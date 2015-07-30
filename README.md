@@ -1,2 +1,2 @@
-moocfi.github.io
+latex-test.github.io
 ================
