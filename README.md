@@ -1,2 +1,2 @@
-latex-test.github.io
+https://ruumis.github.io/latex-test
 ================
