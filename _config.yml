@@ -27,6 +27,7 @@ resources:
     - "/css/main.css"
   js:
     - "//code.jquery.com/jquery-1.11.0.min.js"
+    - "//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
     - "/js/mooc.js"
 
 exclude: [vendor]
