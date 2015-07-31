@@ -24,11 +24,11 @@ navigation:
 resources:
   css:
     - "//fonts.googleapis.com/css?family=Alegreya+Sans:400|Noto+Sans:400,700|Open+Sans+Condensed:300,700"
-    - "/css/main.css"
+    - "/latex-test/css/main.css"
   js:
     - "//code.jquery.com/jquery-1.11.0.min.js"
     - "//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-    - "/js/mooc.js"
+    - "/latex-test/js/mooc.js"
 
 exclude: [vendor]
 
