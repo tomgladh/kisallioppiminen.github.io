@@ -4,11 +4,7 @@ baseurl: ""
 url: "http://ruumis.github.io/latex-test"
 
 # Build settings
-markdown: redcarpet
-redcarpet:
-  extensions:
-    - tables
-    - with_toc_data
+markdown: kramdown
 gems:
   - jekyll-redirect-from
 
