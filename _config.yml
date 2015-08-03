@@ -1,6 +1,6 @@
 # Site settings
 title: Latex-test
-baseurl: ""
+baseurl: "latex-test"
 url: "http://ruumis.github.io/latex-test"
 
 # Build settings
