@@ -35,12 +35,84 @@ sitemap: false
 
 	<section>
 		<header>
-			<h1>Luvun otsikko</h1>
+			<h1>Lineaariset yhtälöryhmät</h1>
 		</header>
 
 		<p>
-			Bacon ipsum dolor sit amet turkey strip steak pancetta. <a href="http://www.kikatus.com/misc/MOOC/#">This is a nice porchop link</a>. Pork belly beef landjaeger, beef ribs frankfurter chuck boudin salami shankle ball tip pig. Meatloaf strip steak spare ribs leberkas salami. Tri-tip ground round pork meatball chuck landjaeger andouille. Sausage drumstick pork loin, beef ribs biltong tail kielbasa. Pig tri-tip drumstick, turducken beef shank pork loin jowl ham hock.
-		</p>
+
+
+
+<em>Lineaarinen yhtälöryhmä</em> on yhtälöryhmä, joka on muotoa
+$$
+\begin{equation*}
+\left\{
+\begin{array}{rcrcccrcr}
+a_{11}x_1&+&a_{12}x_2&+&\cdots&+&a_{1n}x_n&=&b_1 \\
+a_{21}x_1&+&a_{22}x_2&+&\cdots&+&a_{2n}x_n&=&b_2 \\
+&&&&&&&\vdots & \\
+a_{m1}x_1&+&a_{m2}x_2&+&\cdots&+&a_{mn}x_n&=&b_m \\
+\end{array}
+\right.
+\end{equation*}
+$$
+missä $$a_{11},\dots,a_{mn},b_1,\dots,b_m \in \R$$.
+Symbolit $$x_1,x_2,\dots,x_n$$ ovat yhtälöiden tuntemattomia.
+Lukuja $$a_{11},\dots,a_{mn}$$ nimitetään yhtälöryhmän <em></em>kertoimiksi</em> ja lukuja $$b_1,b_2,\dots,b_m$$ <em></em>vakioiksi</em>.
+Jos tuntemattomia on vähän, niitä merkitään yleensä symboleilla $$x,y,z$$ ja niin
+edelleen.
+</p>
+<p>
+Esimerkiksi 
+$$
+\begin{equation*}\label{yhtaloryhmaEsim}
+\left\{
+\begin{array}{rcrcrcr}
+-4x_1&+&\sqrt{3}x_2&+&2x_3&=&4 \\
+x_1&&&+&\frac{6}{8}x_3&=&0 \\
+5x_1&+&\sqrt{2}x_2&+&11x_3&=&-3 \\
+&-&6x_2&-&32x_3&=&4 \\
+\end{array}
+\right.
+\end{equation*}
+$$
+on lineaarinen yhtälöryhmä.
+</p><p>
+Lineaarisen yhtälöryhmän ratkaiseminen merkitsee sitä, että löydetään kaikki ne luvut, jotka tuntemattomien $$x_1,\dots,x_n$$ paikalle
+sijoitettuina toteuttavat yhtä aikaa kaikki yhtälöt.
+</p>
+<p>
+Lineaarisessa yhtälöryhmässä oleellisia ovat vain kertoimet ja vakiot. Kaikki tieto
+yhtälöryhmästä voidaankin tiivistää lukutaulukkoon eli <em></em>matriisiin</em>, jossa
+luetellaan kaikki kertoimet sekä vakiot. Kun
+käsitellään yhtälöryhmien sijasta matriiseja, on kirjoittevaa paljon vähemmän,
+sillä tuntemattomia ei tarvitse kirjata ylös.
+</p><p>
+Esimerkiksi edellä esitellyn yhtälöryhmän matriisi on
+$$
+\[
+\begin{bmatrix}[rrr|r]
+-4&\sqrt{3}&2&4 \\
+1&0&\frac{6}{8}&0 \\
+5&\sqrt{2}&11&-3 \\
+0&-6&-32&4
+\end{bmatrix}.
+\]
+$$
+Selkeyden vuoksi kertoimet on tapana erottaa vakioista pystyviivalla. Huomaa,
+että matriisiin on kirjoitettava nolla niiden termien kohdalle, jotka puuttuvat
+yhtälöryhmästä. Kyseisten termien kertoimena on nimittäin nolla.
+</p><p>
+Kappaleessa 8 tutustutaan matriisien teoriaan yleisemmin. Tässä luvussa käsittelemme vain yhtälöryhmistä saatuja
+matriiseja.
+</p>
+<h2>Gaussin--Jordanin eliminointimenetelmä</h2>
+<p>
+Seuraavaksi käydään läpi menetelmä, jolla voidaan ratkaista mikä tahansa
+lineaarinen yhtälöryhmä.
+Ideana on muokata yhtälöryhmästä uusia yhtälöryhmiä,
+joilla on samat ratkaisut kuin alkuperäisellä yhtälöryhmällä. Viimeisenä saatu
+yhtälöryhmä on helppo ratkaista. Koska viimeisen yhtälöryhmän ratkaisut ovat samat kuin alkuperäisen yhtälöryhmän, on alkuperäisen yhtälöryhmän ratkaisut löydetty.
+</p>	</p>
 
 		<p>
 			Kevin pork pastrami meatloaf, strip steak corned beef ham chicken filet mignon fatback tongue bacon jowl biltong. Bresaola pig shoulder andouille leberkas. Doner fatback strip steak shankle turkey tail turducken pig brisket bacon kielbasa pork belly beef rump. Flank shoulder cow turkey corned beef sausage brisket tri-tip pork kielbasa spare ribs. Venison andouille pork bresaola swine jerky boudin tri-tip shankle pastrami leberkas brisket capicola hamburger.
