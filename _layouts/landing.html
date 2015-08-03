@@ -8,7 +8,9 @@ layout: compress
 
 	<body>
 
-		{% include landing/header.html %}
+		<header>
+		<h1 id="{{ page.title | slugify }}">{{page.title}}</h1>
+		</header>
 
 		<main>
 			{{ content }}
