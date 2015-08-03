@@ -12,9 +12,9 @@ sass:
   style: :compressed
 
 navigation:
-  "Etusivu": "/"
-  "Materiaalit": "/kurssit.html"
-  "Kisällioppiminen?": "/mooc.html"
+  "Etusivu": "/latex-test"
+  "Materiaalit": "/latex-test/kurssit.html"
+  "Kisällioppiminen?": "/latex-test/mooc.html"
 
 resources:
   css:
