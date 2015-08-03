@@ -7,8 +7,8 @@ sidenav: 2015/ohjelmointi
 
 # Lineaariset yhtälöryhmät
 
-**<em>Lineaarinen yhtälöryhmä</em>** on yhtälöryhmä, joka on muotoa
-\\[
+**Lineaarinen yhtälöryhmä** on yhtälöryhmä, joka on muotoa
+$$
 \left\{
 \\begin{array}{rcrcccrcr}
 a_{11}x_1&+&a_{12}x_2&+&\cdots&+&a_{1n}x_n&=&b_1 \\
@@ -17,9 +17,9 @@ a_{21}x_1&+&a_{22}x_2&+&\cdots&+&a_{2n}x_n&=&b_2 \\
 a_{m1}x_1&+&a_{m2}x_2&+&\cdots&+&a_{mn}x_n&=&b_m \\
 \\end{array}
 \right.
-\\]
+$$
 
-missä \\(a_{11},\dots,a_{mn},b_1,\dots,b_m \in \R\\).
+missä $a_{11},\dots,a_{mn},b_1,\dots,b_m \in \R$.
 Symbolit \\(x_1,x_2,\dots,x_n\\) ovat yhtälöiden tuntemattomia.
 Lukuja \\(a_{11},\dots,a_{mn}\\) nimitetään yhtälöryhmän **<em>kertoimiksi</em>** ja lukuja \\(b_1,b_2,\dots,b_m\\) **<em>vakioiksi</em>**.
 Jos tuntemattomia on vähän, niitä merkitään yleensä symboleilla \\(x,y,z\\) ja niin
