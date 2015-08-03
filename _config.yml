@@ -13,9 +13,8 @@ sass:
 
 navigation:
   "Etusivu": "/"
-  "Kurssit": "/kurssit.html"
-  "Mikä MOOC?": "/mooc.html"
-  "In English": "/english.html"
+  "Materiaalit": "/kurssit.html"
+  "Kisällioppiminen?": "/mooc.html"
 
 resources:
   css:
