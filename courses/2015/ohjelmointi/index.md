@@ -8,7 +8,7 @@ sidenav: 2015/ohjelmointi
 # Lineaariset yhtälöryhmät
 
 **Lineaarinen yhtälöryhmä** on yhtälöryhmä, joka on muotoa
-\$$
+$$
 \begin{equation*}
 \left\{
 \\begin{array}{rcrcccrcr}
