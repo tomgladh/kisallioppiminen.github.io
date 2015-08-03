@@ -9,6 +9,7 @@ sidenav: 2015/ohjelmointi
 
 **Lineaarinen yhtälöryhmä** on yhtälöryhmä, joka on muotoa
 $$
+\begin{equation*}
 \left\{
 \\begin{array}{rcrcccrcr}
 a_{11}x_1&+&a_{12}x_2&+&\cdots&+&a_{1n}x_n&=&b_1 \\
@@ -17,6 +18,7 @@ a_{21}x_1&+&a_{22}x_2&+&\cdots&+&a_{2n}x_n&=&b_2 \\
 a_{m1}x_1&+&a_{m2}x_2&+&\cdots&+&a_{mn}x_n&=&b_m \\
 \\end{array}
 \right.
+\end{equation*}
 $$
 
 missä $a_{11},\dots,a_{mn},b_1,\dots,b_m \in \R$.
