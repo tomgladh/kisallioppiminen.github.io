@@ -1,9 +1,6 @@
 ---
 layout: default
 ---
-{% if page.sidenav %}
-	{% include sidenav.html %}
-{% endif %}
 <script type="text/javascript">
     	jQuery(document).ready(function() {
       	$(".tehtava").hide();
@@ -12,7 +9,7 @@ layout: default
        	$(this).next(".tehtava").slideToggle(200);
        	});});
     </script>
-<article>
+<article style="width: 98 %;">
     	<div id="toc" class="menu" data-first-chapter-index="1" data-first-exercise-index="1">
           <div id="materiaali_toc"></div>
           <!--div id="tehtavat_toc"></div-->
