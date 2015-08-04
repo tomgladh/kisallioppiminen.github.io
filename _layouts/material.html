@@ -4,21 +4,19 @@ layout: default
 {% if page.sidenav %}
 	{% include sidenav.html %}
 {% endif %}
-
+<script type="text/javascript">
+    	jQuery(document).ready(function() {
+      	$(".tehtava").hide();
+      	$("div.toc_viikko").hide();
+      	$(".heading").click(function()      {
+       	$(this).next(".tehtava").slideToggle(200);
+       	});});
+    </script>
 <article>
-	<script>
-      		$(document).ready(function() {
-        		sh_highlightDocument();
-        		$('.nav > li >  a').each( function() {
-           			var id = $(this).attr("href") + "2";
-           			$(this).bind('click', function(){
-           				$(id).collapse('toggle');
-               				$('[data-spy="scroll"]').each(function () {
-                   				var $spy = $(this).scrollspy('refresh')
-             				});
-           			});
-         		});
-       		});
-    	</script>
+    	<div id="toc" class="menu" data-first-chapter-index="1" data-first-exercise-index="1">
+          <div id="materiaali_toc"></div>
+          <!--div id="tehtavat_toc"></div-->
+          <div id="tehtavat_toc2"></div>
+        </div>
 	{{ content }}
 </article>
