@@ -6,5 +6,19 @@ layout: default
 {% endif %}
 
 <article>
+	<script>
+      		$(document).ready(function() {
+        		sh_highlightDocument();
+        		$('.nav > li >  a').each( function() {
+           			var id = $(this).attr("href") + "2";
+           			$(this).bind('click', function(){
+           				$(id).collapse('toggle');
+               				$('[data-spy="scroll"]').each(function () {
+                   				var $spy = $(this).scrollspy('refresh')
+             				});
+           			});
+         		});
+       		});
+    	</script>
 	{{ content }}
 </article>
