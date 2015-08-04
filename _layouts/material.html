@@ -9,11 +9,21 @@ layout: default
        	$(this).next(".tehtava").slideToggle(200);
        	});});
     </script>
-<article style="width: 98 %;">
-    	<div id="toc" class="menu" data-first-chapter-index="1" data-first-exercise-index="1">
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo right">Logo</a>
+      <div id="toc" class="menu" data-first-chapter-index="1" data-first-exercise-index="1">
           <div id="materiaali_toc"></div>
           <!--div id="tehtavat_toc"></div-->
           <div id="tehtavat_toc2"></div>
         </div>
+      </ul>
+    </div>
+  </nav>
+            
+    
+<article>
+    	
 	{{ content }}
 </article>
