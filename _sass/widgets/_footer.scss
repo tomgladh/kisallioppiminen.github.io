@@ -8,7 +8,7 @@ body > footer {
 }
 
 body > footer > article {
-	max-width: 1200px;
+	max-width: 1150px;
 	margin: auto;
 }
 
@@ -16,8 +16,12 @@ body > footer > article > section {
 	vertical-align: top;
 	display: inline-block;
 	text-align: left;
-	width: 400px;
+	width: 300px;
 	padding: 23px;
+}
+
+body > footer > article > section.contact {
+	width: 400px;
 }
 
 body > footer > article > section:first-child {
@@ -54,7 +58,7 @@ body > footer > article > section:last-child {
 }
 
 #contact .facebook:before {
-	content: url(https://upload.wikimedia.org/wikipedia/commons/7/70/Crystal_Clear_app_kedit.png);
+	content: url('https://upload.wikimedia.org/wikipedia/commons/7/70/Crystal_Clear_app_kedit.png');
 }
 
 #contact .facebook:before {
