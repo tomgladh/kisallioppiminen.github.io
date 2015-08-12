@@ -13,8 +13,8 @@ sass:
 
 navigation:
   "Etusivu": "/latex-test"
-  "Materiaalit": "/latex-test/kurssit.html"
-  "Kisällioppiminen?": "/latex-test/mooc.html"
+  "Materiaalit": "/latex-test/kurssit"
+  "Kisällioppiminen?": "/latex-test/kisallioppiminen.html"
 
 resources:
   css:
