@@ -4,404 +4,84 @@ layout: material
 sitemap: true
 ---
 <article>
-	<section>
-		<header>
-			<h1>Lineaariset yhtälöryhmät</h1>
-		</header>
+    <section>
+        <header>
+            <h1>Lineaariset yht�l�ryhm�t</h1>
+        </header>
 
-		<p>
+        <p>
 
 
 
-<em>Lineaarinen yhtälöryhmä</em> on yhtälöryhmä, joka on muotoa
-$$
-\begin{equation*}
-\left\{
-\begin{array}{rcrcccrcr}
-a_{11}x_1&+&a_{12}x_2&+&\cdots&+&a_{1n}x_n&=&b_1 \\
-a_{21}x_1&+&a_{22}x_2&+&\cdots&+&a_{2n}x_n&=&b_2 \\
-&&&&&&&\vdots & \\
-a_{m1}x_1&+&a_{m2}x_2&+&\cdots&+&a_{mn}x_n&=&b_m \\
-\end{array}
-\right.
-\end{equation*}
-$$
-missä $a_{11},\dots,a_{mn},b_1,\dots,b_m \in \R$.
-Symbolit $x_1,x_2,\dots,x_n$ ovat yhtälöiden tuntemattomia.
-Lukuja $a_{11},\dots,a_{mn}$ nimitetään yhtälöryhmän <em>kertoimiksi</em> ja lukuja $b_1,b_2,\dots,b_m$ <em>vakioiksi</em>.
-Jos tuntemattomia on vähän, niitä merkitään yleensä symboleilla $x,y,z$ ja niin
-edelleen.
-</p>
-<p>
-Esimerkiksi 
-$$
-\begin{equation*}\label{yhtaloryhmaEsim}
-\left\{
-\begin{array}{rcrcrcr}
--4x_1&+&\sqrt{3}x_2&+&2x_3&=&4 \\
-x_1&&&+&\frac{6}{8}x_3&=&0 \\
-5x_1&+&\sqrt{2}x_2&+&11x_3&=&-3 \\
-&-&6x_2&-&32x_3&=&4 \\
-\end{array}
-\right.
-\end{equation*}
-$$
-on lineaarinen yhtälöryhmä.
-</p><p>
-Lineaarisen yhtälöryhmän ratkaiseminen merkitsee sitä, että löydetään kaikki ne luvut, jotka tuntemattomien $x_1,\dots,x_n$ paikalle
-sijoitettuina toteuttavat yhtä aikaa kaikki yhtälöt.
-</p>
-<p>
-Lineaarisessa yhtälöryhmässä oleellisia ovat vain kertoimet ja vakiot. Kaikki tieto
-yhtälöryhmästä voidaankin tiivistää lukutaulukkoon eli <em>matriisiin</em>, jossa
-luetellaan kaikki kertoimet sekä vakiot. Kun
-käsitellään yhtälöryhmien sijasta matriiseja, on kirjoittevaa paljon vähemmän,
-sillä tuntemattomia ei tarvitse kirjata ylös.
-</p><p>
-Esimerkiksi edellä esitellyn yhtälöryhmän matriisi on
-$$
-\[
-\begin{bmatrix}[rrr|r]
--4&\sqrt{3}&2&4 \\
-1&0&\frac{6}{8}&0 \\
-5&\sqrt{2}&11&-3 \\
-0&-6&-32&4
-\end{bmatrix}.
-\]
-$$
-Selkeyden vuoksi kertoimet on tapana erottaa vakioista pystyviivalla. Huomaa,
-että matriisiin on kirjoitettava nolla niiden termien kohdalle, jotka puuttuvat
-yhtälöryhmästä. Kyseisten termien kertoimena on nimittäin nolla.
-</p>
-<p>
-Kappaleessa 8 tutustutaan matriisien teoriaan yleisemmin. Tässä luvussa käsittelemme vain yhtälöryhmistä saatuja
-matriiseja.
-</p>
-<h2>Gaussin--Jordanin eliminointimenetelmä</h2>
-<p>
-Seuraavaksi käydään läpi menetelmä, jolla voidaan ratkaista mikä tahansa
-lineaarinen yhtälöryhmä.
-Ideana on muokata yhtälöryhmästä uusia yhtälöryhmiä,
-joilla on samat ratkaisut kuin alkuperäisellä yhtälöryhmällä. Viimeisenä saatu
-yhtälöryhmä on helppo ratkaista. Koska viimeisen yhtälöryhmän ratkaisut ovat samat kuin alkuperäisen yhtälöryhmän, on alkuperäisen yhtälöryhmän ratkaisut löydetty.
-	</p>
-
-		<p>
-			Kevin pork pastrami meatloaf, strip steak corned beef ham chicken filet mignon fatback tongue bacon jowl biltong. Bresaola pig shoulder andouille leberkas. Doner fatback strip steak shankle turkey tail turducken pig brisket bacon kielbasa pork belly beef rump. Flank shoulder cow turkey corned beef sausage brisket tri-tip pork kielbasa spare ribs. Venison andouille pork bresaola swine jerky boudin tri-tip shankle pastrami leberkas brisket capicola hamburger.
-		</p>
-
-		<h1>Luvun sisäinen h1 otsikko</h1>
-
-		<p>
-			Meatloaf kevin chuck tail jerky porchetta meatball bacon filet mignon turkey ground round turducken boudin leberkas short loin. Pig shank kielbasa ribeye, beef meatball spare ribs tail strip steak. Pork chop meatloaf capicola swine. T-bone swine andouille salami cow. 
-		</p>
-
-		<ol>
-			<li>Shank ham hock salami pork ham beef. Brisket beef ribs boudin chuck landjaeger pork chop.</li>
-			<li>Hamburger turkey tongue, strip steak pork chop venison beef ribs rump sirloin pork loin tri-tip</li>
-			<li>Venison andouille pork bresaola swine jerky</li>
-			<li>Meatloaf strip steak spare ribs leberkas salami. Tri-tip ground round pork meatball chuck landjaeger andouille. Sausage drumstick pork loin, beef ribs biltong tail kielbasa. Pig tri-tip drumstick, turducken beef shank pork loin jowl ham hock.</li>
-		</ol>
-
-		<p>
-			Hamburger turkey tongue, strip steak pork chop venison beef ribs rump sirloin pork loin tri-tip. Pork chop venison chuck pancetta drumstick, beef ribs shoulder.
-		</p>
-
-		<h2>Luvun sisäinen h2 otsikko</h2>
-
-		<p>
-			Hamburger chuck shankle filet mignon sirloin brisket. Frankfurter leberkas boudin bacon porchetta. Meatloaf pancetta pig, ham hock doner chuck kielbasa pork chop ground round prosciutto ribeye landjaeger shankle bacon turkey. 
-		</p>
-
-		<ul>
-			<li>Shank ham hock salami pork ham beef. Brisket beef ribs boudin chuck landjaeger pork chop.</li>
-			<li>Hamburger turkey tongue, strip steak pork chop venison beef ribs rump sirloin pork loin tri-tip</li>
-			<li>Venison andouille pork bresaola swine jerky</li>
-			<li>Meatloaf strip steak spare ribs leberkas salami. Tri-tip ground round pork meatball chuck landjaeger andouille. Sausage drumstick pork loin, beef ribs biltong tail kielbasa. Pig tri-tip drumstick, turducken beef shank pork loin jowl ham hock.</li>
-		</ul>
-		
-		<h3 data-hash="Paew3YUZE6cGwf1jbq9tKcLxV1FAuloxqhLGIuo_CbV4AFdJRbphEDV-O5wGzV409d_iRaBXBVboRxF2KcxESw==" id="6.5-vertailujen_suoritusjarjestys">6.5 Vertailujen suoritusjärjestys</h3>
-          
-            <p data-hash="D4nqqf8vtn1OC96YJP-3IpvFAFfUDdRhaYTqWO6xSb2CpB4BJORXr8nF9V3fgzCNwB7PS0qKQNjemezCzlVLfA==">Vertailut suoritetaan järjestyksessä ylhäältä alaspäin. Kun suorituksessa päästään lohkoon, jonka ehto on totta, suoritetaan lohko ja lopetetaan vertailu.</p>
-          
-          <pre class="sh_java" data-hash="EAIolEyHd9BH5n2ZhV_Qm7IAon1L_Lxw-fhyAdPLw9uh5J5dnXyHLXjgvhI-1uzBytSM7HaI483kfg6Ps1mm4A==">
-int luku = 5;
-
-if (luku == 0) {
-    System.out.println("Luku on nolla.");
-} else if (luku &gt; 0) {
-    System.out.println("Luku on suurempi kuin nolla.");
-} else if (luku &gt; 2) {
-    System.out.println("Luku on suurempi kuin kaksi.");
-} else {
-    System.out.println("Luku on pienempi kuin nolla.");
-}
-</pre>
-          
-          <pre data-hash="0ad3Qm185oW1CbXNbERkzIAPpHaaVg052848MCF8mKJE0DPO9ppLM_YR7ol4fKIjcaFUm-OX81srXcrTrPo26w==">
-Luku on suurempi kuin nolla.
-</pre>
-          
-            <p data-hash="TrihdwDdO87Lv_31pe1JF94JYYg3uy1z6F2Wkn0uFTBlkXEChI21-39m-AblAzZWtVYdN5a6o-q0tk07WOC3dg==">Yllä oleva esimerkki tulostaa merkkijonon "Luku on suurempi kuin nolla." vaikka myös ehto <code data-hash="9mMifjwVOicqgV5XkWLlDda88bIHhg5lGDnD9AUlFYvS-cRlZIjzCNlo8D9wwwXkaowTBl45rAjO-0s-pibgpg==">luku &gt; 2</code> on totta. Vertailu siis lopetetaan ensimmäiseen valintakäskyyn, jonka ehto on totta.</p>
-          
-            <div class="tehtavat" data-hash="R7LQnGiiQiVYF_sP9CfuMBmXiM_nrq4UuNiPW5glRUUf4ZoKZ9yYMKKaqbjbedSvX1bvEfaWFYs_cWUHm1YFxA==">
-              <div class="middleman-tehtava tehtava"><div class="panel-group" id="21arvosanat_ja_pisteet"><div class="panel panel-default">
-          <a class="panel-title" data-toggle="collapse" data-parent="#21arvosanat_ja_pisteet" href="#21arvosanat_ja_pisteet2"><div class="panel-heading"><h4 class="tehtava" id="21">Tehtävä 21: Arvosanat ja pisteet</h4></div></a><div class="panel-collapse collapse" id="21arvosanat_ja_pisteet2"><div class="panel-body"><div class="tehtava" data-hash="0neXuhZi69F7JXU4seTbe2XEbB1bLQhqkw4wfaOgaiY1mQEkZufS2I9JhgAVJtZzXh9HoFEdzXuB2GmI8NDuzg==">
-                
-                <p data-hash="1W-GoYowhWoV9MQ0qraTzg03buusGSCHAq6psZvhhz-2nt5akLzlxObOSp3fhPZQivUvID_5ygWySv2Pqds7Ug==">Tee ohjelma, joka ilmoittaa kurssiarvosanan seuraavan taulukon mukaisesti.</p>
-          
-              <table class="table">
-<tr>
-<th>pistemäärä</th>
-                  <th>arvosana</th>
-                </tr>
-<tr>
-<td>0–29</td>
-                  <td>hylätty</td>
-                </tr>
-<tr>
-<td>30–34</td>
-                  <td>1</td>
-                </tr>
-<tr>
-<td>35–39</td>
-                  <td>2</td>
-                </tr>
-<tr>
-<td>40–44</td>
-                  <td>3</td>
-                </tr>
-<tr>
-<td>45–49</td>
-                  <td>4</td>
-                </tr>
-<tr>
-<td>50–60</td>
-                  <td>5</td>
-                </tr>
-</table>
-<p data-hash="6HXPFFUzmY1Z-aCK91G-Vjj3yznQxpeCeSyYPNUYPv732WNDrUcP26WdQti2j_jDfwCpAVyTE171bMj9BJH3Pg==">Esimerkkitulostuksia:</p>
-          
-          <pre data-hash="XNGllB0tZyS2J2y-AttLVCKyE3xZaVT0ES-OWfBkPbgoHXYyonD7TVajDzSxVR-QEvTaqFMJHTwMO1LmfLEClg==">
-Anna pisteet [0-60]: <font color="red">37</font>
-
-Arvosana: 2
-</pre>
-          <pre data-hash="2YDu_hmhFO4p3frMRltJvrmRvGET7kMZVo2lTq79RD47qg2cK5taubaLMpTEVRBpuwYZvnzs_CFeLOz6JBxlfQ==">
-Anna pisteet [0-60]: <font color="red">51</font>
-
-Arvosana: 5
-</pre>
-          
-            </div></div></div>
-          </div></div></div>
-          </div>
-          
-            <h3 data-hash="CL1vJ9uO7VxDjx0KbIjSa-ZbdKkFkG2uYX6TGlw5Crry7rM-YgnUcK8pWL7bHMVpNB5CjOAZHwy7ohi88qtW0g==" id="6.6-loogiset_operaatiot">6.6 Loogiset operaatiot</h3>
-          
-            <p data-hash="f5pwM_cT7D1BJ8lWAmOf6oqv6nXwqQYdbHRraVVAVkvTxaDxUz-hlXwAlqa8An1y4g306m6n4G2Q6vCvSDuP0A==">Valinnan ehto voi olla myös monimutkaisempi, yksittäisten loogisten operaatioiden avulla koostettu ehto. Loogisia operaatioita ovat:</p>
-          
-            <ul data-hash="X4oheL4MmX_6NjCHTgrnLsK39AncxOqhTlwm4R6Ygf2F5tJjisw7MkHZ63nnkF3Fm2OsVGjqkRGYGb3hjk6yEg==">
-<li data-hash="q4Hvw1lleAqDdaxIXAqGyfIB4VJxXDqvbyge8OufMbqR36hLhRpOOXP-uQ4Dc0cPYsj12XQ1JBzrYl573IQqdg==">
-          <code data-hash="lUc7EQPTjhrAUlbasKJnlyAzCW0H10_SS6Kh-c5ztAHXeyvxkmr1nlKlCGdyK6ENm10Ph2eSAM9xgD6f6ImJ0w==">ehto1 &amp;&amp; ehto2</code> lausekkeen arvo on tosi molemmat ehdoista ovat tosia</li>
-              <li data-hash="_pGRMKwAx55_qHRLtxEKHZuxwa29h1c3w4puzm3ak319SzrTylBCHZ7A6GO8vagAYYp1tZ2pxBKhsoIOPdvvww==">
-          <code data-hash="Ozaf7LTv3a9B_NDixDxTniDaxWr1TNKo42Yf8MTqxvm1pFKtMgpCSNfbgOCRUMwp7jwEvW3K8k3yOzKWhTcRng==">ehto1 || ehto2</code> lausekkeen arvo on tosi jos jompi kumpi tai molemmat ehdoista tosia</li>
-            </ul>
-<p data-hash="uOQmjVHw0At1ZBdOavqFGG5eqz7ZVcfVmPLkd34eNl8KXEnwT3V2b8b6KlA6USMlOq9T8xdkyIRNjFIdivsdww==">Seuraavassa yhdistetään <code data-hash="OoyPdIvTzU0LItxpNQghawRL7w5bPJivR_6FQ7DsTL0umauioBM41ueTnFK9nE2c2QX1A60nawqJ1y-eci6YbA==">&amp;&amp;</code>:lla eli ja-operaatiolla kaksi yksittäistä ehtoa. Koodilla tarkistetaan, onko muuttujassa oleva luku suurempi kuin 4 <strong>ja</strong> pienempi kuin 11, eli siis välillä 5-10:</p>
-          
-          <pre class="sh_java" data-hash="70GLWaFrS1R8oPeCjSWk6CARv_Mmt6Ud7JZ4j33E8b8RHanGQ5p6S9Lz3v1MopFaOLmIwxrJIh4E18NfAKJaqw==">
-System.out.println("Onkohan luku väliltä 5-10: ");
-int luku = 7;
-
-if (luku &gt; 4 &amp;&amp; luku &lt; 11) {
-    System.out.println("On! :)");
-} else {
-    System.out.println("Ei ollut :(")
-}
-</pre>
-          
-          <pre data-hash="6--VT7SHUxW3BcQh-jiMEybinV43n84kN76fJu_7Bxv78smMYDLnmgerXsW43UrNnX-rlFjVPexgjL6RqnTUJQ==">
-Onkohan luku väliltä 5-10:
-On! :)
-</pre>
-          
-            <p data-hash="Z9pbx9rTCNpfm9P06_AeO83Mwt6gsKZiLsRd9U5saYXMI7prMUZ_1-6VGEKGa6xqHL17yMngRWTzKLgnckSVfA==">Seuraavassa annetaan <code data-hash="oR-dTCxLyBd2sm1wmCYuhPEas2gUY0QU49LEZZpH5KrAyM1e4kLDxIg_G145m-wDtIooGGeNdj76v0FkL32fkQ==">||</code>:n eli tai-operaation avulla kaksi vaihtoehtoa, onko luku pienempi kuin 0 <strong>tai</strong> suurempi kuin 100. Ehto toteutuu jos luku täyttää jomman kumman ehdon:</p>
-          
-          <pre class="sh_java" data-hash="gddyCwv12raO8-pfQY9RAwmSz9n5YZoJosqcHRa-PoDvfHZDd_bowJvGwKOonEviNNspc9yH8w_T3w_RauHC-w==">
-System.out.println("Onkohan luku pienempi kuin 0 tai suurempi kuin 100");
-int luku = 145;
-
-if (luku &lt; 0 || luku &gt; 100) {
-    System.out.println("On! :)");
-} else {
-    System.out.println("Ei ollut :(")
-}
-</pre>
-          
-          <pre data-hash="Fuj44ROE4-76SLOISS2NKWNvjptuYeUyB9yk8zt4r6JC9l2Gy61SfW2GKf5jAxN-1jyzKD6tQZxab7CqGuYI-g==">
-Onkohan luku pienempi kuin 0 tai suurempi kuin 100
-On! :)
-</pre>
-          
-            <div class="tehtavat" data-hash="zmuS5GM06nO6nm_ZNHfJ-ddpjLiSOKfful0tjBcHYWY3aT9UaXNcqWfeRwlWvX-hTzcuPti6Wp5P2vQT11T3Kw==">
-              <div class="middleman-tehtava tehtava"><div class="panel-group" id="22ian_tarkistus"><div class="panel panel-default">
-          <a class="panel-title" data-toggle="collapse" data-parent="#22ian_tarkistus" href="#22ian_tarkistus2"><div class="panel-heading"><h4 class="tehtava" id="22">Tehtävä 22: Iän tarkistus</h4></div></a><div class="panel-collapse collapse" id="22ian_tarkistus2"><div class="panel-body"><div class="tehtava" data-hash="76SBhEk9wgqgnd95A-tH_SxMzIV37pgpvc9ZQowbUOSlVjLe99-BOPVFiarTAMe6AI2UsdrldcXpL6xsQOhCCw==">
-              
-              <p data-hash="Zwn9j0srCtjW_ObwWlnHBqX5DmC0LEY4PdsuhbuVT5x0APiUuVWn7dpSc2jsVQGIP5OngRw6mxJiqgAs94ZwdQ==">Tee ohjelma, joka kysyy käyttäjän iän ja tarkistaa,
-                että se on mahdollinen (ainakin 0 ja korkeintaan 120).</p>
-          <pre data-hash="qMVB1bxpUFnCCGqTQnB3-mNPShpf1MIea9pE87J-wmBfZFJhWc4eKtKo_rugHVTu7NKyyODQkMWXYtvJLk1zwA==">
-Kuinka vanha olet? <font color="red">10</font>
-OK
-</pre>
-          <pre data-hash="73jG0-KiBiFqMF2wD8Di_Cg9db9oG7C174ct3MyMrZtT8Gk39oTZhBpjKtoIaZFXpFJ4I0CxxNsQlVynrXP_EA==">
-Kuinka vanha olet? <font color="red">55</font>
-OK
-</pre>
-          <pre data-hash="7D-itRxwag1WDeWDYrXfcn-I3KERnfw6ns-b_IWgYkHWPkMnIRsyn4g36G9SjSOYKgp2zith3cMcxT3JvEYQ7Q==">
-Kuinka vanha olet? <font color="red">-3</font>
-Mahdotonta!
-</pre>
-          <pre data-hash="MUXPTUqPPkkr3ZN-Fv3eU13EOtdMeotmdWv4vvwWWLhnxePCq6DlSmAHjhN_sR75GwbfUYM1xoSJFcevVJsLOw==">
-Kuinka vanha olet? <font color="red">150</font>
-Mahdotonta!
-</pre>
-          </div></div></div>
-          </div></div></div>
-          
-          </div>
-          
-          
-            <h3 data-hash="fAInCXdNvFykCxktQkdV05qvSEaEYDJpkAzNs45WnjZb75CB__ftlge6k6ZIjh3uPrbODAgH6dRqN2bfqSH7-A==" id="6.7-totuusarvomuuttuja">6.7 Totuusarvomuuttuja</h3>
-          
-            <p data-hash="dXyCyM4_yDLk84IORKKovC8POonyUIsv1MMY_q_bASKajGTk517KKggHmXndUlKmefP-ZpqGRL1usB4ZvxY2fA==">Kaikki vertailut muuntuvat käytännössä totuusarvomuuttujaksi. Totuusarvomuuttujan tyyppi on <code data-hash="ZD8nauwwxeXVmfYuj7Y7ykjCGbaf1SybC8YnPz9KZMjs1ekQFBsoMzMvAq1-5KYnVDBjdG7gML3cLdJ2wmppew==">boolean</code> ja arvo <em>true</em> tai <em>false</em>.</p>
-          
-          <pre class="sh_java" data-hash="RLbs-fITeGTYr8W60F1FeTZvPIBSQRk2LLr90gN1NvA6YmRuDgNWjhfA5VAxNjfHcbC5LHGyle0PWJ4d1BWeWQ==">
-boolean onkoTotta = true;
-System.out.println("Totuusarvomuuttujan arvo on " + onkoTotta);
-</pre>
-          
-          <pre data-hash="QhgCabc25fOwVZZqInmd2wadhmu2LKmUYkQB35LBmVO-ylw7jsTyEdTnvhNetekFzCKkckChCBAVhxJSPun2xw==">
-Totuusarvomuuttujan arvo on true
-</pre>
-          
-            <p data-hash="hSNAbYBj_9J2VPH8eO62v9kQHQrDFgE-n7DKm1VjEcj0iks4D3xEHKy4vAczYas2er5dHco3SiPr7IhR0THfcw==">Vertailuoperaattoreita voi käyttää myös ehtojen ulkopuolella. Tällöin vertailun tuloksena saatu totuusarvo asetetaan talteen totuusarvomuuttujaan myöhempää käyttöä varten.</p>
-          
-          <pre class="sh_java" data-hash="Fg1Q3WQavt8DBCC_0qJGzD4kkjAOFj784guyUPzirOvyNXWOoqG3b1FXkTlNVCtDh9PfHx3-srn4Ngo5a5B2dA==">
-int eka = 1;
-int toka = 3;
-
-boolean onkoSuurempi = eka &gt; toka;
-</pre>
-          
-            <p data-hash="5esk_o7KVpU1xxV4HdshZVs_tb0mnh0SfHTcjgVZK0j5v3kgBwg2RMdZGoejiyhTokW5d5HZRJQiCotNqcwekg==">Yllä olevassa esimerkissä totuusarvomuuttuja <code data-hash="RRnWJo7jvUUixjaNOSHq9_W0qq6ZHSjSEssWLEVtyzePc1qh8x-JafDq6DjliS5l65X2GtqxSGPywps66tHWMA==">onkoSuurempi</code> sisältää nyt totuusarvon <em>false</em>.</p>
-          
-            <p data-hash="EpckRsJmwzIijGpar429dYdnhnjxNuW0uNfPB7yKohyZjEasY9Zyf7WUIwrmh9Mzo6_oGQY1gkGTYCR70yoWfA==">Totuusarvomuuttujaa voidaan käyttää valintakäskyssä ehtona.</p>
-          
-            <pre class="sh_java" data-hash="KWYZou2xYF11Kyz1k5_GgHt70fyWj98zQH5edmyqx_5e0oSYrXjF5TH5mUYsi2aK38Ng-UEx4O38WsIsCbSOsQ==">
-int eka = 1;
-int toka = 3;
-
-boolean onkoPienempi = eka &lt; toka;
-
-if (onkoPienempi) {
-    System.out.println("1 on pienempi kuin 3!");
-}
-</pre>
-          
-          <pre data-hash="brnxu20eta33_qOczvSfLhnnwK1VqAQYLfa81gEp4_Yd5q0Fqdc0cysOA9CQihLvyhfTY_Z9H0mxgLgpxezb_Q==">
-1 on pienempi kuin 3!
-</pre>
-          
-          <!-- muuntautuu totuusarvoksi <em>true</em> tai <em>false</em>.  Valintakäsky <code>if</code> käsittelee siis lopulta vain ja ainoastaan totuusarvoja. -->
-          
-          
-          
-            <h3 data-hash="4lMSDdzvJ9bCqCRSFHFtdqNhzoMFZckyKSSf-dmSwQ_yr5qOnybdua1YDtXoVPmTALO0tQvyDSd3Kr8SSfy0AA==" id="6.8-jakojaannos">6.8 Jakojäännös</h3>
-          
-          
-            <p data-hash="6VbVYusVLTYbxVzKGqpjCMjDU58l_cJ5WKcB-dUudXpVluKEMckYoXdYMaK9aZvf_LSUw53pZSS70PuaJY3b0Q==">Jakojäännös on hieman harvemmin käytetty operaatio, joka on kuitenkin varsin näppärä kun halutaan tarkistaa esimerkiksi luvun jaollisuutta. Jakojäännösoperaation merkki on <code data-hash="xQWRtGFcB5ImxhPh2z_hXASXlPZ9M3Ld4qIICbreg4Tz-tXdXhWEBshKKobWx-ZH_cWSNR-XAfTonuCqBRll_Q==">%</code>.</p>
-          
-          <pre class="sh_java" data-hash="6JB3Vl-bvMbPXOhX4w5DOx_lv7rgxro9ENpqM5M0p-KRU2fRS20Vz3_TDmWSymOeal9v9zuFSkGWh14cDEexIA==">
-int jakojaannos = 7 % 2; 
-System.out.println(jakojaannos); // tulostaa 1
-</pre>
-          
-            <p data-hash="5qvArRab4t6-G0eB81YZb1_ZTAdzpyKRPCPK5mPDtC7ntrzLfSpHL7n-GyAAUXhMjNbyC_xvluHiZdswQWrh0A==">Jos haluamme tietää onko käyttäjän syöttämä luku jaollinen neljälläsadalla, tarkastamme onko syötetyn luvun jakojäännös neljänsadan suhteen nolla.</p>
-          
-          
-          <pre class="sh_java" data-hash="GiBuL3ljaKmVUT593JgBTu3OtZsKsXFQtmdUe3gd_-ACvK_yV7JwveELKVEbTszi8OUDV2UVlv1rBdXqOKwckA==">
-Scanner lukija = new Scanner(System.in);
-int luku = Integer.parseInt(lukija.nextLine());
-int jakojaannos = luku % 400;
-
-if (jakojaannos == 0) {
-    System.out.println("Luku " + luku + " on jaollinen neljälläsadalla.");
-} else {
-    System.out.println("Luku " + luku + " ei ole jaollinen neljälläsadalla.");
-}
-</pre>
-          
-              <p data-hash="NtdzxY-SNCVLpw-A96ZQSc3NfxeplXo1d_7yqIo0OstjhuVVEh38zO0fpetoWwd6Uq-8VhowyprjVMimYweFbg==">Koska jakojäännös on samanlainen operaatio kuin muutkin laskut, voi sen asettaa osaksi valintakäskyä.</p>
-          
-          
-          <pre class="sh_java" data-hash="qthCyrL8Zz0zJTzUhUq0QvKpn0GIbP55S_I9I9spcaQjOxtR_n1Itr_bif-T7JF0B2lqVXvgS2-SO3solO4b6Q==">
-Scanner lukija = new Scanner(System.in);
-int luku = Integer.parseInt(lukija.nextLine());
-
-if (luku % 400 == 0) {
-    System.out.println("Luku " + luku + " on jaollinen neljälläsadalla.");
-} else {
-    System.out.println("Luku " + luku + " ei ole jaollinen neljälläsadalla.");
-}
-</pre>
-          
-          <div class="tehtavat">
-            <div class="middleman-tehtava tehtava"><div class="panel-group" id="23pariton_vai_parillinen"><div class="panel panel-default">
-          <a class="panel-title" data-toggle="collapse" data-parent="#23pariton_vai_parillinen" href="#23pariton_vai_parillinen2"><div class="panel-heading"><h4 class="tehtava" id="23">Tehtävä 23: Pariton vai parillinen?</h4></div></a><div class="panel-collapse collapse" id="23pariton_vai_parillinen2"><div class="panel-body"><div class="tehtava" data-hash="yMQd6Bg7JDGZNzU9q_2hXwoVsw-BK3aJ8yTa5ENqxXxgdONTcxlzigtsVYWh6QCa7Mf1IYigifL7oUPRR9nryw==">
-              
-              <p>Tee ohjelma, joka kysyy käyttäjältä luvun ja ilmoittaa,
-                onko se parillinen vai pariton.</p>
-          <pre>
-Anna luku: <font color="red">2</font>
-Luku 2 on parillinen.
-</pre>
-          <pre>
-Anna luku: <font color="red">7</font>
-Luku 7 on pariton.
-</pre>
-              <p>Vihje: Luvun jakojäännös 2:lla kertoo, onko luku parillinen vai pariton. Jakojäännos taas saadaan <code data-hash="xQWRtGFcB5ImxhPh2z_hXASXlPZ9M3Ld4qIICbreg4Tz-tXdXhWEBshKKobWx-ZH_cWSNR-XAfTonuCqBRll_Q==">%</code>-operaattorilla, tehtäväpohjassa on lisää ohjeita miten parittomuustarkastus hoituu jakojäännöksen avulla.</p>
-            </div></div></div>
-          </div></div></div>
-          </div>
-          
-            <h3 id="6.9-monimutkaisemman_ongelman_ratkaiseminen_osa_kerrallaan">6.9 Monimutkaisemman ongelman ratkaiseminen osa kerrallaan</h3>
-          
-            <p>Tutustutaan klassiseen ohjelmointiongelmaan: 'Kirjoita ohjelma, joka kysyy käyttäjältä lukua yhden ja sadan väliltä ja tulostaa luvun. Jos luku on kolmella jaollinen, luvun sijaan tulostetaan "Fizz". Jos luku on viidellä jaollinen, luvun sijaan tulostetaan "Buzz". Jos luku on sekä kolmellä että viidellä jaollinen, luvun sijaan tulostetaan "FizzBuzz"'.</p>
-          
-            <p>Ohjelmoija lähtee ratkaisemaan tehtävää lukemalla ehdot yksi kerrallaan läpi ja toteuttamalla kullekin ehdolle oman vertailun. Tällöin ohjelman rakenne muotoutuu seuraavanlaisesta ajatusketjusta:</p>
-          
-              <ol>
-<li>Tee ohjelma, joka lukee luvun käyttäjältä ja tulostaa sen.</li>
-                <li>Jos luku on jaollinen kolmella, tulosta luvun sijaan merkkijono "Fizz".</li>
-                <li>Jos luku on jaollinen viidellä, tulosta luvun sijaan merkkijono "Buzz".</li>
-                <li>Jos luku on jaollinen kolmella ja viidellä, tulosta luvun sijan merkkijono "FizzBuzz".</li>
-              </ol>
-<p>Ajatusketju muodostuu ongelmalliseksi viimeistään neljännen kohdan paikkeilla. Alla oleva koodi seurailee ylläolevaa ajatusketjua, mutta ei toimi oikein. Kokeile itse!</p>
-          
-          <pre class="sh_java">
-Scanner lukija = new Scanner(System.in);
-
-int luku = Integer.parseInt(lukija.nextLine());
-
-if (luku % 3 == 0) {
-    System.out.println("Fizz");
-} else if (luku % 5 == 0) {
-    System.out.println("Buzz");
-} else if (luku % 3 == 0 &amp;&amp; luku % 5 == 0) {
-    System.out.println("FizzBuzz");
-} else {
-    System.out.println(luku);
-}
-</pre>
-	</section>
+            <em>Lineaarinen yht�l�ryhm�</em> on yht�l�ryhm�, joka on muotoa
+            $$
+            \begin{equation*}
+            \left\{
+            \begin{array}{rcrcccrcr}
+            a_{11}x_1&+&a_{12}x_2&+&\cdots&+&a_{1n}x_n&=&b_1 \\
+            a_{21}x_1&+&a_{22}x_2&+&\cdots&+&a_{2n}x_n&=&b_2 \\
+            &&&&&&&\vdots & \\
+            a_{m1}x_1&+&a_{m2}x_2&+&\cdots&+&a_{mn}x_n&=&b_m \\
+            \end{array}
+            \right.
+            \end{equation*}
+            $$
+            miss� $a_{11},\dots,a_{mn},b_1,\dots,b_m \in \R$.
+            Symbolit $x_1,x_2,\dots,x_n$ ovat yht�l�iden tuntemattomia.
+            Lukuja $a_{11},\dots,a_{mn}$ nimitet��n yht�l�ryhm�n <em>kertoimiksi</em> ja lukuja $b_1,b_2,\dots,b_m$ <em>vakioiksi</em>.
+            Jos tuntemattomia on v�h�n, niit� merkit��n yleens� symboleilla $x,y,z$ ja niin
+            edelleen.
+        </p>
+        <p>
+            Esimerkiksi 
+            $$
+            \begin{equation*}\label{yhtaloryhmaEsim}
+            \left\{
+            \begin{array}{rcrcrcr}
+            -4x_1&+&\sqrt{3}x_2&+&2x_3&=&4 \\
+            x_1&&&+&\frac{6}{8}x_3&=&0 \\
+            5x_1&+&\sqrt{2}x_2&+&11x_3&=&-3 \\
+            &-&6x_2&-&32x_3&=&4 \\
+            \end{array}
+            \right.
+            \end{equation*}
+            $$
+            on lineaarinen yht�l�ryhm�.
+        </p><p>
+            Lineaarisen yht�l�ryhm�n ratkaiseminen merkitsee sit�, ett� l�ydet��n kaikki ne luvut, jotka tuntemattomien $x_1,\dots,x_n$ paikalle
+            sijoitettuina toteuttavat yht� aikaa kaikki yht�l�t.
+        </p>
+        <p>
+            Lineaarisessa yht�l�ryhm�ss� oleellisia ovat vain kertoimet ja vakiot. Kaikki tieto
+            yht�l�ryhm�st� voidaankin tiivist�� lukutaulukkoon eli <em>matriisiin</em>, jossa
+            luetellaan kaikki kertoimet sek� vakiot. Kun
+            k�sitell��n yht�l�ryhmien sijasta matriiseja, on kirjoittevaa paljon v�hemm�n,
+            sill� tuntemattomia ei tarvitse kirjata yl�s.
+        </p><p>
+            Esimerkiksi edell� esitellyn yht�l�ryhm�n matriisi on
+            $$
+            \begin{bmatrix}[rrr|r]
+            -4&\sqrt{3}&2&4 \\
+            1&0&\frac{6}{8}&0 \\
+            5&\sqrt{2}&11&-3 \\
+            0&-6&-32&4
+            \end{bmatrix}.
+            $$
+            Selkeyden vuoksi kertoimet on tapana erottaa vakioista pystyviivalla. Huomaa,
+            ett� matriisiin on kirjoitettava nolla niiden termien kohdalle, jotka puuttuvat
+            yht�l�ryhm�st�. Kyseisten termien kertoimena on nimitt�in nolla.
+        </p>
+        <p>
+            Kappaleessa 8 tutustutaan matriisien teoriaan yleisemmin. T�ss� luvussa k�sittelemme vain yht�l�ryhmist� saatuja
+            matriiseja.
+        </p>
+        <h2>Gaussin--Jordanin eliminointimenetelm�</h2>
+        <p>
+            Seuraavaksi k�yd��n l�pi menetelm�, jolla voidaan ratkaista mik� tahansa
+            lineaarinen yht�l�ryhm�.
+            Ideana on muokata yht�l�ryhm�st� uusia yht�l�ryhmi�,
+            joilla on samat ratkaisut kuin alkuper�isell� yht�l�ryhm�ll�. Viimeisen� saatu
+            yht�l�ryhm� on helppo ratkaista. Koska viimeisen yht�l�ryhm�n ratkaisut ovat samat kuin alkuper�isen yht�l�ryhm�n, on alkuper�isen yht�l�ryhm�n ratkaisut l�ydetty.
+        </p>
+    </section>
 </article>
