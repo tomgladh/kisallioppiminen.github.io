@@ -6,14 +6,13 @@ sitemap: true
 <article>
     <section>
         <header>
-            <h1>Lineaariset yhtälöryhmät</h1>
+            <h1>Lineaariset yhtÃ¤lÃ¶ryhmÃ¤t</h1>
         </header>
 
         <p>
 
 
-
-            <em>Lineaarinen yhtälöryhmä</em> on yhtälöryhmä, joka on muotoa
+            <em>Lineaarinen yhtÃ¤lÃ¶ryhmÃ¤</em> on yhtÃ¤lÃ¶ryhmÃ¤, joka on muotoa
             $$
             \begin{equation*}
             \left\{
@@ -26,10 +25,10 @@ sitemap: true
             \right.
             \end{equation*}
             $$
-            missä $a_{11},\dots,a_{mn},b_1,\dots,b_m \in \R$.
-            Symbolit $x_1,x_2,\dots,x_n$ ovat yhtälöiden tuntemattomia.
-            Lukuja $a_{11},\dots,a_{mn}$ nimitetään yhtälöryhmän <em>kertoimiksi</em> ja lukuja $b_1,b_2,\dots,b_m$ <em>vakioiksi</em>.
-            Jos tuntemattomia on vähän, niitä merkitään yleensä symboleilla $x,y,z$ ja niin
+            missÃ¤ $a_{11},\dots,a_{mn},b_1,\dots,b_m \in \R$.
+            Symbolit $x_1,x_2,\dots,x_n$ ovat yhtÃ¤lÃ¶iden tuntemattomia.
+            Lukuja $a_{11},\dots,a_{mn}$ nimitetÃ¤Ã¤n yhtÃ¤lÃ¶ryhmÃ¤n <em>kertoimiksi</em> ja lukuja $b_1,b_2,\dots,b_m$ <em>vakioiksi</em>.
+            Jos tuntemattomia on vÃ¤hÃ¤n, niitÃ¤ merkitÃ¤Ã¤n yleensÃ¤ symboleilla $x,y,z$ ja niin
             edelleen.
         </p>
         <p>
@@ -46,19 +45,19 @@ sitemap: true
             \right.
             \end{equation*}
             $$
-            on lineaarinen yhtälöryhmä.
+            on lineaarinen yhtÃ¤lÃ¶ryhmÃ¤.
         </p><p>
-            Lineaarisen yhtälöryhmän ratkaiseminen merkitsee sitä, että löydetään kaikki ne luvut, jotka tuntemattomien $x_1,\dots,x_n$ paikalle
-            sijoitettuina toteuttavat yhtä aikaa kaikki yhtälöt.
+            Lineaarisen yhtÃ¤lÃ¶ryhmÃ¤n ratkaiseminen merkitsee sitÃ¤, ettÃ¤ lÃ¶ydetÃ¤Ã¤n kaikki ne luvut, jotka tuntemattomien $x_1,\dots,x_n$ paikalle
+            sijoitettuina toteuttavat yhtÃ¤ aikaa kaikki yhtÃ¤lÃ¶t.
         </p>
         <p>
-            Lineaarisessa yhtälöryhmässä oleellisia ovat vain kertoimet ja vakiot. Kaikki tieto
-            yhtälöryhmästä voidaankin tiivistää lukutaulukkoon eli <em>matriisiin</em>, jossa
-            luetellaan kaikki kertoimet sekä vakiot. Kun
-            käsitellään yhtälöryhmien sijasta matriiseja, on kirjoittevaa paljon vähemmän,
-            sillä tuntemattomia ei tarvitse kirjata ylös.
+            Lineaarisessa yhtÃ¤lÃ¶ryhmÃ¤ssÃ¤ oleellisia ovat vain kertoimet ja vakiot. Kaikki tieto
+            yhtÃ¤lÃ¶ryhmÃ¤stÃ¤ voidaankin tiivistÃ¤Ã¤ lukutaulukkoon eli <em>matriisiin</em>, jossa
+            luetellaan kaikki kertoimet sekÃ¤ vakiot. Kun
+            kÃ¤sitellÃ¤Ã¤n yhtÃ¤lÃ¶ryhmien sijasta matriiseja, on kirjoittevaa paljon vÃ¤hemmÃ¤n,
+            sillÃ¤ tuntemattomia ei tarvitse kirjata ylÃ¶s.
         </p><p>
-            Esimerkiksi edellä esitellyn yhtälöryhmän matriisi on
+            Esimerkiksi edellÃ¤ esitellyn yhtÃ¤lÃ¶ryhmÃ¤n matriisi on
             $$
             \begin{bmatrix}[rrr|r]
             -4&\sqrt{3}&2&4 \\
@@ -68,20 +67,20 @@ sitemap: true
             \end{bmatrix}.
             $$
             Selkeyden vuoksi kertoimet on tapana erottaa vakioista pystyviivalla. Huomaa,
-            että matriisiin on kirjoitettava nolla niiden termien kohdalle, jotka puuttuvat
-            yhtälöryhmästä. Kyseisten termien kertoimena on nimittäin nolla.
+            ettÃ¤ matriisiin on kirjoitettava nolla niiden termien kohdalle, jotka puuttuvat
+            yhtÃ¤lÃ¶ryhmÃ¤stÃ¤. Kyseisten termien kertoimena on nimittÃ¤in nolla.
         </p>
         <p>
-            Kappaleessa 8 tutustutaan matriisien teoriaan yleisemmin. Tässä luvussa käsittelemme vain yhtälöryhmistä saatuja
+            Kappaleessa 8 tutustutaan matriisien teoriaan yleisemmin. TÃ¤ssÃ¤ luvussa kÃ¤sittelemme vain yhtÃ¤lÃ¶ryhmistÃ¤ saatuja
             matriiseja.
         </p>
-        <h2>Gaussin--Jordanin eliminointimenetelmä</h2>
+        <h2>Gaussin--Jordanin eliminointimenetelmÃ¤</h2>
         <p>
-            Seuraavaksi käydään läpi menetelmä, jolla voidaan ratkaista mikä tahansa
-            lineaarinen yhtälöryhmä.
-            Ideana on muokata yhtälöryhmästä uusia yhtälöryhmiä,
-            joilla on samat ratkaisut kuin alkuperäisellä yhtälöryhmällä. Viimeisenä saatu
-            yhtälöryhmä on helppo ratkaista. Koska viimeisen yhtälöryhmän ratkaisut ovat samat kuin alkuperäisen yhtälöryhmän, on alkuperäisen yhtälöryhmän ratkaisut löydetty.
+            Seuraavaksi kÃ¤ydÃ¤Ã¤n lÃ¤pi menetelmÃ¤, jolla voidaan ratkaista mikÃ¤ tahansa
+            lineaarinen yhtÃ¤lÃ¶ryhmÃ¤.
+            Ideana on muokata yhtÃ¤lÃ¶ryhmÃ¤stÃ¤ uusia yhtÃ¤lÃ¶ryhmiÃ¤,
+            joilla on samat ratkaisut kuin alkuperÃ¤isellÃ¤ yhtÃ¤lÃ¶ryhmÃ¤llÃ¤. ViimeisenÃ¤ saatu
+            yhtÃ¤lÃ¶ryhmÃ¤ on helppo ratkaista. Koska viimeisen yhtÃ¤lÃ¶ryhmÃ¤n ratkaisut ovat samat kuin alkuperÃ¤isen yhtÃ¤lÃ¶ryhmÃ¤n, on alkuperÃ¤isen yhtÃ¤lÃ¶ryhmÃ¤n ratkaisut lÃ¶ydetty.
         </p>
     </section>
 </article>
