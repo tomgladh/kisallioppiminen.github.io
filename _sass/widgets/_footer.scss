@@ -46,6 +46,7 @@ body > footer > article > section:last-child {
 	top: -30px;
 }
 
+#contact .blog:before,
 #contact .facebook:before,
 #contact .irc:before,
 #contact .email:before,
@@ -76,7 +77,7 @@ body > footer > article > section:last-child {
 }
 
 #contact .blog {
-	margin-bottom: 12px;
+	margin-bottom: 32px;
 }
 
 #license p img {
