@@ -36,3 +36,23 @@
     ,"widgets/ribbon"
     ,"syntax-highlighting"
 ;
+
+@media all and (max-width: 760px) {
+
+	body > header.no-nav {
+		margin-top: 0;
+	}
+
+	body > header > img {
+		display: none;
+	}
+
+	.item,
+	.alone {
+		width: auto;
+	}
+
+	.item {
+		margin: 20px auto;
+	}
+}
