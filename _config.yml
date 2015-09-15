@@ -1,6 +1,6 @@
 # Site settings
 title: Kisallioppiminen.fi
-baseurl: "kisallioppiminen.fi"
+baseurl: ""
 url: "http://kisallioppiminen.github.io"
 
 # Build settings
