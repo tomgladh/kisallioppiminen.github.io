@@ -270,22 +270,3 @@ article ul {
 	}
 
 }
-
-/**
- * EXERCISES
- */
- 
- .exercise h2 {
-    text-color: white;
-    background-color: black;
-    padding: 10px;
-    cursor: pointer;
-}
- .exercise .content {
-    display: none;
-}
-
- .exercise:focus .content {
-    display:block;
-    padding: 10px;
-}	
