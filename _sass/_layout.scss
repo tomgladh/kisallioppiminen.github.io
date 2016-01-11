@@ -275,10 +275,15 @@ article ul {
  * EXERCISES
  */
  
+ .exercise h2 {
+    text-color: white;
+    background-color: black;
+}
  .exercise .content {
     display: none;
 }
 
  .exercise:focus .content {
     display:block;
+    padding: 10px;
 }	
