@@ -273,20 +273,20 @@ article ul {
 
 /**
  * EXERCISES
- */
+
  
 .tehtava {
   border-color: black; }
   .tehtava > header {
-    /* Safari 4-5, Chrome 1-9 */
+    /* Safari 4-5, Chrome 1-9 /
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#333333), to(#020202));
-    /* Safari 5.1, Chrome 10+ */
+    /* Safari 5.1, Chrome 10+ /
     background: -webkit-linear-gradient(top, #333333, #020202);
-    /* Firefox 3.6+ */
+    /* Firefox 3.6+ /
     background: -moz-linear-gradient(top, #333333, #020202);
-    /* IE 10 */
+    /* IE 10 /
     background: -ms-linear-gradient(top, #333333, #020202);
-    /* Opera 11.10+ */
+    /* Opera 11.10+ /
     background: -o-linear-gradient(top, #333333, #020202);
     color: #fff; }
     .tehtava > header > h1 {
@@ -425,3 +425,4 @@ article ul {
       font-weight: bold; }
     .tehtava > div > .pisteytys {
       list-style-type: none; }
+ */
