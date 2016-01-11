@@ -270,3 +270,23 @@ article ul {
 	}
 
 }
+
+/**
+ * EXERCISES
+ */
+ 
+ .exercise .content {
+    display:none;
+}
+
+.exercise:focus .content {
+    display:block;
+}	
+ 	
+ }
+ 
+ .exercise .wrapper {
+ 	
+ }
+ }
+ 
