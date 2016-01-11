@@ -276,17 +276,9 @@ article ul {
  */
  
  .exercise .content {
-    display:none;
+    display: none;
 }
 
-.exercise:focus .content {
+ .exercise:focus .content {
     display:block;
 }	
- 	
- }
- 
- .exercise .wrapper {
- 	
- }
- }
- 
