@@ -318,6 +318,26 @@ layout: default
   .tehtava > div h2 {
     font-weight: normal;
     text-transform: uppercase; }
+    
+    .collapse {
+  display: none; }
+  .collapse.in {
+    display: block; }
+
+.tehtava {
+  border-color: #dddddd; }
+  .panel-default > .panel-heading, .tehtava > .panel-heading, .tehtava > header {
+    color: #333333;
+    background-color: whitesmoke;
+    border-color: #dddddd; }
+    .panel-default > .panel-heading + .panel-collapse > .panel-body, .tehtava > .panel-heading + .panel-collapse > .panel-body, .tehtava > header + .panel-collapse > .panel-body, .tehtava > .panel-heading + div > .panel-body, .tehtava > header + div > .panel-body, .panel-default > .panel-heading + .tehtava.panel-collapse > div, .tehtava > .panel-heading + .tehtava.panel-collapse > div, .tehtava > header + .tehtava.panel-collapse > div, .tehtava > .panel-heading + div.tehtava > div, .tehtava > header + div.tehtava > div {
+      border-top-color: #dddddd; }
+    .panel-default > .panel-heading .badge, .tehtava > .panel-heading .badge, .tehtava > header .badge {
+      color: whitesmoke;
+      background-color: #333333; }
+  .panel-default > .panel-footer + .panel-collapse > .panel-body, .tehtava > .panel-footer + .panel-collapse > .panel-body, .tehtava > .panel-footer + div > .panel-body, .panel-default > .panel-footer + .tehtava.panel-collapse > div, .tehtava > .panel-footer + .tehtava.panel-collapse > div, .tehtava > .panel-footer + div.tehtava > div {
+    border-bottom-color: #dddddd; }
+
 
         	
         </style>
