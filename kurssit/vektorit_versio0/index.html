@@ -1,0 +1,76 @@
+---
+title: Testikurssi
+layout: material
+sitemap: true
+---
+<article>
+    <section>
+        <header>Vektorit ja $\boldsymbol{xy}$-koordinaatisto
+        </header>
+
+<p> Tutki alla olevaa kuvaa \ref{kuva:kolme pistetta koordinaatistossa}. Kuinka monta yhden ruudun mittaista askelta pitää siirtyä	
+\begin{enumerate}
+\item $x$-akselin suunnassa, jotta päästään origosta $O$ pisteeseen $S$? 
+\item $y$-akselin suunnassa, jotta päästään origosta $O$ pisteeseen $S$? 
+\end{enumerate}
+Kuinka monta yhden ruudun mittaista askelta pitää siirtyä	
+\begin{enumerate}
+\item[(c)]  $x$-akselin suunnassa, jotta päästään origosta $O$ pisteeseen $Q$? 
+\item[(d)]  $y$-akselin suunnassa, jotta päästään origosta $O$ pisteeseen $Q$? 
+\end{enumerate}
+Miten voisit merkitä sitä, että pisteen $Q$ tapauksessa siirrytään $y$-akselin suunnassa alaspäin eikä ylöspäin?
+
+	\begin{center}
+	\begin{figurehere}
+	\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.7cm,y=0.7cm]
+
+		%x-akseli:
+		\draw[->,color=gray] (-5.5,0) -- (5.5,0);
+		%tiksut ja viivat
+		\foreach \x in {-5,-4,-3,-2,-1,1,2,3,4,5}
+		{\draw[dashed, color= lightgray] (\x,-2.5)--(\x,3.5);
+		\draw[shift={(\x,0)},color=black] (0pt,1pt) -- (0pt,-1pt);
+		}
+		\node [below] at (5.5,0) {$x$};
+		%y-akseli
+		\draw[->,color=gray] (0,-2.5) -- (0,3.5);
+
+		%tiksut ja viivat
+		\foreach \y in {-2,-1,1,2,3}
+		{
+		\draw[dashed, color=lightgray] (-5.5,\y)--(5.5,\y);
+		\draw[shift={(0,\y)},color=black] (1pt,0pt) -- (-1pt,0pt);
+		}
+		\node [left] at (0,3.5) {$y$};
+		% Varsinainen kuva
+
+		\draw[fill, color = black] (2,3) circle [radius = 1.5pt];
+		\node[above right] at (2,3) {$S$};
+
+		\draw[fill, color = black] (-3,1) circle [radius = 1.5pt];
+		\node[above right] at (-3,1) {$P$};
+
+		\draw[fill, color = black] (3,-1) circle [radius = 1.5pt];
+		\node[above right] at (3, -1) {$Q$};
+		
+		\draw[fill, color = black] (4,2) circle [radius = 1.5pt];
+		\node[above right] at (4,2) {$R$};
+		
+		\draw[fill, color = black] (0,0) circle [radius = 1.5pt];
+		\node[above right] at (0,0) {$O$};
+
+%		% Kaarisulku alasp.
+%		\draw [decorate,decoration={brace,amplitude=10pt,raise=2pt},yshift=0pt,rotate around={90:(3,0)},=90]
+%		(3,0) -- (3,3) node [black,midway,yshift=-0.7cm]{};
+%
+%		% Kaarisulku oikeanp.
+%		\draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=2pt},xshift=0pt]
+%		(3,0) -- (3,2) node [black,midway,xshift=0.7cm] {};
+
+	\end{tikzpicture}
+	\caption{Pisteitä koordinaatistossa.}
+	\label{kuva:kolme pistetta koordinaatistossa}
+	\end{figurehere}
+	\end{center}
+    </section>
+</article>
