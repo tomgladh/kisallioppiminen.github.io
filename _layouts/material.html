@@ -14,7 +14,7 @@ layout: default
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 
 
-.tehtava {
+.tehtava, .panel {
   margin-bottom: 20px;
   background-color: white;
   border: 1px solid transparent;
@@ -22,7 +22,7 @@ layout: default
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
 
-.tehtava > div {
+.tehtava > div, .panel > div {
   padding: 15px; }
   .panel-body:before, .tehtava > div:before, .panel-body:after, .tehtava > div:after {
     content: " ";
@@ -30,7 +30,7 @@ layout: default
   .panel-body:after, .tehtava > div:after {
     clear: both; }
 
-.tehtava > header {
+.tehtava > header, .panel > header {
   padding: 10px 15px;
   border-bottom: 1px solid transparent;
   border-top-right-radius: 3px;
@@ -38,7 +38,7 @@ layout: default
   .panel-heading > .dropdown .dropdown-toggle, .tehtava > header > .dropdown .dropdown-toggle {
     color: inherit; }
 
-.tehtava > header > h1 {
+.tehtava > header > h1, .panel > header > h1 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 16px;
@@ -46,7 +46,7 @@ layout: default
   .panel-title > a, .tehtava > header > h1 > a {
     color: inherit; }
 
-.tehtava > .list-group {
+.tehtava > .list-group, .panel > .list-group {
   margin-bottom: 0; }
   .panel > .list-group .list-group-item, .tehtava > .list-group .list-group-item {
     border-width: 1px 0;
@@ -268,34 +268,34 @@ layout: default
     border-bottom-color: #dddddd; }
 
 
-.tehtava {
+.tehtava, .panel {
   border: 1px solid #139197;
   border-bottom-width: 4px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px; }
-  .tehtava > header {
+  .tehtava > header, .panel > header {
     background: #139197;
     color: #fff; }
     .tehtava > header > h1 {
       color: #fff;
       font-size: 1.2em;
       letter-spacing: 1px; }
-    .tehtava > header a[data-toggle="collapse"]:after {
+    .tehtava > header a[data-toggle="collapse"]:after, .panel > header a[data-toggle="collapse"]:after {
       content: '\25B2';
       float: right; }
-    .tehtava > header a[data-toggle="collapse"].collapsed:after {
+    .tehtava > header a[data-toggle="collapse"].collapsed:after,  .panel > header a[data-toggle="collapse"].collapsed:after {
       content: '\25BC'; }
-  .tehtava > div {
+  .tehtava > div, .panel > div {
     margin-top: -1px; }
-    .tehtava > div h1 {
+    .tehtava > div h1, .panel > div h1 {
       font-size: 1.25em; }
-    .tehtava > div h2 {
+    .tehtava > div h2, .panel > div h2 {
       font-size: 1.1em;
       font-weight: bold; }
-    .tehtava > div > .pisteytys {
+    .tehtava > div > .pisteytys, .panel > div > .pisteytys {
       list-style-type: none; }
 
-.tehtava {
+.tehtava, .panel {
   border-color: black; }
   .tehtava > header {
     /* Safari 4-5, Chrome 1-9 */
@@ -309,17 +309,17 @@ layout: default
     /* Opera 11.10+ */
     background: -o-linear-gradient(top, #333333, #020202);
     color: #fff; }
-    .tehtava > header > h1 {
+    .tehtava > header > h1, .panel > header > h1 {
       font-weight: normal;
       text-transform: uppercase; }
-  .tehtava > div h1 {
+  .tehtava > div h1, .panel > div h1 {
     font-weight: normal;
     text-transform: uppercase; }
-  .tehtava > div h2 {
+  .tehtava > div h2, .panel > div h2 {
     font-weight: normal;
     text-transform: uppercase; }
     
-    .tehtava > header > h1 > a:hover {
+    .tehtava > header > h1 > a:hover, .panel > header > h1 > a:hover {
     	background: none;
     }
     
@@ -328,7 +328,7 @@ layout: default
   .collapse.in {
     display: block; }
 
-.tehtava {
+.tehtava, .panel {
   border-color: #dddddd; }
   .panel-default > .panel-heading, .tehtava > .panel-heading, .tehtava > header {
     color: #333333;
