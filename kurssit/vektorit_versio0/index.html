@@ -990,9 +990,131 @@ $$
 <h2>Vektorien pistetulo ja vektorien välinen kulma</h2>
 </header>
 
+<div style="display: block; max-width: 94%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
+  <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ</h3>
+  <p style="display: block; max-width: 94%; width: auto; height: auto; padding: 20px; margin-bottom: 1em; margin-top: 0; background-color: #f2ffcc;">
+   Vektorien $\vv=x_1\vi+y_1\vj$ ja $\vw=x_2\vi+y_2\vj$ pistetulo on $\vv \cdot \vw = x_1x_2+y_1y_2$.
+  </p>
+</div>
+
+<p>
+Vektorien pistetulosta saadaan siis tuloksena aina reaaliluku. Esimerkiksi vektorien $\vv=-2\vi+4\vj$ ja $\vw=3\vi-\vj$ pistetulo on 
+\begin{align*}
+\vv \cdot \vw 
+&= (-2\vi+4\vj) \cdot (3\vi-\vj) \\ 
+&= (-2) \cdot 3 + 4\cdot (-1) \\
+&= -6-4 \\
+&=-10.
+\end{align*}
+Reaalilukuja voidaan kutsua skalaareiksi, minkä vuoksi pistetuloa kutsutaan joskus skalaarituloksi.
+</p>
+
+<div class="tehtavat">
+	<div class="tehtava" id="t-pistetulo-ex">
+	<header>
+	<h1>
+	<a data-toggle="collapse" class="collapsed" href="#t-pistetulo">
+	Pistetulo
+	</a>
+	</h1>
+	</header>
+
+	<div id="t-pistetulo" class="collapse">
+		<p> Tarkaste vektoreita $\va=7\vi+6\vj$, $\vb=3\vi-5\vj$ ja $\vc=5\vi-3\vj$.
+		<ol type="a">
+		<li> Piirrä vektorit $\va$, $\vb$ ja $\vc$ koordinaatistoon niin, että ne alkavat samasta pisteestä.
+		<li> Laske pistetulo $\va \cdot \vb$.
+		<li> Laske pistetulo $\va \cdot \vc$.
+		<li> Laske pistetulo $\vb \cdot \vc$.
+		<li> Millaisessa tilanteessa vektorien pistetulo on nolla? Vertaa edellisten laskujen tuloksia ja piirtämääsi kuvaa.
+		</ol>
+		</p>
+	</div>
+	</div>
+</div>
+
+<div class="tehtavat">
+	<div class="tehtava" id="t-pistetulo2-ex">
+	<header>
+	<h1>
+	<a data-toggle="collapse" class="collapsed" href="#t-pistetulo2">
+	Pistetulo
+	</a>
+	</h1>
+	</header>
+
+	<div id="t-pistetulo2" class="collapse">
+		<p> Tarkastele vektoreita $\va=-11\vi+5\vj$, $\vb=-4\vi-7\vj$ ja $\vc=3\vi-9\vj$ sekä reaalilukua $t=3$.
+		<ol type="a">
+		<li> Laske pistetulot $\va \cdot \vb$ ja $\va \cdot \vc$.
+		<li> Laske pistetulo $\va \cdot (\vb + \vc)$.
+		<li> Vertaa a- ja b-kohtien tuloksia. Miten ne liittyvät toisiinsa?
+		<li> Laske pistetulot $(t\va) \cdot \vb$ ja $\va \cdot (t\vb)$.
+		<li> Vertaa a- ja d-kohtien tuloksia. Millaisen ilmiön huomaat?
+		</ol>
+		</p>
+	</div>
+	</div>
+</div>
+
+<p>
+Pistetulolla voidaan laskea tavallisten laskusääntöjen mukaan. Näitä on koottu alla olevaan teoreemaan.
+</p>
+
+<div style="display: block; max-width: 91.963%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
+  <h3 style="margin: 0; width: auto; height: auto; background-color: #737373; color: #fff; padding: 10px 20px;">TEOREEMA</h3>
+  <p style="display: block; width: auto; height: auto; padding: 20px; margin-bottom: 0; margin-top: 0; background-color: #cccccc;">
+   Olkoot $\va$, $\vb$ ja $\vc$ vektoreita ja $t$ reaaliluku. Pistetulolla on seuraavat ominaisuudet: 
+\begin{align*}
+\va \cdot \vb 
+&= \vb \cdot \va \\
+\va \cdot (\vb + \vc)
+&=(\va \cdot \vb) + (\va \cdot \vc) \\
+t(\va \cdot \vb)
+&=(t\va) \cdot \vb
+= \va \cdot (t\vb)
+\end{align*}
+  </p>
+  <p style="display: block; width: auto; height: auto; padding: 20px 20px 5px 20px; margin-bottom: 0; margin-top: 0; background-color: #e6e6e6;">
+   Perustelu: 
+<ul style="display: block; width: auto; height: auto; padding: 5px 40px 20px 40px; margin-bottom: 1em; margin-top: 0; background-color: #e6e6e6;">
+ <li>  Se, että kaksi vektoria ovat samat, tarkoittaa, että ne voidaan esittää samalla tavalla vektorien $\vi$ ja $\vj$ avulla. Tällöin ne ovat samansuuntaiset ja yhtä pitkät.
+<li>Jos vektorit ovat samansuuntaiset ja yhtä pitkät, ne voidaan esittää samalla tavalla vektorien $\vi$ ja $\vj$ avulla. Tämä tarkoittaa, että  ne ovat samat.
+</ul>
+</p>
+</div>
+
+
 <p>
 Vektorien välistä kulmaa voidaan tarkastella, jos vektorien alkupisteet ovat samat. Vektorien välisellä kulmalla tarkoitetaan muodostuvista kulmista pienempää. Esimerkiksi alla olevan kuvan vektorien $\vv$ ja $\vw$ välinen kulma tarkoittaa kulmaa $\alpha$.
 </p>
+
+<p>
+	<img src="img/vektorienKulma.png" max-width: 90%; width: auto; height: auto;/> 
+</p>
+
+<div class="tehtavat">
+	<div class="tehtava" id="t-kulma-ex">
+	<header>
+	<h1>
+	<a data-toggle="collapse" class="collapsed" href="#t-kulma">
+	Vektoreiden välinen kulma
+	</a>
+	</h1>
+	</header>
+
+	<div id="t-kulma" class="collapse">
+		<p> 
+		<ol type="a">
+		<li> Kuinka suuri on vektorien $\vv$ ja $3\vv$ välinen kulma? 
+		<li> Kuinka suuri on vektorien $\vv$ ja $-\vv$ välinen kulma?
+		<li> Jos vektorit ovat samansuuntaiset, mikä niiden välinen kulma on?
+		<li> Jos vektorit ovat vastakkaissuuntaiset, mikä niiden välinen kulma on?
+		</ol>
+		</p>
+	</div>
+	</div>
+</div>
 
 </section>
 </article>
