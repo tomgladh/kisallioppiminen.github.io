@@ -1168,5 +1168,61 @@ Tutkitaan seuraavaksi vektorien välisen kulman ja pistetulon yhteyttä. Vektori
 	</div>
 </div>
 
+<p>
+Vektorien välinen kulma voidaan laskea Geometria-kurssista tutun kosinilauseen avulla. Kosinilause on Pythagoraan lauseen yleistys. Pythagoraan lause pätee ainoastaan suorakulmaisille kolmioille, mutta kosinilausetta voi käyttää kaikille kolmioille. Kosinilauseen mukaan alla olevan kuvan kolmiossa 
+$$
+c^2=a^2+b^2-2ab \cos \alpha.
+$$
+</p>
+
+<p>
+	<img src="img/kosinilause.png" max-width: 90%; width: auto; height: auto;/> 
+</p>
+
+<p>
+Ajattelemalla kolmioiden sivujen pituudet vektorien pituuksina kosinilauseesta saadaan yhtälö
+$$
+|\vv-\vw|^2=|\vv|^2+|\vw|^2-2|\vv||\vw| \cos \sphericalangle(\vv,\vw).
+$$
+</p>
+
+<p>
+	<img src="img/vektorienKulma2.png" max-width: 90%; width: auto; height: auto;/> 
+</p>
+
+<p>
+Tämän yhtälön ja pistetulon ominaisuuksien avulla saadaan perusteltua seuraava teoreema, joka yhdistää pistetulon ja vektorien välisen kulman kosinin.
+</p>
+
+<div style="display: block; max-width: 91.963%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
+  <h3 style="margin: 0; width: auto; height: auto; background-color: #737373; color: #fff; padding: 10px 20px;">TEOREEMA</h3>
+  <p style="display: block; width: auto; height: auto; padding: 20px 20px 5px 20px; margin: 0; background-color: #cccccc;">
+   Vektorien $\vv$ ja $\vw$ pistetulolle pätee $\vv \cdot \vw = |\vv||\vw|\cos (\vv, \vw)$.
+   	</p>
+  	<p style="display: block; width: auto; height: auto; padding: 5px 20px 2px 20px; margin-bottom: 1em; margin-top: 0; background-color: #e6e6e6;">
+   	Perustelu: Tiedetään, että vektorin pituuden neliö on aina sama kuin sen pistetulo itsensä kanssa. Tästä saadaan seuraava yhtälöketju:
+	$$
+	\begin{align*}
+	|\vv-\vw|^2
+	&=(\vv-\vw)\cdot(\vv-\vw) \\
+	&= \vv \cdot \vv -\vv\cdot\vw - \vw \cdot \vv+\vw\cdot\vw \\
+	&= |\vv|^2 - 2(\vv\cdot\vw) +|\vw|^2.
+	\end{align*}
+	$$
+	Toisaalta kosinilauseen mukaan
+	$$
+	|\vv-\vw|^2=|\vv|^2+|\vw|^2-2|\vv||\vw| \cos \sphericalangle(\vv,\vw).
+	$$
+	Yhdistämällä nämä tiedot saadaan yhtälö
+	$$
+	|\vv|^2 - 2(\vv\cdot\vw) +|\vw|^2 = |\vv|^2+|\vw|^2-2|\vv||\vw| \cos \sphericalangle(\vv,\vw).
+	$$
+	Ratkaistaan tästä $\vv\cdot\vw$, jolloin saadaan
+	$$
+	\vv\cdot\vw = |\vv||\vw| \cos \sphericalangle(\vv,\vw).
+	$$
+   	</p>
+</div>
+
 </section>
 </article>
