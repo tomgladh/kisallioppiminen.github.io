@@ -369,7 +369,7 @@ Vektorien samuus tarkoittaa siis sitä, että ne ovat saman pituisia ja osoittav
                     <header>
                         <h1>
                             	<a href="#t-setti1.1">
-                                Pisteitä koordinaatistossa
+                                Vektorin esittäminen vektorien $\vi$ ja $\vj$ avulla
                                 </a>
                         </h1>
                     </header>
@@ -773,6 +773,180 @@ Alla on näkyvissä eräs vektori $\vv$ ja sen vastavektori $-\vv$.
 	</div>
 </div>
 
+<header>
+<h2>Erotus</h2>
+</header>
+
+<div style="display: block; max-width: 94%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
+  <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ</h3>
+  <p style="display: block; max-width: 94%; width: auto; height: auto; padding: 20px; margin-bottom: 1em; margin-top: 0; background-color: #f2ffcc;">
+   Vektorien $\vv$ ja $\vw$ erotus $\vv-\vw$ saadaan lisäämällä vektoriin $\vv$ vastavektori $-\vw$.
+  </p>
+</div>
+
+<p>
+Palautetaan mieleen, että summan $\bar{v}+\bar{w}$ voi  määrittää piirtämällä seuraavasti: piirretään ensin vektori $\bar{v}$, ja piirretään sitten vektori $\bar{w}$ alkamaan vektorin $\bar{v}$ loppupisteestä. Summa $\bar{v}+\bar{w}$ on vektori, joka alkaa vektorin $\bar{v}$ alkupisteestä ja päättyy vektorin $\bar{w}$ loppupisteeseen. Tätä on havainnollistettu alla olevassa kuvassa.
+</p>
+
+<p>
+Erotuksen $\bar{v}-\bar{w}$ voi määrittää piirtämällä samaan tapaan vektoreiden $\vv$ ja $-\vw$ avulla. Piirretään ensin vektori $\bar{v}$, ja piirretään sitten vastavektori $-\bar{w}$ alkamaan vektorin $\bar{v}$ loppupisteestä. Erotus $\bar{v}-\bar{w}$ on vektori, joka alkaa vektorin $\bar{v}$ alkupisteestä ja päättyy vektorin $-\bar{w}$ loppupisteeseen.
+</p>
+
+<p>
+	<img src="img/summaJaErotus.png" max-width: 90%; width: auto; height: auto;/> 
+</p>
+
+<p>
+Vektorien erotus lasketaan samaan tapaan komponenteittain kuin summakin. Esimerkiksi yllä olevan kuvan vektorien $\vv$ ja $\vw$ erotus on 
+\begin{align*}
+\vv-\vw
+&=2\vi+2\vj-(2\vi - 3\vj) \\
+&=2\vi+2\vj-2\vi + 3\vj \\
+&=0\vi + 5\vj \\
+&=5\vj.
+\end{align*}
+</p>
+
+<div class="tehtavat">
+	<div class="tehtava" id="t-erotus-ex">
+	<header>
+	<h1>
+	<a data-toggle="collapse" class="collapsed" href="#t-erotus">
+	Vektorien erotus
+	</a>
+	</h1>
+	</header>
+
+	<div id="t-erotus" class="collapse">
+		<p> Tutki vektoreita $\va=-3\vi+4\vj$ ja $\vb=5\vi+2\vj$.
+		<ol type="a">
+		<li> Laske erotus $\va-\vb$.
+		<li> Määritä erotus $\va-\vb$ piirtämällä vektorien $\va$ ja $-\vb$ avulla.
+		<li> Vertaa a- ja b-kohtien tuloksia. Ovatko ne ristiriidassa keskenään?
+		</ol>
+		</p>
+	</div>
+	</div>
+</div>
+
+<div class="tehtavat">
+        <div class="panel">
+            <header>
+                <h1>
+                    <a data-toggle="collapse" class="collapsed" href="#t-tehtavasetti">
+                        TEHTÄVIÄ
+                    </a>
+                </h1>
+            </header>
+            <div id="t-tehtavasetti" class="collapse">
+                <!-- Tästä alkaa piilotus -->
+
+                <div class="tehtava" id="t-setti2.1-ex">
+                    <header>
+                        <h1>
+                            	<a href="#t-setti2.1">
+                                Pisteitä koordinaatistossa
+                                </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-setti2.1">
+                        <p> Tarkastele alla olevan kuvan vektoreita. Mitkä niistä voidaan esittää muodossa $2\vi+\vj$?
+                        </p>
+                        <p>
+						<img src="img/setti1-1.png" max-width: 90%; width: auto; height: auto;/> 
+						</p>
+                    </div>
+                </div>
+
+                <div class="tehtava" id="t-setti1.2-ex">
+                    <header>
+                        <h1>
+                            	<a href="#t-setti1.2">
+                                Vektorien samuus
+                                </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-setti1.2">
+                        <p>
+                        Määritä sellaiset reaaliluvut $r$ ja $s$, että vektorit $\vv=-r\vi+8\vj$ ja $\vw=5\vi-12s\vj$ ovat samat.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tehtava" id="t-setti1.3-ex">
+                    <header>
+                        <h1>
+                            	<a href="#t-setti1.3">
+                                Paikkavektori
+                                </a>
+                        </h1>
+                    </header>
+                    <div id="t-setti1.3">
+                        <p> Tutki vektoria $\pv{AB}=-9\vi+5\vj$. Määritä pisteen $B$ paikkavektori, jos 
+                        <ol type="a">
+                            <li> piste $A=(11,2)$</li>
+                            <li> piste $A=(-8,-7)$.</li>
+                        </ol>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="tehtava" id="t-setti1.4-ex">
+                    <header>
+                        <h1>
+                            	<a href="#t-setti1.4">
+                                Kahden pisteen välinen vektori
+                                </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-setti1.4">
+                        <p> Määritä vektori $\pv{AB}$, jos
+                        <ol type="a">
+                            <li> $A=(-5,2)$ ja $B=(3,1)$</li>
+                            <li> $A=(3,-7)$ ja $B=(-4,8)$.</li>
+                        </ol>
+                        Tarkista tuloksen järkevyys piirtämällä kuva tilanteesta.
+                        </p>
+
+                    </div>
+                </div>
+
+				<div class="tehtava" id="t-setti1.5-ex">
+                    <header>
+                        <h1>
+                            	<a href="#t-setti1.5">
+                                Kahden pisteen välinen vektori
+                                </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-setti1.5">
+                        <p> Tarkastele pisteitä $A=(-2,4)$, $B=(3,1)$ ja $C=(5,-3)$. Määritä piste $D$, jos
+                        <ol type="a">
+                            <li> $\pv{CD}=\pv{AB}$</li>
+                            <li> $\pv{DC}=\pv{AB}$</li>
+                            <li> $\pv{AD}=-\pv{AC}$</li>
+                            <li> $\pv{BC}=-\pv{AD}$.</li>
+                        </ol>
+                        Havainnollista ratkaisuasi piirtämällä.
+                        </p>
+
+                    </div>
+                </div>
+            </div>                 
+            <!-- Tähän loppui piilotus -->
+
+        </div>
+    </div>
+
+<header>
+<h2>Vektorin suunta ja pituus</h2>
+</header>
+
 <p>
 Tutkitaan seuraavaksi vektorien suuntia. Alla olevan kuvan vektorit $\va$ ja $\vv$ ovat <b>samansuuntaiset</b>. Myös esimerkiksi vektorit $-\va$ ja $\vu$ ovat samansuuntaiset. Tämä voidaan merkitä kirjoittamalla $\va \upuparrows \vv$ ja $-\va \upuparrows \vu$. 
 </p>
@@ -875,66 +1049,7 @@ Esimerkiksi vektorit $\va=4\vi+6\vj$ ja $\vb=-2\vi-3\vj$ ovat yhdensuuntaiset, s
 	</div>
 </div>
 
-<header>
-<h2>Erotus</h2>
-</header>
-
-<div style="display: block; max-width: 94%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
-  <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ</h3>
-  <p style="display: block; max-width: 94%; width: auto; height: auto; padding: 20px; margin-bottom: 1em; margin-top: 0; background-color: #f2ffcc;">
-   Vektorien $\vv$ ja $\vw$ erotus $\vv-\vw$ saadaan lisäämällä vektoriin $\vv$ vastavektori $-\vw$.
-  </p>
-</div>
-
 <p>
-Palautetaan mieleen, että summan $\bar{v}+\bar{w}$ voi  määrittää piirtämällä seuraavasti: piirretään ensin vektori $\bar{v}$, ja piirretään sitten vektori $\bar{w}$ alkamaan vektorin $\bar{v}$ loppupisteestä. Summa $\bar{v}+\bar{w}$ on vektori, joka alkaa vektorin $\bar{v}$ alkupisteestä ja päättyy vektorin $\bar{w}$ loppupisteeseen. Tätä on havainnollistettu alla olevassa kuvassa.
-</p>
-
-<p>
-Erotuksen $\bar{v}-\bar{w}$ voi määrittää piirtämällä samaan tapaan vektoreiden $\vv$ ja $-\vw$ avulla. Piirretään ensin vektori $\bar{v}$, ja piirretään sitten vastavektori $-\bar{w}$ alkamaan vektorin $\bar{v}$ loppupisteestä. Erotus $\bar{v}-\bar{w}$ on vektori, joka alkaa vektorin $\bar{v}$ alkupisteestä ja päättyy vektorin $-\bar{w}$ loppupisteeseen.
-</p>
-
-<p>
-	<img src="img/summaJaErotus.png" max-width: 90%; width: auto; height: auto;/> 
-</p>
-
-<p>
-Vektorien erotus lasketaan samaan tapaan komponenteittain kuin summakin. Esimerkiksi yllä olevan kuvan vektorien $\vv$ ja $\vw$ erotus on 
-\begin{align*}
-\vv-\vw
-&=2\vi+2\vj-(2\vi - 3\vj) \\
-&=2\vi+2\vj-2\vi + 3\vj \\
-&=0\vi + 5\vj \\
-&=5\vj.
-\end{align*}
-</p>
-
-<div class="tehtavat">
-	<div class="tehtava" id="t-erotus-ex">
-	<header>
-	<h1>
-	<a data-toggle="collapse" class="collapsed" href="#t-erotus">
-	Vektorien erotus
-	</a>
-	</h1>
-	</header>
-
-	<div id="t-erotus" class="collapse">
-		<p> Tutki vektoreita $\va=-3\vi+4\vj$ ja $\vb=5\vi+2\vj$.
-		<ol type="a">
-		<li> Laske erotus $\va-\vb$.
-		<li> Määritä erotus $\va-\vb$ piirtämällä vektorien $\va$ ja $-\vb$ avulla.
-		<li> Vertaa a- ja b-kohtien tuloksia. Ovatko ne ristiriidassa keskenään?
-		</ol>
-		</p>
-	</div>
-	</div>
-</div>
-
-<header>
-<h2>Vektorin pituus</h2>
-</header>
-
 Vektorin pituus saadaan laskettua Pythagoraan lauseen avulla. Esimerkiksi alla olevassa kuvassa vektorin $\va$ pituus $\left|\va\right|$ saadaan yhtälöstä
 $$
 \left|\va\right|^2 = 2^2 + 3^2.
@@ -943,9 +1058,13 @@ Vektorin $\va$ pituudeksi saadaan siis
 $$
 \left|\va\right| = \sqrt{2^2 + 3^2}=\sqrt{4+9}=\sqrt{13} \approx 3{,}6.
 $$
-Koska 2. potenssiin korotus tekee kaikista luvuista epänegatiivisia, voidaan vektorin pituus määritellä seuraavasti:
+</p>
 <p>
 	<img src="img/vektorinPituus.png" max-width: 90%; width: auto; height: auto;/> 
+</p>
+
+<p>
+	Koska 2. potenssiin korotus tekee kaikista luvuista epänegatiivisia, voidaan vektorin pituus määritellä seuraavasti:
 </p>
 
 <div style="display: block; max-width: 94%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
