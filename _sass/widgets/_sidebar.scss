@@ -1,8 +1,6 @@
 aside {
 	clear:both;
 	float: right;
-	border-bottom: 1px solid #e2e2e2;
-	border-top: 1px solid #fff;
 	line-height: 1.3em;
 }
 
@@ -30,8 +28,7 @@ aside a:hover {
 }
 
 aside nav {
-	border-bottom: 1px solid #e2e2e2;
-	border-top: 1px solid #fff;
+
 }
 
 aside nav ul {
@@ -47,7 +44,7 @@ aside nav ul li {
 }
 
 aside nav ul li a {
-	background: #3ebba7; 
+	background: #A8BB73; 
 	text-shadow: 1px 1px 1px #005357;
 
 	&:hover {
