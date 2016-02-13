@@ -4,11 +4,6 @@
 	{% assign sidebar = sidebar[part] %}
 {% endfor %}
 <aside>
-	<header>
-		<h1>
-			<a href="{{ "/" | prepend: sidebar.path | prepend: site.baseurl }}">{{sidebar.header}}</a>
-		</h1>
-	</header>
 	<nav class="sidenav">
 		<ul>
 			{% for link in sidebar.navigation %}
