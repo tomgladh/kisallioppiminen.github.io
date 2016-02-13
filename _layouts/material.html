@@ -361,7 +361,9 @@ layout: default
         });
     });
 </script>
-
+{% if page.sidenav %}
+	{% include sidenav.html %}
+{% endif %}
 <article>
     {{ content }}
 </article>
