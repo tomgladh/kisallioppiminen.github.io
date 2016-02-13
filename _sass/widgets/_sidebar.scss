@@ -1,5 +1,4 @@
 aside {
-	width: 350px;
 	clear:both;
 	float: right;
 	border-bottom: 1px solid #e2e2e2;
@@ -36,12 +35,12 @@ aside nav {
 }
 
 aside nav ul {
-
 	margin: 0;
 	padding: 0;
 }
 
 aside nav ul li {
+        display: inline-block;
 	list-style-type: none;
 	text-transform: none;
 	border: 0 none;
