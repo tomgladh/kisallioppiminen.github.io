@@ -4,25 +4,15 @@ navigation:
   -
     name: Kurssin etusivu
     path: /index.html
-    base: true
-    target: _blank
   -
     name: Vektorit ja xy-koordinaatisto
     path: /xy-taso/index.html
-    base: true
-    target: _blank
   -
     name: Vektorit ja xyz-koordinaatisto
     path: /xyz-taso/index.html
-    base: true
-    target: _blank
   -
     name: Suorat ja tasot
     path: /suoratJaTasot/index.html
-    base: true
-    target: _blank
   -
     name: Geometriaa vektorien avulla
     path: /geometriaaVektorienAvulla/index.html
-    base: true
-    target: _blank
