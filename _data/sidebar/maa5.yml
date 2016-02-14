@@ -1,11 +1,6 @@
 header: 
 path: 
 navigation:
-
-Vektorit ja xy-koordinaatisto
-Vektorit ja xyz-koordinaatisto
-Suorat ja tasot
-Geometriaa vektorien avulla
   -
     name: Kurssin etusivu
     path: /index.html
