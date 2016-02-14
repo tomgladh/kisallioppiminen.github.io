@@ -3,16 +3,16 @@ path:
 navigation:
   -
     name: Kurssin etusivu
-    path: /index.html
+    path: /kurssit/vektorit_versio0/index.html
   -
     name: Vektorit ja xy-koordinaatisto
-    path: /xy-taso/index.html
+    path: /kurssit/vektorit_versio0/xy-taso/index.html
   -
     name: Vektorit ja xyz-koordinaatisto
-    path: /xyz-taso/index.html
+    path: /kurssit/vektorit_versio0/xyz-taso/index.html
   -
     name: Suorat ja tasot
-    path: /suoratJaTasot/index.html
+    path: /kurssit/vektorit_versio0/suoratJaTasot/index.html
   -
     name: Geometriaa vektorien avulla
-    path: /geometriaaVektorienAvulla/index.html
+    path: /kurssit/vektorit_versio0/geometriaaVektorienAvulla/index.html
