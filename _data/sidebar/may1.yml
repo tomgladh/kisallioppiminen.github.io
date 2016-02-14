@@ -3,16 +3,16 @@ path:
 navigation:
   -
     name: Kurssin etusivu
-    path: /kurssit/vektorit_versio0/index.html
+    path: /kurssit/may1/index.html
   -
     name: Lukujonot ja summat
-    path: /kurssit/vektorit_versio0/lukujonot-summat.html
+    path: /kurssit/may1/lukujonot-summat.html
   -
     name: Prosenttilaskenta
-    path: /kurssit/vektorit_versio0/prosenttilaskenta.html
+    path: /kurssit/may1/prosenttilaskenta.html
   -
     name: Funktio
-    path: /kurssit/vektorit_versio0/funktio.html
+    path: /kurssit/may1/funktio.html
   -
     name: Potenssi ja logaritmi
-    path: /kurssit/vektorit_versio0/potenssi-logaritmi.html
+    path: /kurssit/may1/potenssi-logaritmi.html
