@@ -6,13 +6,13 @@ navigation:
     path: /kurssit/may1/index.html
   -
     name: Lukujonot ja summat
-    path: /kurssit/may1/lukujonot-summat.html
+    path: /kurssit/may1/lukujonotSummat/index.html
   -
     name: Prosenttilaskenta
-    path: /kurssit/may1/prosenttilaskenta.html
+    path: /kurssit/may1/prosenttilaskenta/index.html
   -
     name: Funktio
-    path: /kurssit/may1/funktio.html
+    path: /kurssit/may1/funktio/index.html
   -
     name: Potenssi ja logaritmi
-    path: /kurssit/may1/potenssi-logaritmi.html
+    path: /kurssit/may1/potenssiLogaritmi/index.html
