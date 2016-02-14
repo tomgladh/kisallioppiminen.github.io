@@ -5,10 +5,10 @@ navigation:
     name: Kurssin etusivu
     path: /kurssit/vektorit_versio0/index.html
   -
-    name: Vektorit ja $xy$-koordinaatisto
+    name: Vektorit ja <i>xy</i>-koordinaatisto
     path: /kurssit/vektorit_versio0/xy-taso/index.html
   -
-    name: Vektorit ja $xyz$-koordinaatisto
+    name: Vektorit ja <i>xyz</i>-koordinaatisto
     path: /kurssit/vektorit_versio0/xyz-taso/index.html
   -
     name: Suorat ja tasot
