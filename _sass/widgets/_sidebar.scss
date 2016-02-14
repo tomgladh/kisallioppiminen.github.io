@@ -61,6 +61,18 @@ aside nav ul .current {
 }
 
 @media all and (max-width: 1160px) {
+	aside {
+	clear: none;
+	width: 100%;
+	}
+
+	aside header {
+		margin: 10px;
+	}
+
+	aside nav {
+		border: 0;
+	}
 }
 
 @media all and (max-width: 760px) {
