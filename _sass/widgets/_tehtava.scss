@@ -277,15 +277,15 @@
         border-color: black; }
     .tehtava > header {
         /* Safari 4-5, Chrome 1-9 */
-        background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ddd), to(#ccc));
+        background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#DEF79A), to(#DEF79A));
         /* Safari 5.1, Chrome 10+ */
-        background: -webkit-linear-gradient(top, #ddd, #ccc);
+        background: -webkit-linear-gradient(top, #DEF79A, #DEF79A);
         /* Firefox 3.6+ */
-        background: -moz-linear-gradient(top, #ddd, #ccc);
+        background: -moz-linear-gradient(top, #DEF79A, #DEF79A);
         /* IE 10 */
-        background: -ms-linear-gradient(top, #ddd, #ccc);
+        background: -ms-linear-gradient(top, #DEF79A, #DEF79A);
         /* Opera 11.10+ */
-        background: -o-linear-gradient(top, #ddd, #ccc);
+        background: -o-linear-gradient(top, #DEF79A, #DEF79A);
         color: #fff; }
     .tehtava > header > h1, .panel > header > h1 {
         font-weight: normal;
