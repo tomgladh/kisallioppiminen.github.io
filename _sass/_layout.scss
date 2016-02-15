@@ -234,7 +234,10 @@ article ul {
 
 	main.has-aside,
 	main.has-aside > header,
-	main.has-aside article {
+	main.has-aside article,
+	main.has-top,
+	main.has-top > header,
+	main.has-top article{
 		width: auto;
 	}
 
@@ -277,170 +280,18 @@ article ul {
 
 	main.has-aside,
 	main.has-aside > header,
-	main.has-aside article {
+	main.has-aside article,
+	main.has-top,
+	main.has-top > header,
+	main.has-top article{
 		width: 100%;
 		padding: 0;
 	}
 
-	main.has-aside article > header h1 {
+	main.has-aside article > header h1,
+	main.has-top article > header h1{
 		width: 100%;
 		border-radius: 0;
 	}
 
 }
-
-/**
- * EXERCISES
-
- 
-.tehtava {
-  border-color: black; }
-  .tehtava > header {
-    /* Safari 4-5, Chrome 1-9 /
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#333333), to(#020202));
-    /* Safari 5.1, Chrome 10+ /
-    background: -webkit-linear-gradient(top, #333333, #020202);
-    /* Firefox 3.6+ /
-    background: -moz-linear-gradient(top, #333333, #020202);
-    /* IE 10 /
-    background: -ms-linear-gradient(top, #333333, #020202);
-    /* Opera 11.10+ /
-    background: -o-linear-gradient(top, #333333, #020202);
-    color: #fff; }
-    .tehtava > header > h1 {
-      font-weight: normal;
-      text-transform: uppercase; }
-  .tehtava > div h1 {
-    font-weight: normal;
-    text-transform: uppercase; }
-  .tehtava > div h2 {
-    font-weight: normal;
-    text-transform: uppercase; }
-    
-    .panel-group, .tehtavat {
-  margin-bottom: 20px; }
-  .panel-group .panel, .tehtavat .panel, .panel-group .tehtava, .tehtavat .tehtava {
-    margin-bottom: 0;
-    border-radius: 4px; }
-    .panel-group .panel + .panel, .tehtavat .panel + .panel, .panel-group .tehtava + .panel, .tehtavat .tehtava + .panel, .panel-group .panel + .tehtava, .tehtavat .panel + .tehtava, .panel-group .tehtava + .tehtava, .tehtavat .tehtava + .tehtava {
-      margin-top: 5px; }
-  .panel-group .panel-heading, .tehtavat .panel-heading, .panel-group .tehtava > header, .tehtavat .tehtava > header {
-    border-bottom: 0; }
-    .panel-group .panel-heading + .panel-collapse > .panel-body, .tehtavat .panel-heading + .panel-collapse > .panel-body, .panel-group .tehtava > header + .panel-collapse > .panel-body, .tehtavat .tehtava > header + .panel-collapse > .panel-body, .panel-group .tehtava > .panel-heading + div > .panel-body, .tehtavat .tehtava > .panel-heading + div > .panel-body, .panel-group .tehtava > header + div > .panel-body, .tehtavat .tehtava > header + div > .panel-body, .panel-group .panel-heading + .tehtava.panel-collapse > div, .tehtavat .panel-heading + .tehtava.panel-collapse > div, .panel-group .tehtava > header + .tehtava.panel-collapse > div, .tehtavat .tehtava > header + .tehtava.panel-collapse > div, .panel-group .tehtava > .panel-heading + div.tehtava > div, .tehtavat .tehtava > .panel-heading + div.tehtava > div, .panel-group .tehtava > header + div.tehtava > div, .tehtavat .tehtava > header + div.tehtava > div {
-      border-top: 1px solid #dddddd; }
-  .panel-group .panel-footer, .tehtavat .panel-footer {
-    border-top: 0; }
-    .panel-group .panel-footer + .panel-collapse .panel-body, .tehtavat .panel-footer + .panel-collapse .panel-body, .panel-group .tehtava > .panel-footer + div .panel-body, .tehtavat .tehtava > .panel-footer + div .panel-body, .panel-group .panel-footer + .panel-collapse .tehtava > div, .tehtavat .panel-footer + .panel-collapse .tehtava > div, .panel-group .tehtava > .panel-footer + div .tehtava > div, .tehtavat .tehtava > .panel-footer + div .tehtava > div {
-      border-bottom: 1px solid #dddddd; }
-
-.panel-default, .tehtava {
-  border-color: #dddddd; }
-  .panel-default > .panel-heading, .tehtava > .panel-heading, .tehtava > header {
-    color: #333333;
-    background-color: whitesmoke;
-    border-color: #dddddd; }
-    .panel-default > .panel-heading + .panel-collapse > .panel-body, .tehtava > .panel-heading + .panel-collapse > .panel-body, .tehtava > header + .panel-collapse > .panel-body, .tehtava > .panel-heading + div > .panel-body, .tehtava > header + div > .panel-body, .panel-default > .panel-heading + .tehtava.panel-collapse > div, .tehtava > .panel-heading + .tehtava.panel-collapse > div, .tehtava > header + .tehtava.panel-collapse > div, .tehtava > .panel-heading + div.tehtava > div, .tehtava > header + div.tehtava > div {
-      border-top-color: #dddddd; }
-    .panel-default > .panel-heading .badge, .tehtava > .panel-heading .badge, .tehtava > header .badge {
-      color: whitesmoke;
-      background-color: #333333; }
-  .panel-default > .panel-footer + .panel-collapse > .panel-body, .tehtava > .panel-footer + .panel-collapse > .panel-body, .tehtava > .panel-footer + div > .panel-body, .panel-default > .panel-footer + .tehtava.panel-collapse > div, .tehtava > .panel-footer + .tehtava.panel-collapse > div, .tehtava > .panel-footer + div.tehtava > div {
-    border-bottom-color: #dddddd; }
-
-.panel-primary {
-  border-color: #428bca; }
-  .panel-primary > .panel-heading, .tehtava.panel-primary > header {
-    color: white;
-    background-color: #428bca;
-    border-color: #428bca; }
-    .panel-primary > .panel-heading + .panel-collapse > .panel-body, .tehtava.panel-primary > header + .panel-collapse > .panel-body, .tehtava.panel-primary > .panel-heading + div > .panel-body, .tehtava.panel-primary > header + div > .panel-body, .panel-primary > .panel-heading + .tehtava.panel-collapse > div, .tehtava.panel-primary > header + .tehtava.panel-collapse > div, .tehtava.panel-primary > .panel-heading + div.tehtava > div, .tehtava.panel-primary > header + div.tehtava > div {
-      border-top-color: #428bca; }
-    .panel-primary > .panel-heading .badge, .tehtava.panel-primary > header .badge {
-      color: #428bca;
-      background-color: white; }
-  .panel-primary > .panel-footer + .panel-collapse > .panel-body, .tehtava.panel-primary > .panel-footer + div > .panel-body, .panel-primary > .panel-footer + .tehtava.panel-collapse > div, .tehtava.panel-primary > .panel-footer + div.tehtava > div {
-    border-bottom-color: #428bca; }
-
-.panel-success {
-  border-color: #d6e9c6; }
-  .panel-success > .panel-heading, .tehtava.panel-success > header {
-    color: #3c763d;
-    background-color: #dff0d8;
-    border-color: #d6e9c6; }
-    .panel-success > .panel-heading + .panel-collapse > .panel-body, .tehtava.panel-success > header + .panel-collapse > .panel-body, .tehtava.panel-success > .panel-heading + div > .panel-body, .tehtava.panel-success > header + div > .panel-body, .panel-success > .panel-heading + .tehtava.panel-collapse > div, .tehtava.panel-success > header + .tehtava.panel-collapse > div, .tehtava.panel-success > .panel-heading + div.tehtava > div, .tehtava.panel-success > header + div.tehtava > div {
-      border-top-color: #d6e9c6; }
-    .panel-success > .panel-heading .badge, .tehtava.panel-success > header .badge {
-      color: #dff0d8;
-      background-color: #3c763d; }
-  .panel-success > .panel-footer + .panel-collapse > .panel-body, .tehtava.panel-success > .panel-footer + div > .panel-body, .panel-success > .panel-footer + .tehtava.panel-collapse > div, .tehtava.panel-success > .panel-footer + div.tehtava > div {
-    border-bottom-color: #d6e9c6; }
-
-.panel-info {
-  border-color: #bce8f1; }
-  .panel-info > .panel-heading, .tehtava.panel-info > header {
-    color: #31708f;
-    background-color: #d9edf7;
-    border-color: #bce8f1; }
-    .panel-info > .panel-heading + .panel-collapse > .panel-body, .tehtava.panel-info > header + .panel-collapse > .panel-body, .tehtava.panel-info > .panel-heading + div > .panel-body, .tehtava.panel-info > header + div > .panel-body, .panel-info > .panel-heading + .tehtava.panel-collapse > div, .tehtava.panel-info > header + .tehtava.panel-collapse > div, .tehtava.panel-info > .panel-heading + div.tehtava > div, .tehtava.panel-info > header + div.tehtava > div {
-      border-top-color: #bce8f1; }
-    .panel-info > .panel-heading .badge, .tehtava.panel-info > header .badge {
-      color: #d9edf7;
-      background-color: #31708f; }
-  .panel-info > .panel-footer + .panel-collapse > .panel-body, .tehtava.panel-info > .panel-footer + div > .panel-body, .panel-info > .panel-footer + .tehtava.panel-collapse > div, .tehtava.panel-info > .panel-footer + div.tehtava > div {
-    border-bottom-color: #bce8f1; }
-
-.panel-warning {
-  border-color: #faebcc; }
-  .panel-warning > .panel-heading, .tehtava.panel-warning > header {
-    color: #8a6d3b;
-    background-color: #fcf8e3;
-    border-color: #faebcc; }
-    .panel-warning > .panel-heading + .panel-collapse > .panel-body, .tehtava.panel-warning > header + .panel-collapse > .panel-body, .tehtava.panel-warning > .panel-heading + div > .panel-body, .tehtava.panel-warning > header + div > .panel-body, .panel-warning > .panel-heading + .tehtava.panel-collapse > div, .tehtava.panel-warning > header + .tehtava.panel-collapse > div, .tehtava.panel-warning > .panel-heading + div.tehtava > div, .tehtava.panel-warning > header + div.tehtava > div {
-      border-top-color: #faebcc; }
-    .panel-warning > .panel-heading .badge, .tehtava.panel-warning > header .badge {
-      color: #fcf8e3;
-      background-color: #8a6d3b; }
-  .panel-warning > .panel-footer + .panel-collapse > .panel-body, .tehtava.panel-warning > .panel-footer + div > .panel-body, .panel-warning > .panel-footer + .tehtava.panel-collapse > div, .tehtava.panel-warning > .panel-footer + div.tehtava > div {
-    border-bottom-color: #faebcc; }
-
-.panel-danger {
-  border-color: #ebccd1; }
-  .panel-danger > .panel-heading, .tehtava.panel-danger > header {
-    color: #a94442;
-    background-color: #f2dede;
-    border-color: #ebccd1; }
-    .panel-danger > .panel-heading + .panel-collapse > .panel-body, .tehtava.panel-danger > header + .panel-collapse > .panel-body, .tehtava.panel-danger > .panel-heading + div > .panel-body, .tehtava.panel-danger > header + div > .panel-body, .panel-danger > .panel-heading + .tehtava.panel-collapse > div, .tehtava.panel-danger > header + .tehtava.panel-collapse > div, .tehtava.panel-danger > .panel-heading + div.tehtava > div, .tehtava.panel-danger > header + div.tehtava > div {
-      border-top-color: #ebccd1; }
-    .panel-danger > .panel-heading .badge, .tehtava.panel-danger > header .badge {
-      color: #f2dede;
-      background-color: #a94442; }
-  .panel-danger > .panel-footer + .panel-collapse > .panel-body, .tehtava.panel-danger > .panel-footer + div > .panel-body, .panel-danger > .panel-footer + .tehtava.panel-collapse > div, .tehtava.panel-danger > .panel-footer + div.tehtava > div {
-    border-bottom-color: #ebccd1; }
-    
-    .tehtava {
-  border: 1px solid #139197;
-  border-bottom-width: 4px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px; }
-  .tehtava > header {
-    background: #139197;
-    color: #fff; }
-    .tehtava > header > h1 {
-      color: #fff;
-      font-size: 1.2em;
-      letter-spacing: 1px; }
-    .tehtava > header a[data-toggle="collapse"]:after {
-      content: '\25B2';
-      float: right; }
-    .tehtava > header a[data-toggle="collapse"].collapsed:after {
-      content: '\25BC'; }
-  .tehtava > div {
-    margin-top: -1px; }
-    .tehtava > div h1 {
-      font-size: 1.25em; }
-    .tehtava > div h2 {
-      font-size: 1.1em;
-      font-weight: bold; }
-    .tehtava > div > .pisteytys {
-      list-style-type: none; }
- */
