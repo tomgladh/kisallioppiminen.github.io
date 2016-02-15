@@ -277,15 +277,15 @@
         border-color: black; }
     .tehtava > header {
         /* Safari 4-5, Chrome 1-9 */
-        background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EBFFB3), to(#DEF79A));
+        background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F9F8F8), to(#F1F1F1));
         /* Safari 5.1, Chrome 10+ */
-        background: -webkit-linear-gradient(top, #EBFFB3, #DEF79A);
+        background: -webkit-linear-gradient(top, #F9F8F8, #F1F1F1);
         /* Firefox 3.6+ */
-        background: -moz-linear-gradient(top, #EBFFB3, #DEF79A);
+        background: -moz-linear-gradient(top, #F9F8F8, #F1F1F1);
         /* IE 10 */
-        background: -ms-linear-gradient(top, #EBFFB3, #DEF79A);
+        background: -ms-linear-gradient(top, #F9F8F8, #F1F1F1);
         /* Opera 11.10+ */
-        background: -o-linear-gradient(top, #EBFFB3, #DEF79A);
+        background: -o-linear-gradient(top, #F9F8F8, #F1F1F1);
         color: #fff; }
     .tehtava > header > h1, .panel > header > h1 {
         font-weight: normal;
