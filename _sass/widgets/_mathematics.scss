@@ -33,6 +33,7 @@ background-color: #f2ffcc;
   height: auto; 
   margin-bottom: 0; 
   margin-top: 1em;
+  background-color: #cccccc;
 }
 
 .theorem h3 {
@@ -49,10 +50,9 @@ background-color: #f2ffcc;
   height: auto; 
   padding: 20px; 
   margin-bottom: 0; 
-  margin-top: 0; 
-  background-color: #cccccc;
+  margin-top: 0;
 }
-.theorem ul {
+.theorem .proof {
   display: block; 
   width: auto; 
   height: auto; 
