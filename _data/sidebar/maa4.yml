@@ -1,1 +1,7 @@
 
+header: Ohjeita
+path: 
+navigation:
+  -
+    name: Opiskelun ohjeet
+    path: opiskelunOhjeet.html
