@@ -73,6 +73,23 @@ main.has-aside article {
 	margin-bottom: 40px;
 }
 
+/**
+ * CONTENT WITH TOPNAV
+ */
+
+main.has-top article > header h1 {
+	display: none;
+}
+
+main.has-top article,
+main.has-top > header {
+	float: left;
+}
+
+main.has-top article {
+	margin-bottom: 40px;
+}
+
 
 /**
  * MAIN CONTENT
