@@ -1,6 +1,9 @@
 aside {
+	width: 350px;
 	clear:both;
 	float: right;
+	border-bottom: 1px solid #e2e2e2;
+	border-top: 1px solid #fff;
 	line-height: 1.3em;
 }
 
@@ -28,23 +31,24 @@ aside a:hover {
 }
 
 aside nav {
-
+	border-bottom: 1px solid #e2e2e2;
+	border-top: 1px solid #fff;
 }
 
 aside nav ul {
+
 	margin: 0;
 	padding: 0;
 }
 
 aside nav ul li {
-        display: inline-block;
 	list-style-type: none;
 	text-transform: none;
 	border: 0 none;
 }
 
 aside nav ul li a {
-	background: #A8BB73; 
+	background: #3ebba7; 
 	text-shadow: 1px 1px 1px #005357;
 
 	&:hover {
@@ -61,17 +65,9 @@ aside nav ul .current {
 }
 
 @media all and (max-width: 1160px) {
+
 	aside {
-	clear: none;
-	width: 100%;
-	}
-
-	aside header {
-		margin: 10px;
-	}
-
-	aside nav {
-		border: 0;
+		width: 30%;
 	}
 }
 
