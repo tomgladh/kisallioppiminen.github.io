@@ -83,16 +83,16 @@ main.has-aside article {
  * CONTENT WITH TOPNAV
  */
 
-main.has-top article > header h1 {
+main.has-atop article > header h1 {
 	display: none;
 }
 
-main.has-top article,
-main.has-top > header {
+main.has-atop article,
+main.has-atop > header {
 	float: left;
 }
 
-main.has-top article {
+main.has-atop article {
 	margin-bottom: 40px;
 	clear: both;
 }
@@ -236,9 +236,9 @@ article ul {
 	main.has-aside,
 	main.has-aside > header,
 	main.has-aside article,
-	main.has-top,
-	main.has-top > header,
-	main.has-top article{
+	main.has-atop,
+	main.has-atop > header,
+	main.has-atop article{
 		width: auto;
 	}
 
@@ -282,15 +282,15 @@ article ul {
 	main.has-aside,
 	main.has-aside > header,
 	main.has-aside article,
-	main.has-top,
-	main.has-top > header,
-	main.has-top article{
+	main.has-atop,
+	main.has-atop > header,
+	main.has-atop article{
 		width: 100%;
 		padding: 0;
 	}
 
 	main.has-aside article > header h1,
-	main.has-top article > header h1{
+	main.has-atop article > header h1{
 		width: 100%;
 		border-radius: 0;
 	}
