@@ -2,7 +2,6 @@
 layout: default
 ---
 <link rel="stylesheet" href="http://web-palvelinohjelmointi.github.io/css/wepa.csss"/>
-<link rel="stylesheet" href="http://web-palvelinohjelmointi.github.io/css/wepa-mooc.csss"/>
 
 <script src="http://web-palvelinohjelmointi.github.io/js/libs/jquery/jquery.js"></script>        
 <script src="http://web-palvelinohjelmointi.github.io/js/libs/jqueryui/jquery-ui.js"></script>
@@ -361,6 +360,9 @@ layout: default
         });
     });
 </script>
+{% if page.topnav %}
+	{% include topnav.html %}
+{% endif %}
 {% if page.sidenav %}
 	{% include sidenav.html %}
 {% endif %}
