@@ -60,16 +60,22 @@ body > header.no-nav {
  * CONTENT WITH SIDENAV
  */
 
-main.has-aside article > header h1 {
-	display: none;
+main article > header h1 {
+	display: block;
+	border-radius: 7px;
+	padding: 12px 20px;
+	margin-top: 0px;
+	margin-bottom: 30px;
 }
 
 main.has-aside article,
 main.has-aside > header {
+	width: 65%;
 	float: left;
 }
 
 main.has-aside article {
+	padding: 10px;
 	margin-bottom: 40px;
 }
 
