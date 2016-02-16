@@ -12,7 +12,9 @@ layout: compress
 		{% include header.html %}
 		
 		
-
+		{% if page.topnav %}
+			{% include topnav.html %}
+		{% endif %}
 		<main{% if page.main-class %} class="{{page.main-class}}"{% endif %}>
 			{{ content }}
 		</main>
