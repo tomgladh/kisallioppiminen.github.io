@@ -30,7 +30,7 @@ $
     </div>
 
     <p>
-        Lukujonon termejä tai jäseniä merkitään usein muodossa $a_n$, jossa alaindeksi $n$ kertoo, kuinka mones jonon termi on kyseessä ja $a_n$ kertoo n:nnen jonon termin. Esimerkiksi edellisen tehtävän lukujonossa $1,2,3,\ldots$ voidaan merkitä $a_1=1, a_2=2, a_3=3$. Koko lukujonoa kuvataan merkinnällä $(a_n)$. 
+        Lukujonon termejä tai jäseniä merkitään usein muodossa $a_n$, jossa alaindeksi $n$ (järjestysnumero) kertoo, kuinka mones jonon jäsen on kyseessä ja $a_n$ kertoo n:nnen jonon termin. Esimerkiksi edellisen tehtävän lukujonossa $1,2,3,\ldots$ voidaan merkitä $a_1=1, a_2=2, a_3=3$. Koko lukujonoa kuvataan merkinnällä $(a_n)$. 
     </p>
 
     <div class="tehtavat">
@@ -58,7 +58,8 @@ $
     </p>
 
     <p>
-        Usein lukujonon jäsenet ilmoitetaan sääntönä, jolla mikä tahansa jonon jäsen saadaan määritettyä. Sääntö voi riippua siitä, mones jonon jäsen on kyseessä, tai edellisistä jonon jäsenistä. (Sääntöä, joka riippuu siitä, kuinka mones jäsen on kyseessä, eli kirjaimesta $n$, sanotaan analyyttiseksi, kun taas sääntöä, joka riippuu jonon edellisistä jäsenistä, sanotaan rekursiiviseksi.) 
+        Usein lukujonon jäsenet ilmoitetaan sääntönä, jolla mikä tahansa jonon jäsen saadaan määritettyä. Sääntö voi riippua siitä, mones jonon jäsen on kyseessä eli jonon järjestysnumerosta, tai edellisistä jonon jäsenistä. (Sääntöä, joka riippuu siitä, kuinka mones jäsen on kyseessä, eli kirjaimesta $n$, sanotaan analyyttiseksi, kun taas sääntöä, joka riippuu jonon edellisistä jäsenistä, sanotaan rekursiiviseksi.) 
+        Jos lukujonolla on olemassa sääntö, niin kaikki lukujonon jäsenet toteuttavat säännön jollain positiivisella kokonaisluvulla $n$. Esimerkiksi jonon $6,11,16,21,\ldots$ sääntö on muotoa $5n+1$, eli suomeksi "kerro jonon järjestysnumeroa viidellä ja lisää siihen yksi". Tämä tarkoittaa, että esimerkiksi jonon toinen jäsen on $5\cdot2+1=11$ ja jonon kymmenes jäsen on $5\cdot 10+1=51$. On huomattava, että muut kuin lukujonon jäsenet eivät toteuta sääntöä positiivisella kokonaisluvulla $n$. 
     </p>
 
     <div class="tehtavat">
@@ -108,9 +109,51 @@ $
                 </h1>
             </header>
             <div id="t-helloweb4" class="collapse">
-                Olkoon $b_n=3n+5$. <br>
+                Olkoon lukujonon $(b_n)$ jäsenet muotoa $b_n=3n+5$. <br>
                 a) Onko luku 20 lukujonon $(b_n)$ jäsen? Entä luku 127?<br>
                 b) Miten voit yleisesti tutkia, onko jokin luku lukujonon jäsen, jos lukujonon sääntö tunnetaan? Keinon tulee toimia, olipa kyseinen luku kuinka suuri tai pieni tahansa.
+            </div>
+        </div>
+    </div>
+<p>
+	Koska kaikki lukujonon jäsenet toteuttavat lukujonon säännön jollain positiivisella kokonaisluvulla $n$, voidaan tätä tietoa käyttää hyväksi, kun tutkitaan, onko jokin luku lukujonon jäsen. Jos luku on lukujonon jäsen, niin se on lukujonon säännön muotoa jollain positiivisella kokonaisluvulla $n$. 
+</p>
+
+    <div class="tehtavat">
+        <div class="tehtava" id="t-helloweb-ex">
+
+            <header>
+                <h1>
+                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb4b">
+                        Onko luku lukujonon jäsen?
+                    </a>
+                </h1>
+            </header>
+            <div id="t-helloweb4b" class="collapse">
+              Tarkastele lukujonoa $(a_n)$.
+              <ol type="a">
+              	<li>
+              		Tutkittaessa, onko luku 123 lukujonon $a_n$ jäsen, saadaan yhtälön $a_n=123$ ratkaisuksi $n=9$. Onko luku 123 lukujonon $(a_n)$ jäsen? Jos on, niin mones?
+              	</li>
+              	<li> Yhtälölle $a_n=28$ saadaan ratkaisuksi $n=2,6$. Onko luku 28 lukujonon jäsen? Jos on, niin mones?</li>
+              </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="tehtavat">
+        <div class="tehtava" id="t-helloweb-ex">
+
+            <header>
+                <h1>
+                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb4c">
+                        Onko luku lukujonon jäsen?
+                    </a>
+                </h1>
+            </header>
+            <div id="t-helloweb4c" class="collapse">
+                Olkoon lukujonon $(a_n)$ sääntö $a_n=8n-3$. Tutki yhtälön avulla, onko luku 19 lukujonon jäsen? Jos on, niin mones lukujonon jäsen se on?
+     
             </div>
         </div>
     </div>
