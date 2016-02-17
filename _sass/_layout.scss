@@ -280,6 +280,12 @@ article ul {
 	body > header > h1 {
 		display: none;
 	}
+	
+	main {
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-bottom: 5px;
+	}
 
 	main.has-aside,
 	main.has-aside > header,
