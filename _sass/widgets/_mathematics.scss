@@ -1,4 +1,5 @@
 .definition {
+  background-color: #f2ffcc;
 display: block; 
 max-width: 94%; 
 width: auto; 
@@ -7,7 +8,6 @@ height: auto;
 
 .definition h3 {
 margin: 0; 
-max-width: 94%; 
 width: auto; 
 height: auto; 
 background-color: #86b300; 
@@ -17,13 +17,11 @@ padding: 10px 20px;
 
 .definition p {
 display: block; 
-max-width: 94%; 
 width: auto; 
 height: auto; 
 padding: 20px; 
 margin-bottom: 1em; 
-margin-top: 0; 
-background-color: #f2ffcc;
+margin-top: 0;
 }
 
 .theorem {
