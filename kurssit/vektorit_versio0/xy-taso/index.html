@@ -17,12 +17,24 @@ $
 \require{color}
 $
 <article>
-    <section>
+<section>
         <header>
             <h1>Vektorit ja $xy$-koordinaatisto</h1>
         </header>
+
         <p>
-            Tämän luvun tavoitteena on, että tiedät, mikä vektori on. Osaat määrittää kahden pisteen välisen vektorin sekä tutkia vektoreiden suuntia ja pituuksia kuvan perusteella. Osaat määrittää koordinaatiston pisteitä paikkavektorien avulla. Lisäksi osaat määrittää vektorien pistetulon ja sen avulla vektoreiden välisen kulman. Tavoitteiden toteutumista pääset arvioimaan luvun lopussa olevan itsearviointitestin avulla.</p>
+            Tämän luvun tavoitteena on, että tiedät, millaisia xy-koordinaatiston vektorit ovat. Osaat 
+        <ul>
+        <li> kirjoittaa xy-koordinaatistoon piirretyn vektorin vektoreiden $\vi$ ja $\vj$ avulla 
+        <li> määrittää pisteen paikkavektorin 
+        <li> laskea vektoreiden summan, erotuksen ja pistetulon
+        <li> kertoa vektorin reaaliluvulla
+        <li> määrittää kahden pisteen välisen vektorin
+        <li> laskea vektorin pituuden
+        <li> määrittää vektoreiden välisen kulma pistetulon avulla.
+        </ul>
+        Tavoitteiden toteutumista pääset arvioimaan luvun lopussa olevan itsearviointitestin avulla.</p>
+
         <div class="tehtavat">
             <div class="tehtava" id="t-koordinaatisto-ex">
                 <header>
@@ -59,7 +71,7 @@ $
         </div>
 
         <p>
-            Tason piste ilmoitetaan lukuparina $(x,y)$, missä ensimmäinen luku $x$ ilmoittaa $x$-akselin suuntaisten ja toinen luku $y$ ilmoittaa $y$-akselin suuntaisten askelten määrän. Näitä lukuja kutsutaan <b>pisteen koordinaateiksi</b>. 
+            Tason piste ilmoitetaan lukuparina $(x,y)$. Ensimmäinen luku $x$ kertoo, kuinka kauas origosta pitää siirtyä $x$-akselin suunnassa, ja toinen luku $y$ kertoo, kuinka kauas origosta pitää siirtyä $y$-akselin suunnassa, jotta päästään kyseiseen pisteeseen. Näitä lukuja kutsutaan <b>pisteen koordinaateiksi</b>. 
         </p>
 
         <p>
@@ -126,11 +138,11 @@ $
         </p>
 
         <p>
-            Muut vektorit voidaan esittää vektorien $\bar{\imath}$ ja $\bar{\jmath}$ avulla. Esimerkiksi alla olevassa kuvassa vektori $\bar{u}$
-            on esitetty vektorien $\bar{\imath}$ ja $\bar{\jmath}$ avulla. 
+            Muut vektorit voidaan esittää vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla. Esimerkiksi alla olevassa kuvassa vektori $\bar{u}$
+            on esitetty vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla. 
         </p>
         <p>
-            Kuvasta nähdään, että vektorin $\bar{u}$ alkupisteestä päästään sen loppupisteeseen ottamalla kaksi $x$-akselin suuntaista askelta negatiiviseen suuntaan ja neljä $y$-akselin suuntaista askelta positiiviseen suuntaan. Vektori $\bar{u}$ voidaan siis ilmoittaa vektorien $\bar{\imath}$ ja $\bar{\jmath}$ avulla muodossa $\bar{u} = -2\bar{\imath} + 4\bar{\jmath}$.
+            Kuvasta nähdään, että vektorin $\bar{u}$ alkupisteestä päästään sen loppupisteeseen ottamalla kaksi $x$-akselin suuntaista askelta negatiiviseen suuntaan ja neljä $y$-akselin suuntaista askelta positiiviseen suuntaan. Vektori $\bar{u}$ voidaan siis ilmoittaa vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla muodossa $\bar{u} = -2\bar{\imath} + 4\bar{\jmath}$.
         </p>
 
         <p>
@@ -142,14 +154,14 @@ $
                 <header>
                     <h1>
                         <a data-toggle="collapse" class="collapsed" href="#t-vektoreita1">
-                            Vektorien esittäminen vektorien $\bar{\imath}$ ja $\bar{\jmath}$ avulla
+                            Vektoreiden esittäminen vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla
                         </a>
                     </h1>
                 </header>
 
                 <div id="t-vektoreita1" class="collapse">
                     <p>
-                        Ilmoita yllä olevassa kuvassa näkyvät vektorit $\bar{v}$ ja $\bar{w}$ vektorien $\bar{\imath}$ ja $\bar{\jmath}$ avulla. 
+                        Ilmoita yllä olevassa kuvassa näkyvät vektorit $\bar{v}$ ja $\bar{w}$ vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla. 
                     </p>
                 </div>
             </div>
@@ -164,7 +176,7 @@ $
                 <header>
                     <h1>
                         <a data-toggle="collapse" class="collapsed" href="#t-samojaVektoreita">
-                            Vektorien esittäminen vektorien $\bar{\imath}$ ja $\bar{\jmath}$ avulla
+                            Vektoreiden esittäminen vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla
                         </a>
                     </h1>
                 </header>
@@ -172,7 +184,7 @@ $
                 <div id="t-samojaVektoreita" class="collapse">
                     <p>
                     <ol type="a">
-                        <li> Ilmoita kaikki kuvassa näkyvät vektorit vektorien $\bar{\imath}$ ja $\bar{\jmath}$ avulla. 
+                        <li> Ilmoita kaikki kuvassa näkyvät vektorit vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla. 
                         <li> Selitä omin sanoin, mitä huomaat.
                     </ol>
                     </p>
@@ -184,14 +196,14 @@ $
         </div>
 
         <div class="definition">
-            <h3>MÄÄRITELMÄ</h3>
+            <h3>MÄÄRITELMÄ: VEKTOREIDEN SAMUUS</h3>
             <p>
-                Kaksi vektoria ovat samat, jos ne voidaan esittää samalla tavalla vektorien $\bar{\imath}$ ja $\bar{\jmath}$ avulla.
+                Kaksi vektoria ovat samat, jos ne voidaan esittää samalla tavalla vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla.
             </p>
         </div>
 
         <p>
-            Vektorien samuus tarkoittaa siis sitä, että ne ovat saman pituisia ja osoittavat samaan suuntaan &mdash; niiden paikalla koordinaatistossa ei ole merkitystä.
+            Vektoreiden samuus tarkoittaa siis sitä, että ne ovat saman pituisia ja osoittavat samaan suuntaan &mdash; niiden paikalla koordinaatistossa ei ole merkitystä.
         </p>
 
         <div class="tehtavat">
@@ -199,7 +211,7 @@ $
                 <header>
                     <h1>
                         <a data-toggle="collapse" class="collapsed" href="#t-paikkavektoreita">
-                            Vektorien esittäminen vektorien $\bar{\imath}$ ja $\bar{\jmath}$ avulla
+                            Vektoreiden esittäminen vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla
                         </a>
                     </h1>
                 </header>
@@ -207,7 +219,7 @@ $
                 <div id="t-paikkavektoreita" class="collapse">
                     <p>
                     <ol type="a">
-                        <li> Ilmoita kaikki kuvassa näkyvät vektorit vektorien $\bar{\imath}$ ja $\bar{\jmath}$ avulla. 
+                        <li> Ilmoita kaikki kuvassa näkyvät vektorit vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla. 
                         <li> Vertaa a-kohdan tuloksia vektoreiden loppupisteiden koordinaatteihin. Kerro havaintosi omin sanoin.
                     </ol>
                     </p>
@@ -219,7 +231,7 @@ $
         </div>
 
         <div style="display: block; max-width: 94%; width: auto; height: auto;">
-            <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ</h3>
+            <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ: PAIKKAVEKTORI</h3>
             <p style="display: block; max-width: 94%; width: auto; height: auto; padding: 20px; margin-bottom: 1em; margin-top: 0; background-color: #f2ffcc;">
                 Vektori, joka lähtee origosta ja joka loppuu pisteeseen $P$, on pisteen $P$ paikkavektori.
             </p>
@@ -238,7 +250,7 @@ $
                 <header>
                     <h1>
                         <a data-toggle="collapse" class="collapsed" href="#t-paikkavektoreita2">
-                            Vektorien esittäminen vektorien $\bar{\imath}$ ja $\bar{\jmath}$ avulla
+                            Vektoreiden esittäminen vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla
                         </a>
                     </h1>
                 </header>
@@ -246,8 +258,8 @@ $
                 <div id="t-paikkavektoreita2" class="collapse">
                     <p>
                     <ol type="a">
-                        <li> Ilmoita vektori $\bar{w}$ vektorien $\bar{\imath}$ ja $\bar{\jmath}$ avulla. Minkä pisteen paikkavektori se on?  
-                        <li> Ilmoita vektori $\bar{u}$ vektorien $\bar{\imath}$ ja $\bar{\jmath}$ avulla. Minkä pisteen paikkavektori se on?  
+                        <li> Ilmoita vektori $\bar{w}$ vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla. Minkä pisteen paikkavektori se on?  
+                        <li> Ilmoita vektori $\bar{u}$ vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla. Minkä pisteen paikkavektori se on?  
                         <li> Minkä pisteiden paikkavektoreita vektorit $\bar{\imath}$ ja $\bar{\jmath}$ ovat?
                         <li> Mikä on origon paikkavektori?
                     </ol>
@@ -260,7 +272,7 @@ $
         </div>
 
         <div style="display: block; max-width: 94%; width: auto; height: auto;">
-            <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ</h3>
+            <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ: NOLLAVEKTORI</h3>
             <p style="display: block; max-width: 94%; width: auto; height: auto; padding: 20px; margin-bottom: 1em; margin-top: 0; background-color: #f2ffcc;">
                 Vektoria $0\bar{\imath} + 0\bar{\jmath}$ sanotaan nollavektoriksi ja merkitään $\bar{0}$.
             </p>
@@ -269,105 +281,16 @@ $
         <p>
             Nollavektori $\bar{0}$ on siis vektori, jonka alkupiste ja loppupiste ovat samat. Nollavektori on origon eli pisteen $(0,0)$ paikkavektori.
         </p>
-    </section>
+</section>
 
-    <section>
+<section>
         <header>
-            <h1>Kahden pisteen välinen vektori</h1>
+            <h1>Vektoreiden summa</h1>
         </header>
 
-        <p>
-            Vektoria pisteestä $A$ pisteeseen $B$ merkitään $\overline{AB}$. 
-        </p>
 
         <p>
-            <img src="img/vektoriAB.png" max-width: 90%; width: auto; height: auto;/> 
-        </p>
-
-        <div class="tehtavat">
-            <div class="tehtava" id="t-pisteidenValinen-ex">
-                <header>
-                    <h1>
-                        <a data-toggle="collapse" class="collapsed" href="#t-pisteidenValinen">
-                            Kahden pisteen välinen vektori 
-                        </a>
-                    </h1>
-                </header>
-
-                <div id="t-pisteidenValinen" class="collapse">
-                    <p>
-                    <ol type="a">
-                        <li> Piirrä koordinaatisto ja valitse sen ensimmäiseltä neljännekseltä kaksi pistettä. Merkitse näitä pisteitä kirjaimilla $P$ ja $Q$. Merkitse myös pisteiden koordinaatit näkyviin. 
-                        <li> Piirrä vektori $\overline{PQ}$.  
-                        <li> Ilmoita vektori $\overline{PQ}$ vektorien $\bar{\imath}$ ja $\bar{\jmath}$ avulla.
-                    </ol>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="tehtavat">
-            <div class="tehtava" id="t-pisteidenValinen2-ex">
-                <header>
-                    <h1>
-                        <a data-toggle="collapse" class="collapsed" href="#t-pisteidenValinen2">
-                            Kahden pisteen välinen vektori 
-                        </a>
-                    </h1>
-                </header>
-
-                <div id="t-pisteidenValinen2" class="collapse">
-                    <p>
-                    <ol type="a">
-                        <li> Piirrä koordinaatisto ja valitse sen toiselta, kolmannelta tai neljännekseltä neljännekseltä kaksi pistettä. Merkitse näitä pisteitä kirjaimilla $R$ ja $S$. Merkitse myös pisteiden koordinaatit näkyviin.
-                        <li> Piirrä vektori $\overline{RS}$.  
-                        <li> Ilmoita vektori $\overline{RS}$ vektorien $\bar{\imath}$ ja $\bar{\jmath}$ avulla.
-                    </ol>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="tehtavat">
-            <div class="tehtava" id="t-pisteidenValinen3-ex">
-                <header>
-                    <h1>
-                        <a data-toggle="collapse" class="collapsed" href="#t-pisteidenValinen3">
-                            Kahden pisteen välinen vektori 
-                        </a>
-                    </h1>
-                </header>
-
-                <div id="t-pisteidenValinen3" class="collapse">
-                    <p>
-                    <ol type="a">
-                        <li> Piirrä koordinaatistoon jotkin pisteet $A$ ja $B$. Merkitse niiden koordinaatit.
-                        <li> Ilmoita vektori $\overline{AB}$ vektorien $\bar{\imath}$ ja $\bar{\jmath}$ avulla.
-                        <li> Ilmoita vektori $\overline{BA}$ vektorien $\bar{\imath}$ ja $\bar{\jmath}$ avulla.
-                        <li> Vertaa b- ja c-kohdan tuloksia. Kerro havaintosi omin sanoin.
-                    </ol>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <p> 
-            Vektorit $\overline{AB}$ ja $\overline{BA}$ ovat eri vektorit, sillä niitä ei voida esittää samalla tavalla vektorien $\bar{\imath}$ ja $\bar{\jmath}$ avulla. Vektorin suunnalla on siis merkitystä. </br>
-        </p>
-
-    </section>
-
-    <section>
-        <header>
-            <h1>Vektorien laskutoimituksia</h1>
-        </header>
-
-        <header>
-            <h2>Summa</h2>
-        </header>
-
-        <p>
-            Edellisessä kappaleessa opittiin ilmoittamaan vektoreita vektorien $\bar{\imath}$ ja $\bar{\jmath}$ avulla. Esimerkiksi alla olevan kuvan  vektori $\bar{v}$ on vektorien $2\bar{\imath}$ ja $4\bar{\jmath}$ summa eli $\bar{v} = 2\bar{\imath} + 4\bar{\jmath}$.
+            Edellä opittiin kirjoittamaan vektoreita vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla. Esimerkiksi alla olevan kuvan  vektori $\bar{v}$ on vektoreiden $2\bar{\imath}$ ja $4\bar{\jmath}$ summa eli $\bar{v} = 2\bar{\imath} + 4\bar{\jmath}$.
         </p>
         <p>
             <img src="img/summa1.png" max-width: 90%; width: auto; height: auto;/> 
@@ -378,18 +301,18 @@ $
         </p>
 
         <p>
-            Seuraavaksi sovitaan, miten lasketaan minkä tahansa vektorien summa. Se tehdään laskemalla vektorit komponenteittain yhteen.
+            Seuraavaksi sovitaan, miten lasketaan minkä tahansa vektoreiden summa. Se tehdään laskemalla vektorit komponenteittain yhteen.
         </p>
 
         <div style="display: block; max-width: 94%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
-            <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ</h3>
+            <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ: SUMMA</h3>
             <p style="display: block; max-width: 94%; width: auto; height: auto; padding: 20px; margin-bottom: 1em; margin-top: 0; background-color: #f2ffcc;">
-                Vektorien $\bar{v}$ ja $\bar{w}$ summa $\bar{v} + \bar{w}$ saadaan laskemalla vektorit komponenteittain yhteen.
+                Vektoreiden $\bar{v}$ ja $\bar{w}$ summa $\bar{v} + \bar{w}$ saadaan laskemalla vektorit komponenteittain yhteen.
             </p>
         </div>
 
         <p>
-            Esimerkiksi alla olevan kuvan vektorien $\bar{v}=\bar{\imath}+\textcolor{blue}{2}\bar{\jmath}$ ja $\bar{w} = \textcolor{darkgreen}{4}\bar{\imath}\textcolor{blue}{-3}\bar{\jmath}$ summa saadaan laskemalla yhteen $x$-akselin suuntaiset komponentit:
+            Esimerkiksi alla olevan kuvan vektoreiden $\bar{v}=\bar{\imath}+\textcolor{blue}{2}\bar{\jmath}$ ja $\bar{w} = \textcolor{darkgreen}{4}\bar{\imath}\textcolor{blue}{-3}\bar{\jmath}$ summa saadaan laskemalla yhteen $x$-akselin suuntaiset komponentit:
             $$
             \bar{\imath} + \textcolor{darkgreen}{4}\bar{\imath} = \textcolor{darkgreen}{5}\bar{\imath}
             $$
@@ -397,7 +320,7 @@ $
             $$
             \textcolor{blue}{2}\bar{\jmath}+(\textcolor{blue}{-3}\bar{\jmath})=\textcolor{blue}{2}\bar{\jmath}\textcolor{blue}{-3}\bar{\jmath}=\textcolor{blue}{-}\bar{\jmath}.
             $$
-            Vektorien $\bar{v}$ ja $\bar{w}$ summaksi saadaan siis
+            Vektoreiden $\bar{v}$ ja $\bar{w}$ summaksi saadaan siis
             \begin{align*}
             \bar{v} + \bar{w} &=(\bar{\imath}+\textcolor{blue}{2}\bar{\jmath}) + (\textcolor{darkgreen}{4}\bar{\imath}\textcolor{blue}{-3}\bar{\jmath}) \\
             &= (\textcolor{darkgreen}{1+4})\bar{\imath} + (\textcolor{blue}{2+(-3)})\bar{\jmath} \\
@@ -455,7 +378,7 @@ $
         </div>
 
         <p>
-            Tarkastellaan alla olevaa kuvaa. Kuvassa on vektorit $\bar{a}=3\bar{\imath}+5\bar{\jmath}$ ja $\bar{b}=4\bar{\imath}+3\bar{\jmath}$ piirrettynä siten, että vektori $\bar{b}$ alkaa vektorin $\bar{a}$ loppupisteestä. Vektorien $\bar{a}$ ja $\bar{b}$ summa on komponenteittain laskettuna
+            Tarkastellaan alla olevaa kuvaa. Kuvassa on vektorit $\bar{a}=3\bar{\imath}+5\bar{\jmath}$ ja $\bar{b}=4\bar{\imath}+3\bar{\jmath}$ piirrettynä siten, että vektori $\bar{b}$ alkaa vektorin $\bar{a}$ loppupisteestä. Vektoreiden $\bar{a}$ ja $\bar{b}$ summa on komponenteittain laskettuna
             \begin{align*}
             \bar{a}+\bar{b} 
             &= (\textcolor{darkgreen}{3}\bar{\imath}+\textcolor{blue}{5}\bar{\jmath})+(\textcolor{darkgreen}{4}\bar{\imath}\textcolor{blue}{-2}\bar{\jmath}) \\
@@ -486,8 +409,8 @@ $
                 <div id="t-summaPiirtamalla1" class="collapse">
                     <p> Tutki vektoreita $\bar{v}=-2\bar{\imath}+\bar{\jmath}$ ja $\bar{w}=4\bar{\imath}+4\bar{\jmath}$.
                     <ol type="a">
-                        <li> Piirrä summavektori $\vv+\vw$ koordinaatistoon vektorien $\vv$ ja $\vw$ avulla. 
-                        <li> Ilmoita vektori $\vv+\vw$ vektorien $\vi$ ja $\vj$ avulla.
+                        <li> Piirrä summavektori $\vv+\vw$ koordinaatistoon vektoreiden $\vv$ ja $\vw$ avulla. 
+                        <li> Ilmoita vektori $\vv+\vw$ vektoreiden $\vi$ ja $\vj$ avulla.
                         <li> Tarkista tuloksesi laskemalla yhteen vektorit $\vv$ ja $\vw$ komponenteittain.
                     </ol>
                     </p>
@@ -506,7 +429,7 @@ $
                 </header>
 
                 <div id="t-summaPiirtamalla2" class="collapse">
-                    <p> Tutki vektoreita $\vu=i+2\vj$, $\vv=-3i+j$ ja $\vw=3i+-5j$. Piirrä seuraavat summavektorit koordinaatistoon vektorien $\vu, \vv$ ja $\vw$ avulla: 
+                    <p> Tutki vektoreita $\vu=i+2\vj$, $\vv=-3i+j$ ja $\vw=3i+-5j$. Piirrä seuraavat summavektorit koordinaatistoon vektoreiden $\vu, \vv$ ja $\vw$ avulla: 
                     <ol type="a">
                         <li> $\vu+\vv+\vw$ 
                         <li> $\vu+\vv+\vw$
@@ -518,7 +441,7 @@ $
             </div>
         </div>
         <p>
-            Edellisen tehtävän tulos on yksi osoitus siitä, että vektorien yhteenlaskun järjestyksellä ei ole merkitystä. Vektorien yhteenlasku on siis <b>vaihdannainen</b> operaatio. Tämä näkyy myös alla olevassa kuvassa: vektori $4\vj+2\vi$ on sama kuin vektori $2\vi+4\vj$.
+            Edellisen tehtävän tulos on yksi osoitus siitä, että vektoreiden yhteenlaskun järjestyksellä ei ole merkitystä. Vektoreiden yhteenlasku on siis vaihdannainen operaatio. Tämä näkyy myös alla olevassa kuvassa: vektori $4\vj+2\vi$ on sama kuin vektori $2\vi+4\vj$.
         </p>
 
         <p>
@@ -540,15 +463,17 @@ $
                     <ol type="a">
                         <li> Piirrä vektori $\va +\vb +\vc$ koordinaatistoon.
                         <li> Selitä omin sanoin, mitä huomaat.
-                        <li> Miten voit ilmaista vektorin $\vc$ vektorien $\va$ ja $\vb$ avulla?
+                        <li> Miten voit ilmaista vektorin $\vc$ vektoreiden $\va$ ja $\vb$ avulla?
                     </ol>
                     </p>
                 </div>
             </div>
         </div>
+</section>
 
+<section>
         <header>
-            <h2>Vektorin kertominen reaaliluvulla</h2>
+            <h1>Vektorin kertominen reaaliluvulla</h1>
         </header>
 
         <p>
@@ -560,7 +485,7 @@ $
         </p>
 
         <div style="display: block; max-width: 94%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
-            <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ</h3>
+            <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ: VEKTORIN KERTOMINEN REAALILUVULLA</h3>
             <p style="display: block; max-width: 94%; width: auto; height: auto; padding: 20px; margin-bottom: 1em; margin-top: 0; background-color: #f2ffcc;">
                 Vektorin $\vv$ skalaarimonikerta $r\vv$ saadaan kertomalla vektorin $\vv$ komponentit reaaliluvulla $r$.
             </p>
@@ -592,7 +517,7 @@ $
                 <div id="t-skalaarikerto1" class="collapse">
                     <p> Tutki vektoria $\va=-\vi+2\vj$.
                     <ol type="a">
-                        <li> Ilmoita vektorit $2\va$, $3\va$ ja $-1\va$ vektorien $\vi$ ja $\vj$ avulla.
+                        <li> Ilmoita vektorit $2\va$, $3\va$ ja $-1\va$ vektoreiden $\vi$ ja $\vj$ avulla.
                         <li> Piirrä vektorit $2\va$, $3\va$ ja $-1\va$ koordinaatistoon.
                         <li> Selitä omin sanoin, miten reaaliluvulla kertominen vaikuttaa vektoriin.
                     </ol>
@@ -623,7 +548,7 @@ $
         </div>
 
         <div style="display: block; max-width: 94%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
-            <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ</h3>
+            <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ: VASTAVEKTORI</h3>
             <p style="display: block; max-width: 94%; width: auto; height: auto; padding: 20px; margin-bottom: 1em; margin-top: 0; background-color: #f2ffcc;">
                 Vektori $-1\vv$ on vektorin $\vv$ vastavektori. Sitä merkitään $-\vv$.
             </p>
@@ -651,7 +576,7 @@ $
                     <p> Tarkastele alla olevaa kuvaa.
                     <ol type="a">
                         <li> Nimeä kaikki kuvan vektorit, eli merkitse niitä jollakin kirjaimella (esim. $\va, \vb, \vc$ jne.)
-                        <li> Ilmoita nimeämäsi vektorit vektorien $\vi$ ja $\vj$ avulla.
+                        <li> Ilmoita nimeämäsi vektorit vektoreiden $\vi$ ja $\vj$ avulla.
                         <li> Mitkä vektoreista ovat toistensa vastavektoreita?
                     </ol>
                     </p>
@@ -661,15 +586,17 @@ $
                 </div>
             </div>
         </div>
+</section>
 
+<section>
         <header>
-            <h2>Erotus</h2>
+            <h1>Vektoreiden erotus</h1>
         </header>
 
         <div style="display: block; max-width: 94%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
-            <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ</h3>
+            <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ: EROTUS</h3>
             <p style="display: block; max-width: 94%; width: auto; height: auto; padding: 20px; margin-bottom: 1em; margin-top: 0; background-color: #f2ffcc;">
-                Vektorien $\vv$ ja $\vw$ erotus $\vv-\vw$ saadaan lisäämällä vektoriin $\vv$ vastavektori $-\vw$.
+                Vektoreiden $\vv$ ja $\vw$ erotus $\vv-\vw$ saadaan lisäämällä vektoriin $\vv$ vastavektori $-\vw$.
             </p>
         </div>
 
@@ -686,7 +613,7 @@ $
         </p>
 
         <p>
-            Vektorien erotus lasketaan samaan tapaan komponenteittain kuin summakin. Esimerkiksi yllä olevan kuvan vektorien $\vv$ ja $\vw$ erotus on 
+            Vektoreiden erotus lasketaan samaan tapaan komponenteittain kuin summakin. Esimerkiksi yllä olevan kuvan vektoreiden $\vv$ ja $\vw$ erotus on 
             \begin{align*}
             \vv-\vw
             &=2\vi+2\vj-(2\vi - 3\vj) \\
@@ -701,7 +628,7 @@ $
                 <header>
                     <h1>
                         <a data-toggle="collapse" class="collapsed" href="#t-erotus">
-                            Vektorien erotus
+                            Vektoreiden erotus
                         </a>
                     </h1>
                 </header>
@@ -710,20 +637,80 @@ $
                     <p> Tutki vektoreita $\va=-3\vi+4\vj$ ja $\vb=5\vi+2\vj$.
                     <ol type="a">
                         <li> Laske erotus $\va-\vb$.
-                        <li> Määritä erotus $\va-\vb$ piirtämällä vektorien $\va$ ja $-\vb$ avulla.
+                        <li> Määritä erotus $\va-\vb$ piirtämällä vektoreiden $\va$ ja $-\vb$ avulla.
                         <li> Vertaa a- ja b-kohtien tuloksia. Ovatko ne ristiriidassa keskenään?
                     </ol>
                     </p>
                 </div>
             </div>
         </div>
+</section>
 
+<section>
         <header>
-            <h2>Vektorin suunta ja pituus</h2>
+            <h1>Kahden pisteen välinen vektori</h1>
+        </header>
+        TÄTÄ PITÄÄ VIILATA
+        <p>
+            Vektoria pisteestä $A$ pisteeseen $B$ merkitään $\overline{AB}$. Alla olevassa kuvassa on näkyvissä vektori $\pv{AB} = 4\vi + 2\vj$. 
+        </p>
+
+        <p>
+            <img src="img/vektoriAB.png" max-width: 90%; width: auto; height: auto;/> 
+        </p>
+
+        <div class="tehtavat">
+            <div class="tehtava" id="t-pisteidenValinen1-ex">
+                <header>
+                    <h1>
+                        <a data-toggle="collapse" class="collapsed" href="#t-pisteidenValinen1">
+                            Kahden pisteen välinen vektori 
+                        </a>
+                    </h1>
+                </header>
+
+                <div id="t-pisteidenValinen1" class="collapse">
+                    <p> Tarkastele yllä olevaa kuvaa.
+                    <ol type="a">
+                        <li> Muodosta pisteiden $A$ ja $B$ paikkavektorit $\pv{OA}$ ja $\pv{OB}$. 
+                        <li> Millä laskutoimituksella saat niistä muodotettua vektorin $\pv{AB} = 4\vi + 2\vj$?
+                    </ol>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tehtavat">
+            <div class="tehtava" id="t-pisteidenValinen-ex">
+                <header>
+                    <h1>
+                        <a data-toggle="collapse" class="collapsed" href="#t-pisteidenValinen">
+                            Kahden pisteen välinen vektori 
+                        </a>
+                    </h1>
+                </header>
+
+                <div id="t-pisteidenValinen" class="collapse">
+                    <p>
+                    <ol type="a">
+                        <li> Piirrä koordinaatisto ja valitse sen ensimmäiseltä neljännekseltä kaksi pistettä. Merkitse näitä pisteitä kirjaimilla $P$ ja $Q$. Merkitse myös pisteiden koordinaatit näkyviin. 
+                        <li> Piirrä vektori $\overline{PQ}$.  
+                        <li> Ilmoita vektori $\overline{PQ}$ vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla.
+                    </ol>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+</section>
+
+<section>
+        <header>
+            <h1>Vektorin suunta ja pituus</h1>
         </header>
 
         <p>
-            Tutkitaan seuraavaksi vektorien suuntia. Alla olevan kuvan vektorit $\va$ ja $\vv$ ovat <b>samansuuntaiset</b>. Myös esimerkiksi vektorit $-\va$ ja $\vu$ ovat samansuuntaiset. Tämä voidaan merkitä kirjoittamalla $\va \upuparrows \vv$ ja $-\va \upuparrows \vu$. 
+            Tutkitaan seuraavaksi vektoreiden suuntia. Alla olevan kuvan vektorit $\va$ ja $\vv$ ovat <b>samansuuntaiset</b>. Myös esimerkiksi vektorit $-\va$ ja $\vu$ ovat samansuuntaiset. Tämä voidaan merkitä kirjoittamalla $\va \upuparrows \vv$ ja $-\va \upuparrows \vu$. 
         </p>
 
         <p>
@@ -743,7 +730,7 @@ $
                 <header>
                     <h1>
                         <a data-toggle="collapse" class="collapsed" href="#t-vektorinSuunta">
-                            Vektorien yhdensuuntaisuus
+                            Vektoreiden yhdensuuntaisuus
                         </a>
                     </h1>
                 </header>
@@ -769,7 +756,7 @@ $
                 <header>
                     <h1>
                         <a data-toggle="collapse" class="collapsed" href="#t-vektorinSuunta2">
-                            Vektorien yhdensuuntaisuus
+                            Vektoreiden yhdensuuntaisuus
                         </a>
                     </h1>
                 </header>
@@ -786,7 +773,7 @@ $
         </div>
 
         <div style="display: block; max-width: 94%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
-            <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ</h3>
+            <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ: YHDENSUUNTAISUUS</h3>
             <p style="display: block; max-width: 94%; width: auto; height: auto; padding: 20px; margin-bottom: 1em; margin-top: 0; background-color: #f2ffcc;">
                 Vektorit $\vv$ ja $\vw$ ovat yhdensuuntaiset, jos $\vv=r\vw$ jollakin reaaliluvulla $r \neq 0$.
             </p>
@@ -808,7 +795,7 @@ $
                 <header>
                     <h1>
                         <a data-toggle="collapse" class="collapsed" href="#t-vektorinSuunta3">
-                            Vektorien yhdensuuntaisuus
+                            Vektoreiden yhdensuuntaisuus
                         </a>
                     </h1>
                 </header>
@@ -844,7 +831,7 @@ $
         </p>
 
         <div style="display: block; max-width: 94%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
-            <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ</h3>
+            <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ: VEKTORIN PITUUS</h3>
             <p style="display: block; max-width: 94%; width: auto; height: auto; padding: 20px; margin-bottom: 1em; margin-top: 0; background-color: #f2ffcc;">
                 Vektorin $\vv=x\vi+y\vj$ pituus on $$|\vv|=\sqrt{x^2+y^2}.$$
             </p>
@@ -853,6 +840,24 @@ $
         <p>
             Huomaa, että merkintä $|\vv|$ tarkoittaa vektorin $\vv$ pituutta, kun taas merkintä $|x|$ tarkoittaa luvun $x$ itseisarvoa.
         </p>
+
+        <b>TÄHÄN TEHTÄVÄ, JOSSA PITÄÄ LASKEA VEKTORIN PITUUS</b>
+
+        <div class="theorem">
+            <h3>TEOREEMA</h3>
+            <p>
+                Kaksi vektoria ovat samat, jos ja vain jos ne ovat samansuuntaiset ja yhtä pitkät.
+            </p>
+            <div class="proof">
+                <p>
+                    Perustelu: 
+                <ul>
+                    <li>  Se, että kaksi vektoria ovat samat, tarkoittaa, että ne voidaan esittää samalla tavalla vektoreiden $\vi$ ja $\vj$ avulla. Tällöin ne ovat samansuuntaiset ja yhtä pitkät.
+                    <li>Jos vektorit ovat samansuuntaiset ja yhtä pitkät, ne voidaan esittää samalla tavalla vektoreiden $\vi$ ja $\vj$ avulla. Tämä tarkoittaa, että  ne ovat samat.
+                </ul>
+                </p>
+            </div>
+        </div>
 
         <div class="tehtavat">
             <div class="tehtava" id="t-pituus-ex">
@@ -868,7 +873,7 @@ $
                     <p> Tutki vektoria $\vv=6\vi+3\vj$.
                     <ol type="a">
                         <li> Muodosta vektorit $5\vv$, $-2\vv$ ja $(1/3)\vv$.
-                        <li> Laske vektorien $\vv$, $5\vv$, $-2\vv$ ja $(1/3)\vv$ pituudet.
+                        <li> Laske vektoreiden $\vv$, $5\vv$, $-2\vv$ ja $(1/3)\vv$ pituudet.
                         <li> Selitä omin sanoin, miten vektorin kertominen luvulla vaikuttaa vektorin pituuteen.
                         <li> Millaisella luvulla vektoria tulee kertoa, jotta se pitenee? 
                         <li> Millaisella luvulla vektoria tulee kertoa, jotta se lyhenee? 
@@ -879,7 +884,7 @@ $
         </div>
 
         <p>
-            Tarkastellaan alla olevan kuvan vektorien $\va=2\vi+\vj$ ja $4\va=8\vi+4\vj$ pituuksia. Huomataan, että vektorin $\va$ pituus on
+            Tarkastellaan alla olevan kuvan vektoreiden $\va=2\vi+\vj$ ja $4\va=8\vi+4\vj$ pituuksia. Huomataan, että vektorin $\va$ pituus on
             $$
             \begin{align*}
             |\va|&=\sqrt{2^2+1^2} \\
@@ -909,6 +914,8 @@ $
             Tämä pätee kaikille vektoreille. Vektorin $t\vv$ pituus $|t\vv|$ saadaan kertomalla vektorin $\vv$ pituutta luvun $t$ itseisarvolla. Toisin sanottuna  $$|t\vv|=|t|\cdot |\vv|.$$ 
         </p>
 
+        <b>EDELLINEN ASIA TEOREEMAKSI?</b>
+
         <div class="tehtavat">
             <div class="tehtava" id="t-pituus2-ex">
                 <header>
@@ -920,14 +927,14 @@ $
                 </header>
 
                 <div id="t-pituus2" class="collapse">
-                    <p> Laske tai päättele vektorien $\vi$ ja $\vj$ pituus.
+                    <p> Laske tai päättele vektoreiden $\vi$ ja $\vj$ pituus.
                     </p>
                 </div>
             </div>
         </div>
 
         <div style="display: block; max-width: 94%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
-            <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ</h3>
+            <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ: YKSIKKÖVEKTORI</h3>
             <p style="display: block; max-width: 94%; width: auto; height: auto; padding: 20px; margin-bottom: 1em; margin-top: 0; background-color: #f2ffcc;">
                 Vektoria, jonka pituus on $1$, sanotaan yksikkövektoriksi.
             </p>
@@ -981,36 +988,22 @@ $
                 </div>
             </div>
         </div>
-
-        <div class="theorem">
-            <h3>TEOREEMA</h3>
-            <p>
-                Kaksi vektoria ovat samat, jos ja vain jos ne ovat samansuuntaiset ja yhtä pitkät.
-            </p>
-            <div class="proof">
-                <p>
-                    Perustelu: 
-                <ul>
-                    <li>  Se, että kaksi vektoria ovat samat, tarkoittaa, että ne voidaan esittää samalla tavalla vektorien $\vi$ ja $\vj$ avulla. Tällöin ne ovat samansuuntaiset ja yhtä pitkät.
-                    <li>Jos vektorit ovat samansuuntaiset ja yhtä pitkät, ne voidaan esittää samalla tavalla vektorien $\vi$ ja $\vj$ avulla. Tämä tarkoittaa, että  ne ovat samat.
-                </ul>
-                </p>
-            </div>
-        </div>
-
+</section>
+ 
+<section>
         <header>
-            <h2>Vektorien pistetulo ja vektorien välinen kulma</h2>
+            <h1>Vektoreiden pistetulo ja vektoreiden välinen kulma</h1>
         </header>
 
         <div style="display: block; max-width: 94%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
-            <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ</h3>
+            <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ: PISTETULO</h3>
             <p style="display: block; max-width: 94%; width: auto; height: auto; padding: 20px; margin-bottom: 1em; margin-top: 0; background-color: #f2ffcc;">
-                Vektorien $\vv=x_1\vi+y_1\vj$ ja $\vw=x_2\vi+y_2\vj$ pistetulo on $\vv \cdot \vw = x_1x_2+y_1y_2$.
+                Vektoreiden $\vv=x_1\vi+y_1\vj$ ja $\vw=x_2\vi+y_2\vj$ pistetulo on $\vv \cdot \vw = x_1x_2+y_1y_2$.
             </p>
         </div>
 
         <p>
-            Vektorien pistetulosta saadaan siis tuloksena aina reaaliluku. Esimerkiksi vektorien $\vv=-2\vi+4\vj$ ja $\vw=3\vi-\vj$ pistetulo on 
+            Vektoreiden pistetulosta saadaan siis tuloksena aina reaaliluku. Esimerkiksi vektoreiden $\vv=-2\vi+4\vj$ ja $\vw=3\vi-\vj$ pistetulo on 
             \begin{align*}
             \vv \cdot \vw 
             &= (-2\vi+4\vj) \cdot (3\vi-\vj) \\ 
@@ -1038,7 +1031,7 @@ $
                         <li> Laske pistetulo $\va \cdot \vb$.
                         <li> Laske pistetulo $\va \cdot \vc$.
                         <li> Laske pistetulo $\vb \cdot \vc$.
-                        <li> Millaisessa tilanteessa vektorien pistetulo on nolla? Vertaa edellisten laskujen tuloksia ja piirtämääsi kuvaa.
+                        <li> Millaisessa tilanteessa vektoreiden pistetulo on nolla? Vertaa edellisten laskujen tuloksia ja piirtämääsi kuvaa.
                     </ol>
                     </p>
                 </div>
@@ -1150,11 +1143,11 @@ $
         </div>
 
         <p>
-            Tutkitaan seuraavaksi vektorien välisen kulman ja pistetulon yhteyttä. Vektorien välistä kulmaa voidaan tarkastella, jos vektorien alkupisteet ovat samat. Vektorien välisellä kulmalla tarkoitetaan muodostuvista kulmista pienempää. Tätä on havainnollistettu alla olevassa kuvassa.
+            Tutkitaan seuraavaksi vektoreiden välisen kulman ja pistetulon yhteyttä. Vektoreiden välistä kulmaa voidaan tarkastella, jos vektoreiden alkupisteet ovat samat. Vektoreiden välisellä kulmalla tarkoitetaan muodostuvista kulmista pienempää. Tätä on havainnollistettu alla olevassa kuvassa.
         </p>
 
         <p>
-            <img src="img/vektorienKulma.png" max-width: 90%; width: auto; height: auto;/> 
+            <img src="img/vektoreidenKulma.png" max-width: 90%; width: auto; height: auto;/> 
         </p>
 
         <div class="tehtavat">
@@ -1170,8 +1163,8 @@ $
                 <div id="t-kulma" class="collapse">
                     <p> Tarkastellaan yllä olevan kuvan vektoria $\vv$.
                     <ol type="a">
-                        <li> Kuinka suuri on vektorien $\vv$ ja $2\vv$ välinen kulma? 
-                        <li> Kuinka suuri on vektorien $\vv$ ja $-\vv$ välinen kulma?
+                        <li> Kuinka suuri on vektoreiden $\vv$ ja $2\vv$ välinen kulma? 
+                        <li> Kuinka suuri on vektoreiden $\vv$ ja $-\vv$ välinen kulma?
                         <li> Jos vektorit ovat samansuuntaiset, mikä niiden välinen kulma on?
                         <li> Jos vektorit ovat vastakkaissuuntaiset, mikä niiden välinen kulma on?
                     </ol>
@@ -1181,7 +1174,7 @@ $
         </div>
 
         <p>
-            Vektorien välinen kulma voidaan laskea Geometria-kurssista tutun kosinilauseen avulla. Kosinilause on Pythagoraan lauseen yleistys. Pythagoraan lause pätee ainoastaan suorakulmaisille kolmioille, mutta kosinilausetta voi käyttää kaikille kolmioille. Kosinilauseen mukaan alla olevan kuvan kolmiossa 
+            Vektoreiden välinen kulma voidaan laskea Geometria-kurssista tutun kosinilauseen avulla. Kosinilause on Pythagoraan lauseen yleistys. Pythagoraan lause pätee ainoastaan suorakulmaisille kolmioille, mutta kosinilausetta voi käyttää kaikille kolmioille. Kosinilauseen mukaan alla olevan kuvan kolmiossa 
             $$
             c^2=a^2+b^2-2ab \cos \gamma.
             $$
@@ -1192,25 +1185,25 @@ $
         </p>
 
         <p>
-            Ajattelemalla kolmion sivujen pituudet vektorien pituuksina kosinilauseesta saadaan yhtälö
+            Ajattelemalla kolmion sivujen pituudet vektoreiden pituuksina kosinilauseesta saadaan yhtälö
             $$
             |\vv-\vw|^2=|\vv|^2+|\vw|^2-2|\vv||\vw| \cos(\vv,\vw).
             $$
-            Merkintä $\cos(\vv,\vw)$ tarkoittaa vektorien $\vv$ ja $\vw$ välisen kulman kosinia.
+            Merkintä $\cos(\vv,\vw)$ tarkoittaa vektoreiden $\vv$ ja $\vw$ välisen kulman kosinia.
         </p>
 
         <p>
-            <img src="img/vektorienKulma2.png" max-width: 90%; width: auto; height: auto;/> 
+            <img src="img/vektoreidenKulma2.png" max-width: 90%; width: auto; height: auto;/> 
         </p>
 
         <p>
-            Kosinilauseen ja pistetulon ominaisuuksien avulla saadaan perusteltua seuraava teoreema, joka yhdistää pistetulon ja vektorien välisen kulman.
+            Kosinilauseen ja pistetulon ominaisuuksien avulla saadaan perusteltua seuraava teoreema, joka yhdistää pistetulon ja vektoreiden välisen kulman.
         </p>
 
         <div style="display: block; max-width: 91.963%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
             <h3 style="margin: 0; width: auto; height: auto; background-color: #737373; color: #fff; padding: 10px 20px;">TEOREEMA</h3>
             <p style="display: block; width: auto; height: auto; padding: 20px 20px 20px 20px; margin: 0; background-color: #cccccc;">
-                Vektorien $\vv$ ja $\vw$ pistetulolle pätee $\vv \cdot \vw = |\vv||\vw|\cos (\vv, \vw)$.
+                Vektoreiden $\vv$ ja $\vw$ pistetulolle pätee $\vv \cdot \vw = |\vv||\vw|\cos (\vv, \vw)$.
             </p>
             <p style="display: block; width: auto; height: auto; padding: 20px 20px 2px 20px; margin-bottom: 1em; margin-top: 0; background-color: #e6e6e6;">
                 Perustelu: Tiedetään, että vektorin pituuden neliö on aina sama kuin sen pistetulo itsensä kanssa. Tästä saadaan seuraava yhtälöketju:
@@ -1252,11 +1245,11 @@ $
                     <ol type="a">
                         <li> vektorit $\va$ ja $\vb$ ovat samansuuntaiset.
                         <li> vektorit $\va$ ja $\vb$ ovat vastakkaissuuntaiset.
-                        <li> vektorien $\va$ ja $\vb$ välinen kulma on $45^{\circ}$.
-                        <li> vektorien $\va$ ja $\vb$ välinen kulma on $135^{\circ}$.
-                        <li> vektorien $\va$ ja $\vb$ välinen kulma on $90^{\circ}$.
+                        <li> vektoreiden $\va$ ja $\vb$ välinen kulma on $45^{\circ}$.
+                        <li> vektoreiden $\va$ ja $\vb$ välinen kulma on $135^{\circ}$.
+                        <li> vektoreiden $\va$ ja $\vb$ välinen kulma on $90^{\circ}$.
                     </ol>
-                    Selitä omin sanoin, miten vektorien välinen kulma liittyy pistetulon etumerkkiin.
+                    Selitä omin sanoin, miten vektoreiden välinen kulma liittyy pistetulon etumerkkiin.
                     </p>
                 </div>
             </div>
@@ -1283,7 +1276,7 @@ $
                     Siis $\vv \cdot \vw = 0$.
                 <li> Oletetaan, että $\vv \cdot \vw = 0$. Tiedetään, että $\vv \cdot \vw = |\vv||\vw|\cos (\vv, \vw)$. Näistä tiedoista voidaan päätellä, että $|\vv||\vw|\cos (\vv, \vw) = 0$. </br> </br>
 
-                    Oletuksen mukaan $\vv \neq \bar{0}$ ja $\vw \neq \bar{0}$, joten vektorien $\vv$ ja $\vw$ pituudet ovat positiivisia: $\left|\vv\right| > 0$ ja $\left|\vw\right| > 0$. Tulon nollasäännön avulla voidaan siten päätellä, että $\cos (\vv, \vw) = 0$. Tästä seuraa, että $\sphericalangle(\vv,\vw)=90^{\circ}$. </br> </br>
+                    Oletuksen mukaan $\vv \neq \bar{0}$ ja $\vw \neq \bar{0}$, joten vektoreiden $\vv$ ja $\vw$ pituudet ovat positiivisia: $\left|\vv\right| > 0$ ja $\left|\vw\right| > 0$. Tulon nollasäännön avulla voidaan siten päätellä, että $\cos (\vv, \vw) = 0$. Tästä seuraa, että $\sphericalangle(\vv,\vw)=90^{\circ}$. </br> </br>
 
                     Vektorit $\vv$ ja $\vw$ ovat siis toisiaan vastaan kohtisuorassa.
             </ul>
@@ -1294,7 +1287,7 @@ $
                 <header>
                     <h1>
                         <a data-toggle="collapse" class="collapsed" href="#t-pistetuloKulma2">
-                            Pistetulo ja vektorien kohtisuoruus
+                            Pistetulo ja vektoreiden kohtisuoruus
                         </a>
                     </h1>
                 </header>
@@ -1322,7 +1315,7 @@ $
             <p style="display: block; width: auto; height: auto; padding: 20px 20px 20px 20px; margin-bottom: 1em; margin-top: 0; background-color: #e6e6e6;">
                 Perustelu: Aiemman teoreeman nojalla tiedetään, että 
                 $$\vv \cdot \vw = |\vv||\vw|\cos (\vv, \vw).$$ 
-                Jos $\vv \neq \bar{0}$ ja $\vw \neq \bar{0}$, niin vektorien $\vv$ ja $\vw$ pituudet ovat positiivisia. Jakamalla yhtälön molemmat puolet tulolla $|\vv||\vw|$ saadaan
+                Jos $\vv \neq \bar{0}$ ja $\vw \neq \bar{0}$, niin vektoreiden $\vv$ ja $\vw$ pituudet ovat positiivisia. Jakamalla yhtälön molemmat puolet tulolla $|\vv||\vw|$ saadaan
                 $$
                 \cos (\vv, \vw)=\frac{\vv \cdot \vw}{|\vv||\vw|}.
                 $$
@@ -1334,7 +1327,7 @@ $
                 <header>
                     <h1>
                         <a data-toggle="collapse" class="collapsed" href="#t-pistetuloKulma3">
-                            Pistetulo ja vektorien välinen kulma
+                            Pistetulo ja vektoreiden välinen kulma
                         </a>
                     </h1>
                 </header>
@@ -1355,7 +1348,7 @@ $
                 <header>
                     <h1>
                         <a data-toggle="collapse" class="collapsed" href="#t-pistetuloKulma4">
-                            Pistetulo ja vektorien välinen kulma
+                            Pistetulo ja vektoreiden välinen kulma
                         </a>
                     </h1>
                 </header>
@@ -1370,7 +1363,12 @@ $
                 </div>
             </div>
         </div>
+</section>
 
+<section>
+    <header>
+            <h1>Tehtäviä</h1>
+    </header>
         <div class="tehtavat">
             <div class="panel">
                 <header>
@@ -1387,7 +1385,7 @@ $
                         <header>
                             <h1>
                                 <a href="#t-setti1.1">
-                                    Vektorin esittäminen vektorien $\vi$ ja $\vj$ avulla
+                                    Vektorin esittäminen vektoreiden $\vi$ ja $\vj$ avulla
                                 </a>
                             </h1>
                         </header>
@@ -1405,7 +1403,7 @@ $
                         <header>
                             <h1>
                                 <a href="#t-setti1.2">
-                                    Vektorien samuus
+                                    Vektoreiden samuus
                                 </a>
                             </h1>
                         </header>
@@ -1499,7 +1497,7 @@ $
                                 <li> vektorin $-\vb$ verran</li>
                                 <li> ensin vektorin $-\va$ verran ja sitten vektorin $\vb$ verran.</li>
                             </ol>
-                            Mihin vektorien laskutoimituksiin b- ja d-kohdat liittyvät?
+                            Mihin vektoreiden laskutoimituksiin b- ja d-kohdat liittyvät?
                             </p>
                             <p>
                                 <img src="img/setti2-4.png" max-width: 90%; width: auto; height: auto;/> 
@@ -1511,13 +1509,13 @@ $
                         <header>
                             <h1>
                                 <a href="#t-setti2.1">
-                                    Vektorien summa ja erotus
+                                    Vektoreiden summa ja erotus
                                 </a>
                             </h1>
                         </header>
 
                         <div id="t-setti2.1">
-                            <p> Tarkastele alla olevaa kuvaa. Piirrä vektorien $\vv$, $\vw$ ja $\vu$ avulla vektorit
+                            <p> Tarkastele alla olevaa kuvaa. Piirrä vektoreiden $\vv$, $\vw$ ja $\vu$ avulla vektorit
                             <ol type="a">
                                 <li> $\vv+\vw$</li>
                                 <li> $\vw-\vv$</li>
@@ -1554,7 +1552,7 @@ $
                         <header>
                             <h1>
                                 <a href="#t-setti2.3">
-                                    Vektorien summa ja erotus
+                                    Vektoreiden summa ja erotus
                                 </a>
                             </h1>
                         </header>
@@ -1679,7 +1677,7 @@ $
                         <header>
                             <h1>
                                 <a href="#t-setti3.4b">
-                                    Vektorien summa ja erotus
+                                    Vektoreiden summa ja erotus
                                 </a>
                             </h1>
                         </header>
@@ -1773,8 +1771,8 @@ $
                         <div id="t-setti3.7">
                             <p> Vektorin $\vv$ pituus on 24. </p>
                             <ol type="a">
-                                <li> Määritä vektorien $-6\vv$ ja $\frac{1}{8}\vv$ pituudet.</li>
-                                <li> Vertaa vektorien $-6\vv$ ja $\frac{1}{8}\vv$ suuntaa vektorin $\vv$ suuntaan.</li>
+                                <li> Määritä vektoreiden $-6\vv$ ja $\frac{1}{8}\vv$ pituudet.</li>
+                                <li> Vertaa vektoreiden $-6\vv$ ja $\frac{1}{8}\vv$ suuntaa vektorin $\vv$ suuntaan.</li>
                             </ol>
                         </div>
                     </div>
@@ -1830,7 +1828,7 @@ $
                         </header>
 
                         <div id="t-setti3.14">
-                            <p> Laske vektorien $\vv$ ja $\vw$ pistetulo, jos
+                            <p> Laske vektoreiden $\vv$ ja $\vw$ pistetulo, jos
                             <ol type="a">
                                 <li> $\vv=\frac{1}{2}\vi-3\vj$ ja $\vw=10\vi+7\vj$</li>
                                 <li> $\vv=9\vi+11\vj$ ja $\vw=\frac{2}{3}\vi-2\vj$</li>
@@ -2085,8 +2083,8 @@ $
                         <div id="t-setti4.4">
                             <p> Tarkastele alla olevaa kuvaa. Esitä 
                             <ol type="a">
-                                <li> vektori $\pv{AC}$ vektorien $\va$ ja $\vb$ avulla </li>
-                                <li> vektori $\pv{BE}$ vektorien $\vb$, $\vc$ ja $\bar{d}$ avulla</li>
+                                <li> vektori $\pv{AC}$ vektoreiden $\va$ ja $\vb$ avulla </li>
+                                <li> vektori $\pv{BE}$ vektoreiden $\vb$, $\vc$ ja $\bar{d}$ avulla</li>
                                 <li> vektori $\pv{EC}$ kahdella eri tavalla. </li>
                             </ol>
                             </p>
@@ -2223,7 +2221,7 @@ $
                         </header>
 
                         <div id="t-setti4.16">
-                            <p> Mitä voit päätellä vektorien $\va$ ja $\vb$ suunnasta ja pituudesta, jos 
+                            <p> Mitä voit päätellä vektoreiden $\va$ ja $\vb$ suunnasta ja pituudesta, jos 
                                 \begin{align*}
                                 2(2\va-3\vb)-5\va-(3\va-4\vb)=\bar{0}.
                                 \end{align*}
