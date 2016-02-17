@@ -1183,58 +1183,18 @@ $
         </div>
 
         <p>
-            Vektoreiden välinen kulma voidaan laskea Geometria-kurssista tutun kosinilauseen avulla. Kosinilause on Pythagoraan lauseen yleistys. Pythagoraan lause pätee ainoastaan suorakulmaisille kolmioille, mutta kosinilausetta voi käyttää kaikille kolmioille. Kosinilauseen mukaan alla olevan kuvan kolmiossa 
-            $$
-            c^2=a^2+b^2-2ab \cos \gamma.
-            $$
-        </p>
-
-        <p>
-            <img src="img/kosinilause.png" max-width: 90%; width: auto; height: auto;/> 
-        </p>
-
-        <p>
-            Ajattelemalla kolmion sivujen pituudet vektoreiden pituuksina kosinilauseesta saadaan yhtälö
-            $$
-            |\vv-\vw|^2=|\vv|^2+|\vw|^2-2|\vv||\vw| \cos(\vv,\vw).
-            $$
-            Merkintä $\cos(\vv,\vw)$ tarkoittaa vektoreiden $\vv$ ja $\vw$ välisen kulman kosinia.
-        </p>
-
-        <p>
-            <img src="img/vektoreidenKulma2.png" max-width: 90%; width: auto; height: auto;/> 
-        </p>
-
-        <p>
-            Kosinilauseen ja pistetulon ominaisuuksien avulla saadaan perusteltua seuraava teoreema, joka yhdistää pistetulon ja vektoreiden välisen kulman.
+            Geometria-kurssista tutun kosinilauseen ja pistetulon ominaisuuksien avulla saadaan perusteltua seuraava teoreema, joka yhdistää pistetulon ja vektoreiden välisen kulman. Teoreema perustellaan myöhemmin $xyz$-koordinaatisto käsittelevässä luvussa.
         </p>
 
         <div style="display: block; max-width: 91.963%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
             <h3 style="margin: 0; width: auto; height: auto; background-color: #737373; color: #fff; padding: 10px 20px;">TEOREEMA</h3>
-            <p style="display: block; width: auto; height: auto; padding: 20px 20px 20px 20px; margin: 0; background-color: #cccccc;">
+            <p style="display: block; width: auto; height: auto; padding: 20px 20px 20px 20px; margin-bottom: 1em; margin-top: 0; background-color: #cccccc;">
                 Vektoreiden $\vv$ ja $\vw$ pistetulolle pätee $\vv \cdot \vw = |\vv||\vw|\cos (\vv, \vw)$.
-            </p>
-            <p style="display: block; width: auto; height: auto; padding: 20px 20px 2px 20px; margin-bottom: 1em; margin-top: 0; background-color: #e6e6e6;">
-                Perustelu: Tiedetään, että vektorin pituuden neliö on aina sama kuin sen pistetulo itsensä kanssa. Tästä saadaan seuraava yhtälöketju:
+
+                <br>
+                Jos $\vv \neq \bar{0}$ ja $\vw \neq \bar{0}$, niin 
                 $$
-                \begin{align*}
-                |\vv-\vw|^2
-                &=(\vv-\vw)\cdot(\vv-\vw) \\
-                &= \vv \cdot \vv -\vv\cdot\vw - \vw \cdot \vv+\vw\cdot\vw \\
-                &= |\vv|^2 - 2(\vv\cdot\vw) +|\vw|^2.
-                \end{align*}
-                $$
-                Toisaalta kosinilauseen mukaan
-                $$
-                |\vv-\vw|^2=|\vv|^2+|\vw|^2-2|\vv||\vw| \cos(\vv,\vw).
-                $$
-                Yhdistämällä edelliset tiedot saadaan yhtälö
-                $$
-                |\vv|^2 - 2(\vv\cdot\vw) +|\vw|^2 = |\vv|^2+|\vw|^2-2|\vv||\vw| \cos(\vv,\vw).
-                $$
-                Ratkaistaan tästä $\vv\cdot\vw$, jolloin saadaan
-                $$
-                \vv\cdot\vw = |\vv||\vw| \cos(\vv,\vw).
+                \cos (\vv, \vw)=\frac{\vv \cdot \vw}{|\vv||\vw|}.
                 $$
             </p>
         </div>
@@ -1313,23 +1273,6 @@ $
             </div>
         </div>
 
-        <div style="display: block; max-width: 91.963%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
-            <h3 style="margin: 0; width: auto; height: auto; background-color: #737373; color: #fff; padding: 10px 20px;">TEOREEMA</h3>
-            <p style="display: block; width: auto; height: auto; padding: 20px 20px 20px 20px; margin: 0; background-color: #cccccc;">
-                Jos $\vv \neq \bar{0}$ ja $\vw \neq \bar{0}$, niin 
-                $$
-                \cos (\vv, \vw)=\frac{\vv \cdot \vw}{|\vv||\vw|}.
-                $$
-            </p>
-            <p style="display: block; width: auto; height: auto; padding: 20px 20px 20px 20px; margin-bottom: 1em; margin-top: 0; background-color: #e6e6e6;">
-                Perustelu: Aiemman teoreeman nojalla tiedetään, että 
-                $$\vv \cdot \vw = |\vv||\vw|\cos (\vv, \vw).$$ 
-                Jos $\vv \neq \bar{0}$ ja $\vw \neq \bar{0}$, niin vektoreiden $\vv$ ja $\vw$ pituudet ovat positiivisia. Jakamalla yhtälön molemmat puolet tulolla $|\vv||\vw|$ saadaan
-                $$
-                \cos (\vv, \vw)=\frac{\vv \cdot \vw}{|\vv||\vw|}.
-                $$
-            </p>
-        </div>
 
         <div class="tehtavat">
             <div class="tehtava" id="t-pistetuloKulma3-ex">

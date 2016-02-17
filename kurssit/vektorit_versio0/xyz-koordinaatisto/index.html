@@ -422,7 +422,53 @@ $
         <p>
             <img src="img/vektoreidenKulma.png" max-width: 90%; width: auto; height: auto;/> 
         </p>
-               
+
+        <div class="tehtavat">
+            <div class="tehtava" id="t-kulma-ex">
+                <header>
+                    <h1>
+                        <a data-toggle="collapse" class="collapsed" href="#t-kulma">
+                            Vektoreiden välinen kulma
+                        </a>
+                    </h1>
+                </header>
+
+                <div id="t-kulma" class="collapse">
+                    <p> Tarkastellaan yllä olevan kuvan vektoria $\vv$.
+                    <ol type="a">
+                        <li> Kuinka suuri on vektoreiden $\vv$ ja $2\vv$ välinen kulma? 
+                        <li> Kuinka suuri on vektoreiden $\vv$ ja $-\vv$ välinen kulma?
+                        <li> Jos vektorit ovat samansuuntaiset, mikä niiden välinen kulma on?
+                        <li> Jos vektorit ovat vastakkaissuuntaiset, mikä niiden välinen kulma on?
+                    </ol>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <p>
+            Vektoreiden välinen kulma voidaan laskea Geometria-kurssista tutun kosinilauseen avulla. Kosinilause on Pythagoraan lauseen yleistys. Pythagoraan lause pätee ainoastaan suorakulmaisille kolmioille, mutta kosinilausetta voi käyttää kaikille kolmioille. Kosinilauseen mukaan alla olevan kuvan kolmiossa 
+            $$
+            c^2=a^2+b^2-2ab \cos \gamma.
+            $$
+        </p>
+
+        <p>
+            <img src="img/kosinilause.png" max-width: 90%; width: auto; height: auto;/> 
+        </p>
+
+        <p>
+            Ajattelemalla kolmion sivujen pituudet vektoreiden pituuksina kosinilauseesta saadaan yhtälö
+            $$
+            |\vv-\vw|^2=|\vv|^2+|\vw|^2-2|\vv||\vw| \cos(\vv,\vw).
+            $$
+            Merkintä $\cos(\vv,\vw)$ tarkoittaa vektoreiden $\vv$ ja $\vw$ välisen kulman kosinia.
+        </p>
+
+        <p>
+            <img src="img/vektoreidenKulma2.png" max-width: 90%; width: auto; height: auto;/> 
+        </p>
+
         <p>
             Kosinilauseen ja pistetulon ominaisuuksien avulla saadaan perusteltua seuraava teoreema, joka yhdistää pistetulon ja vektoreiden välisen kulman.
         </p>
@@ -455,6 +501,31 @@ $
                 \vv\cdot\vw = |\vv||\vw| \cos(\vv,\vw).
                 $$
             </p>
+        </div>
+
+        <div class="tehtavat">
+            <div class="tehtava" id="t-pistetuloKulma-ex">
+                <header>
+                    <h1>
+                        <a data-toggle="collapse" class="collapsed" href="#t-pistetuloKulma">
+                            Pistetulo
+                        </a>
+                    </h1>
+                </header>
+
+                <div id="t-pistetuloKulma" class="collapse">
+                    <p>  Vektorin $\va$ pituus on $\left|\va\right| = 3$ ja vektorin $\vb$ pituus on $\left|\vb\right| = 7$. Laske edellisen teoreeman avulla pistetulo $\va \cdot \vb$, jos
+                    <ol type="a">
+                        <li> vektorit $\va$ ja $\vb$ ovat samansuuntaiset.
+                        <li> vektorit $\va$ ja $\vb$ ovat vastakkaissuuntaiset.
+                        <li> vektoreiden $\va$ ja $\vb$ välinen kulma on $45^{\circ}$.
+                        <li> vektoreiden $\va$ ja $\vb$ välinen kulma on $135^{\circ}$.
+                        <li> vektoreiden $\va$ ja $\vb$ välinen kulma on $90^{\circ}$.
+                    </ol>
+                    Selitä omin sanoin, miten vektoreiden välinen kulma liittyy pistetulon etumerkkiin.
+                    </p>
+                </div>
+            </div>
         </div>
 
 
@@ -522,6 +593,48 @@ $
                 \cos (\vv, \vw)=\frac{\vv \cdot \vw}{|\vv||\vw|}.
                 $$
             </p>
+        </div>
+
+        <div class="tehtavat">
+            <div class="tehtava" id="t-pistetuloKulma3-ex">
+                <header>
+                    <h1>
+                        <a data-toggle="collapse" class="collapsed" href="#t-pistetuloKulma3">
+                            Pistetulo ja vektoreiden välinen kulma
+                        </a>
+                    </h1>
+                </header>
+
+                <div id="t-pistetuloKulma3" class="collapse">
+                    <p>  Tarkaste kolmiota $ABC$, missä $\overline{AB}=5\vi-4\vj$ ja $\overline{AC}=9\vi+3\vj$. 
+                    <ol type="a">
+                        <li> Laske kolmion kulmien suuruudet asteen tarkkuudella.
+                        <li> Piirrä kuva kolmiosta $ABC$ ja tarkista, onko vastauksesi järkevä.
+                    </ol>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tehtavat">
+            <div class="tehtava" id="t-pistetuloKulma4-ex">
+                <header>
+                    <h1>
+                        <a data-toggle="collapse" class="collapsed" href="#t-pistetuloKulma4">
+                            Pistetulo ja vektoreiden välinen kulma
+                        </a>
+                    </h1>
+                </header>
+
+                <div id="t-pistetuloKulma4" class="collapse">
+                    <p>  Kolmion $ABC$ kärjet ovat pisteissä $A=(-7,1)$, $B=(4,9)$ ja $C=(-3,-5)$.
+                    <ol type="a">
+                        <li> Laske kolmion kulmien suuruudet asteen tarkkuudella.
+                        <li> Piirrä kuva kolmiosta $ABC$ ja tarkista, onko vastauksesi järkevä.
+                    </ol>
+                    </p>
+                </div>
+            </div>
         </div>
 </section>
 
