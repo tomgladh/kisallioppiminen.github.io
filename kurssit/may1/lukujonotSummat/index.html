@@ -284,167 +284,7 @@ $$
         </div>
     </div>
 
-    <p>
-        Tehtävissä, joissa halutaan selvittää muita kuin rekursiivisen lukujonon alkupään jäseniä, laskimesta on suuri apu. Laskimista löytyy ans-näppäin, joka tarkoittaa aina viimeisintä tulosta. Kyseistä näppäintä voi käyttää rekursiokaavassa alkuehdon paikalla. Tarkastellaan esimerkiksi jonoa 
-        $$
-        \begin{equation*}
-        \left\{
-        \begin{array}{ll}
-        a_1&=2\\
-        a_n&=\dfrac{a_{n-1}+1}{2}, n=2, 3,4,\ldots
-        \end{array}
-        \right.
-        \end{equation*}
-        $$
-
-        Selvitetään jonon 10. jäsen. Käsin se olisi melko hidasta. Syötetään laskimeen aluksi alkuarvo 2 ja painetaan enter. Syötetään tämän jälkeen rekursiokaava niin, että korvataan edeltävä jäsen $a_{n-1}$ ans-näppäimellä. Painetaan tämän jälkeen enter ja saadaan jonon toinen jäsen. Tässä laskin syötti ans-napin kohdalle luvun 2. Kun tämän jälkeen painetaan taas enter, saadaan jonon kolmas jäsen, missä ans-napin paikalle laskin sijoitti jonon toisen jäsenen. Jatketaan enter-napin painamista, kunnes saadaan jonon kymmenes jäsen. Taulukoidaan kaikki aiemmat jäsenet paperille näkyviin.
-    <p>
-
-    <div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
-
-            <header>
-                <h1>
-                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb10">
-                        Rekursiivinen lukujono
-                    </a>
-                </h1>
-            </header>
-            <div id="t-helloweb10" class="collapse">
-
-                Tutki jonoa $(a_n)$, jolle
-                $$
-                \begin{equation*}
-                \left\{
-                \begin{array}{ll}
-                a_1&=3\\
-                a_n&=a_{n-1}+4, n=2,3,\ldots
-                \end{array}
-                \right.
-                \end{equation*}
-                $$
-
-                a) Määritä laskimen avulla taulukoiden lukujonon 9. jäsen.<br>
-                b) Tutki laskimen avulla, kuinka moni jonon jäsenistä on pienempiä kuin luku 100?
-            </div>
-        </div>
-    </div>
-
-    <div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
-
-            <header>
-                <h1>
-                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb11">
-                        Lukujono
-                    </a>
-                </h1>
-            </header>
-            <div id="t-helloweb11" class="collapse">
-
-                Lukujonon $a_1,a_2,a_3,\ldots$ ensimmäinen jäsen on luku 3, kolmas jäsen on luku 27 ja neljäs jäsen luku 81. <br>
-                a) Määritä lukujonon toinen jäsen $a_2$.<br>
-                b) Kerro sääntö, miten jonon jäsenet saadaan lausuttua edellisen jäsenen avulla. Yritä muodostaa myös rekursiokaava.<br>
-                c) Kerro sääntö, miten jonon jäsenet saadaan lausuttua jonon järjestysnumeron $n$ avulla. Yritä muodostaa myös lauseke $a_n$.<br>
-            </div>
-        </div>
-    </div>
-
-    <div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
-
-            <header>
-                <h1>
-                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb12">
-                        Lukujonon jäsenen määrittäminen
-                    </a>
-                </h1>
-            </header>
-            <div id="t-helloweb12" class="collapse">
-
-                Määritä lukujonon kolme ensimmäistä sekä 100. jäsen, jos <br>
-                a) $a_n=\frac{n-1}{n+2}$<br>
-                b) $b_n=n^2+2n$.<br>
-            </div>
-        </div>
-    </div>
-
-    <div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
-
-            <header>
-                <h1>
-                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb13">
-                        Lukujono
-                    </a>
-                </h1>
-            </header>
-            <div id="t-helloweb13" class="collapse">
-
-                Muotoile sääntö kaikille parillisille positiivisille kokonaisluvuille $2,4,6,\ldots$. 
-            </div>
-        </div>
-    </div>
-
-    <div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
-
-            <header>
-                <h1>
-                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb14">
-                        Lukujono
-                    </a>
-                </h1>
-            </header>
-            <div id="t-helloweb14" class="collapse">
-
-                Muotoile sääntö kaikille parittomille positiivisille kokonaisluvuille $1,3,5\ldots$.
-            </div>
-        </div>
-    </div>
-
-    <p>
-        Ajatus: saisiko tällaisten tehtävien avulla esiteltyä kevyesti teoriassa myös lukualueet?
-    </p>
-
-    <div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
-
-            <header>
-                <h1>
-                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb15">
-                        Onko luku lukujonon jäsen?
-                    </a>
-                </h1>
-            </header>
-            <div id="t-helloweb15" class="collapse">
-
-                Tutki jonon lausekkeen avulla tai jollain muulla tavalla, onko lukujonossa $7, 4, 1, -2,\ldots$ jäsen<br>
-                a) luku 2<br>
-                b) -14?<br>
-
-                Jos luku on lukujonon jäsen, kerro mones jäsen.
-            </div>
-        </div>
-    </div>
-
-    <div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
-
-            <header>
-                <h1>
-                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb16">
-                        Rekursiivinen lukujono
-                    </a>
-                </h1>
-            </header>
-            <div id="t-helloweb16" class="collapse">
-                Henkilö aloittaa lenkkeilyharrastuksen. Ensimmäinen lenkki on kilometrin mittainen ja seuraavat lenkit aina 200 metriä pidempi kuin edellinen. <br>
-                a) Kuinka pitkä on henkilön seitsemäs lenkki?<br>
-                b) Kuvaile rekursiivisesti jono $a_1,a_2,\ldots$, missä $a_n$ on n:ntenä päivänä tehdyn lenkin pituus.
-            </div>
-        </div>
-    </div>
+    
 
 <p>
     Kohti aritmeettista lukujonoa.
@@ -589,68 +429,7 @@ Määritä aritmeettisen jonon yleinen jäsen $a_n$, jos jonon ensimmäiset jäs
         </div>
     </div>
     
-<div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
 
-            <header>
-                <h1>
-                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb22">
-                        Lukujono
-                    </a>
-                </h1>
-            </header>
-            <div id="t-helloweb22" class="collapse">		
-Määritä $a_7$ ja $a_{52}$, jos 
-<ol type="a">
-		<li> $a_n=2n-5$
-		<li> $a_n=-\frac{2}{3}n+2$. 
-		
-		</ol>		
-	 </div>
-        </div>
-    </div>
-    
-	<div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
-
-            <header>
-                <h1>
-                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb23">
-                        Aritmeettinen lukujono
-                    </a>
-                </h1>
-            </header>
-            <div id="t-helloweb23" class="collapse">	
-		Mikä on jonon differenssi, jos aritmeettisen jonon yleinen jäsen on 
-		<ol type="a">
-		<li> $a_n=2n-5$
-		<li> $a_n=-\frac{2}{3}n+2$.
-		</ol>
-	 </div>
-        </div>
-    </div>
-    
-		<div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
-
-            <header>
-                <h1>
-                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb24">
-                        Aritmeettinen lukujono
-                    </a>
-                </h1>
-            </header>
-            <div id="t-helloweb24" class="collapse">
-		Tutki, voiko jono olla aritmeettinen, jos jonon peräkkäiset jäsenet ovat
-		<ol type="a">
-		<li> $6,10$ ja $14$
-		<li> $\pi, 3\pi$ ja $5\pi$
-		<li> $3,3$ ja $3$.
-		</ol>
-		Perustele.
-		 </div>
-        </div>
-    </div>
 		<p>
 		Aritmeettista summaa kohti. 
 		</p>
@@ -777,42 +556,7 @@ Määritä $a_7$ ja $a_{52}$, jos
         </div>
     </div>
     
-    	<div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
-
-            <header>
-                <h1>
-                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb31">
-                        Aritmeettinen summa
-                    </a>
-                </h1>
-            </header>
-            <div id="t-helloweb31" class="collapse">
-    Määritä aritmeettisen jonon $a_n=3n+1$ kahdenkymmenen ensimmäisen jäsenen summa.
-    </div>
-        </div>
-    </div>
-    
-    	<div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
-
-            <header>
-                <h1>
-                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb32">
-                        Aritmeettinen summa
-                    </a>
-                </h1>
-            </header>
-            <div id="t-helloweb32" class="collapse">
-    Päättele, kuinka monta aritmeettisen jonon jäsentä pitää vähintään laskea yhteen, jotta summa ylitää 100, jos
-    <ol type="a">
-		<li> aritmeettisen jonon toinen jäsen on 7 ja neljäs 15
-		<li> aritmeettisen jonon yleinen jäsen on $a_n=8n+2$.
-		</ol>
-		Selitä, miten ajattelit.
-    </div>
-        </div>
-    </div>
+    	
     
     
     <p>
@@ -1021,5 +765,286 @@ Tämä päättely ei kuitenkaan toimi aina ja siksi turvallisempi tapa tutkia ky
 		 </div>
         </div>
     </div>
+   <p>
+   	Geometrinen summa. Kaavan johtaminen on ehkä liikaa johdantotehtävätyyppisesti, onko muutenkin tähän teorian sekaan? Pitäisikö olla haastavampien tehtävien kohdalla? Geometrisen summan kaava.
+  Ideana, että voisi mallintaa lopussa joitakin tehtäviä ja ratkaista laskimen avulla.
+   </p>
+
+<div class="tehtavat">
+        <div class="panel">
+            <header>
+                <h1>
+                    <a data-toggle="collapse" class="collapsed" href="#t-tehtavasetti">
+                        TEHTÄVÄSARJA I
+                    </a>
+                </h1>
+            </header>
+            <div id="t-tehtavasetti" class="collapse">
+                <!-- Tästä alkaa piilotus -->
+                
+                <p>
+        Tehtävissä, joissa halutaan selvittää muita kuin rekursiivisen lukujonon alkupään jäseniä, laskimesta on suuri apu. Laskimista löytyy ans-näppäin, joka tarkoittaa aina viimeisintä tulosta. Kyseistä näppäintä voi käyttää rekursiokaavassa alkuehdon paikalla. Tarkastellaan esimerkiksi jonoa 
+        $$
+        \begin{equation*}
+        \left\{
+        \begin{array}{ll}
+        a_1&=2\\
+        a_n&=\dfrac{a_{n-1}+1}{2}, n=2, 3,4,\ldots
+        \end{array}
+        \right.
+        \end{equation*}
+        $$
+
+        Selvitetään jonon 10. jäsen. Käsin se olisi melko hidasta. Syötetään laskimeen aluksi alkuarvo 2 ja painetaan enter. Syötetään tämän jälkeen rekursiokaava niin, että korvataan edeltävä jäsen $a_{n-1}$ ans-näppäimellä. Painetaan tämän jälkeen enter ja saadaan jonon toinen jäsen. Tässä laskin syötti ans-napin kohdalle luvun 2. Kun tämän jälkeen painetaan taas enter, saadaan jonon kolmas jäsen, missä ans-napin paikalle laskin sijoitti jonon toisen jäsenen. Jatketaan enter-napin painamista, kunnes saadaan jonon kymmenes jäsen. Taulukoidaan kaikki aiemmat jäsenet paperille näkyviin.
+    <p>
+
+    <div class="tehtavat">
+        <div class="tehtava" id="t-helloweb-ex">
+
+            <header>
+                <h1>
+                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb10">
+                        Rekursiivinen lukujono
+                    </a>
+                </h1>
+            </header>
+            <div id="t-helloweb10" class="collapse">
+
+                Tutki jonoa $(a_n)$, jolle
+                $$
+                \begin{equation*}
+                \left\{
+                \begin{array}{ll}
+                a_1&=3\\
+                a_n&=a_{n-1}+4, n=2,3,\ldots
+                \end{array}
+                \right.
+                \end{equation*}
+                $$
+
+                a) Määritä laskimen avulla taulukoiden lukujonon 9. jäsen.<br>
+                b) Tutki laskimen avulla, kuinka moni jonon jäsenistä on pienempiä kuin luku 100?
+            </div>
+        </div>
+    </div>
+          
+          
+
+    <div class="tehtavat">
+        <div class="tehtava" id="t-helloweb-ex">
+
+            <header>
+                <h1>
+                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb11">
+                        Lukujono
+                    </a>
+                </h1>
+            </header>
+            <div id="t-helloweb11" class="collapse">
+
+                Lukujonon $a_1,a_2,a_3,\ldots$ ensimmäinen jäsen on luku 3, kolmas jäsen on luku 27 ja neljäs jäsen luku 81. <br>
+                a) Määritä lukujonon toinen jäsen $a_2$.<br>
+                b) Kerro sääntö, miten jonon jäsenet saadaan lausuttua edellisen jäsenen avulla. Yritä muodostaa myös rekursiokaava.<br>
+                c) Kerro sääntö, miten jonon jäsenet saadaan lausuttua jonon järjestysnumeron $n$ avulla. Yritä muodostaa myös lauseke $a_n$.<br>
+            </div>
+        </div>
+    </div>
+
+    <div class="tehtavat">
+        <div class="tehtava" id="t-helloweb-ex">
+
+            <header>
+                <h1>
+                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb12">
+                        Lukujonon jäsenen määrittäminen
+                    </a>
+                </h1>
+            </header>
+            <div id="t-helloweb12" class="collapse">
+
+                Määritä lukujonon kolme ensimmäistä sekä 100. jäsen, jos <br>
+                a) $a_n=\frac{n-1}{n+2}$<br>
+                b) $b_n=n^2+2n$.<br>
+            </div>
+        </div>
+    </div>
+
+    <div class="tehtavat">
+        <div class="tehtava" id="t-helloweb-ex">
+
+            <header>
+                <h1>
+                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb13">
+                        Lukujono
+                    </a>
+                </h1>
+            </header>
+            <div id="t-helloweb13" class="collapse">
+
+                Muotoile sääntö kaikille parillisille positiivisille kokonaisluvuille $2,4,6,\ldots$. 
+            </div>
+        </div>
+    </div>
+
+    <div class="tehtavat">
+        <div class="tehtava" id="t-helloweb-ex">
+
+            <header>
+                <h1>
+                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb14">
+                        Lukujono
+                    </a>
+                </h1>
+            </header>
+            <div id="t-helloweb14" class="collapse">
+
+                Muotoile sääntö kaikille parittomille positiivisille kokonaisluvuille $1,3,5\ldots$.
+            </div>
+        </div>
+    </div>
+
+    <p>
+        Ajatus: saisiko tällaisten tehtävien avulla esiteltyä kevyesti teoriassa myös lukualueet?
+    </p>
+
+    <div class="tehtavat">
+        <div class="tehtava" id="t-helloweb-ex">
+
+            <header>
+                <h1>
+                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb15">
+                        Onko luku lukujonon jäsen?
+                    </a>
+                </h1>
+            </header>
+            <div id="t-helloweb15" class="collapse">
+
+                Tutki jonon lausekkeen avulla tai jollain muulla tavalla, onko lukujonossa $7, 4, 1, -2,\ldots$ jäsen<br>
+                a) luku 2<br>
+                b) -14?<br>
+
+                Jos luku on lukujonon jäsen, kerro mones jäsen.
+            </div>
+        </div>
+    </div>
+
+    <div class="tehtavat">
+        <div class="tehtava" id="t-helloweb-ex">
+
+            <header>
+                <h1>
+                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb16">
+                        Rekursiivinen lukujono
+                    </a>
+                </h1>
+            </header>
+            <div id="t-helloweb16" class="collapse">
+                Henkilö aloittaa lenkkeilyharrastuksen. Ensimmäinen lenkki on kilometrin mittainen ja seuraavat lenkit aina 200 metriä pidempi kuin edellinen. <br>
+                a) Kuinka pitkä on henkilön seitsemäs lenkki?<br>
+                b) Kuvaile rekursiivisesti jono $a_1,a_2,\ldots$, missä $a_n$ on n:ntenä päivänä tehdyn lenkin pituus.
+            </div>
+        </div>
+    </div>       
+
+<div class="tehtavat">
+        <div class="tehtava" id="t-helloweb-ex">
+
+            <header>
+                <h1>
+                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb22">
+                        Lukujono
+                    </a>
+                </h1>
+            </header>
+            <div id="t-helloweb22" class="collapse">		
+Määritä $a_7$ ja $a_{52}$, jos 
+<ol type="a">
+		<li> $a_n=2n-5$
+		<li> $a_n=-\frac{2}{3}n+2$. 
+		
+		</ol>		
+	 </div>
+        </div>
+    </div>
+    
+	<div class="tehtavat">
+        <div class="tehtava" id="t-helloweb-ex">
+
+            <header>
+                <h1>
+                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb23">
+                        Aritmeettinen lukujono
+                    </a>
+                </h1>
+            </header>
+            <div id="t-helloweb23" class="collapse">	
+		Mikä on jonon differenssi, jos aritmeettisen jonon yleinen jäsen on 
+		<ol type="a">
+		<li> $a_n=2n-5$
+		<li> $a_n=-\frac{2}{3}n+2$.
+		</ol>
+	 </div>
+        </div>
+    </div>
+    
+		<div class="tehtavat">
+        <div class="tehtava" id="t-helloweb-ex">
+
+            <header>
+                <h1>
+                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb24">
+                        Aritmeettinen lukujono
+                    </a>
+                </h1>
+            </header>
+            <div id="t-helloweb24" class="collapse">
+		Tutki, voiko jono olla aritmeettinen, jos jonon peräkkäiset jäsenet ovat
+		<ol type="a">
+		<li> $6,10$ ja $14$
+		<li> $\pi, 3\pi$ ja $5\pi$
+		<li> $3,3$ ja $3$.
+		</ol>
+		Perustele.
+		 </div>
+        </div>
+    </div>
+          
+          <div class="tehtavat">
+        <div class="tehtava" id="t-helloweb-ex">
+
+            <header>
+                <h1>
+                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb31">
+                        Aritmeettinen summa
+                    </a>
+                </h1>
+            </header>
+            <div id="t-helloweb31" class="collapse">
+    Määritä aritmeettisen jonon $a_n=3n+1$ kahdenkymmenen ensimmäisen jäsenen summa.
+    </div>
+        </div>
+    </div>
+    
+    	<div class="tehtavat">
+        <div class="tehtava" id="t-helloweb-ex">
+
+            <header>
+                <h1>
+                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb32">
+                        Aritmeettinen summa
+                    </a>
+                </h1>
+            </header>
+            <div id="t-helloweb32" class="collapse">
+    Päättele, kuinka monta aritmeettisen jonon jäsentä pitää vähintään laskea yhteen, jotta summa ylitää 100, jos
+    <ol type="a">
+		<li> aritmeettisen jonon toinen jäsen on 7 ja neljäs 15
+		<li> aritmeettisen jonon yleinen jäsen on $a_n=8n+2$.
+		</ol>
+		Selitä, miten ajattelit.
+    </div>
+        </div>
+    </div>    
     
 </article>
+
