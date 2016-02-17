@@ -20,6 +20,7 @@ $
 \def\vb{\bar{b}}
 \def\vc{\bar{c}}
 \def\pv{\overline}
+\def\R{\mathbb{R}}
 \require{color}
 $
 <article>
@@ -82,7 +83,7 @@ $
         </p>
 
         <p>
-            Esimerkiksi alla olevan kuvan pisteeseen $R$ päästään siirtymällä origosta neljä askelta $x$-akselin positiiviseen suuntaan ja kaksi askelta $y$-akselin positiiviseen suuntaan. Pistettä $R$ merkitään siis $R=(4,2)$. Pistettä $P$ merkitään puolestaan $P=(-3,1)$. 
+            Esimerkiksi alla olevan kuvan pisteeseen $R$ päästään siirtymällä origosta neljä yksikköä $x$-akselin positiiviseen suuntaan ja kaksi yksikköä $y$-akselin positiiviseen suuntaan. Pistettä $R$ merkitään siis $R=(4,2)$. Pistettä $P$ merkitään puolestaan $P=(-3,1)$. 
         </p>
 
         <p>
@@ -149,7 +150,7 @@ $
             on esitetty vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla. 
         </p>
         <p>
-            Kuvasta nähdään, että vektorin $\bar{u}$ alkupisteestä päästään sen loppupisteeseen ottamalla kaksi $x$-akselin suuntaista askelta negatiiviseen suuntaan ja neljä $y$-akselin suuntaista askelta positiiviseen suuntaan. Vektori $\bar{u}$ voidaan siis ilmoittaa vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla muodossa $\bar{u} = -2\bar{\imath} + 4\bar{\jmath}$.
+            Kuvasta nähdään, että vektorin $\bar{u}$ alkupisteestä päästään sen loppupisteeseen siirtymällä kaksi yksikköä $x$-akselin negatiiviseen suuntaan ja neljä yksikköä $y$-akselin positiiviseen suuntaan. Vektori $\bar{u}$ voidaan siis ilmoittaa vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla muodossa $\bar{u} = -2\bar{\imath} + 4\bar{\jmath}$.
         </p>
 
         <p>
@@ -205,12 +206,12 @@ $
         <div class="definition">
             <h3>MÄÄRITELMÄ: VEKTOREIDEN SAMUUS</h3>
             <p>
-                Kaksi vektoria ovat samat, jos ne voidaan esittää samalla tavalla vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla.
+                Kaksi vektoria ovat samat, jos ja vain jos ne voidaan esittää samalla tavalla vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla. Tarkemmin sanottuna vektorit $\vv = x_1\vi + y_1\vj$ ja $\vw = x_2\vi + y_2\vj$ ovat samat eli $\vv = \vw$, jos ja vain jos $x_1 = x_2$ ja $y_1 = y_2$.
             </p>
         </div>
 
         <p>
-            Vektoreiden samuus tarkoittaa siis sitä, että ne ovat saman pituisia ja osoittavat samaan suuntaan &mdash; niiden paikalla koordinaatistossa ei ole merkitystä.
+            Kuten edellisessä tehtävässä huomataan, vektoreiden samuus tarkoittaa siis sitä, että ne ovat saman pituisia ja osoittavat samaan suuntaan &mdash; niiden paikalla koordinaatistossa ei ole merkitystä.
         </p>
 
         <div class="tehtavat">
@@ -782,7 +783,7 @@ $
         <div style="display: block; max-width: 94%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
             <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ: YHDENSUUNTAISUUS</h3>
             <p style="display: block; max-width: 94%; width: auto; height: auto; padding: 20px; margin-bottom: 1em; margin-top: 0; background-color: #f2ffcc;">
-                Vektorit $\vv$ ja $\vw$ ovat yhdensuuntaiset, jos $\vv=r\vw$ jollakin reaaliluvulla $r \neq 0$.
+                Vektorit $\vv$ ja $\vw$ ovat yhdensuuntaiset, jos ja vain jos $\vv=r\vw$ jollakin reaaliluvulla $r \neq 0$.
             </p>
         </div>
 
@@ -794,7 +795,7 @@ $
             &=-2(-2\vi-3\vj) \\
             &=-2\vb.
             \end{align*}
-            Yllä vektorin yhdensuuntaisuus osoitettiin muokkaamalla vektorin $\va$ lauseketta niin, että se saatiin ilmoitettua muodossa jokin luku kertaa vektori $\vb$. Toinen tapa tutkia vektoreiden yhdensuuntaisuutta on muodostaa yhtälö $\va=t\vb$ ja tutkia, löytyykö yhtälölle yksikäsitteistä ratkaisua $t$. Jos yksikäsitteistä ratkaisua ei löydy, niin tällöin vektorit eivät ole yhdensuuntaiset.
+            Yllä vektoreiden yhdensuuntaisuus osoitettiin muokkaamalla vektoria $\va$ niin, että se saatiin ilmoitettua vektorin $\vb$ skalaarimonikertana eli muodossa $t\vb$, missä $t \in \R$. Toinen tapa tutkia vektoreiden yhdensuuntaisuutta on muodostaa yhtälö $\va=t\vb$ ja tutkia, toteutuuko tämä yhtälö jollakin luvulla $t \neq 0$. Jos ratkaisu löytyy, vektorit ovat yhdensuuntaiset. Esimerkiksi edellisessä tilanteessa ratkaisu on $t = -2$. Jos ratkaisua ei löydy, niin vektorit eivät ole yhdensuuntaiset.
         </p>
 
         <div class="tehtavat">
@@ -891,7 +892,7 @@ $
         </div>
 
         <p>
-            Tarkastellaan alla olevan kuvan vektoreiden $\va=2\vi+\vj$ ja $4\va=8\vi+4\vj$ pituuksia. Huomataan, että vektorin $\va$ pituus on
+            Tarkastellaan alla olevan kuvan vektoreiden $\va=2\vi+\vj$ ja $-4\va=-8\vi-4\vj$ pituuksia. Huomataan, että vektorin $\va$ pituus on
             $$
             \begin{align*}
             |\va|&=\sqrt{2^2+1^2} \\
@@ -899,16 +900,17 @@ $
             &=\sqrt{5}
             \end{align*}
             $$
-            ja vektorin $4\va$ pituus on
+            ja vektorin $-4\va$ pituus on
             $$
             \begin{align*}
-            |4\va|&=\sqrt{8^2+4^2} \\
+            |4\va|&=\sqrt{(-8)^2+(-4)^2} \\
             &= \sqrt{64+16} \\
             &=\sqrt{80} \\
             &= \sqrt{16\cdot 5} \\
             &=\sqrt{16} \cdot \sqrt{5} \\
             &=4\sqrt{5} \\
-            &=4\cdot |\va|.
+            &=4\cdot |\va|\\
+            &=|-4|\cdot |\va|..
             \end{align*}
             $$
         </p>
@@ -918,10 +920,16 @@ $
         </p>
 
         <p>
-            Tämä pätee kaikille vektoreille. Vektorin $t\vv$ pituus $|t\vv|$ saadaan kertomalla vektorin $\vv$ pituutta luvun $t$ itseisarvolla. Toisin sanottuna  $$|t\vv|=|t|\cdot |\vv|.$$ 
+            Voidaan näyttää, että tämä pätee kaikille vektoreille: Vektorin $t\vv$ pituus $|t\vv|$ saadaan kertomalla vektorin $\vv$ pituutta luvun $t$ itseisarvolla. Seuraava teoreema perustellaan myöhemmin $xyz$-koordinaatistoa käsittelevässä luvussa.
         </p>
 
-        <b>EDELLINEN ASIA TEOREEMAKSI?</b>
+        <div class="theorem">
+            <h3>TEOREEMA</h3>
+            <p>
+                Kaikilla vektoreilla $\vv$ ja reaaliluvuilla $t$ pätee, että 
+                $$|t\vv|=|t|\cdot |\vv|.$$
+            </p>
+        </div>
 
         <div class="tehtavat">
             <div class="tehtava" id="t-pituus2-ex">
@@ -1005,7 +1013,7 @@ $
         <div style="display: block; max-width: 94%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
             <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ: PISTETULO</h3>
             <p style="display: block; max-width: 94%; width: auto; height: auto; padding: 20px; margin-bottom: 1em; margin-top: 0; background-color: #f2ffcc;">
-                Vektoreiden $\vv=x_1\vi+y_1\vj$ ja $\vw=x_2\vi+y_2\vj$ pistetulo on $\vv \cdot \vw = x_1x_2+y_1y_2$.
+                Vektoreiden $\vv=x_1\vi+y_1\vj$ ja $\vw=x_2\vi+y_2\vj$ pistetulo on $$\vv \cdot \vw = x_1x_2+y_1y_2.$$
             </p>
         </div>
 
