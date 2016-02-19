@@ -306,5 +306,8 @@ article ul {
 }
 
 @media print {
+	.tehtava .collapse {
+		display: block;
+	}
 	
 }
