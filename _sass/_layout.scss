@@ -306,8 +306,8 @@ article ul {
 }
 
 @media print {
-	body {
-		padding: 50px;
+	@page { 
+		margin: 2cm;
 	}
 	
 	body > header, 
@@ -325,7 +325,8 @@ article ul {
 	article .theorem,
 	.tehtava {
 		border: 1px solid black;
-		margin: 20px;
+		margin: 0.5 cm;
+		page-break-inside: avoid;
 	}
 	
 	article .definition h3,
