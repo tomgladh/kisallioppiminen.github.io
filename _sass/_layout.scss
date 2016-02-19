@@ -306,6 +306,10 @@ article ul {
 }
 
 @media print {
+	body {
+		padding: 50px;
+	}
+	
 	body > header, 
 	atop,
 	nav,
