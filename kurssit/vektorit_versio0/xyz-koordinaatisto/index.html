@@ -27,8 +27,7 @@ $
             Tämän luvun tavoitteena on, että tiedät, millaisia $xyz$-koordinaatiston vektorit ovat. Osaat 
         <ul>
         <li> kirjoittaa $xyz$-koordinaatistoon piirretyn vektorin vektoreiden $\vi$, $\vj$ ja $\vk$ avulla 
-        <li> määrittää pisteen paikkavektorin 
-        <li> laskea vektoreiden summan, erotuksen ja pistetulon
+        <li> laskea $xyz$-koordinaatiston vektoreiden summan, erotuksen ja pistetulon
         <li> kertoa vektorin reaaliluvulla ja tiedät, miten se vaikuttaa vektorin pituuteen ja suuntaan
         <li> määrittää kahden pisteen välisen vektorin
         <li> laskea vektorin pituuden
@@ -36,30 +35,71 @@ $
         </ul>
         Tavoitteiden toteutumista pääset arvioimaan luvun lopussa olevan itsearviointitestin avulla.</p>
 
-        <p>Esittele $xyz$-koordinaatisto ja kantavektorit</p>
-
         <p>
-            Alla olevassa kuvassa näkyvät vektorit $\bar{\imath}$ ja $\bar{\jmath}$. Ne ovat koordinaattiakselien suuntaisia ja yhden yksikön pituisia. 
+        Edellisessä luvussa tutustuimme $xy$-koordinaatistoon, jonka avulla voidaan kuvata tason pisteitä ja vektoreita. Kolmiulotteisen avaruuden pisteitä ja vektoreita voidaan kuvata niin sanotun $xyz$-koordinaatiston avulla. Tämä koordinaatisto saadaan $xy$-koordinaatistosta lisäämällä siihen yksi akseli, joka on kohtisuorassa sekä $x$-akselia että $y$-akselia vastaan. Kolmatta akselia sanotaan $z$-akseliksi. 
         </p>
 
         <p>
-            Muut vektorit voidaan esittää vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla. Esimerkiksi alla olevassa kuvassa ... 
+            <img src="img/L2k1.png" max-width: 90%; width: auto; height: auto;/> 
         </p>
 
+        <p>
+        Avaruuden piste $P$ ilmaistaan siis lukukolmikkona $(x,y,z)$, missä ensimmäiset kaksi lukua ilmoittavat pisteen paikan $xy$-tasossa ja kolmas koordinaatti kertoo, missä piste sijaitsee $z$-akselin suunnassa origoon verrattuna. Alla olevassa kuvassa on havainnollistettu $xyz$-koordinaatiston pisteitä $S=(1,0,4)$ ja  $R = (3,2,2)$. 
+        </p>
+
+        <p>
+            <img src="img/L2k2.png" max-width: 90%; width: auto; height: auto;/> 
+        </p>
+
+    <p>
+        Yllä olevasta kuvasta nähdään myös, miten $xyz$-koordinaatisto yleensä piirretään. Katsojaa kohti tuleva akseli piirretään 135 asteen kulmassa oikealle suuntautuvaan akseliin nähden. Lisäksi katsojaa kohti tulevan akselin yksikön pituudeksi valitaan noin puolet muiden akseleiden yksikön pituudesta, jotta vaikutelmasta tulee kolmiulotteinen.
+    </p>
+    <p>
+        Esimerkiksi yllä olevassa kuvassa $x$- ja $y$-akseleiden yksiköksi on valittu kolme ruutua ja $z$-akselin yksikön pituudeksi yhden ruudun lävistäjä eli $\sqrt{2}\approx 1{,}4$ ruutua.
+    </p>
 
         <div class="tehtavat">
-            <div class="tehtava" id="t-vektoreita1-ex">
+            <div class="tehtava" id="t-L2t1-ex">
                 <header>
                     <h1>
-                        <a data-toggle="collapse" class="collapsed" href="#t-vektoreita1">
-                            Vektoreiden esittäminen vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla
+                        <a data-toggle="collapse" class="collapsed" href="#t-L2t1">
+                            $xyz$-koordinaatisto
                         </a>
                     </h1>
                 </header>
 
-                <div id="t-vektoreita1" class="collapse">
+                <div id="t-L2t1" class="collapse">
                     <p>
-                        Ilmoita yllä olevassa kuvassa näkyvät vektorit $\bar{v}$ ja $\bar{w}$ vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla. 
+                        Piirrä kolmiulotteinen koordinaatisto ja merkitse siihen pisteet $A=(3,0,1)$, $B=(-2,1,2)$ ja $C=(2,3,-2)$. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <p>
+            Kolmiulotteisessa koordinaatistossa kaikki vektorit voidaan esittää koordinaattiakselien suuntaisten yksikkövektoreiden avulla samaan tapaan kuin $xy$-tasossa. Erona on, että koordinaattiakselien suuntaisia yksikkövektoreita on nyt kolme: $\vi$, $\vj$ ja $\vk$. Niitä on havainnollistettu alla olevassa kuvassa.
+        </p>
+
+        <p>
+            <img src="img/L2k3.png" max-width: 90%; width: auto; height: auto;/> 
+        </p>
+
+        <div class="tehtavat">
+            <div class="tehtava" id="t-L2t2-ex">
+                <header>
+                    <h1>
+                        <a data-toggle="collapse" class="collapsed" href="#t-L2t2">
+                            Vektoreiden esittäminen vektoreiden $\bar{\imath}$, $\bar{\jmath}$ ja $\vk$ avulla
+                        </a>
+                    </h1>
+                </header>
+
+                <div id="t-L2t2" class="collapse">
+                    <p>
+                        Ilmoita alla olevan kuvan vektori $\bar{v}$ vektoreiden $\bar{\imath}$, $\bar{\jmath}$ ja $\vk$ avulla. 
+                    </p>
+                    <p>
+                    <img src="img/L2k4.png" max-width: 90%; width: auto; height: auto;/> 
                     </p>
                 </div>
             </div>
@@ -68,11 +108,27 @@ $
         <div class="definition">
             <h3>MÄÄRITELMÄ: VEKTOREIDEN SAMUUS</h3>
             <p>
-                Kaksi vektoria ovat samat, jos ne voidaan esittää samalla tavalla vektoreiden $\bar{\imath}$, $\bar{\jmath}$ ja $\vk$ avulla.
+                Kaksi vektoria ovat samat, jos ne voidaan esittää samalla tavalla vektoreiden $\bar{\imath}$, $\bar{\jmath}$ ja $\vk$ avulla. Tarkemmin sanottuna vektorit $\vv = x_1\vi + y_1\vj + z_1\vk$ ja $\vw = x_2\vi + y_2\vj + z_2\vk$ ovat samat eli $\vv = \vw$, jos ja vain jos $x_1 = x_2$ ja $y_1 = y_2$ ja $z_1 = z_2$.
             </p>
         </div>
 
+        <div class="tehtavat">
+            <div class="tehtava" id="t-L2t3-ex">
+                <header>
+                    <h1>
+                        <a data-toggle="collapse" class="collapsed" href="#t-L2t3">
+                            Vektoreiden samuus
+                        </a>
+                    </h1>
+                </header>
 
+                <div id="t-L2t3" class="collapse">
+                    <p>
+                    Tiedetään, että $\vv = -9\vi + (3-a)\vj + 4b\vk$ ja $\vw = 3c\vi - 7\vj - 20\vk$. Etsi sellaiset luvut $a$, $b$ ja $c$, että $\vv = \vw$. Kuinka monella tavalla tällaiset luvut on mahdollista valita?
+                    </p>
+                </div>
+            </div>
+        </div>
 
         <p>
             Esimerkiksi alla olevassa kuvassa oleva vektori $\bar{v}=4\bar{\imath} + 3\bar{\jmath}$ on siis pisteen $(4,3)$ paikkavektori. 
