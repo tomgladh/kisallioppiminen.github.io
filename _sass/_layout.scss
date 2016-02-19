@@ -321,13 +321,15 @@ article ul {
 		display: block;
 	}
 	
-	.definition,
-	.theorem {
+	article .definition,
+	article .theorem,
+	.tehtava {
 		border: 1px solid black;
+		margin: 20px;
 	}
 	
-	.definition h3,
-	.theorem h3 {
+	article .definition h3,
+	article .theorem h3 {
 		color: black;
 	}
 	
