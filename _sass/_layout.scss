@@ -206,7 +206,7 @@ article ul {
 	margin: 10px 0;
 }
 
-@media all and (max-width: 1160px) {
+@media screen and (max-width: 1160px) {
 
 	main {
 		padding-left: 30px;
@@ -221,7 +221,7 @@ article ul {
 	}
 }
 
-@media all and (max-width: 760px) {
+@media screen and (max-width: 760px) {
 
 	main {
 		padding: 0;
@@ -275,7 +275,7 @@ article ul {
 	}
 }
 
-@media all and (max-width: 475px) {
+@media screen and (max-width: 475px) {
 
 	body > header > h1 {
 		display: none;
@@ -303,4 +303,8 @@ article ul {
 		border-radius: 0;
 	}
 
+}
+
+@media print {
+	
 }
