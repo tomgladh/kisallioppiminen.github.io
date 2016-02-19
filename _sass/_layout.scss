@@ -306,8 +306,25 @@ article ul {
 }
 
 @media print {
+	body > header, 
+	atop,
+	nav,
+	aside {
+		display: none;
+	}
+	
 	.tehtava .collapse {
 		display: block;
+	}
+	
+	.definition,
+	.theorem {
+		border: 1px solid black;
+	}
+	
+	.definition h3,
+	.theorem h3 {
+		color: black;
 	}
 	
 }
