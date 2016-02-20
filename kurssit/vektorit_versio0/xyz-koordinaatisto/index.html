@@ -4,21 +4,9 @@ title: MAA4 Vektorit
 main-class: has-atop
 topnav: maa4
 ---
-$
-\def\vi{\bar{\imath}}
-\def\vj{\bar{\jmath}}
-\def\vv{\bar{v}}
-\def\vu{\bar{u}}
-\def\vw{\bar{w}}
-\def\va{\bar{a}}
-\def\vb{\bar{b}}
-\def\vc{\bar{c}}
-\def\vk{\bar{k}}
-\def\pv{\overline}
-\require{color}
-$
+
 <article>
-<section>
+    <section>
         <header>
             <h1>Vektorit ja $xyz$-koordinaatisto</h1>
         </header>
@@ -26,17 +14,17 @@ $
         <p>
             Tämän luvun tavoitteena on, että tiedät, millaisia $xyz$-koordinaatiston vektorit ovat. Osaat 
         <ul>
-        <li> kirjoittaa $xyz$-koordinaatistoon piirretyn vektorin vektoreiden $\vi$, $\vj$ ja $\vk$ avulla 
-        <li> laskea $xyz$-koordinaatiston vektoreiden summan, erotuksen ja pistetulon
-        <li> kertoa vektorin reaaliluvulla ja tiedät, miten se vaikuttaa vektorin pituuteen ja suuntaan
-        <li> määrittää kahden pisteen välisen vektorin
-        <li> laskea vektorin pituuden
-        <li> määrittää vektoreiden välisen kulma pistetulon avulla.
+            <li> kirjoittaa $xyz$-koordinaatistoon piirretyn vektorin vektoreiden $\vi$, $\vj$ ja $\vk$ avulla 
+            <li> laskea $xyz$-koordinaatiston vektoreiden summan, erotuksen ja pistetulon
+            <li> kertoa vektorin reaaliluvulla ja tiedät, miten se vaikuttaa vektorin pituuteen ja suuntaan
+            <li> määrittää kahden pisteen välisen vektorin
+            <li> laskea vektorin pituuden
+            <li> määrittää vektoreiden välisen kulma pistetulon avulla.
         </ul>
         Tavoitteiden toteutumista pääset arvioimaan luvun lopussa olevan itsearviointitestin avulla.</p>
 
         <p>
-        Edellisessä luvussa tutustuimme $xy$-koordinaatistoon, jonka avulla voidaan kuvata tason pisteitä ja vektoreita. Kolmiulotteisen avaruuden pisteitä ja vektoreita voidaan kuvata niin sanotun $xyz$-koordinaatiston avulla. Tämä koordinaatisto saadaan $xy$-koordinaatistosta lisäämällä siihen yksi akseli, joka on kohtisuorassa sekä $x$-akselia että $y$-akselia vastaan. Kolmatta akselia sanotaan $z$-akseliksi. 
+            Edellisessä luvussa tutustuimme $xy$-koordinaatistoon, jonka avulla voidaan kuvata tason pisteitä ja vektoreita. Kolmiulotteisen avaruuden pisteitä ja vektoreita voidaan kuvata niin sanotun $xyz$-koordinaatiston avulla. Tämä koordinaatisto saadaan $xy$-koordinaatistosta lisäämällä siihen yksi akseli, joka on kohtisuorassa sekä $x$-akselia että $y$-akselia vastaan. Kolmatta akselia sanotaan $z$-akseliksi. 
         </p>
 
         <p>
@@ -44,19 +32,19 @@ $
         </p>
 
         <p>
-        Avaruuden piste $P$ ilmaistaan siis lukukolmikkona $(x,y,z)$, missä ensimmäiset kaksi lukua ilmoittavat pisteen paikan $xy$-tasossa ja kolmas koordinaatti kertoo, missä piste sijaitsee $z$-akselin suunnassa origoon verrattuna. Alla olevassa kuvassa on havainnollistettu $xyz$-koordinaatiston pisteitä $S=(1,0,4)$ ja  $R = (3,2,2)$. 
+            Avaruuden piste $P$ ilmaistaan siis lukukolmikkona $(x,y,z)$, missä ensimmäiset kaksi lukua ilmoittavat pisteen paikan $xy$-tasossa ja kolmas koordinaatti kertoo, missä piste sijaitsee $z$-akselin suunnassa origoon verrattuna. Alla olevassa kuvassa on havainnollistettu $xyz$-koordinaatiston pisteitä $S=(1,0,4)$ ja  $R = (3,2,2)$. 
         </p>
 
         <p>
             <img src="img/L2k2.png" max-width: 90%; width: auto; height: auto;/> 
         </p>
 
-    <p>
-        Yllä olevasta kuvasta nähdään myös, miten $xyz$-koordinaatisto yleensä piirretään. Katsojaa kohti tuleva akseli piirretään 135 asteen kulmassa oikealle suuntautuvaan akseliin nähden. Lisäksi katsojaa kohti tulevan akselin yksikön pituudeksi valitaan noin puolet muiden akseleiden yksikön pituudesta, jotta vaikutelmasta tulee kolmiulotteinen.
-    </p>
-    <p>
-        Esimerkiksi yllä olevassa kuvassa $x$- ja $y$-akseleiden yksiköksi on valittu kolme ruutua ja $z$-akselin yksikön pituudeksi yhden ruudun lävistäjä eli $\sqrt{2}\approx 1{,}4$ ruutua.
-    </p>
+        <p>
+            Yllä olevasta kuvasta nähdään myös, miten $xyz$-koordinaatisto yleensä piirretään. Katsojaa kohti tuleva akseli piirretään 135 asteen kulmassa oikealle suuntautuvaan akseliin nähden. Lisäksi katsojaa kohti tulevan akselin yksikön pituudeksi valitaan noin puolet muiden akseleiden yksikön pituudesta, jotta vaikutelmasta tulee kolmiulotteinen.
+        </p>
+        <p>
+            Esimerkiksi yllä olevassa kuvassa $x$- ja $y$-akseleiden yksiköksi on valittu kolme ruutua ja $z$-akselin yksikön pituudeksi yhden ruudun lävistäjä eli $\sqrt{2}\approx 1{,}4$ ruutua.
+        </p>
 
         <div class="tehtavat">
             <div class="tehtava" id="t-L2t1-ex">
@@ -99,7 +87,7 @@ $
                         Ilmoita alla olevan kuvan vektori $\bar{v}$ vektoreiden $\bar{\imath}$, $\bar{\jmath}$ ja $\vk$ avulla. 
                     </p>
                     <p>
-                    <img src="img/L2k4.png" max-width: 90%; width: auto; height: auto;/> 
+                        <img src="img/L2k4.png" max-width: 90%; width: auto; height: auto;/> 
                     </p>
                 </div>
             </div>
@@ -124,7 +112,7 @@ $
 
                 <div id="t-L2t3" class="collapse">
                     <p>
-                    Tiedetään, että $\vv = -9\vi + (3-a)\vj + 4b\vk$ ja $\vw = 3c\vi - 7\vj - 20\vk$. Etsi sellaiset luvut $a$, $b$ ja $c$, että $\vv = \vw$. Kuinka monella tavalla tällaiset luvut on mahdollista valita?
+                        Tiedetään, että $\vv = -9\vi + (3-a)\vj + 4b\vk$ ja $\vw = 3c\vi - 7\vj - 20\vk$. Etsi sellaiset luvut $a$, $b$ ja $c$, että $\vv = \vw$. Kuinka monella tavalla tällaiset luvut on mahdollista valita?
                     </p>
                 </div>
             </div>
@@ -134,15 +122,15 @@ $
             Esimerkiksi alla olevassa kuvassa oleva vektori $\bar{v}=4\bar{\imath} + 3\bar{\jmath}$ on siis pisteen $(4,3)$ paikkavektori. 
         </p>
 
-Nollavektori ja paikkavektori mainintana
+        Nollavektori ja paikkavektori mainintana
 
 
         <p>
             Nollavektori on origon eli pisteen $(0,0,0)$ paikkavektori.
         </p>
-</section>
+    </section>
 
-<section>
+    <section>
         <header>
             <h1>Vektoreiden laskutoimituksia</h1>
         </header>
@@ -174,7 +162,7 @@ Nollavektori ja paikkavektori mainintana
             </div>
         </div>
 
-         <p>Tässä voisi muistuttaa mallikuvien käytöstä.</p>
+        <p>Tässä voisi muistuttaa mallikuvien käytöstä.</p>
 
         <p>
             Summavektorin $\bar{a}+\bar{b}$ voi siis määrittää piirtämällä samaan tapaan kuin yllä olevassa kuvassa: piirretään ensin vektori $\bar{a}$, ja piirretään sitten vektori $\bar{b}$ alkamaan vektorin $\bar{a}$ loppupisteestä. Summavektori $\bar{a}+\bar{b}$ on vektori, joka alkaa vektorin $\bar{a}$ alkupisteestä ja päättyy vektorin $\bar{b}$ loppupisteeseen. 
@@ -281,9 +269,9 @@ Nollavektori ja paikkavektori mainintana
                 </div>
             </div>
         </div>
-</section>
+    </section>
 
-<section>
+    <section>
         <header>
             <h1>Kahden pisteen välinen vektori</h1>
         </header>
@@ -339,9 +327,9 @@ Nollavektori ja paikkavektori mainintana
             </div>
         </div>
 
-</section>
+    </section>
 
-<section>
+    <section>
         <header>
             <h1>Vektorin suunta ja pituus</h1>
         </header>
@@ -358,7 +346,7 @@ Nollavektori ja paikkavektori mainintana
         </p>
 
         Yhtälöryhmät tähän
-        
+
         <div class="tehtavat">
             <div class="tehtava" id="t-vektorinSuunta3-ex">
                 <header>
@@ -399,9 +387,9 @@ Nollavektori ja paikkavektori mainintana
             Koska 2. potenssiin korotus tekee kaikista luvuista epänegatiivisia, voidaan vektorin pituus määritellä seuraavasti:
         </p>
 
-        <div style="display: block; max-width: 94%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
-            <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ: VEKTORIN PITUUS</h3>
-            <p style="display: block; max-width: 94%; width: auto; height: auto; padding: 20px; margin-bottom: 1em; margin-top: 0; background-color: #f2ffcc;">
+        <div  >
+            <h3  >MÄÄRITELMÄ: VEKTORIN PITUUS</h3>
+            <p  >
                 Vektorin $\vv=x\vi+y\vj + z\vk$ pituus on $$|\vv|=\sqrt{x^2+y^2+z^2}.$$
             </p>
         </div>
@@ -414,16 +402,16 @@ Nollavektori ja paikkavektori mainintana
         </p>
 
         <b>EDELLINEN ASIA TEOREEMAKSI?</b>
-</section>
- 
-<section>
+    </section>
+
+    <section>
         <header>
             <h1>Vektoreiden pistetulo ja vektoreiden välinen kulma</h1>
         </header>
 
-        <div style="display: block; max-width: 94%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
-            <h3 style="margin: 0; max-width: 94%; width: auto; height: auto; background-color: #86b300; color: #fff; padding: 10px 20px;">MÄÄRITELMÄ: PISTETULO</h3>
-            <p style="display: block; max-width: 94%; width: auto; height: auto; padding: 20px; margin-bottom: 1em; margin-top: 0; background-color: #f2ffcc;">
+        <div  >
+            <h3  >MÄÄRITELMÄ: PISTETULO</h3>
+            <p  >
                 Vektoreiden $\vv=x_1\vi+y_1\vj + z_1\vk$ ja $\vw=x_2\vi+y_2\vj + z_2\vk$ pistetulo on $\vv \cdot \vw = x_1x_2+y_1y_2 + z_1z_2$.
             </p>
         </div>
@@ -458,9 +446,9 @@ Nollavektori ja paikkavektori mainintana
             Pistetulolla voidaan laskea tavallisten laskusääntöjen mukaan (viittaus $xy$-koordinaatiston juttuun?)
         </p>
 
-        <div style="display: block; max-width: 91.963%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
-            <h3 style="margin: 0; width: auto; height: auto; background-color: #737373; color: #fff; padding: 10px 20px;">TEOREEMA</h3>
-            <p style="display: block; width: auto; height: auto; padding: 20px 20px 20px 20px; margin-bottom: 1em; margin-top: 0; background-color: #cccccc;">
+        <div  >
+            <h3  >TEOREEMA</h3>
+            <p  >
                 Vektorin pistetulo itsensä kanssa on yhtä suuri kuin vektorin pituuden neliö. Toisin sanottuna $\vv \cdot \vv = \left|\vv\right|^2$
             </p>
         </div>
@@ -523,12 +511,12 @@ Nollavektori ja paikkavektori mainintana
             Kosinilauseen ja pistetulon ominaisuuksien avulla saadaan perusteltua seuraava teoreema, joka yhdistää pistetulon ja vektoreiden välisen kulman.
         </p>
 
-        <div style="display: block; max-width: 91.963%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
-            <h3 style="margin: 0; width: auto; height: auto; background-color: #737373; color: #fff; padding: 10px 20px;">TEOREEMA</h3>
-            <p style="display: block; width: auto; height: auto; padding: 20px 20px 20px 20px; margin: 0; background-color: #cccccc;">
+        <div  >
+            <h3  >TEOREEMA</h3>
+            <p  >
                 Vektoreiden $\vv$ ja $\vw$ pistetulolle pätee $\vv \cdot \vw = |\vv||\vw|\cos (\vv, \vw)$.
             </p>
-            <p style="display: block; width: auto; height: auto; padding: 20px 20px 2px 20px; margin-bottom: 1em; margin-top: 0; background-color: #e6e6e6;">
+            <p  >
                 Perustelu: Tiedetään, että vektorin pituuden neliö on aina sama kuin sen pistetulo itsensä kanssa. Tästä saadaan seuraava yhtälöketju:
                 $$
                 \begin{align*}
@@ -579,15 +567,15 @@ Nollavektori ja paikkavektori mainintana
         </div>
 
 
-        <div style="display: block; max-width: 91.963%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
-            <h3 style="margin: 0; width: auto; height: auto; background-color: #737373; color: #fff; padding: 10px 20px;">TEOREEMA</h3>
-            <p style="display: block; width: auto; height: auto; padding: 20px 20px 20px 20px; margin: 0; background-color: #cccccc;">
+        <div  >
+            <h3  >TEOREEMA</h3>
+            <p  >
                 Oletetaan, että $\vv \neq \bar{0}$ ja $\vw \neq \bar{0}$. Vektorit $\vv$ ja $\vw$ ovat toisiaan vastaan kohtisuorassa, jos ja vain jos $\vv \cdot \vw = 0$.
             </p>
-            <p style="display: block; width: auto; height: auto; padding: 20px 20px 5px 20px; margin: 0; background-color: #e6e6e6;">
+            <p  >
                 Perustelu: 
             </p>
-            <ul style="display: block; width: auto; height: auto; padding: 5px 40px 20px 40px; margin-bottom: 1em; margin-top: 0; background-color: #e6e6e6;">
+            <ul  >
                 <li>  Oletetaan, että vektorit $\vv$ ja $\vw$ ovat kohtisuorassa toisiaan vastaan eli $\sphericalangle(\vv,\vw)=90^{\circ}$. Tällöin 
                     \begin{align*}
                     \vv \cdot \vw 
@@ -627,15 +615,15 @@ Nollavektori ja paikkavektori mainintana
             </div>
         </div>
 
-        <div style="display: block; max-width: 91.963%; width: auto; height: auto; margin-bottom: 0; margin-top: 1em;">
-            <h3 style="margin: 0; width: auto; height: auto; background-color: #737373; color: #fff; padding: 10px 20px;">TEOREEMA</h3>
-            <p style="display: block; width: auto; height: auto; padding: 20px 20px 20px 20px; margin: 0; background-color: #cccccc;">
+        <div  >
+            <h3  >TEOREEMA</h3>
+            <p  >
                 Jos $\vv \neq \bar{0}$ ja $\vw \neq \bar{0}$, niin 
                 $$
                 \cos (\vv, \vw)=\frac{\vv \cdot \vw}{|\vv||\vw|}.
                 $$
             </p>
-            <p style="display: block; width: auto; height: auto; padding: 20px 20px 20px 20px; margin-bottom: 1em; margin-top: 0; background-color: #e6e6e6;">
+            <p  >
                 Perustelu: Aiemman teoreeman nojalla tiedetään, että 
                 $$\vv \cdot \vw = |\vv||\vw|\cos (\vv, \vw).$$ 
                 Jos $\vv \neq \bar{0}$ ja $\vw \neq \bar{0}$, niin vektoreiden $\vv$ ja $\vw$ pituudet ovat positiivisia. Jakamalla yhtälön molemmat puolet tulolla $|\vv||\vw|$ saadaan
@@ -686,12 +674,12 @@ Nollavektori ja paikkavektori mainintana
                 </div>
             </div>
         </div>
-</section>
+    </section>
 
-<section>
-    <header>
+    <section>
+        <header>
             <h1>Tehtäviä</h1>
-    </header>
+        </header>
         <div class="tehtavat">
             <div class="panel">
                 <header>
