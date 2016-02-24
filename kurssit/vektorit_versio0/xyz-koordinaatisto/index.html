@@ -286,8 +286,35 @@ topnav: maa4
 
     <section>
         <header>
-            <h1>Vektorin suunta ja pituus</h1>
+            <h1>Vektorin pituus ja suunta</h1>
         </header>
+
+        <p>
+            Vektorin pituus saadaan myös $xyz$-koordinaatistossa laskettua Pythagoraan lauseen avulla, mutta sitä täytyy soveltaa useamman kerran. SELITYSTÄ JA KUVA 
+        </p>
+        <p>
+            <img src="img/vektorinPituus.png" max-width: 90%; width: auto; height: auto;/> 
+        </p>
+
+        <p>
+            Koska 2. potenssiin korotus tekee kaikista luvuista epänegatiivisia, voidaan vektorin pituus määritellä seuraavasti:
+        </p>
+
+        <div class="definition">
+            <h3>MÄÄRITELMÄ: VEKTORIN PITUUS</h3>
+            <p>
+                Vektorin $\vv=x\vi+y\vj + z\vk$ pituus on $$|\vv|=\sqrt{x^2+y^2+z^2}.$$
+            </p>
+        </div>
+
+
+        <b>TÄHÄN TEHTÄVÄ, JOSSA PITÄÄ LASKEA VEKTORIN PITUUS</b>
+
+        <p>
+            Tämä pätee kaikille vektoreille. Vektorin $t\vv$ pituus $|t\vv|$ saadaan kertomalla vektorin $\vv$ pituutta luvun $t$ itseisarvolla. Toisin sanottuna  $$|t\vv|=|t|\cdot |\vv|.$$ 
+        </p>
+
+        <b>EDELLINEN ASIA TEOREEMAKSI?</b>
 
         <p>
             Esimerkiksi vektorit $\va=4\vi+6\vj$ ja $\vb=-2\vi-3\vj$ ovat yhdensuuntaiset, sillä 
@@ -299,8 +326,6 @@ topnav: maa4
             \end{align*}
             Yllä vektorin yhdensuuntaisuus osoitettiin muokkaamalla vektorin $\va$ lauseketta niin, että se saatiin ilmoitettua muodossa jokin luku kertaa vektori $\vb$. Toinen tapa tutkia vektoreiden yhdensuuntaisuutta on muodostaa yhtälö $\va=t\vb$ ja tutkia, löytyykö yhtälölle yksikäsitteistä ratkaisua $t$. Jos yksikäsitteistä ratkaisua ei löydy, niin tällöin vektorit eivät ole yhdensuuntaiset.
         </p>
-
-        Yhtälöryhmät tähän
 
         <div class="tehtavat">
             <div class="tehtava" id="t-vektorinSuunta3-ex">
@@ -323,50 +348,23 @@ topnav: maa4
                 </div>
             </div>
         </div>
-
-        <p>
-            Vektorin pituus saadaan laskettua Pythagoraan lauseen avulla. Esimerkiksi alla olevassa kuvassa vektorin $\va$ pituus $\left|\va\right|$ saadaan yhtälöstä
-            $$
-            \left|\va\right|^2 = 2^2 + 3^2.
-            $$
-            Vektorin $\va$ pituudeksi saadaan siis 
-            $$
-            \left|\va\right| = \sqrt{2^2 + 3^2}=\sqrt{4+9}=\sqrt{13} \approx 3{,}6.
-            $$
-        </p>
-        <p>
-            <img src="img/vektorinPituus.png" max-width: 90%; width: auto; height: auto;/> 
-        </p>
-
-        <p>
-            Koska 2. potenssiin korotus tekee kaikista luvuista epänegatiivisia, voidaan vektorin pituus määritellä seuraavasti:
-        </p>
-
-        <div  >
-            <h3  >MÄÄRITELMÄ: VEKTORIN PITUUS</h3>
-            <p  >
-                Vektorin $\vv=x\vi+y\vj + z\vk$ pituus on $$|\vv|=\sqrt{x^2+y^2+z^2}.$$
-            </p>
-        </div>
-
-
-        <b>TÄHÄN TEHTÄVÄ, JOSSA PITÄÄ LASKEA VEKTORIN PITUUS</b>
-
-        <p>
-            Tämä pätee kaikille vektoreille. Vektorin $t\vv$ pituus $|t\vv|$ saadaan kertomalla vektorin $\vv$ pituutta luvun $t$ itseisarvolla. Toisin sanottuna  $$|t\vv|=|t|\cdot |\vv|.$$ 
-        </p>
-
-        <b>EDELLINEN ASIA TEOREEMAKSI?</b>
     </section>
 
+    <section>
+        <header>
+            <h1>Yhtälöryhmän ratkaiseminen</h1>
+        </header>
+
+    </section>
+    
     <section>
         <header>
             <h1>Vektoreiden pistetulo ja vektoreiden välinen kulma</h1>
         </header>
 
-        <div  >
-            <h3  >MÄÄRITELMÄ: PISTETULO</h3>
-            <p  >
+        <div class="definition">
+            <h3>MÄÄRITELMÄ: PISTETULO</h3>
+            <p>
                 Vektoreiden $\vv=x_1\vi+y_1\vj + z_1\vk$ ja $\vw=x_2\vi+y_2\vj + z_2\vk$ pistetulo on $\vv \cdot \vw = x_1x_2+y_1y_2 + z_1z_2$.
             </p>
         </div>
