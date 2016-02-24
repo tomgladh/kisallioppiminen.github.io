@@ -28,8 +28,15 @@ topnav: maa4
             <img src="img/L2k1.png" max-width: 90%; width: auto; height: auto;/> 
         </p>
 
+        <p> Yllä olevassa kuvassa $z$-akseli suuntautuu kohti katsojaa. Kolmiulotteista koordinaatistoa voidaan katsoa muistakin suunnista, jolloin esimerkiksi $x$-akseli saattaa suuntautua kohti katsojaa, kuten alla olevassa kuvassa. Koordinaattiakselien keskinäiset suunnat pysyvät kuitenkin samoina. Niitä voidaan havainnollistaa oikean käden sormien avulla: peukalo vastaa $x$-akselia, etusormi $y$-akselia ja keskisormi $z$-akselia.
+        </p>
+
         <p>
-            Avaruuden piste $P$ ilmaistaan siis lukukolmikkona $(x,y,z)$, missä ensimmäiset kaksi lukua ilmoittavat pisteen paikan $xy$-tasossa ja kolmas koordinaatti kertoo, missä piste sijaitsee $z$-akselin suunnassa origoon verrattuna. Alla olevassa kuvassa on havainnollistettu $xyz$-koordinaatiston pisteitä $S=(1,0,4)$ ja  $R = (3,2,2)$. 
+            <img src="img/L2k05.png" max-width: 90%; width: auto; height: auto;/> 
+        </p>
+
+        <p>
+            Avaruuden piste $P$ ilmaistaan lukukolmikkona $(x,y,z)$, missä ensimmäiset kaksi lukua ilmoittavat pisteen paikan $x$- ja $y$-akseleiden suhteen ja kolmas koordinaatti kertoo, missä piste sijaitsee $z$-akselin suunnassa origoon verrattuna. Alla olevassa kuvassa on havainnollistettu $xyz$-koordinaatiston pisteitä $S=(1,0,4)$ ja  $R = (3,2,2)$. 
         </p>
 
         <p>
@@ -115,15 +122,32 @@ topnav: maa4
             </div>
         </div>
 
-        <p>
-            Esimerkiksi alla olevassa kuvassa oleva vektori $\bar{v}=4\bar{\imath} + 3\bar{\jmath}$ on siis pisteen $(4,3)$ paikkavektori. 
+        <p>Pisteen $P = (x,yz)$ paikkavektori määritellään kolmiulotteisessa koordinaatistossa samaan tapaan kuin $xy$-tasossa: pisteen $P = (x,yz)$ paikkavektorin alkupiste on origo ja loppupiste on $P$. 
         </p>
 
-        Nollavektori ja paikkavektori mainintana
+        <div class="tehtavat">
+            <div class="tehtava" id="t-L2t4-ex">
+                <header>
+                    <h1>
+                        <a data-toggle="collapse" class="collapsed" href="#t-L2t4">
+                            Paikkavektori
+                        </a>
+                    </h1>
+                </header>
 
-
+                <div id="t-L2t4" class="collapse">
+                    <p>
+                        Ilmaise alla olevan kuvan vektori $\vv$ vektoreiden $\vi$, $\vj$ ja $\vk$ avulla. Minkä pisteen paikkavektori se on?
+                    </p>
+                    <p>
+                        <img src="img/L2k06.png" max-width: 90%; width: auto; height: auto;/> 
+                    </p>
+                </div>
+            </div>
+        </div>
+ 
         <p>
-            Nollavektori on origon eli pisteen $(0,0,0)$ paikkavektori.
+            Kolmiulotteisessa koordinaatistossa nollavektori tarkoittaa vektoria $\bar{0} = 0\vi + 0\vj + 0\vk$. Se on origon eli pisteen $O = (0,0,0) paikkavektori.
         </p>
     </section>
 
@@ -133,36 +157,47 @@ topnav: maa4
         </header>
 
         <p>
-            Seuraavaksi sovitaan, miten lasketaan minkä tahansa vektoreiden summa. Se tehdään laskemalla vektorit komponenteittain yhteen.
+            Vektoreiden summa ja erotus lasketaan $xyz$-koordinaatistossa samaan tapaan kuin $xy$-koordinaatistossa eli komponenteittain. Esimerkiksi vektoreiden $\vv = 2\vi - 5\vj + 3\vk$ ja $\vw = -7\vi + 9\vj + 8\vk$ summa on $\vv + \vw = (2-7)\vi + (-5+9)\vj + (3+8)\vk = -5\vi + 4\vj + 11\vk$ ja erotus on $\vv - \vw = (2-(-7))\vi + (-5-9)\vj + (3-8)\vk = 9\vi - 14\vj - 5\vk$.
         </p>
-
 
         <div class="tehtavat">
             <div class="tehtava" id="t-summa1-ex">
                 <header>
                     <h1>
                         <a data-toggle="collapse" class="collapsed" href="#t-summa1">
-                            Vektoreiden summa
+                            Vektoreiden summa ja erotus
                         </a>
                     </h1>
                 </header>
 
                 <div id="t-summa1" class="collapse">
-                    <p> Tutki vektoreita $\bar{v}=-3\bar{\imath}-4\bar{\jmath}$, $\bar{w}=9\bar{\imath}-5\bar{\jmath}$ ja $\bar{u}=-2\bar{\imath}+7\bar{\jmath}$. Laske seuraavat summat:
+                    <p> Tutki vektoreita $\bar{v}= 3\bar{\imath}-4\bar{\jmath} + 7\vk$, $\bar{w}=9\bar{\imath}-5\vk$ ja $\bar{u}=-2\vj+6\vk$. Laske seuraavat vektorit:
                     <ol type="a">
                         <li> $\bar{v}+\bar{w}$  
                         <li> $\bar{w}+\bar{u}$
-                        <li> $\bar{v}+\bar{u}$.
+                        <li> $\bar{v}-\bar{w}$
+                        <li> $\bar{u}-\bar{v}$.
                     </ol>
                     </p>
                 </div>
             </div>
         </div>
 
-        <p>Tässä voisi muistuttaa mallikuvien käytöstä.</p>
-
         <p>
-            Summavektorin $\bar{a}+\bar{b}$ voi siis määrittää piirtämällä samaan tapaan kuin yllä olevassa kuvassa: piirretään ensin vektori $\bar{a}$, ja piirretään sitten vektori $\bar{b}$ alkamaan vektorin $\bar{a}$ loppupisteestä. Summavektori $\bar{a}+\bar{b}$ on vektori, joka alkaa vektorin $\bar{a}$ alkupisteestä ja päättyy vektorin $\bar{b}$ loppupisteeseen. 
+            Summan ja erotuksen määrittäminen piirtämällä on $xyz$-koordinaatistossa paljon hankalampaa kuin $xy$-koordinaatistossa, koska tarkkojen kolmiulotteisten kuvien piirtäminen on usein vaikeaa. Summaa ja erotusta voidaan kuitenkin havainnollistaa mallikuvilla. Summavektori saadaan muodotettua laittamalla yhteenlaskettavat vektorit peräkkäin ja piirtämällä vektori ensimmäisen yhteenlaskettavan alkupisteestä viimeisen yhteenlaskettavan loppupisteeseen. Tätä on havainnollistettu alla olevassa kuvassa.
+        </p>
+        <p>
+        <img src="img/L2k07.png" max-width: 90%; width: auto; height: auto;/> 
+        </p>
+        <p> Erotusvektori $\vv - \vw$ saadaan muodostettua laittamalla peräkkäin vektorit $\vv$ ja $-\vw$ kuten alla olevassa kuvassa.
+        </p>
+        <p>
+        <img src="img/L2k08.png" max-width: 90%; width: auto; height: auto;/> 
+        </p>
+        <p> Toinen vaihtoehto erotusvektorin $\vv - \vw$ muodostamiseen on etsiä reitti, jossa kuljetaan vektorit $-\vw$ ja $\vv$ peräkkäin, kuten alla olevassa kuvassa.
+        </p>
+        <p>
+        <img src="img/L2k09.png" max-width: 90%; width: auto; height: auto;/> 
         </p>
 
         <div class="tehtavat">
@@ -170,19 +205,17 @@ topnav: maa4
                 <header>
                     <h1>
                         <a data-toggle="collapse" class="collapsed" href="#t-summa2">
-                            Vektoreiden summa
+                            Vektoreiden summa ja erotus
                         </a>
                     </h1>
                 </header>
 
                 <div id="t-summa2" class="collapse">
-                    <p> Tutki vektoreita $\bar{v}=2\bar{\imath}+2\bar{\jmath}$ ja $\bar{w}=\bar{\imath}+3\bar{\jmath}$.
+                    <p> Tiedetään, että $A= (1,5,-3)$ ja $\pv{AB} = -4\vi-7\vj + 15 \vk$. 
                     <ol type="a">
-                        <li> Piirrä vektori $\bar{v}$ koordinaatistoon. 
-                        <li> Piirrä vektori $\bar{w}$ koordinaatistoon siten, että se alkaa vektorin $\bar{v}$ loppupisteestä.
-                        <li> Laske summa $\bar{v}+\bar{w}$.
-                        <li> Piirrä summavektori $\bar{v}+\bar{w}$ koordinaatistoon siten, että se alkaa vektorin $\bar{v}$ alkupisteestä. 
-                        <li> Kerro omin sanoin, mitä havaitset edellisistä kohdista.
+                        <li> Muodosta pisteen $A$ paikkavektori.
+                        <li> Määritä pisteen $B$ paikkavektori $\pv{OB}$ ja piste $B$. Havainnollista ratkaisuasi mallikuvan avulla.
+                        <li> Selitä omin sanoin, miten paikkavektorin $\vp{OA}$ muodostaminen auttoi b-kohdan ratkaisemista.
                     </ol>
                     </p>
                 </div>
