@@ -214,6 +214,10 @@ topnav: maa4
         <p>
         <img src="img/L2k09.png" max-width: 90%; width: auto; height: auto;/> 
         </p>
+        <p>
+            Tätä ideaa voidaan hyödyntää kahden pisteen välisen vektorin määrittämisessä samaan tapaan kuin $xy$-koordinaatistossa. Alla olevasta kuvasta voidaan päätellä, että vektori $\pv{AB}$ saadaan vähentämällä loppupisteen paikkavektorista $\pv{OB}$ alkupisteen paikkavektori $\pv{OA}$ eli 
+            $$\pv{AB} = \pv{OB} - \pv{OA}.$$
+        </p>
 
         <div class="tehtavat">
             <div class="tehtava" id="t-summa2-ex">
@@ -246,6 +250,12 @@ topnav: maa4
         $$
         </p>
 
+        <p> Alla olevassa kuvassa piste $P$ jakaa janan $AB$ suhteessa $1:3$. Jana $AB$ muodostuu siis neljästä yhtä pitkästä osasta. Jana $AP$ on yhden osan mittainen ja jana $PB$ on kolmen osan mittainen. Tätä tietoa voidaan hyödyntää esimerkiksi pisteen $P$ paikkavektorin määrittämisessä. Sitä harjoitellaan seuraavassa tehtävässä.
+        </p>
+        <p>
+        <img src="img/L2k10.png" max-width: 90%; width: auto; height: auto;/> 
+        </p>
+
         <div class="tehtavat">
             <div class="tehtava" id="t-skalaarikerto1-ex">
                 <header>
@@ -257,129 +267,18 @@ topnav: maa4
                 </header>
 
                 <div id="t-skalaarikerto1" class="collapse">
-                    <p> Tutki vektoria $\va=-\vi+2\vj$.
+                    <p> Tiedetään, että $A = (1,-1,0)$ ja $B = (5,7,8)$. Tiedetään lisäksi, että piste $P$ jakaa janan $AB$ suhteessa $1:3$ kuten yllä olevassa kuvassa. Piirrä tilanteesta mallikuva ja havainnollista ratkaisusi vaiheita sen avulla.
                     <ol type="a">
-                        <li> Ilmoita vektorit $2\va$, $3\va$ ja $-1\va$ vektoreiden $\vi$ ja $\vj$ avulla.
-                        <li> Piirrä vektorit $2\va$, $3\va$ ja $-1\va$ koordinaatistoon.
-                        <li> Selitä omin sanoin, miten reaaliluvulla kertominen vaikuttaa vektoriin.
+                        <li> Määritä paikkavektorit $\pv{OA}$ ja $\pv{OB}$.
+                        <li> Muodosta vektori $\pv{AB}$.
+                        <li> Ilmaise vektori $\pv{AP}$ vektorin $\pv{AB}$ avulla.
+                        <li> Määritä paikkavektori $\pv{OP}$.
+                        <li> Mitkä ovat pisteen $P$ koordinaatit?
                     </ol>
                     </p>
                 </div>
             </div>
         </div>
-
-        <div class="tehtavat">
-            <div class="tehtava" id="t-skalaarikerto2-ex">
-                <header>
-                    <h1>
-                        <a data-toggle="collapse" class="collapsed" href="#t-skalaarikerto2">
-                            Vektorin kertominen reaaliluvulla
-                        </a>
-                    </h1>
-                </header>
-
-                <div id="t-skalaarikerto2" class="collapse">
-                    <p> 
-                    <ol type="a">
-                        <li> Piirrä koordinaatistoon vektorit $\va=\vi+2\vj$ ja $\vb=2\vi+4\vj$.
-                        <li> Miten voisit ilmaista vektorin $\vb$ vektorin $\va$ avulla?
-                    </ol>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <p>
-            Palautetaan mieleen, että summan $\bar{v}+\bar{w}$ voi  määrittää piirtämällä seuraavasti: piirretään ensin vektori $\bar{v}$, ja piirretään sitten vektori $\bar{w}$ alkamaan vektorin $\bar{v}$ loppupisteestä. Summa $\bar{v}+\bar{w}$ on vektori, joka alkaa vektorin $\bar{v}$ alkupisteestä ja päättyy vektorin $\bar{w}$ loppupisteeseen. Tätä on havainnollistettu alla olevassa kuvassa.
-        </p>
-
-        <p>
-            Erotuksen $\bar{v}-\bar{w}$ voi määrittää piirtämällä samaan tapaan vektoreiden $\vv$ ja $-\vw$ avulla. Piirretään ensin vektori $\bar{v}$, ja piirretään sitten vastavektori $-\bar{w}$ alkamaan vektorin $\bar{v}$ loppupisteestä. Erotus $\bar{v}-\bar{w}$ on vektori, joka alkaa vektorin $\bar{v}$ alkupisteestä ja päättyy vektorin $-\bar{w}$ loppupisteeseen.
-        </p>
-
-        <p>
-            <img src="img/summaJaErotus.png" max-width: 90%; width: auto; height: auto;/> 
-        </p>
-
-        <div class="tehtavat">
-            <div class="tehtava" id="t-erotus-ex">
-                <header>
-                    <h1>
-                        <a data-toggle="collapse" class="collapsed" href="#t-erotus">
-                            Vektoreiden erotus
-                        </a>
-                    </h1>
-                </header>
-
-                <div id="t-erotus" class="collapse">
-                    <p> Tutki vektoreita $\va=-3\vi+4\vj$ ja $\vb=5\vi+2\vj$.
-                    <ol type="a">
-                        <li> Laske erotus $\va-\vb$.
-                        <li> Määritä erotus $\va-\vb$ piirtämällä vektoreiden $\va$ ja $-\vb$ avulla.
-                        <li> Vertaa a- ja b-kohtien tuloksia. Ovatko ne ristiriidassa keskenään?
-                    </ol>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <header>
-            <h1>Kahden pisteen välinen vektori</h1>
-        </header>
-        TÄTÄ PITÄÄ VIILATA
-        <p>
-            Vektoria pisteestä $A$ pisteeseen $B$ merkitään $\overline{AB}$. Alla olevassa kuvassa on näkyvissä vektori $\pv{AB} = 4\vi + 2\vj$. 
-        </p>
-
-        <p>
-            <img src="img/vektoriAB.png" max-width: 90%; width: auto; height: auto;/> 
-        </p>
-
-        <div class="tehtavat">
-            <div class="tehtava" id="t-pisteidenValinen1-ex">
-                <header>
-                    <h1>
-                        <a data-toggle="collapse" class="collapsed" href="#t-pisteidenValinen1">
-                            Kahden pisteen välinen vektori 
-                        </a>
-                    </h1>
-                </header>
-
-                <div id="t-pisteidenValinen1" class="collapse">
-                    <p> Tarkastele yllä olevaa kuvaa.
-                    <ol type="a">
-                        <li> Muodosta pisteiden $A$ ja $B$ paikkavektorit $\pv{OA}$ ja $\pv{OB}$. 
-                        <li> Millä laskutoimituksella saat niistä muodotettua vektorin $\pv{AB} = 4\vi + 2\vj$?
-                    </ol>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="tehtavat">
-            <div class="tehtava" id="t-pisteidenValinen-ex">
-                <header>
-                    <h1>
-                        <a data-toggle="collapse" class="collapsed" href="#t-pisteidenValinen">
-                            Kahden pisteen välinen vektori 
-                        </a>
-                    </h1>
-                </header>
-
-                <div id="t-pisteidenValinen" class="collapse">
-                    <p>
-                    <ol type="a">
-                        <li> Piirrä koordinaatisto ja valitse sen ensimmäiseltä neljännekseltä kaksi pistettä. Merkitse näitä pisteitä kirjaimilla $P$ ja $Q$. Merkitse myös pisteiden koordinaatit näkyviin. 
-                        <li> Piirrä vektori $\overline{PQ}$.  
-                        <li> Ilmoita vektori $\overline{PQ}$ vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla.
-                    </ol>
-                    </p>
-                </div>
-            </div>
-        </div>
-
     </section>
 
     <section>
