@@ -308,6 +308,7 @@ article ul {
 @media print {
 	@page { 
 		margin: 2cm;
+		 size: letter;
 	}
 	
 	body > header, 
@@ -315,6 +316,10 @@ article ul {
 	nav,
 	aside {
 		display: none;
+	}
+	
+	body {
+		font-size: 0.9em;
 	}
 	
 	.tehtava .collapse,
