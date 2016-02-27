@@ -319,9 +319,9 @@ article ul {
 		display: none;
 	}
 	
-	body {
-		font-size: 0.9em;
-	}
+	.tehtava>header a[data-toggle="collapse"].collapsed:after, .panel>header a[data-toggle="collapse"].collapsed:after {
+                content: none;
+        }
 	
 	.tehtava .collapse,
 	.panel .collapse {
