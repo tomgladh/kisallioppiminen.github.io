@@ -299,7 +299,7 @@ topnav: maa4
         </p>
         <p>
             Särmiön pohjan lävistäjän $c$ ja särmiön korkeuden $h$ avulla saadaan selville vektorin $\vv$ pituus, kun Pythagoraan lausetta sovelletaan alla olevassa kuvassa näkyvään suorakulmaiseen kolmioon. Pythagoraan lauseen mukaan
-            $$|\vv|^2 = c^2 + h^2$$.
+            $$|\vv|^2 = c^2 + h^2.$$
             Edellä todettiin, että $c^2 = a^2 + b^2$, joten saadaan yhtälö
             $$|\vv|^2 = a^2 + b^2 + h^2.$$
             Tässä tapauksessa $|\vv|^2 = 2^2 + 3^2 + 2^2 = 17$, joten $|\vv| = \sqrt{17}$.
@@ -309,7 +309,7 @@ topnav: maa4
         </p>
 
         <p>
-            Koska 2. potenssiin korotus tekee kaikista luvuista epänegatiivisia, voidaan vektorin pituus määritellä seuraavasti:
+            Koska toiseen potenssiin korotus tekee kaikista luvuista epänegatiivisia, voidaan vektorin pituus määritellä seuraavasti:
         </p>
 
         <div class="definition">
@@ -319,14 +319,68 @@ topnav: maa4
             </p>
         </div>
 
+        <div class="tehtavat">
+            <div class="tehtava" id="t-pituus1-ex">
+                <header>
+                    <h1>
+                        <a data-toggle="collapse" class="collapsed" href="#t-pituus1">
+                            Vektorin pituus
+                        </a>
+                    </h1>
+                </header>
 
-        <b>TÄHÄN TEHTÄVÄ, JOSSA PITÄÄ LASKEA VEKTORIN PITUUS</b>
+                <div id="t-pituus1" class="collapse">
+                    <p> Piirrä pisteen $A = (4,1,3)$ paikkavektori suorakulmaisen särmiön avaruuslävistäjänä ja laske paikkavektorin pituus.
+                    </p>
+                </div>
+            </div>
+        </div>
 
-        <p>
-            Tämä pätee kaikille vektoreille. Vektorin $t\vv$ pituus $|t\vv|$ saadaan kertomalla vektorin $\vv$ pituutta luvun $t$ itseisarvolla. Toisin sanottuna  $$|t\vv|=|t|\cdot |\vv|.$$ 
-        </p>
+        <div class="tehtavat">
+            <div class="tehtava" id="t-pituus2-ex">
+                <header>
+                    <h1>
+                        <a data-toggle="collapse" class="collapsed" href="#t-pituus2">
+                            Vektorin pituus
+                        </a>
+                    </h1>
+                </header>
 
-        <b>EDELLINEN ASIA TEOREEMAKSI?</b>
+                <div id="t-pituus2" class="collapse">
+                    <p> Tarkastele vektoria $\vv = 2\vi-6\vj-3\vk$. 
+                         <ol type="a">
+                        <li> Laske vektorin $\vv$ pituus $|\vv|$.
+                        <li> Muodosta vektori $\vw = -5\vv$.
+                        <li> Laske vektorin $\vw$ pituus $|\vw|$.
+                        <li> Millä luvulla pituutta $|\vv|$ pitäisi kertoa, jotta se olisi sama kuin vektorin $\vw$ pituus?
+                    </ol>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="theorem">
+            <h3>TEOREEMA</h3>
+            <p>
+                Kaikilla vektoreilla $\vv$ ja reaaliluvuilla $t$ pätee, että 
+                $$|t\vv|=|t|\cdot |\vv|.$$
+            </p>
+             <div class="proof">
+                <p>
+                    Perustelu: Tarkastellaan vektoria $\vv = x\vi + y\vj + z\vk$ ja reaalilukua $t$. Vektorin $\vv$ pituus on 
+                    $$|\vv|=\sqrt{x^2+y^2+z^2}.$$
+                    Vektorin $t\vv = tx\vi + ty\vj + tz\vk$ pituus on puolestaan
+                    $$\begin{align*}
+                    |\vv| &=\sqrt{(tx)^2+(ty)^2+(tz)^2} \\
+                    &=\sqrt{t^2x^2+t^2y^2+t^2z^2} \\
+                    &=\sqrt{t^2(x^2+y^2+z^2)} \\
+                    &=\sqrt{t^2}\sqrt{(x^2+y^2+z^2)} 
+                    &=|t|\sqrt{(x^2+y^2+z^2)}\\
+                    &=|t|\cdot |\vv|.
+                    \end{align*}$$
+                </p>
+             </div>
+        </div>
 
         <p>
             Esimerkiksi vektorit $\va=4\vi+6\vj$ ja $\vb=-2\vi-3\vj$ ovat yhdensuuntaiset, sillä 
