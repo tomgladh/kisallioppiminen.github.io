@@ -371,49 +371,84 @@ topnav: maa4
                     $$|\vv|=\sqrt{x^2+y^2+z^2}.$$
                     Vektorin $t\vv = tx\vi + ty\vj + tz\vk$ pituus on puolestaan
                     $$\begin{align*}
-                    |\vv| &=\sqrt{(tx)^2+(ty)^2+(tz)^2} \\
+                    |t\vv| &=\sqrt{(tx)^2+(ty)^2+(tz)^2} \\
                     &=\sqrt{t^2x^2+t^2y^2+t^2z^2} \\
                     &=\sqrt{t^2(x^2+y^2+z^2)} \\
                     &=\sqrt{t^2}\sqrt{(x^2+y^2+z^2)} 
-                    &=|t|\sqrt{(x^2+y^2+z^2)}\\
-                    &=|t|\cdot |\vv|.
+                    &=|t|\sqrt{(x^2+y^2+z^2)}.
                     \end{align*}$$
+                    Huomataan, että tämä on sama kuin vektorin $\vv$ pituus kerrottuna luvun $t$ itseisarvolla. Siis 
+                    $$|t\vv|=|t|\cdot |\vv|.$$
                 </p>
              </div>
         </div>
 
-        <p>
-            Esimerkiksi vektorit $\va=4\vi+6\vj$ ja $\vb=-2\vi-3\vj$ ovat yhdensuuntaiset, sillä 
-            \begin{align*}
-            \va
-            &=4\vi+6\vj \\
-            &=-2(-2\vi-3\vj) \\
-            &=-2\vb.
-            \end{align*}
-            Yllä vektorin yhdensuuntaisuus osoitettiin muokkaamalla vektorin $\va$ lauseketta niin, että se saatiin ilmoitettua muodossa jokin luku kertaa vektori $\vb$. Toinen tapa tutkia vektoreiden yhdensuuntaisuutta on muodostaa yhtälö $\va=t\vb$ ja tutkia, löytyykö yhtälölle yksikäsitteistä ratkaisua $t$. Jos yksikäsitteistä ratkaisua ei löydy, niin tällöin vektorit eivät ole yhdensuuntaiset.
+        <p>Palautetaan mieleen, että yksikkövektori tarkoittaa vektoria, jonka pituus on 1. Edellisen teoreeman avulla saadaan johdettua lauseke annetun vektorin suuntaiselle yksikkövektorille:
         </p>
+
+        <div class="theorem">
+            <h3>TEOREEMA</h3>
+            <p>
+                Vektorin $\vv \neq \bar{0}$ suuntainen yksikkövektori on
+                $$\frac{1}{|\vv|}\vv.$$
+            </p>
+             <div class="proof">
+                <p>
+                    Perustelu: Koska $\vv \neq \bar{0}$, niin vektorin $\vv$ pituus on positiivinen eli $|\vv| > 0$. Tällöin sen käänteisluku on määritelty ja positiivinen. Toisin sanottuna
+                    $$\frac{1}{|\vv|} > 0.$$
+                    Positiivisella luvulla kerrottaessa vektorin suunta säilyy, joten vektori 
+                    $$\frac{1}{|\vv|}\vv$$
+                    on samansuuntainen kuin vektori $\vv$. Sen pituudeksi saadaan edellisen teoreeman nojalla
+                    $$\begin{align*}
+                    \left| \frac{1}{|\vv|}\vv \right| &= \left| \frac{1}{|\vv|}\right| \cdot |\vv| \\
+                    &=  \frac{1}{|\vv|} \cdot |\vv| \\
+                    &= 1.
+                    \end{align*}$$
+                </p>
+             </div>
+        </div>
 
         <div class="tehtavat">
             <div class="tehtava" id="t-vektorinSuunta3-ex">
                 <header>
                     <h1>
                         <a data-toggle="collapse" class="collapsed" href="#t-vektorinSuunta3">
-                            Vektoreiden yhdensuuntaisuus
+                            Yksikkövektori
                         </a>
                     </h1>
                 </header>
 
                 <div id="t-vektorinSuunta3" class="collapse">
-                    <p> Tarkastele vektoria $\vv=-5\vi-5\vj$.
+                    <p> Puuttuu
                     <ol type="a">
-                        <li> Muodosta kaksi uutta vektoria, jotka ovat vektorin $\vv$ kanssa yhdensuuntaisia.
-                        <li> Onko vektori $\vw=\vi+\vj$ yhdensuuntainen vektorin $\vv$ kanssa?
-                        <li> Onko vektori $\vu=\vi+2\vj$ yhdensuuntainen vektorin $\vv$ kanssa?
+                        <li> 
+                        <li> 
+                        <li> 
                     </ol>
                     </p>
                 </div>
             </div>
         </div>
+
+        <p> Vektorien yhdensuuntaisuus määritellään $xyz$-koordinaatistossa samalla tavalla kuin $xy$-tasossa: vektorit $\vv$ ja $\vw$ ovat yhdensuuntaiset eli $\vv \parallel \vw$, jos ja vain jos $\vv=r\vw$ jollakin reaaliluvulla $r \neq 0$.  
+        </p>
+
+        <p>Kahden vektorin yhdensuuntaisuuden tutkiminen johtaa usein yhtälöpariin tai yhtälöryhmään. Esimerkiksi jos halutaan määrittää vakio $t$ niin, että vektorit $\vv = 0{,}5\vi + t\vj + \vk$ ja $\vw = -\vi + 1{,}5\vj-2\vk$ ovat yhdensuuntaisia, on tutkittava yhtälöä
+        $$\vv = r\vw.$$
+        Tämä yhtälö voidaan kirjoittaa muodossa
+        $$0{,}5\vi + t\vj + \vk = r(-\vi + 1{,}5\vj-2\vk)$$
+        eli
+        $$0{,}5\vi + t\vj + \vk = -r\vi + 1{,}5r\vj-2r\vk.$$
+        Vektorien samuuden määritelmän mukaan tämä yhtälö toteutuu, jos ja vain jos
+         $$
+        \left\{\begin{aligned}
+        -r &= 0{,}5 \\
+        1{,}5r &= t \\
+        -2r &= 1
+        \end{aligned}\right.
+        $$
+        Ratkaisuun pääseminen vaatii siis yhtälöryhmän ratkaisemisen. Seuraavaksi opettelemmekin ratkaisemaan yhtälöpareja ja yhtälöryhmiä.
+        </p>
     </section>
 
     <section>
