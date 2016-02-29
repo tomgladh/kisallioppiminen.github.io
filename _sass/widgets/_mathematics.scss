@@ -75,19 +75,19 @@ margin-top: 0;
   background-color: #E6E6E6;
 }
 
-ol {
+ol.a {
     list-style-type: none;
     counter-reset:list; /* Initiate a counter */
     margin-left:0; /* Remove the default left margin */
     padding-left:0; /* Remove the default left padding */
 }
-ol > li {
+ol.a > li {
     position:relative; /* Create a positioning context */
     margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
     padding:4px 8px; /* Add some spacing around the content */
     list-style:none; /* Disable the normal item numbering */
 }
-ol > li:before {
+ol.a > li:before {
     counter-increment: list;
     content: "(" counter(list, lower-alpha) ") ";
     /* Position and style the number */
@@ -101,6 +101,6 @@ ol > li:before {
     padding:4px;
     text-align:center;
 }
-li ol,
+li ol.a,
 li ul {margin-top:6px;}
-ol ol li:last-child {margin-bottom:0;}
+ol.a ol li:last-child {margin-bottom:0;}
