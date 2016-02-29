@@ -25,7 +25,6 @@ resources:
     - "//code.jquery.com/jquery-1.11.0.min.js"
     - "//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
     - "/js/mooc.js"
-    - "/js/numbering.js"
 
 exclude: [vendor]
 
