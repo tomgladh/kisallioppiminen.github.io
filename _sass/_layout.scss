@@ -327,15 +327,11 @@ article ul {
 		display: block;
 	}
 	
-	
-	article .definition h3,
-	article .theorem h3 {
-		color: black;
+	.tehtava {
+		font-size: 10pt;
 	}
 	
-	p {
-		font-size: 12pt;
+	.tehtava img {
+		max-width: 80 %;
 	}
-	
-	
 }
