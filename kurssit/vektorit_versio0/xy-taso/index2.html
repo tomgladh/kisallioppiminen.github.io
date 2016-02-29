@@ -4,6 +4,16 @@ title: MAA4 Vektorit
 main-class: has-atop
 topnav: maa4
 ---
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("section").hide();
+        $("div.toc_viikko").hide();
+        $(".heading").click(function() {
+            $(this).next("section").slideToggle(200);
+        });
+    });
+</script>
+
 <style>
             section.panel > header {
                         display: block;
