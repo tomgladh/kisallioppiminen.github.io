@@ -456,6 +456,40 @@ topnav: maa4
             <h1>Yhtälöryhmän ratkaiseminen</h1>
         </header>
 
+        <p>
+        Edellisessä kappaleessa tutkittiin vektorien yhdensuuntaisuutta ja päädyttiin yhtälöryhmään 
+        $$
+        \left\{\begin{aligned}
+        -r &= 0{,}5 \\
+        1{,}5r &= t \\
+        -2r &= 1
+        \end{aligned}\right.
+        $$
+        Jos tämän yhtälöryhmän ensimmäisen yhtälön molemmat puolet kerrotaan luvulla $-1$, saadaan yhtälö $$r = -0{,}5$$. Se voidaan sijoittaa yhtälöryhmän toiseen yhtälöön, joka saadaan silloin kirjoitettua muodossa
+        $$1{,}5\cdot (-0{,}5 = t$$.
+        Toisin sanottuna
+        $$t = -0{,}75.$$
+        Yhtälöryhmän ainoa mahdollinen ratkaisu on siis $r = -0{,}5$ ja $t = -0{,}75$. Vielä on kuitenkin tarkistettava, että se todella on yhtälöryhmän ratkaisu. Tämä tehdään sijoittamalla nämä luvut alkuperäiseen yhtälöryhmään ja tarkistamalla, että kaikki yhtälöt toteutuvat:
+         $$
+        \left\{\begin{aligned}
+        -(-0{,}5) &= 0{,}5 \\
+        1{,}5\cdot (-0{,}5) &= -0{,}75 \\
+        -2\cdot (-0{,}5) &= 1
+        \end{aligned}\right.
+        $$
+        Kaikki yhtälöt toteutuvat, joten yhtälöryhmän
+        $$
+        \left\{\begin{aligned}
+        -r &= 0{,}5 \\
+        1{,}5r &= t \\
+        -2r &= 1
+        \end{aligned}\right.
+        $$
+        ratkaisu on $r = -0{,}5$ ja $t = -0{,}75$.
+        </p>
+
+        <p> 
+
     </section>
     
     <section>
@@ -463,10 +497,27 @@ topnav: maa4
             <h1>Vektoreiden pistetulo ja vektoreiden välinen kulma</h1>
         </header>
 
+        <p>
+            Kolmiulotteisen koordinaatiston vektoreiden pistetulo määritellään samaan tapaan kuin $xy$-koordinaatiston vektoreiden pistetulo:
+        </p>
+
         <div class="definition">
             <h3>MÄÄRITELMÄ: PISTETULO</h3>
             <p>
                 Vektoreiden $\vv=x_1\vi+y_1\vj + z_1\vk$ ja $\vw=x_2\vi+y_2\vj + z_2\vk$ pistetulo on $\vv \cdot \vw = x_1x_2+y_1y_2 + z_1z_2$.
+            </p>
+        </div>
+
+        <p> Kolmiulotteisen avaruuden vektorien pistetulolla on samat ominaisuudet kuin $xy$-koordinaatiston vektorien pistetulolla. Näistä tärkeimmät on koottu alla olevaan teoreemaan, jotka on perusteltu $xy$-koordinaatiston tapauksessa edellisessä luvussa.
+        </p>
+
+        <div class="theorem">
+            <h3>TEOREEMA</h3>
+            <p>
+                Vektorit $\vv\neq \bar{0}$ ja $\vw\neq \bar{0}$ ovat toisiaan vastaan kohtisuorassa, jos ja vain jos $\vv \cdot \vw = 0$.
+            </p>
+            <p>
+                Vektorin pistetulo itsensä kanssa on yhtä suuri kuin vektorin pituuden neliö. Toisin sanottuna $\vv \cdot \vv = \left|\vv\right|^2$
             </p>
         </div>
 
@@ -481,64 +532,14 @@ topnav: maa4
                 </header>
 
                 <div id="t-pistetulo" class="collapse">
-                    <p> Tarkaste vektoreita $\va=7\vi+6\vj$, $\vb=3\vi-5\vj$ ja $\vc=5\vi-3\vj$.
-                    <ol type="a">
-                        <li> Piirrä vektorit $\va$, $\vb$ ja $\vc$ koordinaatistoon niin, että ne alkavat samasta pisteestä.
-                        <li> Laske pistetulo $\va \cdot \vb$.
-                        <li> Laske pistetulo $\va \cdot \vc$.
-                        <li> Laske pistetulo $\vb \cdot \vc$.
-                        <li> Millaisessa tilanteessa vektoreiden pistetulo on nolla? Vertaa edellisten laskujen tuloksia ja piirtämääsi kuvaa.
-                    </ol>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-
-
-        <p>
-            Pistetulolla voidaan laskea tavallisten laskusääntöjen mukaan (viittaus $xy$-koordinaatiston juttuun?)
-        </p>
-
-        <div  >
-            <h3  >TEOREEMA</h3>
-            <p  >
-                Vektorin pistetulo itsensä kanssa on yhtä suuri kuin vektorin pituuden neliö. Toisin sanottuna $\vv \cdot \vv = \left|\vv\right|^2$
-            </p>
-        </div>
-
-        <p>
-            Tutkitaan seuraavaksi vektoreiden välisen kulman ja pistetulon yhteyttä. Vektoreiden välistä kulmaa voidaan tarkastella, jos vektoreiden alkupisteet ovat samat. Vektoreiden välisellä kulmalla tarkoitetaan muodostuvista kulmista pienempää. Tätä on havainnollistettu alla olevassa kuvassa.
-        </p>
-
-        <p>
-            <img src="img/vektoreidenKulma.png" max-width: 90%; width: auto; height: auto;/> 
-        </p>
-
-        <div class="tehtavat">
-            <div class="tehtava" id="t-kulma-ex">
-                <header>
-                    <h1>
-                        <a data-toggle="collapse" class="collapsed" href="#t-kulma">
-                            Vektoreiden välinen kulma
-                        </a>
-                    </h1>
-                </header>
-
-                <div id="t-kulma" class="collapse">
-                    <p> Tarkastellaan yllä olevan kuvan vektoria $\vv$.
-                    <ol type="a">
-                        <li> Kuinka suuri on vektoreiden $\vv$ ja $2\vv$ välinen kulma? 
-                        <li> Kuinka suuri on vektoreiden $\vv$ ja $-\vv$ välinen kulma?
-                        <li> Jos vektorit ovat samansuuntaiset, mikä niiden välinen kulma on?
-                        <li> Jos vektorit ovat vastakkaissuuntaiset, mikä niiden välinen kulma on?
-                    </ol>
+                    <p> Määritä reaaliluku $t$ siten, että vektorit $\vv = 2\vi-5t\vj + 3t\vk$ ja $\vw = \vi + \vj - t\vk$ ovat kohtisuorassa toisiaan vastaan.
                     </p>
                 </div>
             </div>
         </div>
 
         <p>
+            Tutkitaan seuraavaksi vektoreiden välisen kulman ja pistetulon yhteyttä. 
             Vektoreiden välinen kulma voidaan laskea Geometria-kurssista tutun kosinilauseen avulla. Kosinilause on Pythagoraan lauseen yleistys. Pythagoraan lause pätee ainoastaan suorakulmaisille kolmioille, mutta kosinilausetta voi käyttää kaikille kolmioille. Kosinilauseen mukaan alla olevan kuvan kolmiossa 
             $$
             c^2=a^2+b^2-2ab \cos \gamma.
@@ -546,7 +547,7 @@ topnav: maa4
         </p>
 
         <p>
-            <img src="img/kosinilause.png" max-width: 90%; width: auto; height: auto;/> 
+            <img src="img/L2k14.png" max-width: 90%; width: auto; height: auto;/> 
         </p>
 
         <p>
@@ -558,19 +559,24 @@ topnav: maa4
         </p>
 
         <p>
-            <img src="img/vektoreidenKulma2.png" max-width: 90%; width: auto; height: auto;/> 
+            <img src="img/L2k15.png" max-width: 90%; width: auto; height: auto;/> 
         </p>
 
         <p>
-            Kosinilauseen ja pistetulon ominaisuuksien avulla saadaan perusteltua seuraava teoreema, joka yhdistää pistetulon ja vektoreiden välisen kulman.
+            Kosinilauseen ja pistetulon ominaisuuksien avulla saadaan perusteltua seuraava edellisestä luvusta tuttu teoreema, joka yhdistää pistetulon ja vektoreiden välisen kulman.
         </p>
 
-        <div  >
-            <h3  >TEOREEMA</h3>
-            <p  >
-                Vektoreiden $\vv$ ja $\vw$ pistetulolle pätee $\vv \cdot \vw = |\vv||\vw|\cos (\vv, \vw)$.
+        <div class="theorem">
+            <h3>TEOREEMA</h3>
+            <p>
+                Vektoreiden $\vv$ ja $\vw$ pistetulolle pätee $$\vv \cdot \vw = |\vv||\vw|\cos (\vv, \vw).$$
+                Jos $\vv \neq \bar{0}$ ja $\vw \neq \bar{0}$, niin vektoreiden $\vv$ ja $\vw$ välinen kulma saadaan yhtälöstä
+                $$
+                \cos (\vv, \vw)=\frac{\vv \cdot \vw}{|\vv||\vw|}.
+                $$
             </p>
-            <p  >
+            <div class="proof">
+            <p>
                 Perustelu: Tiedetään, että vektorin pituuden neliö on aina sama kuin sen pistetulo itsensä kanssa. Tästä saadaan seuraava yhtälöketju:
                 $$
                 \begin{align*}
@@ -592,7 +598,12 @@ topnav: maa4
                 $$
                 \vv\cdot\vw = |\vv||\vw| \cos(\vv,\vw).
                 $$
+                Jos $\vv \neq \bar{0}$ ja $\vw \neq \bar{0}$, niin vektoreiden $\vv$ ja $\vw$ pituudet ovat positiivisia. Jakamalla yhtälön molemmat puolet tulolla $|\vv||\vw|$ saadaan
+                $$
+                \cos (\vv, \vw)=\frac{\vv \cdot \vw}{|\vv||\vw|}.
+                $$
             </p>
+        </div>
         </div>
 
         <div class="tehtavat">
@@ -606,85 +617,10 @@ topnav: maa4
                 </header>
 
                 <div id="t-pistetuloKulma" class="collapse">
-                    <p>  Vektorin $\va$ pituus on $\left|\va\right| = 3$ ja vektorin $\vb$ pituus on $\left|\vb\right| = 7$. Laske edellisen teoreeman avulla pistetulo $\va \cdot \vb$, jos
-                    <ol type="a">
-                        <li> vektorit $\va$ ja $\vb$ ovat samansuuntaiset.
-                        <li> vektorit $\va$ ja $\vb$ ovat vastakkaissuuntaiset.
-                        <li> vektoreiden $\va$ ja $\vb$ välinen kulma on $45^{\circ}$.
-                        <li> vektoreiden $\va$ ja $\vb$ välinen kulma on $135^{\circ}$.
-                        <li> vektoreiden $\va$ ja $\vb$ välinen kulma on $90^{\circ}$.
-                    </ol>
-                    Selitä omin sanoin, miten vektoreiden välinen kulma liittyy pistetulon etumerkkiin.
+                    <p>  Puuttuu.
                     </p>
                 </div>
             </div>
-        </div>
-
-
-        <div  >
-            <h3  >TEOREEMA</h3>
-            <p  >
-                Oletetaan, että $\vv \neq \bar{0}$ ja $\vw \neq \bar{0}$. Vektorit $\vv$ ja $\vw$ ovat toisiaan vastaan kohtisuorassa, jos ja vain jos $\vv \cdot \vw = 0$.
-            </p>
-            <p  >
-                Perustelu: 
-            </p>
-            <ul  >
-                <li>  Oletetaan, että vektorit $\vv$ ja $\vw$ ovat kohtisuorassa toisiaan vastaan eli $\sphericalangle(\vv,\vw)=90^{\circ}$. Tällöin 
-                    \begin{align*}
-                    \vv \cdot \vw 
-                    &= |\vv||\vw|\cos (\vv, \vw) \\
-                    &= |\vv||\vw|\cos 90^{\circ} \\
-                    &= |\vv||\vw| \cdot 0 \\
-                    &= 0.
-                    \end{align*}
-                    Siis $\vv \cdot \vw = 0$.
-                <li> Oletetaan, että $\vv \cdot \vw = 0$. Tiedetään, että $\vv \cdot \vw = |\vv||\vw|\cos (\vv, \vw)$. Näistä tiedoista voidaan päätellä, että $|\vv||\vw|\cos (\vv, \vw) = 0$. </br> </br>
-
-                    Oletuksen mukaan $\vv \neq \bar{0}$ ja $\vw \neq \bar{0}$, joten vektoreiden $\vv$ ja $\vw$ pituudet ovat positiivisia: $\left|\vv\right| > 0$ ja $\left|\vw\right| > 0$. Tulon nollasäännön avulla voidaan siten päätellä, että $\cos (\vv, \vw) = 0$. Tästä seuraa, että $\sphericalangle(\vv,\vw)=90^{\circ}$. </br> </br>
-
-                    Vektorit $\vv$ ja $\vw$ ovat siis toisiaan vastaan kohtisuorassa.
-            </ul>
-        </div>
-
-        <div class="tehtavat">
-            <div class="tehtava" id="t-pistetuloKulma2-ex">
-                <header>
-                    <h1>
-                        <a data-toggle="collapse" class="collapsed" href="#t-pistetuloKulma2">
-                            Pistetulo ja vektoreiden kohtisuoruus
-                        </a>
-                    </h1>
-                </header>
-
-                <div id="t-pistetuloKulma2" class="collapse">
-                    <p>  Tutki vektoreita $\vv=-2\vi+3\vj$ ja $\vw=x\vi+3\vj$.
-                    <ol type="a">
-                        <li> Muodosta lauseke pistetulolle $\vv \cdot \vw$.
-                        <li> Millä muuttujan $x$ arvolla vektorit $\vv$ ja $\vw$ ovat kohtisuorassa toisiaan vastaan?
-                        <li> Piirrä vektorit $\vv$ ja $\vw$ koordinaatistoon ja tarkista, onko vastauksesi järkevä.
-                    </ol>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div  >
-            <h3  >TEOREEMA</h3>
-            <p  >
-                Jos $\vv \neq \bar{0}$ ja $\vw \neq \bar{0}$, niin 
-                $$
-                \cos (\vv, \vw)=\frac{\vv \cdot \vw}{|\vv||\vw|}.
-                $$
-            </p>
-            <p  >
-                Perustelu: Aiemman teoreeman nojalla tiedetään, että 
-                $$\vv \cdot \vw = |\vv||\vw|\cos (\vv, \vw).$$ 
-                Jos $\vv \neq \bar{0}$ ja $\vw \neq \bar{0}$, niin vektoreiden $\vv$ ja $\vw$ pituudet ovat positiivisia. Jakamalla yhtälön molemmat puolet tulolla $|\vv||\vw|$ saadaan
-                $$
-                \cos (\vv, \vw)=\frac{\vv \cdot \vw}{|\vv||\vw|}.
-                $$
-            </p>
         </div>
 
         <div class="tehtavat">
@@ -698,36 +634,12 @@ topnav: maa4
                 </header>
 
                 <div id="t-pistetuloKulma3" class="collapse">
-                    <p>  Tarkaste kolmiota $ABC$, missä $\overline{AB}=5\vi-4\vj$ ja $\overline{AC}=9\vi+3\vj$. 
-                    <ol type="a">
-                        <li> Laske kolmion kulmien suuruudet asteen tarkkuudella.
-                        <li> Piirrä kuva kolmiosta $ABC$ ja tarkista, onko vastauksesi järkevä.
-                    </ol>
+                    <p> Puuttuu.
                     </p>
                 </div>
             </div>
         </div>
 
-        <div class="tehtavat">
-            <div class="tehtava" id="t-pistetuloKulma4-ex">
-                <header>
-                    <h1>
-                        <a data-toggle="collapse" class="collapsed" href="#t-pistetuloKulma4">
-                            Pistetulo ja vektoreiden välinen kulma
-                        </a>
-                    </h1>
-                </header>
-
-                <div id="t-pistetuloKulma4" class="collapse">
-                    <p>  Kolmion $ABC$ kärjet ovat pisteissä $A=(-7,1)$, $B=(4,9)$ ja $C=(-3,-5)$.
-                    <ol type="a">
-                        <li> Laske kolmion kulmien suuruudet asteen tarkkuudella.
-                        <li> Piirrä kuva kolmiosta $ABC$ ja tarkista, onko vastauksesi järkevä.
-                    </ol>
-                    </p>
-                </div>
-            </div>
-        </div>
     </section>
 
 
