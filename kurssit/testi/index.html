@@ -8,15 +8,15 @@ sidenav: testi/testi
 <script>
     function() {
         $(".panel").each(function(index, value) {
-            var exCount = (index + 1);
-            var exName = "Tehtäväsetti " + exCount + ": " + $(value).find("h1 a").text();
+            var exCount2 = (index + 1);
+            var exName2 = "Tehtäväsetti " + exCount2 + ": " + $(value).find("h1 a").text();
 
             // relabel assignments
-            $(value).find("header h1 a").text(exName);
+            $(value).find("header h1 a").text(exName2);
 
             // tag subassignments
             $(value).find("div h1").each(function(subIndex, value) {
-                $(value).text(exCount + "." + (subIndex + 1) + ": " + $(value).text());
+                $(value).text(exCount2 + "." + (subIndex + 1) + ": " + $(value).text());
             });
         });
 </script>
