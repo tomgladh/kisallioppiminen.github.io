@@ -5,41 +5,21 @@ sitemap: true
 main-class: has-atop
 sidenav: testi/testi
 ---
+<script>
+    function() {
+        $(".panel").each(function(index, value) {
+            var exCount = (index + 1);
+            var exName = "Tehtäväsetti " + exCount + ": " + $(value).find("h1 a").text();
 
-<style>
-ol {
-    counter-reset:list; /* Initiate a counter */
-    margin-left:0; /* Remove the default left margin */
-    padding-left:0; /* Remove the default left padding */
-}
-ol > li {
-    position:relative; /* Create a positioning context */
-    margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
-    padding:4px 8px; /* Add some spacing around the content */
-    list-style:none; /* Disable the normal item numbering */
+            // relabel assignments
+            $(value).find("header h1 a").text(exName);
 
-}
-ol > li:before {
-    counter-increment: list;
-    content: "(" counter(list, lower-alpha) ") ";
-    font-size: 1.4em;
-
-    /* Position and style the number */
-    position:absolute;
-    top:-7px;
-    left:-2em;
-    width:2em;
-    /* Some space between the number and the content in browsers that support
-       generated content but not positioning it (Camino 2 is one example) */
-    margin-right:8px;
-    padding:4px;
-    text-align:center;
-}
-li ol,
-li ul {margin-top:6px;}
-ol ol li:last-child {margin-bottom:0;}
-
-</style>
+            // tag subassignments
+            $(value).find("div h1").each(function(subIndex, value) {
+                $(value).text(exCount + "." + (subIndex + 1) + ": " + $(value).text());
+            });
+        });
+</script>
 
 <article>
    <ol style="a">
