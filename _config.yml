@@ -13,8 +13,7 @@ sass:
   style: :compressed
 
 navigation:
-  "Etusivu": "/"
-  "Materiaalit": "/kurssit"
+  "Materiaalit": "/"
   "Blogi": "http://blogs.helsinki.fi/kisallioppiminenlukiossa"
   "Tietoa": "/tietoa.html"
 
