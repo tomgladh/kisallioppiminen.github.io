@@ -615,14 +615,14 @@ topnav: maa4
                 $$y = 1.$$
                 Koska aiempien laskujen mukaan $x = 5-2y$, saadaan 
                 $$x = 5-2\cdot 1 = 5-2 = 3.$$
-                Tämä tarkoittaa, että yhtälöryhmän ainoa mahdollinen ratkaisu on $x = 3$ ja $y = 1$. Tarkistetaan vielä, että nämä luvut todella toteuttavat kummankin yhtälön:
+                Tämä tarkoittaa, että yhtälöparin ainoa mahdollinen ratkaisu on $x = 3$ ja $y = 1$. Tarkistetaan vielä, että nämä luvut todella toteuttavat kummankin yhtälön:
                 $$
                 \left\{\begin{aligned}
                 3+2\cdot 1 &= 3 + 2 = 5 \\
                 2\cdot 3-3\cdot 1 &= 6-3 = 3.
                 \end{aligned}\right.
                 $$
-                Kaikki yhtälöt toteutuvat, joten yhtälöryhmän
+                Kaikki yhtälöt toteutuvat, joten yhtälöparin
                 $$
                 \left\{\begin{aligned}
                 x+2y &= 5 \\
@@ -747,7 +747,106 @@ topnav: maa4
                             $$
                             Havainnollista ratkaisua piirtämällä koordinaatistoon yhtälöä $3x-3y = 1$ vastaava suora ja yhtälöä $x+3y = 5$ vastaava suora. 
                         </p>
-                        <p> Pystyistikö päättelemään pelkän piirroksen avulla, mitkä luvut toteuttavat tämän yhtälöparin?
+                        <p> Pystyisitkö päättelemään pelkän piirroksen avulla, mitkä luvut toteuttavat tämän yhtälöparin?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Yhtälöparin ratkaisujen lukumäärää voidaan siis tutkia graafisesti. Esimerkiksi yhtälöpari
+                $$
+                \left\{\begin{aligned}
+                -2x+y &= -3 \\
+                4x-2y &= 3
+                \end{aligned}\right.
+                $$
+                voidaan kirjoittaa myös muodossa 
+                $$
+                \left\{\begin{aligned}
+                y &= 2x-3 \\
+                -2y &= -4x+3
+                \end{aligned}\right.
+                $$
+                ja edelleen muodossa
+                $$
+                \left\{\begin{aligned}
+                y &= 2x-3 \\
+                y &= 2x-\frac{3}{2}.
+                \end{aligned}\right.
+                $$
+                Näitä yhtälöitä vastaavat suorat ovat yhdensuuntaiset, kuten alla olevasta kuvasta nähdään:
+            </p>
+            <p>
+                <img src="img/L2k21.png" max-width: 100%; width: auto; height: auto;/> 
+            </p>
+            <p>
+                Tarkasteltavalla yhtälöparilla ei siis ole yhtään ratkaisua. Samaan tulokseen päädytään myös laskennallisesti: Yhtälöparin ensimmäinen yhtälö voidaan kirjoittaa muodossa $y = 2x-3$. Jos se sijoitetaan toiseen yhtälöön, saadaan yhtälö
+                $$4x-2(2x-3) = 3.$$
+                Sieventämällä yhtälön vasenta puolta saadaan
+                $$4x-4x+6 = 3$$
+                eli 
+                $$6 = 3.$$
+                Tämä yhtälö ei toteudu millään tuntemattomien $x$ ja $y$ arvoilla, joten yhtälöparilla ei ole yhtään ratkaisua.
+            </p>
+            <div class="tehtavat">
+                <div class="tehtava" id="t-yhtaloryhmaT4-ex">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" href="#t-yhtaloryhmaT4">
+                                Yhtälöparin ratkaiseminen
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-yhtaloryhmaT4" class="collapse">
+                        <p> Ratkaise yhtälöpari
+                            $$
+                            \left\{\begin{aligned}
+                            3x+2y &= 6 \\
+                            9x &= 27-6y.
+                            \end{aligned}\right.
+                            $$
+                            Havainnollista ratkaisua piirtämällä. Pystyisitkö päättelemään pelkän piirroksen avulla, mitkä luvut toteuttavat tämän yhtälöparin?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Edellä on tarkasteltu yhtälöpareja, jotka ovat muotoa
+                $$
+                \left\{\begin{aligned}
+                ax+by &= c \\
+                mx+ny &= k,
+                \end{aligned}\right.
+                $$
+                missä $a$, $b$, $c$, $m$, $n$ ja $k$ ovat reaalilukuja. Tällaisia yhtälöpareja sanotaan ensimmäisen asteen yhtälöpareiksi. Edellä nähtiin, että tällaisella ensimmäisen asteen yhtälöparilla voi olla tasan yksi ratkaisu tai ei yhtään ratkaisua riippuen siitä, onko yhtälöparia vastaavilla suorilla leikkauspiste vai ei. Näiden vaihtoehtojen lisäksi on vielä kolmaskin mahdollisuus: yhtälöparin kumpikin yhtälö voi vastata samaa suoraa. Tällöin yhtälöparilla on äärettömän paljon ratkaisuja, koska jokainen kyseisen suoran piste on yksi ratkaisu. 
+            </p>
+            <div class="tehtavat">
+                <div class="tehtava" id="t-yhtaloryhmaT5-ex">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" href="#t-yhtaloryhmaT5">
+                                Yhtälöparin ratkaiseminen
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-yhtaloryhmaT5" class="collapse">
+                        <p> Tarkastele yhtälöparia
+                            $$
+                            \left\{\begin{aligned}
+                            2y &= 4x-6 \\
+                            2x-y &= 3.
+                            \end{aligned}\right.
+                            $$
+                        <ol class="a">
+                            <li> Piirrä yhtälöparin ensimmäistä yhtälöä vastaava suora koordinaatistoon.
+                            <li> Piirrä yhtälöparin toista yhtälöä vastaava suora koordinaatistoon.
+                            <li> Päättele piirroksesi avulla kolme erilaista ratkaisua yhtälöparille. Tarkista laskemalla, että ne todella ovat ratkaisuja.
+                            <li> Tiedetään, että $(x,y)$ on yhtälöparin ratkaisu ja $x = 100$. Määritä $y$.
+                            <li> Tiedetään, että $(x,y)$ on yhtälöparin ratkaisu ja $x = 111$. Määritä $y$.
+                            <li> Millaista muotoa yhtälöparin ratkaisut $(x,y)$ ovat? Toisin sanottuna jos $x = t$, niin mikä on $y$? (Tässä $t$ on reaaliluku.)
+                        </ol>
                         </p>
                     </div>
                 </div>
