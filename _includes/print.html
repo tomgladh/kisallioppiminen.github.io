@@ -1,0 +1,15 @@
+{% assign url_parts = page.topnav | split: '/' %}
+{% assign topbar = site.data.topbar %}
+{% for part in url_parts %}
+	{% assign topbar = topbar[part] %}
+{% endfor %}
+
+			{% for link in topbar.navigation %}
+				{% if link.ext or link.base %}
+					{% assign href = link.path %}
+				{% else %}
+					{% assign href = link.path | prepend: topbar.path %}
+				{% endif %}
+				{% assign page_url = page.url | replace:'index.html','' %}
+				{% include {href} %}
+			{% endfor %}
