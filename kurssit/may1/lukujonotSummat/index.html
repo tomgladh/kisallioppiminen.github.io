@@ -7,9 +7,17 @@ topnav: may1
 ---
 $
 \newcommand\T{\Rule{0pt}{1em}{.3em}}
+\def\N{\mathbb{N}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
 $
 <article>
-
+    <p> 
+        Lukujono tarkoittaa nimensä mukaisesti lukujen muodostamaa, yleensä päättymätöntä jonoa. Esimerkiksi 3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 9, $\ldots$ on eräs lukujono. Tästä jonosta on vaikea sanoa, miten se jatkuu. Yleensä lukujonoon liittyy jokin sääntö, jonka avulla voidaan päätellä, mitkä ovat jonon seuraavat luvut.
+    </p>
+    <p>
+        Lukujonon lukuja sanotaan jonon <em>termeiksi</em> tai <em>jäseniksi</em>. Voidaan esimerkiksi sanoa, että edellä mainitun lukujonon ensimmäinen jäsen on 3 tai että sen kuudes termi on 9. 
+    </p>
     <div class="tehtavat">
         <div class="tehtava" id="t-helloweb-ex">
 
@@ -21,50 +29,89 @@ $
                 </h1>
             </header>
             <div id="t-helloweb" class="collapse">
-                Päättele, miten lukujonot jatkuvat. Selitä, miten ajattelit.<br>
-                a) $1,2,3,\ldots$<br>
-                b) $1,\frac{1}{2},\frac{1}{3},\ldots$<br>
-                c) $1,-2,3,\ldots$
+            Päättele, miten lukujonot jatkuvat. Selitä, miten ajattelit.
+            <ol class="a">
+            <li> $1$,$2$,$3,$\ldots$</li>
+            <li> $1$,$-2$,$3$,$\ldots$</li>
+            <li> $1$,$\frac{1}{2}$,$\frac{1}{3}$,$\ldots$</li>
+            </ol>
             </div>
         </div>
     </div>
-
     <p>
-        Lukujonon termejä tai jäseniä merkitään usein muodossa $a_n$, jossa alaindeksi $n$ (järjestysnumero) kertoo, kuinka mones jonon jäsen on kyseessä ja $a_n$ kertoo n:nnen jonon termin. Esimerkiksi edellisen tehtävän lukujonossa $1,2,3,\ldots$ voidaan merkitä $a_1=1, a_2=2, a_3=3$. Koko lukujonoa kuvataan merkinnällä $(a_n)$. 
+        Edellisessä tehtävässä a-kohdassa tarkastellun jonon jäsenet ovat luonnollisia lukuja. <em>Luonnollisten lukujen joukkoa</em> merkitään symbolilla $\N$. Siihen kuuluvat luvut $0$, $1$, $2$, $3$ ja niin edelleen. Voidaan merkitä, että 
+        $$\N = \{0,1,2,3, \ldots\}.$$
+        Edellisen tehtävän b-kohdan jonon jäsenistä vain osa on luonnollisia lukuja. Esimerkiksi jonon toinen jäsen $-2$ ei ole luonnollinen luku eli $-2 \not\in \N$. Kaikki b-kohdan jonon jäsenet kuuluvat kuitenkin kokonaislukujen joukkoon. Sitä merkitään symbolilla $\Z$. <em>Kokonaislukujen joukko</em> sisältää kaikki luonnolliset luvut ja niiden vastaluvut. Lyhyesti merkittynä
+        $$\Z = \{0,1,-1,2,-2,3,-3,\ldots\}.$$
+        Edellisen tehtävän c-kohdassa tarkastellun jonon jäsenistä vain osa on kokonaislukuja. Esimerkiksi jonon kolmas jäsen $\frac{1}{3}$ ei ole kokonaisluku, mikä voidaan merkitä $\frac{1}{3}\not\in \Z$. Kaikki tämän jonon jäsenet ovat kuitenkin rationaalilukuja, sillä ne voidaan esittää murtolukumuodossa. Esimerkiksi jonon ensimmäinen jäsen $1$ voidaan kirjoittaa vaikkapa muodossa $\frac{1}{1}$ tai muodossa $\frac{2}{2}$. <em>Rationaalilukujen joukon</em> $\Q$ muodostavat kaikki sellaiset luvut, jotka voidaan kirjoittaa murtolukumuodossa. Tämä voidaan ilmaista myös kirjoittamalla
+        $$\Q = \left\{ \frac{m}{n} \mid m, n \in \Z \text{ ja } n \neq 0 \right\}.$$
+    </p>
+    <div class="tehtavat">
+        <div class="tehtava" id="t-helloweb1b-ex">
+
+            <header>
+                <h1>
+                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb1b">
+                        Lukualueet
+                    </a>
+                </h1>
+            </header>
+            <div id="t-helloweb1b" class="collapse">
+            <ol class="a">
+            <li> Keksi jokin kokonaisluku, joka ei ole luonnollinen luku.</li>
+            <li> Keksi jokin rationaaliluku, joka on myös luonnollinen luku.</li>
+            <li> Keksi jokin rationaaliluku, joka ei ole kokonaisluku.</li>
+            <li> Onko mahdollista keksiä sellainen kokonaisluku, joka ei ole rationaaliluku?</li>
+            </ol>
+            </div>
+        </div>
+    </div>
+    <p>
+        Joskus lukujonosta on helpompi puhua, jos sille annetaan nimi. Voidaan esimerkiksi puhua lukujonosta $(a_n)$ tai lukujonosta $(b_n)$ tai lukujonosta $(x_n)$. Tässä merkinnässä sulut kertovat sen, että puhutaan koko lukujonosta eikä yksittäisestä jonon jäsenestä. 
+    </p>
+    <p>
+        Kun lukujono on nimetty esimerkiksi jonoksi $(a_n)$, tarkoittaa merkintä $a_1$ sen ensimmäistä jäsentä, $a_2$ sen toista jäsentä, $a_3$ sen kolmatta jäsentä ja niin edelleen. Jos halutaan esimerkiksi puhua jonon $(a_n)$ sadannesta jäsenestä, voidaan käyttää merkintää $a_{100}$. Alaindeksi siis kertoo, kuinka mones jonon jäsen on kysymyksessä. 
     </p>
 
 
     <div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
+        <div class="tehtava" id="t-helloweb1-ex">
 
             <header>
                 <h1>
                     <a data-toggle="collapse" class="collapsed" href="#t-helloweb1">
-                        Lukujonon jäsenen määrittäminen
+                        Lukujono
                     </a>
                 </h1>
             </header>
             
             <div id="t-helloweb1" class="collapse">
-                Määritä $a_8$ ja $a_{23}$, jos lukujonon ensimmäiset jäsenet ovat<br>
-                a) $1,2,3$<br>
-                b) $1,\frac{1}{2},\frac{1}{3}$<br>
-                c) $1,-2,3.$
+               Päättele, mitä ovat $a_8$ ja $a_{23}$, jos lukujonon ensimmäiset jäsenet ovat
+            <ol class="a">
+            <li> $1$,$2$,$3,$\ldots$</li>
+            <li> $1$,$-2$,$3$,$\ldots$</li>
+            <li> $1$,$\frac{1}{2}$,$\frac{1}{3}$,$\ldots$</li>
+            </ol>
             </div>
         </div>
     </div>
 
     <p>
-        (Lukujono voi olla joko päättyvä tai päättymätön. Kolme pistettä lukujonon alun perässä kertoo, että lukujono on päättymätön.) 
-    </p>
-
-    <p>
-        Usein lukujonon jäsenet ilmoitetaan sääntönä, jolla mikä tahansa jonon jäsen saadaan määritettyä. Sääntö voi riippua siitä, mones jonon jäsen on kyseessä eli jonon järjestysnumerosta, tai edellisistä jonon jäsenistä. (Sääntöä, joka riippuu siitä, kuinka mones jäsen on kyseessä, eli kirjaimesta $n$, sanotaan analyyttiseksi, kun taas sääntöä, joka riippuu jonon edellisistä jäsenistä, sanotaan rekursiiviseksi.) 
-        Jos lukujonolla on olemassa sääntö, niin kaikki lukujonon jäsenet toteuttavat säännön jollain positiivisella kokonaisluvulla $n$. Esimerkiksi jonon $6,11,16,21,\ldots$ sääntö on muotoa $5n+1$, eli suomeksi "kerro jonon järjestysnumeroa viidellä ja lisää siihen yksi". Tämä tarkoittaa, että esimerkiksi jonon toinen jäsen on $5\cdot2+1=11$ ja jonon kymmenes jäsen on $5\cdot 10+1=51$. On huomattava, että muut kuin lukujonon jäsenet eivät toteuta sääntöä positiivisella kokonaisluvulla $n$. 
+        Joskus lukujonoon liittyvä sääntö voidaan esittää niin, että sen avulla voidaan laskea jonon mikä tahansa jäsen, jos vain tiedetään, kuinka mones jäsen on kysymyksessä. Jos esimerkiksi tiedetään, että lukujonon $(a_n)$ <em>yleinen jäsen</em> on $a_n = 2n-1$, voidaan laskea, että esimerkiksi
+        $$
+        \begin{align*}
+        a_1 &= 2\cdot 1 - 1 = 2-1 = 1 \\
+        a_2 &= 2\cdot 2 - 1 = 4-1 = 3 \\
+        a_3 &= 2\cdot 3 - 1 = 6-1 = 5 \\
+        a_{50} &= 2\cdot 50 - 1 = 100-1 = 99 \\
+        a_{1000} &= 2\cdot 1000 - 1 = 2000-1 = 1999
+        \end{align*}
+        $$
+        Tällaisessa tilanteessa sanotaan, että lukujono on määritelty <em>analyyttisesti</em>.
     </p>
 
     <div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
+        <div class="tehtava" id="t-helloweb2-ex">
 
             <header>
                 <h1>
@@ -74,17 +121,18 @@ $
                 </h1>
             </header>
             <div id="t-helloweb2" class="collapse">
-                Olkoon lukujonon $(a_n)$ jäsenet muotoa $a_n=2n-1$, $n=1,2,\ldots$. Määritä 
-                <br>
-                a) $a_1$<br>
-                b) $a_2$<br>
-                c) $a_{100}$.
+                Tarkastellaan lukujonoa $(a_n)$, jonka jäsenet ovat muotoa $a_n=4n+2$ kaikilla $n=1$,$2$,$\ldots$. Määritä 
+                <ol class="a">
+                <li> $a_1$</li>
+                <li> $a_2$</li>
+                <li> $a_{100}$.</li>
+                </ol>
             </div>
         </div>
     </div>
 
     <div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
+        <div class="tehtava" id="t-helloweb3-ex">
 
             <header>
                 <h1>
@@ -94,13 +142,15 @@ $
                 </h1>
             </header>
             <div id="t-helloweb3" class="collapse">
-                Olkoon jonon jäsenet edelleen muotoa $a_n=2n-1$. Päättele, onko luku 10 lukujonon $(a_n)$ jäsen, eli esiintyykö luku 10 lukujonossa? Entä luku 11? Perustele sanallisesti.
+                Tarkastellaan edelleen lukujonoa $(a_n)$, jonka jäsenet ovat muotoa $a_n=4n+2$. Onko luku 9 lukujonon $(a_n)$ jäsen eli esiintyykö luku 9 lukujonossa $(a_n)$? Entä luku 30? Perustele sanallisesti.
             </div>
         </div>
     </div>
 
+  
+
     <div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
+        <div class="tehtava" id="t-helloweb4-ex">
 
             <header>
                 <h1>
@@ -110,18 +160,18 @@ $
                 </h1>
             </header>
             <div id="t-helloweb4" class="collapse">
-                Olkoon lukujonon $(b_n)$ jäsenet muotoa $b_n=3n+5$. <br>
-                a) Onko luku 20 lukujonon $(b_n)$ jäsen? Entä luku 127?<br>
-                b) Miten voit yleisesti tutkia, onko jokin luku lukujonon jäsen, jos lukujonon sääntö tunnetaan? Keinon tulee toimia, olipa kyseinen luku kuinka suuri tai pieni tahansa.
+                Tarkastellaan lukujonoa $(b_n)$, jonka jäsenet muotoa $b_n=3n+5$. 
+                <ol class="a">
+                <li> Onko luku 20 lukujonon $(b_n)$ jäsen? Jos on, niin kuinka mones jäsen se on?</li>
+                <li> Onko luku 127 lukujonon $(b_n)$ jäsen? Jos on, niin kuinka mones jäsen se on?</li>
+                <li> Miten voit yleisesti tutkia, onko jokin luku lukujonon jäsen, jos lukujonon yleinen jäsen tunnetaan? Keinon tulee toimia, olipa kyseinen luku kuinka suuri tai pieni tahansa.</li>
+                </ol>
             </div>
         </div>
     </div>
-<p>
-	Koska kaikki lukujonon jäsenet toteuttavat lukujonon säännön jollain positiivisella kokonaisluvulla $n$, voidaan tätä tietoa käyttää hyväksi, kun tutkitaan, onko jokin luku lukujonon jäsen. Jos luku on lukujonon jäsen, niin se on lukujonon säännön muotoa jollain positiivisella kokonaisluvulla $n$. 
-</p>
 
     <div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
+        <div class="tehtava" id="t-helloweb4b-ex">
 
             <header>
                 <h1>
@@ -134,106 +184,80 @@ $
               Tarkastele lukujonoa $(a_n)$.
               <ol type="a">
               	<li>
-              		Tutkittaessa, onko luku 123 lukujonon $(a_n)$ jäsen, saadaan yhtälön $a_n=123$ ratkaisuksi $n=9$. Onko luku 123 lukujonon $(a_n)$ jäsen? Jos on, niin mones?
+              		Kun tutkittiin, onko luku 123 lukujonon $(a_n)$ jäsen, saatiin yhtälön $a_n=123$ ratkaisuksi $n=9$. Onko luku 123 lukujonon $(a_n)$ jäsen? Jos on, niin kuinka mones jäsen se on?
               	</li>
-              	<li> Yhtälölle $a_n=28$ saadaan ratkaisuksi $n=2,6$. Onko luku 28 lukujonon jäsen? Jos on, niin mones?</li>
+              	<li> Yhtälölle $a_n=28$ saadaan ratkaisuksi $n=2{,}6$. Onko luku 28 lukujonon jäsen? Jos on, niin kuinka mones jäsen se on?</li>
               </ol>
             </div>
         </div>
     </div>
 
-    <div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
+      <p>
+        Joskus lukujonoon liittyvä sääntö voidaan esittää niin, että sen avulla voidaan laskea jonon seuraava jäsen, jos tiedetään, mitä jonon edellisen jäsenet ovat. Tarkastellaan esimerkiksi tilannetta, jossa tiedetään, että lukujonon $(a_n)$ ensimmäinen jäsen on $a_1 = 1$ ja että seuraava jäsen saadaan aina edellisestä jäsenestä lisäämällä siihen kaksi eli
+        $$a_n = a_{n-1} + 2$$
+        kaikilla $n \geq 2$. Tällöin
+        $$
+        \begin{align*}
+        a_2 &= a_1 + 2 = 1 + 2 = 3\\
+        a_3 &= a_2 + 2 = 3 + 2 = 5 \\
+        a_4 &= a_3 + 2 = 5 + 2 = 7 \\
+        a_5 &= a_4 + 2 = 7 + 2 = 9 \\
+        a_6 &= a_5 + 2 = 9 + 2 = 11 \\
+        \end{align*}
+        $$
+        Tällaisessa tilanteessa sanotaan, että lukujono on määritelty <em>rekursiivisesti</em>.
+    </p>
 
-            <header>
-                <h1>
-                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb4c">
-                        Onko luku lukujonon jäsen?
-                    </a>
-                </h1>
-            </header>
-            <div id="t-helloweb4c" class="collapse">
-                Olkoon lukujonon $(a_n)$ sääntö $a_n=8n-3$. Tutki yhtälön avulla, onko luku 19 lukujonon jäsen? Jos on, niin mones lukujonon jäsen se on?
-     
-            </div>
-        </div>
-    </div>
-
     <div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
+        <div class="tehtava" id="t-helloweb5-ex">
 
             <header>
                 <h1>
                     <a data-toggle="collapse" class="collapsed" href="#t-helloweb5">
-                        Lukujonon jäsenen määrittäminen
+                        Rekursiivisen lukujonon jäsenen määrittäminen
                     </a>
                 </h1>
             </header>
             <div id="t-helloweb5" class="collapse">
-                Lukujonon ensimmäinen jäsen on 3 ja seuraava jäsen saadaan lisäämällä edelliseen jäseneen luku 4. Määritä jonon viisi seuraavaa jäsentä.
+                Lukujonosta $(a_n)$ tiedetään, että $a_1 = 3$ ja $a_n = a_{n-1} + 4$ kaikilla $n \geq 2$. Määritä $a_2$, $a_3$, $a_4$, $a_5$ ja $a_6$.
             </div>
         </div>
     </div>
 
     <div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
+        <div class="tehtava" id="t-helloweb6-ex">
 
             <header>
                 <h1>
                     <a data-toggle="collapse" class="collapsed" href="#t-helloweb6">
-                        Lukujonon jäsenen määrittäminen
+                        Rekursiivisen lukujonon jäsenen määrittäminen
                     </a>
                 </h1>
             </header>
             <div id="t-helloweb6" class="collapse">
-                Lukujonon ensimmäinen jäsen on 1 ja toinen jäsen on 19. Seuraavat jäsenet saadaan laskemalla kahden edellisen jäsenen keskiarvo. Määritä $a_3$ ja $a_4$.
-            </div>
-        </div>
-    </div>
-    <p>
-        Lukujonoa, jonka sääntö riippuu jonon edellisestä jäsenestä tai jäsenistä, sanotaan rekursiiviseksi jonoksi. Rekursiivinen jono ilmoitetaan muodossa, jossa tarvittavat ensimmäiset jäsenet ovat kerrottu sekä lisäksi kerrotaan sääntö, miten seuraavat jäsenet saadaan edeltävien jäsenten avulla. Esimerkiksi yllä olevien tehtävien jonot voidaan ilmoittaa muodossa
-        $$
-        \begin{equation*}
-        \left\{
-        \begin{array}{ll}
-        a_1&=3\\
-        a_n&=a_{n-1}+4, n=2,3,\ldots
-        \end{array}
-        \right.
-     \end{equation*}
-$$
-        ja
-       $$
-       \begin{equation*}
-        \left\{
-        \begin{array}{ll}
-        a_1&=1, a_2=19\\
-        a_n&=\dfrac{a_{n-2}+a_{n-1}}{2}, n=3,4,\ldots.
-        \end{array}
-        \right.
-        \end{equation*}
-        $$
-    </p>
-
-    <div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
-
-            <header>
-                <h1>
-                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb7">
-                        Rekursiivinen lukujono
-                    </a>
-                </h1>
-            </header>
-            <div id="t-helloweb7" class="collapse">
-
-                Miksi jälkimmäisessä jonossa luku $n$ lähtee liikkeelle rekursiokaavassa vasta luvusta 3 eikä luvusta 2?
+                Lukujonon $(a_n)$ ensimmäinen jäsen on 1 ja toinen jäsen on 19. Seuraavat jäsenet saadaan laskemalla kahden edellisen jäsenen keskiarvo. Lukujono voidaan siis määritellä seuraavasti:
+                $$
+                \begin{equation*}
+                \left\{
+                \begin{array}{ll}
+                a_1&=1, a_2=19\\
+                a_n&=\dfrac{a_{n-2}+a_{n-1}}{2}, n=3,4,\ldots.
+                \end{array}
+                \right.
+                \end{equation*}
+                $$
+                <ol class="a">
+                <li> Määritä $a_3$ ja $a_4$.</li>
+                <li> Miksi rekursiokaavaa 
+                    $$a_n=\dfrac{a_{n-2}+a_{n-1}}{2}$$    
+                    voi käyttää vasta luvusta 3 alkaen eikä luvusta 2 alkaen?</li>
+                </ol>  
             </div>
         </div>
     </div>
 
     <div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
+        <div class="tehtava" id="t-helloweb8-ex">
 
             <header>
                 <h1>
@@ -243,56 +267,20 @@ $$
                 </h1>
             </header>
             <div id="t-helloweb8" class="collapse">
-
-                Rekursiivisen jonon ensimmäinen jäsen on 3 ja seuraavat saadaan kertomalla edellinen jäsen luvulla 2. <br>
-                a) Määritä $a_2, a_3$ ja $a_4$.<br>
-                b) Kerro, miten saisit määritettyä  $a_{20}$.<br>
-                c) Kirjoita jonon rekursiokaava $a_n$.<br>
+                Rekursiivisen jonon ensimmäinen jäsen on 3 ja seuraavat saadaan kertomalla edellinen jäsen luvulla 2. <ol class="a">
+                <li> Määritä $a_2, a_3$ ja $a_4$.</li>
+                <li> Selitä, miten saisit määritettyä jäsenen $a_{20}$.</li>
+                <li> Kirjoita rekursiokaava jonon yleiselle jäsenelle $a_n$.</li>
+                </ol>  
             </div>
         </div>
     </div>
-
     <p>
-        Kuten edellä huomattiin, rekursiivisessa jonossa tulee tietää kaikki aiemmat jonon termit haluttuun termiin asti. Toisin sanoen jos rekursiivisessa jonossa halutaan tietää, mikä on jonon kymmenes termi, sen määrittämiseen tarvitaan tieto, mikä on jonon yhdeksäs termi. Sen määrittämiseen tarvitaan jonon kahdeksas termi ja näin jatketaan, kunnes ollaan päästy jonon alkuehtoihin eli annettuihin termeihin. 
+        Lukujonoja voidaan luokitella niiden ominaisuuksien mukaan. Sovelluksissa käyttökelpoisia ovat sellaiset lukujonot, joiden jäseniä on helppo määrittää ja jotka sopivat monien ilmiöiden mallintamiseen. 
     </p>
 
-    <div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
-
-            <header>
-                <h1>
-                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb9">
-                        Rekursiivinen lukujono
-                    </a>
-                </h1>
-            </header>
-            <div id="t-helloweb9" class="collapse">
-
-                Olkoon 
-                $$
-                \begin{equation*}
-                \left\{
-                \begin{array}{ll}
-                a_1&=2\\
-                a_n&=\dfrac{a_{n-1}+1}{2}, n=2, 3,4,\ldots
-                \end{array}
-                \right.
-                \end{equation*}
-                $$
-
-                Määritä jonon neljä seuraavaa jäsentä. 
-            </div>
-        </div>
-    </div>
-
-    
-
-<p>
-    Kohti aritmeettista lukujonoa.
-</p>
-
-<div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
+        <div class="tehtavat">
+        <div class="tehtava" id="t-helloweb17-ex">
 
             <header>
                 <h1>
@@ -302,19 +290,19 @@ $$
                 </h1>
             </header>
             <div id="t-helloweb17" class="collapse">
-Mikä seuraavista lukujonoista ei kuulu joukkoon? Perustele.		
-<ol type="a">
-		<li> $1,4,7,10,\ldots$
-		<li>  $2,-3,-8,-13,\ldots$
-		<li> $\frac{1}{2}, \frac{1}{3},\frac{1}{4},\frac{1}{5},\ldots$
-		<li> $1, \frac{3}{2}, 2, \frac{5}{2},\ldots$
-		</ol>
- </div>
+            Mikä seuraavista lukujonoista ei kuulu joukkoon? Perustele.		
+            <ol type="a">
+            		<li> $1$,$4$,$7$,$10$,$\ldots$
+            		<li> $2$,$-3$,$-8$,$-13$,$\ldots$
+            		<li> $\frac{1}{2}$, $\frac{1}{3}$,$\frac{1}{4}$,$\frac{1}{5}$,$\ldots$
+            		<li> $1$, $\frac{3}{2}$, $2$, $\frac{5}{2}$,$\ldots$
+            		</ol>
+             </div>
         </div>
-    </div>
+        </div>
     
-<div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
+        <div class="tehtavat">
+            <div class="tehtava" id="t-helloweb18-ex">
 
             <header>
                 <h1>
@@ -324,22 +312,28 @@ Mikä seuraavista lukujonoista ei kuulu joukkoon? Perustele.
                 </h1>
             </header>
             <div id="t-helloweb18" class="collapse">
-Keksi sääntö, jolla seuraava jäsen saadaan edellisen jäsenen avulla.
-<ol type="a">
-		<li> $1,4,7,10,\ldots$
-		<li> $2,-3,-8,-13,\ldots$
-		<li> $1, \frac{3}{2}, 2, \frac{5}{2},\ldots$
-		</ol>
+            Keksi sääntö, jolla seuraava jäsen saadaan edellisen jäsenen avulla.
+            <ol type="a">
+        		<li> $1,4,7,10,\ldots$
+        		<li> $2,-3,-8,-13,\ldots$
+            	<li> $1, \frac{3}{2}, 2, \frac{5}{2},\ldots$
+            </ol>
 		 </div>
         </div>
     </div>
-    
-<p>... Aritmeettisessa lukujonossa kahden peräkkäisen jäsenen erotus on vakio. Sitä sanotaan differenssiksi. Aritmeettisen lukujonon määritelmä.
-</p>
 
-<div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
+            <div class="definition">
+                <h3>MÄÄRITELMÄ: ARITMEETTINEN LUKUJONO</h3>
+                <p>
+                    Lukujono $(a_n)$ on <em>aritmeettinen</em>, jos ja vain jos sen kahden peräkkäisen jäsenen erotus on aina sama eli jos on olemassa sellainen luku $d$, että
+                    $$a_{n+1}-a_n = d$$
+                    kaikilla $n = 1$, $2$, $3$, $\ldots$ <br>
+                    Erotus $d$ on nimeltään jonon <em>differenssi</em>.
+                </p>
+            </div>
 
+        <div class="tehtavat">
+        <div class="tehtava" id="t-helloweb19-ex">
             <header>
                 <h1>
                     <a data-toggle="collapse" class="collapsed" href="#t-helloweb19">
@@ -348,38 +342,18 @@ Keksi sääntö, jolla seuraava jäsen saadaan edellisen jäsenen avulla.
                 </h1>
             </header>
             <div id="t-helloweb19" class="collapse">
-Luettele jonkin aritmeettisen lukujonon neljä ensimmäistä jäsentä, jos differenssi on
-<ol type="a">
-		<li> $d=-1$
-		<li> $d=\frac{1}{3}$
-		<li> $d=\frac{3}{4}$.
-		</ol>
- </div>
+                Keksi esimerkki aritmeettisesti lukujonosta ja luettele sen neljä ensimmäistä jäsentä, jos jonon differenssi on
+                <ol type="a">
+                	<li> $d=-1$
+                	<li> $d=\frac{1}{3}$
+                	<li> $d=\frac{3}{4}$.
+                </ol>
+                </div>
+            </div>
         </div>
-    </div>
     
-<div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
-
-            <header>
-                <h1>
-                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb20">
-                        Aritmeettinen lukujono
-                    </a>
-                </h1>
-            </header>
-            <div id="t-helloweb20" class="collapse">
-Tarkastele aritmeettista lukujonoa $1,4,7,\ldots$. 
-<ol type="a">
-		<li> Päättele jonon 10. jäsen. 
-		<li> Onko luku 20 jonon jäsen? Perustele. 
-		</ol>		
-		 </div>
-        </div>
-    </div>
-    
-    <div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
+        <div class="tehtavat">
+        <div class="tehtava" id="t-helloweb20b-ex">
 
             <header>
                 <h1>
@@ -389,160 +363,218 @@ Tarkastele aritmeettista lukujonoa $1,4,7,\ldots$.
                 </h1>
             </header>
             <div id="t-helloweb20b" class="collapse">
-Tarkastele aritmeettista lukujonoa $1,4,7,\ldots$. Kopioi alla oleva taulukko vihkoosi.
-$$
-	\begin{array}{|c|c|}
-	\hline
- n \T & a_n \\\hline
-  1 \T & 1 \\\hline
-  2 \T & 2 \\\hline
-  3 \T & 7 \\\hline
-  n \T & \ \\\hline
-\end{array}
-	$$
-		Keksi sääntö, jolla jonon jäsenet saadaan lausuttua jonon järjestysnumeron $n$ avulla. Voit testata sääntöäsi taulukon avulla. Samalla säännöllä järjestysnumerosta $1$ pitää tulla luku $1$, järjestysnumerosta $2$ pitää tulla luku $4$ ja järjestysnumerosta $3$ luku $7$.					
-				 </div>
+            <p>
+            Tarkastele aritmeettista lukujonoa $1,4,7,\ldots$. Kopioi alla oleva taulukko vihkoosi.
+            $$
+            	\begin{array}{c|c}
+                n \T & a_n \\\hline
+                1 \T & 1 \\\hline
+                2 \T & 4 \\\hline
+                3 \T & 7 \\\hline
+                4 \T & \ \\\hline
+                5 \T & \ \\\hline
+                n \T & \ \\\hline
+                \end{array}
+            $$
+            <ol type="a">
+                <li> Mikä on tämän aritmeettisen jonon differenssi $d$?
+                <li> Täydennä taulukkoon luvut $a_4$ ja $a_5$.
+                <li> Täydennä taulukkoon jonon yleinen jäsen $a_n$. Toisin sanottuna keksi sääntö, jolla jonon jäsen saadaan laskettua järjestysnumeron $n$ ja differenssin $d$ avulla. 
+                <li> Testaa keksimääsi sääntöä taulukon avulla. Antaako se oikean tuloksen taulukon kaikilla riveillä?
+            </ol>	
+            </p>	
+			</div>
         </div>
-    </div>
+        </div>
 		
-		<p>
-Aritmeettisen jonon kaava?		
-		</p>
+        <div class="theorem">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Aritmeettisen jonon $(a_n)$ jäsenet saadaan laskettua, jos tiedetään jonon ensimmäinen jäsen $a_1$ ja jonon differenssi $d$, sillä kaikilla $n = 1$, $2$, $3$, $\ldots$ pätee
+                    $$a_n = a_1 + (n-1)d.$$
+                </p>
+                <div class="proof">
+                    <p>
+                        Perustelu: Aritmeettisen jonon määritelmän mukaan $a_{n+1} = a_n + d$ kaikilla $n = 1$, $2$, $3$, $\ldots$ Tästä saadaan seuraavat tiedot:
+                        $$
+                        \begin{align*}
+                        a_2 &= a_1 + d \\
+                        a_3 &= a_2 + d = (a_1+d) + d = a_1 + 2d \\
+                        a_4 &= a_3 + d = (a_1+2d) + d = a_1 + 3d \\
+                        a_5 &= a_4 + d = (a_1+3d) + d = a_1 + 4d 
+                        \end{align*}
+                        $$
+                        ja niin edelleen. Havaitaan säännönmukaisuus: jonon toisesta jäsenestä alkaen jäsen $a_n$ saadaan aina summana $a_1 + (n-1)d$. 
+                        Lisäksi 
+                        $$a_1 = a_1 + 0\cdot d.$$
+                        Voidaan päätellä, että kaikilla $n = 1$, $2$, $3$, $\ldots$ pätee
+                        $$a_n = a_1 + (n-1)d.$$
+                    </p>
+                </div>
+            </div>
 
-<div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
+            <div class="tehtavat">
+            <div class="tehtava" id="t-helloweb21-ex">
 
-            <header>
+                <header>
                 <h1>
-                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb21">
-                        Aritmeettinen lukujono
-                    </a>
+                <a data-toggle="collapse" class="collapsed" href="#t-helloweb21">
+                    Aritmeettinen lukujono
+                </a>
                 </h1>
-            </header>
-            <div id="t-helloweb21" class="collapse">
-Määritä aritmeettisen jonon yleinen jäsen $a_n$, jos jonon ensimmäiset jäsenet ovat
-<ol type="a">
-		<li> $2$ ja $7$
-		<li> $3$ ja $\frac{8}{3}$.
-
-		</ol>
- </div>
-        </div>
-    </div>
+                </header>
+                    <div id="t-helloweb21" class="collapse">
+                    <p>
+                    Määritä aritmeettisen jonon yleinen jäsen $a_n$, jos jonon ensimmäiset jäsenet ovat
+                    <ol type="a">
+                    <li> $2$ ja $7$
+                    <li> $3$ ja $\frac{8}{3}$.
+                    </ol>
+                    </p>
+                    </div>
+            </div>
+            </div>
     
-
 		<p>
-		Aritmeettista summaa kohti. 
+		Edellä on tarkasteltu päättymättömiä lukujonona. Joskus ilmiön mallintamiseen tai ongelman ratkaisemiseen tarvitaan vain äärellinen määrä lukuja lukujonon alkupäästä. Tällaisessa tilanteessa nämä luvut voidaan myös laskea yhteen tavalliseen tapaan. Toisin sanottuna voidaan muodostaa niiden summa. Jos tarkastellaan esimerkiksi lukujonoa $(a_n)$, jonka yleinen termi on $a_n = 2n-1$, voidaan laskea vaikkapa sen viiden ensimmäisen termin summa:
+        $$
+        \begin{align*}
+        S_5 &= a_1 + a_2 + a_3 + a_4 + a_5 \\
+        &= 1 + 3 + 5 + 7 + 9 \\
+        &= 25.
+        \end{align*}
+        $$
+        Erilaiset summat luokitellaan niitä vastaavan lukujonon mukaan. 
 		</p>
-	
-	<div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
+	   
+       <div class="definition">
+                <h3>MÄÄRITELMÄ: ARITMEETTINEN SUMMA</h3>
+                <p>
+                    Summa 
+                    $$S_n = a_1 + \cdots + a_n$$ on <em>aritmeettinen</em>, jos ja vain jos vastaava lukujono $(a_n)$ on aritmeettinen.
+                </p>
+        </div>
+	   
+       <div class="tehtavat">
+        <div class="tehtava" id="t-helloweb25-ex">
 
             <header>
                 <h1>
                     <a data-toggle="collapse" class="collapsed" href="#t-helloweb25">
-                        Lukujonon summa
+                        Aritmeettinen summa
                     </a>
                 </h1>
             </header>
             <div id="t-helloweb25" class="collapse">	
-	Auditoriossa ensimmäisellä rivillä on 20 istuinta ja seuraavalla rivillä aina kaksi enemmän kuin edeltävällä. Kuinka monta istuinta on viimeisellä 13. rivillä? Auditoriossa pidettävään tilaisuuteen on tulossa 300 henkilöä. Mahtuvatko kaikki tulijat istumaan? Perustele. 
- </div>
+            <p>    
+        	Auditoriossa ensimmäisellä rivillä on 20 istuinta ja seuraavalla rivillä aina kaksi enemmän kuin edeltävällä. 
+            <ol type="a">
+                <li> Kuinka monta istuinta on viimeisellä 13. rivillä?
+                <li> Auditoriossa pidettävään tilaisuuteen on tulossa 300 henkilöä. Mahtuvatko kaikki tulijat istumaan? Perustele omin sanoin.
+                <li> Miten aritmeettinen jono liittyy tähän tehtävään?
+                <li> Miten aritmeettinen summa liittyy tähän tehtävään?
+            </ol>
+            </p>
+            </div>
         </div>
-    </div>
-    
-    <p>Kohti aritmeettista summaa.</p>
-    <div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
+        </div>
 
-            <header>
-                <h1>
-                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb26">
-                        Lukujonon summa
-                    </a>
-                </h1>
-            </header>
-            <div id="t-helloweb26" class="collapse">
-    Laske summat ilman apuvälineitä mahdollisimman pienellä vaivalla. Selitä, miten ajattelit.
-    
-    <ol type="a">
-		<li> $1+2+3+4+5+6+7+8+9$
-		<li> $2+4+6+8+10+12+14+16+18$
-		<li> $1+3+5+7+\ldots+95+97+99$ (Kolme pistettä summamerkkien välissä tarkoittaa, että summa jatkuu samalla idealla, kunnes luku 95 tulee summattavaksi.)
-		</ol>
-		</div>
-        </div>
-    </div>
-   <p> 
-   Huomataan, että ensimmäisen ja viimeisen jäsenen summa on sama kuin toisen ja toiseksi viimeisen jne. 
-   </p>
-   
-   	<div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
+        <p>
+            Koska aritmeettisessa summassa yhteenlaskettavia on äärellinen määrä, voi niiden järjestystä vaihtaa vapaasti. Laskut saattavat helpottua huomattavasti, jos yhteenlaskettavat ryhmittelee johonkin toiseen järjestykseen. Aritmeettisen summan tapauksessa erityisen kätevää on ryhmitellä yhteenlaskettavat pareiksi, joiden summa pysyy samana.
+        </p>
+
+        <div class="tehtavat">
+        <div class="tehtava" id="t-helloweb27-ex">
 
             <header>
                 <h1>
                     <a data-toggle="collapse" class="collapsed" href="#t-helloweb27">
-                        Lukujonon summa
+                        Summa
                     </a>
                 </h1>
             </header>
             <div id="t-helloweb27" class="collapse">
-   Kuinka monta lukuparia (ensimmäinen ja viimeinen jäsen, toinen ja toiseksi viimeinen jne.) muodostuu, jos yhteenlaskettavia on 
-   <ol type="a">
-		<li> $15$
-		<li> $93$
-		<li> $6$
-		<li> $18$</li>
-		<li> $191$?</li>
-		</ol>
-   Saivatko kaikki yhteenlaskettavat itselleen parin? Jos eivät, milloin ne jäivät ilman?
-   </div>
+            Kuinka monta lukuparia muodostuu, jos yhteenlaskettavia on 
+            <ol type="a">
+            <li> $6$</li>
+            <li> $18$</li>
+            <li> $15$</li>
+            <li> $93$</li>
+            <li> $191$?</li>
+            </ol>
+            Saavatko kaikki yhteenlaskettavat itselleen aina parin? Jos eivät, millaisissa tapauksissa yksi jää ilman paria?
+            </div>
         </div>
-    </div>
-   <p>
-   	Aritmeettisen summan kaavan johtaminen?
-   	
-   </p>
-    
-    	<div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
+        </div>
+
+        <div class="tehtavat">
+        <div class="tehtava" id="t-helloweb26-ex">
 
             <header>
                 <h1>
-                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb28">
+                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb26">
                         Aritmeettinen summa
                     </a>
                 </h1>
             </header>
-            <div id="t-helloweb28" class="collapse">
-    Mitä tietoja aritmeettisen jonon yhteenlaskettavista jäsenistä tarvitset, jotta voit laskea aritmeettisen summan aritmeettisen summan kaavalla?
-    </div>
+            <div id="t-helloweb26" class="collapse">
+                <p>
+                Järjestä summassa esiintyvät luvut pareiksi niin, että jokaisen parin summa on sama. Laske sen jälkeen koko summa ilman apuvälineitä mahdollisimman pienellä vaivalla. Selitä, miten ajattelit.
+                <ol type="a">
+        		<li> $1+2+3+4+5+6+7+8+9+10$
+        		<li> $2+4+6+8+10+12+14+16+18$
+        		<li> $1+3+5+7+\ldots+95+97+99$ 
+        		</ol>
+                (Kohdan (c) summa on liian pitkä kirjoitettavaksi kokonaan näkyviin.)
+                </p>
+		      </div>
         </div>
-    </div>
-    
-    	<div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
+        </div>
 
-            <header>
-                <h1>
-                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb29">
-                        Aritmeettinen summa
-                    </a>
-                </h1>
-            </header>
-            <div id="t-helloweb29" class="collapse">
-    Edellisessä tehtävässä listasit asioita, joita tarvitset, jotta aritmeettisen summan laskeminen onnistuu. Mitä sinun pitää selvittää seuraavista lähtötiedoista, jotta pääset laskemaan varsinaisen summan? Sinun ei tarvitse laskea mitään, ainoastaan miettiä, mitä tietoja sinun pitää saada selvitettyä. Käytä edellisen tehtävän ratkaisuasi apuna.
-    <ol type="a">
-		<li> $2+5+8+\ldots+26+29$
-		<li> aritmeettisen jonon $a_n=3n+1$ kahdenkymmenen ensimmäisen jäsenen summa.
-		</ol>
-    </div>
-        </div>
-    </div>
+        <div class="theorem">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Aritmeettinen summa $S_n = a_1 + \cdots + a_n$ lasketaan niin, että termien lukumäärällä kerrotaan summan ensimmäisen ja viimeisen termin keskiarvo eli 
+                    $$a_1 + \cdots + a_n = n \frac{a_1+a_n}{2}.$$
+                </p>
+                <div class="proof">
+                    <p>
+                        Perustelu: Kirjoitetaan summa kahteen kertaan, ensin alusta loppuun ja sitten lopusta alkuun:
+                        $$
+                        \begin{align*}
+                        S_n &= a_1 + a_2 + a_3 + \cdots + a_{n-2} + a_{n-1} + a_n \\
+                        S_n &= a_n + a_{n-1} + a_{n-2} + \cdots + a_3 + a_2 + a_1
+                        \end{align*}
+                        $$
+                        Kun nämä lasketaan puolittain yhteen, saadaan
+                        $$2S_n = (a_1 + a_n) + (a_2 + a_{n-1}) + (a_3 + a_{n-2}) + \cdots + (a_n + a_1).$$
+                        Tässä summassa kaikki sulkujen sisällä olevat lausekkeet ovat yhtä suuria kuin $a_1 + a_n$. Aritmeettisen lukujonon määritelmän nojalla nimittäin esimerkiksi
+                        $$
+                        \begin{align*}
+                        a_2 + a_{n-1} &= (a_1 + d) + a_{n-1} \\
+                        &= a_1 + (a_{n-1} + d) \\
+                        &= a_1 + a_n
+                        \end{align*}
+                        $$
+                        ja sen vuoksi myös
+                        $$
+                        \begin{align*}
+                        a_3 + a_{n-2} &= (a_2 + d) + a_{n-2} \\
+                        &= a_2 + (a_{n-2} + d) \\
+                        &= a_2 + a_{n-1} \\
+                        &= a_1 + a_n.
+                        \end{align*}
+                        $$
+                        Näitä yhteenlaskettavia on $n$ kappaletta, joten voidaan päätellä, että 
+                        $$2S_n = n(a_1 + a_n).$$
+                        Siten
+                        $$S_n = \frac{n(a_1+a_n)}{2}.$$
+                    </p>
+                </div>
+            </div>
     
     	<div class="tehtavat">
-        <div class="tehtava" id="t-helloweb-ex">
+        <div class="tehtava" id="t-helloweb30-ex">
 
             <header>
                 <h1>
@@ -552,13 +584,15 @@ Määritä aritmeettisen jonon yleinen jäsen $a_n$, jos jonon ensimmäiset jäs
                 </h1>
             </header>
             <div id="t-helloweb30" class="collapse">
-    Laske $2+5+8+\ldots+26+29$.
-    </div>
+            Laske seuraavat summat 
+            <ol type="a">
+                <li> Mitä tietoja tarvitset, jotta voit laskea aritmeettisen summan käyttäen edellä esitettyä aritmeettisen summan kaavaa?
+                <li> Laske summa $2+5+8+\ldots+26+29$ aritmeettisen summan kaavalla.
+                <li> Aritmeettisen jonon $(a_n)$ yleinen jäsen on $a_n=3n+1$. Laske tämän jonon kahdenkymmenen ensimmäisen jäsenen summa.
+                </ol>
+            </div>
         </div>
-    </div>
-    
-    	
-    
+        </div>
     
     <p>
     	Kohti geometrista lukujonoa.
@@ -728,6 +762,51 @@ Muodosta geometrisen lukujonon yleinen jäsen, jos ensimmäiset jäsenet ovat
             <div id="t-tehtavasetti" class="collapse">
                 <!-- Tästä alkaa piilotus -->
                 
+        <div class="tehtavat">
+            <div class="tehtava" id="t-helloweb-ex">
+
+            <header>
+                <h1>
+                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb4c">
+                        Onko luku lukujonon jäsen?
+                    </a>
+                </h1>
+            </header>
+            <div id="t-helloweb4c" class="collapse">
+                Olkoon lukujonon $(a_n)$ sääntö $a_n=8n-3$. Tutki yhtälön avulla, onko luku 19 lukujonon jäsen? Jos on, niin mones lukujonon jäsen se on?
+     
+            </div>
+            </div>
+        </div>
+
+            <div class="tehtavat">
+        <div class="tehtava" id="t-helloweb9-ex">
+
+            <header>
+                <h1>
+                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb9">
+                        Rekursiivinen lukujono
+                    </a>
+                </h1>
+            </header>
+            <div id="t-helloweb9" class="collapse">
+
+                Olkoon 
+                $$
+                \begin{equation*}
+                \left\{
+                \begin{array}{ll}
+                a_1&=2\\
+                a_n&=\dfrac{a_{n-1}+1}{2}, n=2, 3,4,\ldots
+                \end{array}
+                \right.
+                \end{equation*}
+                $$
+
+                Määritä jonon neljä seuraavaa jäsentä. 
+            </div>
+        </div>
+    </div>
                 <p>
         Tehtävissä, joissa halutaan selvittää muita kuin rekursiivisen lukujonon alkupään jäseniä, laskimesta on suuri apu. Laskimista löytyy ans-näppäin, joka tarkoittaa aina viimeisintä tulosta. Kyseistä näppäintä voi käyttää rekursiokaavassa alkuehdon paikalla. Tarkastellaan esimerkiksi jonoa 
         $$
@@ -912,7 +991,25 @@ Määritä $a_7$ ja $a_{52}$, jos
 	 </div>
         </div>
     </div>
-    
+          <div class="tehtavat">
+        <div class="tehtava" id="t-helloweb20-ex">
+
+            <header>
+                <h1>
+                    <a data-toggle="collapse" class="collapsed" href="#t-helloweb20">
+                        Aritmeettinen lukujono
+                    </a>
+                </h1>
+            </header>
+            <div id="t-helloweb20" class="collapse">
+            Tarkastele aritmeettista lukujonoa $1,4,7,\ldots$. 
+                <ol type="a">
+                    <li> Päättele jonon 10. jäsen. 
+                    <li> Onko luku 20 jonon jäsen? Perustele. 
+                </ol>       
+            </div>
+        </div>
+        </div>
 	<div class="tehtavat">
         <div class="tehtava" id="t-helloweb-ex">
 
