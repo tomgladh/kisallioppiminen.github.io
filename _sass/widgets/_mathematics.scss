@@ -17,14 +17,22 @@ section img {
   display: block;
 }
 
-.objective {
-background-color: #ECF5D4;
+.objective,
+.tool {
 display: block; 
 max-width: 94%; 
 width: auto; 
 height: auto;
 padding: 20px;
 margin: auto;
+}
+
+.objective {
+background-color: #ECF5D4;
+}
+
+.tool {
+background-color: #FBE127;
 }
 
 .definition {
