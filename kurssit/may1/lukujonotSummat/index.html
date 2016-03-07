@@ -815,11 +815,118 @@ $
     </div>
 </section>
     
-    
-   <p>
-   	Geometrinen summa. Kaavan johtaminen on ehkä liikaa johdantotehtävätyyppisesti, onko muutenkin tähän teorian sekaan? Pitäisikö olla haastavampien tehtävien kohdalla? Geometrisen summan kaava.
-  Ideana, että voisi mallintaa lopussa joitakin tehtäviä ja ratkaista laskimen avulla.
-   </p>
+<section class="panel">
+        <header>
+            <h1>
+                <a data-toggle="collapse" class="collapsed" href="#geometrinen-summa">
+                    Geometrinen summa
+                </a>
+            </h1>
+        </header>
+        <div id="geometrinen-summa" class="collapse">
+
+        <p>
+           Edellä tutustuttiin artimeettiseen summaan, joka muodostuu, kun aritmeettisen lukujonon alkupään jäsenet lasketaan yhteen. Geometriseen lukujonoon liittyy vastaava käsite: geometrinen summa.
+        </p>
+
+        <div class="definition">
+            <h3>MÄÄRITELMÄ: GEOMETRINEN SUMMA</h3>
+            <p>
+                Summa 
+                $$S_n = a_1 + \cdots + a_n$$ on <em>geometrinen</em>, jos ja vain jos vastaava lukujono $(a_n)$ on geometrinen.
+            </p>
+        </div>
+
+   <div class="tehtavat">
+        <div class="tehtava" id="t-MAYL1t001-ex">
+
+            <header>
+                <h1>
+                    <a data-toggle="collapse" class="collapsed" href="#t-MAYL1t001">
+                    Geometrinen summa
+                    </a>
+                </h1>
+            </header>
+            <div id="t-MAYL1t001" class="collapse">    
+            <p>    
+            Fysioterapeutti määrää henkilölle kuntousohjelman, jossa toistetaan tiettyjä liikkeitä kerran päivässä kuukauden ajan. Ensimmäisenä päivänä liikkeitä pitää tehdä kymmenen minuutin ajan, ja seuraavina päivinä suoritusaikaa kasvatetaan aina 5 % eli se 1{,}05-kertaistetaan. 
+            <ol class="a">
+                <li> Kuinka monta minuuttia henkilö harjoittelee kuntoutusohjelman 10. päivänä?
+                <li> Kuinka monta minuuttia henkilö harjoittelee yhteensä kuntoutusohjelman viiden ensimmäisen päivän aikana?
+                <li> Miten geometrinen jono liittyy tähän tehtävään?
+                <li> Miten geometrinen summa liittyy tähän tehtävään?
+            </ol>
+            </p>
+            </div>
+        </div>
+        </div>
+
+        <p>
+            Edellä perustellun teoreeman mukaan geometrisen lukujonon $(a_n)$ jäsenet saadaan aina edellisestä jäsenestä kertomalla suhdeluvulla $q$. Geometrinen lukujono $(a_n)$ on siis muotoa $a_1$, $a_1q$, $a_1q^2$, $a_1q^3$, \ldots Vastaava geometrinen summa
+            $$S_n = a_1 + a_2 + a_3 + \cdots + a_n$$
+            voidaan siis kirjoittaa muodossa
+            $$S_n = a_1 + a_1q + a_1q^2 + \cdots + a_1q^{n-1}.$$
+            Koska yhteenlaskettavia on tässä äärellinen määrä, tarkemmin sanottuna $n$ kappaletta, voidaan koko summa kertoa luvulla $q$. 
+        </p>
+
+        <div class="theorem">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Geometrinen summa $S_n = a_1 + \cdots + a_n$ voidaan laskea seuraavasti:
+                    <ul>
+                        <li>Jos suhdeluku $q$ on ykkösestä poikkeava eli $q \neq 1$, niin
+                            $$a_1 + a_1q + a_1q^2 + \cdots + a_1q^{n-1} = a_1\cdot \frac{1-q^n}{1-q}.$$
+                            Huomaa, että tässä luku $n$ kertoo sen, kuinka monta yhteenlaskettavaa summassa on.
+                        </li>
+                        <li> Jos suhdeluku $q$ on yksi eli $q = 1$, niin 
+                            $$a_1 + a_1q + a_1q^2 + \cdots + a_1q^{n-1} = na_1.$$
+                        </li>
+                    </ul>
+                </p>
+                <div class="proof">
+                    <p>
+                        Perustelu: Kirjoitetaan summa kahteen kertaan, ensin tavallisesti ja sitten suhdeluvulla kerrottuna:
+                        $$
+                        \begin{align*}
+                        S_n &= a_1 + a_1q + a_1q^2 + \cdots + a_1q^{n-1} \\
+                        qS_n &= q(a_1 + a_1q + a_1q^2 + \cdots + a_1q^{n-1})
+                        \end{align*}
+                        $$
+                        Kun alemman yhtälön oikealla puolella kerrotaan sulut auki, näyttää tilanne tältä:
+                        $$
+                        \begin{align*}
+                        S_n &= a_1 + a_1q + a_1q^2 + \cdots + a_1q^{n-1} \\
+                        qS_n &= \phantom{a_1 + {}}+ a_1q + a_1q^2 + a_1q^3 + \cdots + a_1q^n)
+                        \end{align*}
+                        $$
+                        $$2S_n = (a_1 + a_n) + (a_2 + a_{n-1}) + (a_3 + a_{n-2}) + \cdots + (a_n + a_1).$$
+                        Tässä summassa kaikki sulkujen sisällä olevat lausekkeet ovat yhtä suuria kuin $a_1 + a_n$. Aritmeettisen lukujonon määritelmän nojalla nimittäin esimerkiksi
+                        $$
+                        \begin{align*}
+                        a_2 + a_{n-1} &= (a_1 + d) + a_{n-1} \\
+                        &= a_1 + (a_{n-1} + d) \\
+                        &= a_1 + a_n
+                        \end{align*}
+                        $$
+                        ja sen vuoksi myös
+                        $$
+                        \begin{align*}
+                        a_3 + a_{n-2} &= (a_2 + d) + a_{n-2} \\
+                        &= a_2 + (a_{n-2} + d) \\
+                        &= a_2 + a_{n-1} \\
+                        &= a_1 + a_n.
+                        \end{align*}
+                        $$
+                        Näitä yhteenlaskettavia on $n$ kappaletta, joten voidaan päätellä, että 
+                        $$2S_n = n(a_1 + a_n).$$
+                        Siten
+                        $$S_n = \frac{n(a_1+a_n)}{2}.$$
+                    </p>
+                </div>
+            </div>
+
+    </div>
+</section>
 
 <div class="tehtavat">
         <div class="panel">
