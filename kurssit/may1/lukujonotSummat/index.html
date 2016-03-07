@@ -884,7 +884,7 @@ $
                 </p>
                 <div class="proof">
                     <p>
-                        Perustelu: Kirjoitetaan summa kahteen kertaan, ensin tavallisesti ja sitten suhdeluvulla kerrottuna:
+                        Perustelu: Tarkastellaan aluksi tilannetta, jossa $q \neq 1$. Kirjoitetaan summa kahteen kertaan, ensin tavallisesti ja sitten suhdeluvulla kerrottuna:
                         $$
                         \begin{align*}
                         S_n &= a_1 + a_1q + a_1q^2 + \cdots + a_1q^{n-1} \\
@@ -895,31 +895,23 @@ $
                         $$
                         \begin{align*}
                         S_n &= a_1 + a_1q + a_1q^2 + \cdots  + a_1q^{n-1} \\
-                        qS_n &= \phantom{a_1 +{}} a_1q + a_1q^2 + a_1q^3 + \cdots + a_1q^n)
+                        qS_n &= \phantom{a_1 +{}} a_1q + a_1q^2 + a_1q^3 + \cdots + a_1q^n
                         \end{align*}
                         $$
-                        $$2S_n = (a_1 + a_n) + (a_2 + a_{n-1}) + (a_3 + a_{n-2}) + \cdots + (a_n + a_1).$$
-                        Tässä summassa kaikki sulkujen sisällä olevat lausekkeet ovat yhtä suuria kuin $a_1 + a_n$. Aritmeettisen lukujonon määritelmän nojalla nimittäin esimerkiksi
-                        $$
-                        \begin{align*}
-                        a_2 + a_{n-1} &= (a_1 + d) + a_{n-1} \\
-                        &= a_1 + (a_{n-1} + d) \\
-                        &= a_1 + a_n
-                        \end{align*}
-                        $$
-                        ja sen vuoksi myös
-                        $$
-                        \begin{align*}
-                        a_3 + a_{n-2} &= (a_2 + d) + a_{n-2} \\
-                        &= a_2 + (a_{n-2} + d) \\
-                        &= a_2 + a_{n-1} \\
-                        &= a_1 + a_n.
-                        \end{align*}
-                        $$
-                        Näitä yhteenlaskettavia on $n$ kappaletta, joten voidaan päätellä, että 
-                        $$2S_n = n(a_1 + a_n).$$
-                        Siten
-                        $$S_n = \frac{n(a_1+a_n)}{2}.$$
+                        Kun ylemmästä yhtälöstä vähennetään alempi, suurin osa termeistä kumoaa toisensa ja saadaan
+                        $$S_n - qS_n = a_1-a_1q^n.$$
+                        Yhtälön vasemmalta puolelta voidaan ottaa yhteinen tekijä $S_n$, jolloin yhtälö saadaan muotoon
+                        $$(1-q)S_n= a_1-a_1q^n.$$
+                        Jakamalla yhtälön molemmat puolet kertoimella 1-q saadaan
+                        $$S_n = \frac{a_1-a_1q^n}{1-q}.$$
+                        Huomaa, että alussa rajoituttiin tarkastelemaan tilannetta, jossa $q \neq 1$. Sen vuoksi $1-q \neq 0$ ja jakaminen voidaan tehdä. 
+                        Saadun yhtälön oikealta puolelta voidaan vielä ottaa yhteinen tekijä $a_1$, jolloin yhtälö saadaan muotoon
+                        $$S_n= a_1\cdot \frac{1-q^n}{1-q}.$$
+                    </p>
+                    <p>
+                        Jos $q = 1$, niin 
+                        $$S_n = a_1 + a_1 + \cdot + a_1$$, missä yhteenlaskettavien lukumäärä on $n$. Siis tässä tapauksessa
+                        $$S_n = na_1$$.
                     </p>
                 </div>
             </div>
