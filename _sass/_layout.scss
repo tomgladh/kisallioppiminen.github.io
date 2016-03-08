@@ -310,6 +310,10 @@ article ul {
 		display: none;
 	}
 	
+	body {
+		background-color: white;
+	}
+	
 	section .tehtava>header a[data-toggle="collapse"].collapsed:after, section .panel>header a[data-toggle="collapse"].collapsed:after {
                 content: none;
         }
@@ -330,6 +334,7 @@ article ul {
 		border-left-width: 0;
 		border-right-width: 0;
 	}
+	
 	.tehtava header {
 		background-color: transparent;
 	}
