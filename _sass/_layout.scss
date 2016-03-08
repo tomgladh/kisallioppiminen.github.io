@@ -301,10 +301,7 @@ article ul {
 }
 
 @media print {
-	@page { 
-		 size: letter;
-	}
-	
+
 	body > header, 
 	atop,
 	nav,
