@@ -328,7 +328,8 @@ article ul {
 	}
 	
 	.panel .tehtava,
-	section.panel {
+	section.panel,
+	.panel-default>.panel-heading, .tehtava>.panel-heading, .tehtava>header, .panel>header {
 		border-color: white;
 		border-top-width: 0pt;
 		border-bottom-width: 0pt;
