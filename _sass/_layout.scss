@@ -310,7 +310,7 @@ article ul {
 		display: none;
 	}
 	
-	.tehtava>header a[data-toggle="collapse"].collapsed:after, .panel>header a[data-toggle="collapse"].collapsed:after {
+	section .tehtava>header a[data-toggle="collapse"].collapsed:after, section .panel>header a[data-toggle="collapse"].collapsed:after {
                 content: none;
         }
 	
@@ -323,9 +323,6 @@ article ul {
 		font-size: 10pt;
 	}
 	
-	.tehtava img {
-		max-width: 80%;
-	}
 	section .tehtava,
 	section .panel {
 		border: 0px solid white;
