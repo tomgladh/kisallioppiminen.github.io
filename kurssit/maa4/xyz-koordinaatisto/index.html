@@ -851,6 +851,121 @@ topnav: maa4
                     </div>
                 </div>
             </div>
+
+            <p>
+                Yhtälöryhmiä, joissa yhtälöitä ja tuntemattomia on useampia, voidaan ratkaista samaan tapaan kuin edellä ratkaistiin kahden tuntemattoman yhtälöpareja. Esimerkiksi yhtälöryhmää
+                $$
+                \left\{\begin{aligned}
+                x-3y-2z &= 0 \\
+                -x+2y-\phantom{2}z &= -5 \\
+                3x+4y+\phantom{2}z &= 1
+                \end{aligned}\right.
+                $$
+                ratkaistaessa voidaan ensin ratkaista ylimmästä yhtälöstä $x$:
+                $$x = 3y+2z.$$
+                Se voidaan sijoittaa kahteen alempaan yhtälöön:
+                $$
+                \left\{\begin{aligned}
+                -(3y+2z)+2y-\phantom{2}z &= -5 \\
+                3(3y+2z)+4y+\phantom{2}z &= 1
+                \end{aligned}\right.
+                $$
+                Kertomalla sulut auki yhtälöt saadaan muotoon
+                $$
+                \left\{\begin{aligned}
+                -3y-2z+2y-\phantom{2}z &= -5 \\
+                9y+6z+4y+\phantom{2}z &= 1.
+                \end{aligned}\right.
+                $$
+                Sievennetään vielä yhtälöiden vasemmat puolet, jolloin ne näyttävät tältä:
+                $$
+                \left\{\begin{aligned}
+                -y-3z &= -5 \\
+                13y+7z &= 1.
+                \end{aligned}\right.
+                $$
+                Koko yhtälöryhmä on siis tässä vaiheessa
+                $$
+                \left\{\begin{aligned}
+                x &= 3y+2z \\
+                -y-3z &= -5 \\
+                13y+7z &= 1.
+                \end{aligned}\right.
+                $$
+                Ratkaistaan keskimmäisestä yhtälöstä $y$ muutaman välivaiheen kautta, jolloin saadaan
+                $$y = 5-3z.$$
+                Tässä kannattaa itse miettiä kynän ja paperin kanssa, millaisia välivaiheita ratkaisussa oli.
+                Sijoitetaan tämä alimpaan yhtälöön:
+                $$13(5-3z)+7z = 1.$$
+                Kertomalla sulut auki yhtälö saadaan muotoon
+                $$65-39z+7z = 1.$$
+                Tästä saadaan ratkaistua
+                $$-32z = -64$$
+                eli 
+                $$z = \frac{-64}{-32} = 2.$$
+                Koko yhtälöryhmä on tässä vaiheessa
+                $$
+                \left\{\begin{aligned}
+                x &= 3y+2z \\
+                y &= 5-3z \\
+                z &= 2.
+                \end{aligned}\right.
+                $$
+                Kun nyt $z$:n arvo tunnetaan, saadaan muut tuntemattomat ratkaistua sen avulla vaiheittain:
+                $$
+                \left\{\begin{aligned}
+                z &= 2 \\
+                y &= 5-3z \\
+                &= 5-3\cdot 2 \\
+                &= 5-6 \\
+                &= -1\\
+                x &= 3y+2z \\
+                &= 3\cdot(-1) + 2\cdot 2 \\
+                &= -3+4 \\
+                &= 1.
+                \end{aligned}\right.
+                $$
+                Nämä laskut osoittavat, että tarkastellulla yhtälöryhmällä on enintään yksi ratkaisu. Tarkistetaan vielä sijoittamalla, että kaikki yhtälöt todella toteutuvat, jos $x = 1$, $y = -1$ ja $z = 2$:
+                $$
+                \left\{\begin{aligned}
+                1-3\cdot(-1)-2\cdot 2 &= 1+3-4 \\
+                &= 4-4 \\
+                &=0 \\
+                -x+2y-\phantom{2}z &= -1 + 2\cdot(-1)-2 \\
+                &= -1-2-2 \\
+                &= -3-2 \\
+                &= -5 \\
+                3x+4y+\phantom{2}z &= 3\cdot 1 + 4\cdot (-1) + 2 \\
+                &= 3-4+2 \\
+                &= -1 + 2 \\
+                &= 1
+                \end{aligned}\right.
+                $$
+                Kaikki yhtälöt toteutuvat, joten yhtälöryhmän ratkaisu on $x = 1$, $y = -1$ ja $z = 2$.
+            </p>
+            <div class="tehtavat">
+                <div class="tehtava" id="t-yhtaloryhmaT6-ex">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" href="#t-yhtaloryhmaT6">
+                                Yhtälöryhmän ratkaiseminen
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-yhtaloryhmaT6" class="collapse">
+                        <p> Ratkaise yhtälöryhmä
+                            $$
+                            \left\{\begin{aligned}
+                            x-2y+3z &= 5 \\
+                            -x+2y-4z &= -4 \\
+                            6x-\phantom{2}y + 5z &= 10
+                            \end{aligned}\right.
+                            $$
+                        </p>
+                    </div>
+                </div>
+            </div>
             </div>
     </section>
 
