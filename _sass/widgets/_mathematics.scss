@@ -113,8 +113,6 @@ ol.a > li:before {
     counter-increment: list;
     content: "(" counter(list, lower-alpha) ") ";
     /* Position and style the number */
-    position:absolute;
-    top:0px;
     left:-2em;
     width:2em;
     /* Some space between the number and the content in browsers that support
