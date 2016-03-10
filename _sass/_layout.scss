@@ -321,6 +321,11 @@ article ul {
 	.tehtava .collapse,
 	.panel .collapse {
 		display: block;
+		border-color: white;
+		border-top-width: 0pt;
+		border-bottom-width: 0pt;
+		border-left-width: 0pt;
+		border-right-width: 0pt;
 	}
 	
 	.tehtava {
