@@ -544,10 +544,17 @@ topnav: maa4
         </header>
         <div id="yhtaloryhman-ratkaiseminen" class="collapse">
 
-            <p> Vektoreiden yhdensuuntaisuus määritellään $xyz$-koordinaatistossa samalla tavalla kuin $xy$-tasossa: vektorit $\vv$ ja $\vw$ ovat yhdensuuntaiset eli $\vv \parallel \vw$, jos ja vain jos $\vv=r\vw$ jollakin reaaliluvulla $r \neq 0$.  
+            <p> Vektoreiden yhdensuuntaisuus määritellään $xyz$-koordinaatistossa samalla tavalla kuin $xy$-tasossa:  
             </p>
 
-            <p>Kahden vektorin yhdensuuntaisuuden tutkiminen johtaa usein yhtälöpariin tai yhtälöryhmään. Esimerkiksi jos halutaan määrittää vakio $t$ niin, että vektorit $\vv = 0{,}5\vi + t\vj + \vk$ ja $\vw = -\vi + 1{,}5\vj-2\vk$ ovat yhdensuuntaisia, on tutkittava yhtälöä
+            <div class="definition">
+                <h3>MÄÄRITELMÄ: YHDENSUUNTAISUUS</h3>
+                <p>
+                    Vektorit $\vv$ ja $\vw$ ovat yhdensuuntaiset eli $\vv \parallel \vw$, jos ja vain jos $\vv=r\vw$ jollakin reaaliluvulla $r \neq 0$.
+                </p>
+            </div>
+
+            <p>Vektoreiden yhdensuuntaisuuden tutkiminen johtaa usein yhtälöpariin tai yhtälöryhmään. Esimerkiksi jos halutaan määrittää vakio $t$ niin, että vektorit $\vv = 0{,}5\vi + t\vj + \vk$ ja $\vw = -\vi + 1{,}5\vj-2\vk$ ovat yhdensuuntaisia, on tutkittava yhtälöä
                 $$\vv = r\vw.$$
                 Tämä yhtälö voidaan kirjoittaa muodossa
                 $$0{,}5\vi + t\vj + \vk = r(-\vi + 1{,}5\vj-2\vk)$$
@@ -592,6 +599,28 @@ topnav: maa4
                 siis toteutuu, jos ja vain jos $r = -0{,}5$ ja $t = -0{,}75$. Tästä voidaan päätellä, että vektorit $\vv = 0{,}5\vi + t\vj + \vk$ ja $\vw = -\vi + 1{,}5\vj-2\vk$ ovat yhdensuuntaisia, jos ja vain jos $t = -0{,}75$. Tällöin vektorit ovat vastakkaissuuntaisia, koska yhtälössä $\vv = r\vw$ esiintyvä kerroin $r$ on negatiivinen: $r = -0{,}5$.
             </p>
 
+            <div class="tehtavat">
+                <div class="tehtava" id="t-yhtaloryhmaT7-ex">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" href="#t-yhtaloryhmaT7">
+                                Vektoreiden yhdensuuntaisuus
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-yhtaloryhmaT7" class="collapse">
+                        <p> Tutki, onko olemassa sellainen luku $t$, että vektorit $\vv$ ja $\vw$ ovat yhdensuuntaiset, jos
+                        <ol class="a">
+                            <li> $\vv = -\vi + 2\vj$ ja $\vw = 2\vi + t\vj$ 
+                            <li> $\vv = 2\vi + 3\vj$ ja $\vw = t\vi + \vj) - 3(3\vi +\vj)$. 
+                        </ol>
+                        Tarkista tuloksesi järkevyys hahmottelemalla kuva vektoreista $\vv$ ja $\vw$. Jos vektorit ovat yhdensuuntaiset, ovatko ne saman- vai vastakkaissuuntaiset? 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
             <div class="tehtavat">
                 <div class="tehtava" id="t-yhtaloryhmaT1-ex">
                     <header>
@@ -979,27 +1008,6 @@ topnav: maa4
                             6x-\phantom{2}y + 5z &= 10
                             \end{aligned}\right.
                             $$
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="tehtavat">
-                <div class="tehtava" id="t-yhtaloryhmaT7-ex">
-                    <header>
-                        <h1>
-                            <a data-toggle="collapse" class="collapsed" href="#t-yhtaloryhmaT7">
-                                Yhtälöryhmän ratkaiseminen
-                            </a>
-                        </h1>
-                    </header>
-
-                    <div id="t-yhtaloryhmaT7" class="collapse">
-                        <p> Tutki, onko olemassa sellainen luku $t$, että vektorit $\vv$ ja $\vw$ ovat yhdensuuntaiset, jos
-                        <ol class="a">
-                            <li> $\vv = -\vi + 2\vj$ ja $\vw = 2\vi + k\vj$ 
-                            <li> $\vv = 2\vi + 3\vj$ ja $\vw = k(\vi + \vj) - 3(3\vi +\vj)$. 
-                        </ol>
-                        Tarkista tuloksesi järkevyys hahmottelemalla kuva vektoreista $\vv$ ja $\vw$. Jos vektorit ovat yhdensuuntaiset, ovatko ne saman- vai vastakkaissuuntaiset? 
                         </p>
                     </div>
                 </div>
