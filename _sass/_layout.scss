@@ -332,14 +332,14 @@ article ul {
 		font-size: 10pt;
 	}
 	
-	.panel .tehtava,
-	section.panel,
-	.panel-default>.panel-heading, .tehtava>.panel-heading, .tehtava>header, .panel>header {
-		border-color: white !important;
-		border-top-width: 0pt !important;
-		border-bottom-width: 0pt !important;
-		border-left-width: 0pt !important;
-		border-right-width: 0pt !important;
+	article .tehtava,
+	article  .panel,
+	article  .panel-default>.panel-heading, article .tehtava>.panel-heading, article .tehtava>header, article .panel>header {
+		border-color: white;
+		border-top-width: 0pt;
+		border-bottom-width: 0pt;
+		border-left-width: 0pt;
+		border-right-width: 0pt;
 	}
 	
 	.tehtava header {
