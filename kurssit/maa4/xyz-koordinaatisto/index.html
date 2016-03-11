@@ -1148,8 +1148,66 @@ topnav: maa4
             </div>
 
             <p>
-                Tutkitaan seuraavaksi vektoreiden välisen kulman ja pistetulon yhteyttä. 
-                Vektoreiden välinen kulma voidaan laskea Geometria-kurssista tutun kosinilauseen avulla. Kosinilause on Pythagoraan lauseen yleistys. Pythagoraan lause pätee ainoastaan suorakulmaisille kolmioille, mutta kosinilausetta voi käyttää kaikille kolmioille. Kosinilauseen mukaan alla olevan kuvan kolmiossa 
+                Tutkitaan seuraavaksi vektoreiden välisen kulman ja pistetulon yhteyttä. Jos vektoreiden $\vv$ ja $\vw$ välinen kulma $\sphericalangle(\vv,\vw) = 180^\circ$, ovat vektorit $\vv$ ja $\vw$ vastakkaissuuntaiset. Tällöin on olemassa sellainen negatiivinen reaaliluku $r$, että $\vv = r\vw$. Vektoreiden $\vv$ ja $\vw$ pistetuloksi saadaan näin
+                $$
+                \begin{align*}
+                \vv \cdot \vw &= (r\vw) \cdot \vw \\
+                &= r(\vw\cdot \vw)  \\
+                &= \textcolor{blue}{r\left|\vw\right|^2}.
+                \end{align*}
+                $$
+                Toisaalta vektoreiden $\vv$ ja $\vw$ pituuksien tuloksi saadaan
+                $$
+                \begin{align*}
+                \left|\vv\right|\left|\vw\right| &= \left|r\vw\right| \left|\vw\right| \\
+                &= \left|r\right|\left|\vw\right| \left|\vw\right| \\
+                &= \left|r\right|\left|\vw\right|^2  \\
+                &= -r\left|\vw\right|^2.
+                \end{align*}
+                $$
+                Huomaa, että koska luku $r$ on negatiivinen, on sen itseisarvo sen vastaluku $-r$. Esimerkiksi jos $r= -2$, niin $\left|r\right| = \left|-2\right| = -(-2) = 2$.
+            </p>
+            <p>
+                Vektoreiden $\vv$ ja $\vw$ pituuksien tuloksi saatiin siis
+                $$
+                \left|\vv\right|\left|\vw\right| = -r\left|\vw\right|^2.
+                $$
+                Kerrotaan tämän yhtälön molemmat puolet luvulla $-1$. Koska $\cos (\vv, \vw) = \cos 180^\circ = -1$, voidaan näin saatu yhtälö kirjoittaa myös muodossa
+                $$
+                \left|\vv\right|\left|\vw\right|\cos (\vv, \vw) = \textcolor{blue}{r\left|\vw\right|^2}.
+                $$
+                Huomataan, että \textcolor{blue}{tässä saatu tulos} on sama kuin edellä \textcolor{blue}{vektoreiden pistetulosta saatu tulos}. Siten voidaan päätellä, että
+                $$
+                \vv \cdot \vw = \left|\vv\right| \left|\vw\right| \cos (\vv, \vw).
+                $$
+            </p>
+            <div class="tehtavat">
+                <div class="tehtava" id="t-pistetulo-ex">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" href="#t-pistetulo">
+                                Pistetulo ja vektoreiden välinen kulma
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-pistetulo" class="collapse">
+                        <p> Tutki, päteekö yhtälö
+                            $$
+                            \vv \cdot \vw = \left|\vv\right| \left|\vw\right| \cos (\vv, \vw)
+                            $$
+                            tilanteessa, jossa vektoreiden $\vv$ ja $\vw$ välinen kulma $\sphericalangle(\vv,\vw) = 0^\circ$.
+                        <ol class="a">
+                            <li> Tässäkin tilanteessa vektorit $\vv$ ja $\vw$ ovat yhdensuuntaisia, joten on olemassa sellainen reaaliluku $t$, että $\vv = t\vw$. Mitä voit päätellä luvun $t$ etumerkistä?
+                            <li> Sievennä vektoreiden $\vv$ ja $\vw$ pistetulo $\vv \cdot \vw$ ja pituuksien tulo $\left|\vv\right|\left|\vw\right|$ samaan tapaan kuin edellä tehtiin. 
+                            <li> Vertaa saamiasi tuloksia. Voitko päätellä, että yllä mainittu yhtälö pätee? Tarkista tarvittaessa kulman $\sphericalangle(\vv,\vw) = 0^\circ$ kosinin arvo laskimesta.
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Jos vektoreiden välinen kulma on suurempi kuin $0^\circ$ ja pienempi kuin $180^\circ$, voidaan vektoreista muodostaa kolmio, jonka kylkinä tarkasteltavat vektorit ovat. Vektoreiden välinen kulma voidaan tällöin laskea Geometria-kurssista tutun kosinilauseen avulla. Kosinilause on Pythagoraan lauseen yleistys. Pythagoraan lause pätee ainoastaan suorakulmaisille kolmioille, mutta kosinilausetta voi käyttää kaikille kolmioille. Kosinilauseen mukaan alla olevan kuvan kolmiossa 
                 $$
                 c^2=a^2+b^2-2ab \cos \gamma.
                 $$
