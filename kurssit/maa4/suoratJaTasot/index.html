@@ -120,6 +120,28 @@ topnav: maa4
                     </div>
                 </div>
 
+                <p>
+                Alla olevassa kuvassa on suora, jonka yksi vektoriyhtälö on
+                $$\pv{OP} = \vi + 2\vj + t(3\vi + \vj).$$
+                Jos suoran pisteen $P$ koordinaatteja merkitään kirjaimilla $x$ ja $y$, voidaan yllä oleva vektoriyhtälö kirjoittaa muodossa
+                $$x\vi + y\vj = \vi + 2\vj + t(3\vi + \vj).$$
+                Tämän yhtälön oikealla puolella voidaan kertoa sulut auki, jolloin yhtälö saadaan muotoon
+                $$x\vi + y\vj = \vi + 2\vj + 3t\vi + t\vj.$$
+                Yhtälön oikeaa puolta voidaan vielä sieventää suorittamalla yhteenlaskut, minkä jälkeen yhtälö näyttää tältä:
+                $$x\vi + y\vj = (1+3t)\vi + (2+t)\vj.$$
+                Vektoreiden samuuden määritelmän mukaan tämä yhtälö toteutuu, jos ja vain jos yhtälön eri puolilla olevat vektorit voidaan ilmaista samalla tavalla vektoreiden $\vi$ ja $\vj$ avulla eli
+                $$
+                \left\{\begin{aligned}
+                x &= 1+3t \\
+                y &= 2+t. 
+                \end{aligned}\right.
+                $$
+                Minkä tahansa suoran vektoriyhtälö voidaan muuttaa vastaavaan muotoon, jossa suoran pisteen jokaiselle koordinaatille on oma yhtälönsä. Tätä esitystapaa sanotaan suoran <em>parametriesitykseksi</em>.
+                </p>
+                <p>
+                <img src="img/L4k8.png" max-width: 100%; width: auto; height: auto;/> 
+                </p>
+
                 <div class="tehtavat">
                     <div class="tehtava" id="t-L4t2-ex">
                         <header>
@@ -138,6 +160,7 @@ topnav: maa4
                                 <li> Piirrä tilanteesta mallikuva.
                                 <li> Muodosta suoran $L$ vektoriyhtälö.
                                 <li> Määritä vektoriyhtälön avulla kolme uutta pistettä suoralta $L$ antamalla eri arvoja parametrille $t$. Havainnollista näitä pisteitä mallikuvasi avulla.
+                                <li> Muodosta suoran $L$ parametriesitys d-kohdan vektoriyhtälön avulla.
                             </ol>
                             </p>
                         </div>
@@ -162,7 +185,7 @@ topnav: maa4
                         </header>
 
                         <div id="t-L4t3" class="collapse">
-                            <p> Suora $L$ kulkee pisteiden $A = (1,4,-2)$ kautta ja sillä on suuntavektori $\vv = \vi - 2\vj + 3\vk$. 
+                            <p> Suora $L$ kulkee pisteen $A = (1,4,-2)$ kautta ja sillä on suuntavektori $\vv = \vi - 2\vj + 3\vk$. 
                             <ol class="a">
                                 <li> Muodosta pisteen $Q = (-1,8,-8)$ paikkavektori ja tutki, onko yhtälöllä $\pv{OQ} = \pv{OA} + t\vv$ ratkaisua.
                                 <li> Päättele a-kohdan avulla, onko piste $Q$ suoralla $L$. Selitä omin sanoin. Voit havainnollistaa tilannetta mallikuvalla.
@@ -172,6 +195,8 @@ topnav: maa4
                             </p>
                         </div>
                     </div>
+
+
                 </div>
         </section>
         <section class="panel">
@@ -184,7 +209,7 @@ topnav: maa4
             </header>
             <div id="taso" class="collapse">
                 <p>
-                    Tarkastellaan alla olevaa kuvaa. Sen pisteiden $A$, $B$ ja $C$ kautta on mahdollista piirtää ainoastaan yksi taso, sillä nämä pisteet eivät ole samalla suoralla.
+                    Tarkastellaan alla olevaa kuvaa. Siinä pisteiden $A$, $B$ ja $C$ kautta on mahdollista piirtää ainoastaan yksi taso, sillä nämä pisteet eivät ole samalla suoralla.
                 </p>
                 <p>
                     <img src="img/L4k5.png" max-width: 100%; width: auto; height: auto;/> 
@@ -209,8 +234,8 @@ topnav: maa4
                         Oletetaan, että piste $A$ on tasossa $T$, jonka suuntavektorit ovat $\vv$ ja $\vw$. Oletetaan lisäksi, että $\vv \nparallel \vw$. Yhtälöä
                         $$\pv{OP} = \pv{OA} + s\vv + t\vw$$
                         sanotaan tason $T$ vektoriyhtälöksi.
-                    </p>
-                    <p> Tason vektoriyhtälössä esiintyvää vektoria $\pv{OA}$ kutsutaan tason paikkavektoriksi.
+                    <br> 
+                        Tason vektoriyhtälössä esiintyvää vektoria $\pv{OA}$ kutsutaan tason paikkavektoriksi.
                     </p>
                 </div>
 
