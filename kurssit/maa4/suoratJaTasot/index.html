@@ -215,9 +215,172 @@ topnav: maa4
                         </header>
 
                         <div id="t-L4t5" class="collapse">
-                            <p> 
+                            <p> Tehtävänä on muodostaa suoran $L$ vektoriyhtälö, kun tiedetään, että sen parametriesitys on 
+                            $$
+                            \left\{\begin{aligned}
+                            x &= 2-2t \\
+                            y &= 5+t \\
+                            z &= 1 + 4t
+                            \end{aligned}\right.
+                            $$ 
                             <ol class="a">
-                                <li> 
+                                <li> Määritä parametrin $t$ arvoa $t = 0$ vastaava suoran $L$ piste ja muodosta sen paikkavektori.
+                                <li> Selitä, miten voit lukea a-kohdan paikkavektorin parametriesityksestä ilman laskuja.
+                                <li> Miten voisit lukea suoran suuntavektorin parametriesityksestä ilman laskuja?
+                                <li> Olkoon $A$ arvoa $t = 0$ vastaava suoran piste ja $B$ arvoa $t = 1$ vastaava suoran piste. Määritä nämä pisteet ja muodosta niiden avulla vektori $\pv{AB}$. Se on yksi suoran $L$ suuntavektori. Saitko saman tuloksen kuin c-kohdassa päättelemällä?
+                                <li> Muodosta suoran $L$ vektoriyhtälö.
+                            </ol>
+                            </p>
+                        </div>
+                    </div>
+
+                    <p> Tutkitaan seuraavaksi suorien leikkauspisteitä. Kaksi suoraa leikkaa toisensa, jos ja vain jos niillä on yhteinen piste. Toisin sanottuna kaksi suoraa leikkaa toisensa, jos ja vain jos on olemassa sellainen piste $P$, jonka paikkavektori $\pv{OP}$ toteuttaa kummankin suoran vektoriyhtälön. KUVA
+                    </p>
+
+                    <div class="tehtavat">
+                    <div class="tehtava" id="t-L4t6-ex">
+                        <header>
+                            <h1>
+                                <a data-toggle="collapse" class="collapsed" href="#t-L4t6">
+                                    Suora
+                                </a>
+                            </h1>
+                        </header>
+
+                        <div id="t-L4t6" class="collapse">
+                            <p> Suoran $L_1$ vektoriyhtälö on $\pv{OP} = -2\vi + 2\jv + t(\vi + 3\vj)$. Suoran $L_2$ vektoriyhtälö on $\pv{OP} = 2\vi - 1\jv + s(-2\vi - \vj)$. 
+                            <ol class="a">
+                                <li> Piirrä kumpikin suora koordinaatistoon. Merkitse kuvaan suorien paikkavektorit ja suuntavektorit.
+                                <li> Suorilla on yksi leikkauspiste $P$. Määritä sen koordinaatit piirroksesi avulla.
+                                <li> Päättele piirroksesi avulla, millä parametrin $t$ arvolla leikkauspisteen paikkavektori $\pv{OP}$ toteuttaa suoran $L_1$ vektoriyhtälön.
+                                <li> Päättele piirroksesi avulla, millä parametrin $s$ arvolla leikkauspisteen paikkavektori $\pv{OP}$ toteuttaa suoran $L_2$ vektoriyhtälön.
+                            </ol>
+                            </p>
+                        </div>
+                    </div>
+
+                    <p> 
+                        Tarkastellaan suoria, joiden vektoriyhtälöt ovat $\pv{OP} = \pv{OA} + t\vv$ ja $\pv{OP} = \pv{OC} + s\vw$. Jos näillä suorilla on leikkauspiste, sen paikkavektori toteuttaa kummankin yhtälön. Leikkauspiste löydetään siis tutkimalla yhtälöä 
+                        $$\pv{OA} + t\vv = \pv{OC} + s\vw.$$
+                        Jos tällä yhtälöllä ei ole ratkaisua, tarkoittaa se, ettei suorilla ole yhtään leikkauspistettä. 
+                    </p>
+
+                    <p>
+                        Esimerkiksi edellisen tehtävän suorien leikkauspiste löydetään tutkimalla yhtälöä
+                        $$-2\vi + 2\jv + t(\vi + 3\vj) = 2\vi - 1\jv + s(-2\vi - \vj).$$ 
+                        Kertomalla sulut auki se saadaan muotoon
+                        $$-2\vi + 2\jv + t\vi + 3t\vj = 2\vi - 1\jv + -2s\vi - s\vj.$$
+                        Vasenta ja oikeaa puolta voidaan vielä sieventää suorittamalla yhteenlaskut, jolloin päästään yhtälöön
+                        $$(-2+t)\vi + (2+3t)\jv= (2-2s)\vi +(-1-s)\jv.$$
+                        Vektoreiden samuuden määritelmän mukaan tämä yhtälö toteutuu, jos ja vain jos yhtälön eri puolilla olevat vektorit voidaan ilmaista samalla tavalla vektoreiden $\vi$ ja $\vj$ avulla eli
+                        $$
+                        \left\{\begin{aligned}
+                        -2+t &= 2-2s \\
+                        2+3t &= -1-s. 
+                        \end{aligned}\right.
+                        $$
+                        Lisäämällä ensimmäisen yhtälön molemmille puolille $2+2s$ ja toisen yhtälön molemmille puolille $s-2$ saadaan yhtälöryhmä muotoon
+                        $$
+                        \left\{\begin{aligned}
+                        2s+t &= 4 \\
+                        s+3t &= -3. 
+                        \end{aligned}\right.
+                        $$
+                        Tämä yhtälöpari voidaan ratkaista samaan tapaan kuin edellisessä luvussa tehtiin.
+                    </p>
+
+                    <div class="tehtavat">
+                    <div class="tehtava" id="t-L4t7-ex">
+                        <header>
+                            <h1>
+                                <a data-toggle="collapse" class="collapsed" href="#t-L4t7">
+                                    Suora
+                                </a>
+                            </h1>
+                        </header>
+
+                        <div id="t-L4t7" class="collapse">
+                            <p> Ratkaise yhtälöpari
+                            $$
+                            \left\{\begin{aligned}
+                            2s+t &= 4 \\
+                            s+3t &= -3. 
+                            \end{aligned}\right.
+                            $$    
+                            ja vertaa tulosta edellisen tehtävän tulokseen. Saitko laskemalla saman tuloksen kuin kuvasta päättelemällä?
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tehtavat">
+                    <div class="tehtava" id="t-L4t8-ex">
+                        <header>
+                            <h1>
+                                <a data-toggle="collapse" class="collapsed" href="#t-L4t8">
+                                    Suora
+                                </a>
+                            </h1>
+                        </header>
+
+                        <div id="t-L4t8" class="collapse">
+                            <p> Suora $L_1$ kulkee pisteiden $A = (4;4;-4,5)$ ja $B = (5,6,-7)$ kautta. Suora $L_2$ kulkee pisteiden $C = (5,0,-1)$ ja $D = (7,1,-3)$ kautta. 
+                            <ol class="a">
+                                <li> Muodosta suoran $L_1$ vektoriyhtälö.
+                                <li> Muodosta suoran $L_2$ vektoriyhtälö. Käytä parametrina jotain toista kirjainta kuin a-kohdassa.
+                                <li> Tutki, leikkavatko suorat $L_1$ ja $L_2$ toisensa. Mitkä ovat mahdollisen leikkauspisteen koordinaatit?
+                            </ol>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tehtavat">
+                    <div class="tehtava" id="t-L4t9-ex">
+                        <header>
+                            <h1>
+                                <a data-toggle="collapse" class="collapsed" href="#t-L4t9">
+                                    Suora
+                                </a>
+                            </h1>
+                        </header>
+
+                        <div id="t-L4t9" class="collapse">
+                            <p> Suora $L_1$ kulkee pisteiden $A = (1,-3,0)$ ja $B = (4,0,3)$ kautta. Suora $L_2$ kulkee pisteiden $C = (5,2,2)$ ja $D = (8,0,1)$ kautta. 
+                            <ol class="a">
+                                <li> Muodosta suoran $L_1$ vektoriyhtälö.
+                                <li> Muodosta suoran $L_2$ vektoriyhtälö. Käytä parametrina jotain toista kirjainta kuin a-kohdassa.
+                                <li> Tutki, leikkavatko suorat $L_1$ ja $L_2$ toisensa. Mitkä ovat mahdollisen leikkauspisteen koordinaatit?
+                            </ol>
+                            </p>
+                        </div>
+                    </div>
+
+                    <p> 
+                    Kahden suoran välistä kulmaa voidaan tutkia pistetulon avulla. Esimerkiksi alla olevassa kuvassa suoran $L_1$ suuntavektoriksi voidaan valita vektori $\vv = -3\vi + 2\vj$ ja suoran $L_2$ suuntavektoriksi voidaan valita $\vw = 4\vi + 3\vj$. KUVA Niiden välisen kulman kosini saadaan yhtälöstä
+                    $$
+                    \begin{align*}
+                    \cos(\vv, \vw) &= \frac{\vv \cdot \vw}{|\vv||\vw|} \\
+                    &= \frac{-3\cdot 4 + 2\cdot 3}{\sqrt{(-3)^2 + 2^2}\sqrt{4^2 + 3^2}} \\
+                    &\approx -0{,}332820.
+                    \end{align*}
+                    $$
+                    Tästä saadaan laskimella $\sphericalangle(\vv, \vw) \approx 109{,}4^\circ$. Koska tulos on yli $90^\circ$, voidaan päätellä, että suorien $L_1$ ja $L_2$ välinen kulma on $180^\circ - 109{,}4^\circ = 70{,}6^\circ.$ 
+                    </p>
+
+                    <div class="tehtavat">
+                    <div class="tehtava" id="t-L4t10-ex">
+                        <header>
+                            <h1>
+                                <a data-toggle="collapse" class="collapsed" href="#t-L4t10">
+                                    Suora
+                                </a>
+                            </h1>
+                        </header>
+
+                        <div id="t-L4t10" class="collapse">
+                            <p>  
+                            <ol class="a">
+                                <li> Laske edellisen tehtävän suorien $L_1$ ja $L_2$ välinen kulma. 
+                                <li> Miten on mahdollista, että suorat $L_1$ ja $L_2$ eivät leikkaa toisiaan, vaikka ne eivät ole yhdensuuntaisia? Selitä omin sanoin.
                             </ol>
                             </p>
                         </div>
