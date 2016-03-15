@@ -352,6 +352,7 @@ article ul {
 	
 	img {
 		max-width: 60%;
+		page-break-inside: avoid;
 	}
 	
 	main.has-atop article {
