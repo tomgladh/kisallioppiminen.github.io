@@ -324,12 +324,12 @@ article ul {
         .tehtava .collapse,
 	.panel .collapse {
 		display: block;
+		line-height: 9pt;
 	}
 	
 	article .tehtava,
 	article  .panel,
 	article  .panel-default>.panel-heading, article .tehtava>.panel-heading, article .tehtava>header, article .panel>header {
-		border-color: white;
 		border-top-width: 0pt;
 		border-bottom-width: 0pt;
 		border-left-width: 0pt;
@@ -338,9 +338,9 @@ article ul {
     		box-shadow: none;
 	}
 	
-	.tehtava>header {
-		background: white;
-		background-color: white;
+	section .tehtava>header {
+		background: transparent;
+		background-color: transparent;
 	}
 	
 	article section .tehtava {
