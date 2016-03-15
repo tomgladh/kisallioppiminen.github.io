@@ -320,6 +320,11 @@ article ul {
 	section.panel>header a[data-toggle="collapse"].collapsed:after {
                 content: none;
         }
+        
+        .tehtava .collapse,
+	.panel .collapse {
+		display: block;
+	}
 	
 	article .tehtava,
 	article  .panel,
