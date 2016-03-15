@@ -301,6 +301,8 @@ article ul {
 }
 
 @media print {
+	
+	*{transition:none!important}
 
 	body > header, 
 	atop,
@@ -328,10 +330,6 @@ article ul {
 		border-right-width: 0pt;
 	}
 	
-	.tehtava {
-		font-size: 10pt;
-	}
-	
 	article .tehtava,
 	article  .panel,
 	article  .panel-default>.panel-heading, article .tehtava>.panel-heading, article .tehtava>header, article .panel>header {
@@ -343,8 +341,13 @@ article ul {
 		-webkit-print-color-adjust: exact;
 	}
 	
-	.tehtava header {
+	.tehtava>header {
 		background: white;
+	}
+	
+	.tehtava {
+		font-size: 10pt;
+		border-left: 1pt solid #555;
 	}
 	
 	img {
