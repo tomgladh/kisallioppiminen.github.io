@@ -321,16 +321,6 @@ article ul {
                 content: none;
         }
 	
-	.tehtava .collapse,
-	.panel .collapse {
-		display: block;
-		border-color: white;
-		border-top-width: 0pt;
-		border-bottom-width: 0pt;
-		border-left-width: 0pt;
-		border-right-width: 0pt;
-	}
-	
 	article .tehtava,
 	article  .panel,
 	article  .panel-default>.panel-heading, article .tehtava>.panel-heading, article .tehtava>header, article .panel>header {
@@ -339,7 +329,8 @@ article ul {
 		border-bottom-width: 0pt;
 		border-left-width: 0pt;
 		border-right-width: 0pt;
-		-webkit-print-color-adjust: exact;
+		-webkit-box-shadow: none;
+    		box-shadow: none;
 	}
 	
 	.tehtava>header {
