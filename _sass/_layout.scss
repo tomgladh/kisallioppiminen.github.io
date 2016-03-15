@@ -316,7 +316,8 @@ article ul {
 		background-color: white;
 	}
 	
-	section .tehtava>header a[data-toggle="collapse"].collapsed:after, section .panel>header a[data-toggle="collapse"].collapsed:after {
+	section .tehtava>header a[data-toggle="collapse"].collapsed:after, 
+	section.panel>header a[data-toggle="collapse"].collapsed:after {
                 content: none;
         }
 	
@@ -345,7 +346,7 @@ article ul {
 		background: white;
 	}
 	
-	.tehtava {
+	article section .tehtava {
 		font-size: 10pt;
 		border-left: 1pt solid #555;
 	}
