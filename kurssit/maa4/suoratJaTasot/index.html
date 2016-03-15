@@ -665,16 +665,41 @@ topnav: maa4
         <section class="panel">
             <header>
                 <h1>
-                    <a data-toggle="collapse" class="collapsed" href="#suora-normaali">
-                        Suoran ja tason 
+                    <a data-toggle="collapse" class="collapsed" href="#normaalit">
+                        Normaalimuotoiset yhtälöt
                     </a>
                 </h1>
             </header>
-            <div id="suora" class="collapse">
-
+            <div id="normaalit" class="collapse">
 
                     <p>
-                        Kaksi koordinaattiakselia määrää aina tason. Esimerkiksi $xy$-taso tarkoittaa $x$- ja $y$-akseleiden kautta kulkevaa tasoa, jossa kaikkien pisteiden $z$-koordinaatti on $0$. Pistetulon avulla voidaan tutkia myös suoran ja tällaisen tason välistä kulmaa. Tätä harjoitellaan seuraavassa tehtävässä. Tämä tason normaalin kautta..
+                        Tarkastellaan alla olevan kuvan suoraa $L$, jonka vektorimuotoinen parametriesitys on 
+                        $$\vp{OP} = 2\vi + \vj + t(2\vi - \vj).$$
+                        Kuvassa on näkyvissä vektori $\vn = \vi + 2\vj$, joka on kohtisuorassa suoran $L$ suuntavektoria $\vv = 2\vi - \vj$ vastaan. Tämä voidaan varmistaa laskemalla näiden vektoreiden pistetulo:
+                        $$\begin{align*}
+                        \vn \cdot \vv &= (\vi + 2\vj)\cdot (2\vi - \vj) \\
+                        &= 1\cdot 2 + 2\cdot (-1) \\
+                        &= 2-2 = 0.
+                        \end{align*}
+                        $$
+                        Koska vektori $\vn$ on kohtisuorassa suoran $L$ suuntavektoria vastaan ja siten myös koko suoraa $L$ vastaan, sanotaan sitä suoran $L$ <em>normaalivektoriksi</em>. 
+                    </p>
+
+                    <p>
+                        Tutkimalla yllä olevaa kuvaa voidaan havaita, että piste $P = (x,y)$ on suoralla $L$, jos ja vain jos vektori $\vp{OP}-\pv{OA}$ on kohtisuorassa suoran normaalivektoria $\vn$ vastaan. Pistetulon avulla sama asia voidaan ilmaista sanomalla, että piste $P = (x,y)$ on suoralla $L$, jos ja vain jos
+                        $$(\pv{OP}-\pv{OA}) \cdot \vn = 0,$$
+                        missä $\pv{OA}$ on suoran $L$ paikkavektori ja $\vn$ on suoran $L$ normaalivektori.
+                    </p>
+
+                    <p>
+                        Pistetulon laskusääntöjen nojalla edellä mainittu yhtälö voidaan kirjoittaa myös muodossa
+                        $$\pv{OP} \cdot \vn-\pv{OA}\cdot \vn = 0.$$
+                        Kun tähän sijoitetaan pisteen $P = (x,y)$ paikkavektori $\pv{OP} = x\vi + y\vj$, suoran $L$ paikkavektori $\pv{OA} = 2\vi + \vj$ ja suoran $L$ normaalivektori $\vn = \vi + 2\vj$, saadaan se muotoon
+                        $$(x\vi + y\vj)\cdot (\vi + 2\vj) - (2\vi + \vj)) \cdot (\vi + 2\vj) = 0.$$
+                        Vasenta puolta voidaan sieventää laskemalla pistetulot:
+                        $$(x\cdot 1 + y\cdot 2) - (2\cdot 1 + 1\cdot 2) = 0.$$
+                        Sievennyksen jälkeen yhtälö saadaan muotoon
+                        $$x + 2y -4 = 0.$$
                     </p>
 
                     <div class="tehtavat">
@@ -682,16 +707,54 @@ topnav: maa4
                         <header>
                             <h1>
                                 <a data-toggle="collapse" class="collapsed" href="#t-L4t20">
-                                    Suora
+                                    Suoran normaalivektori
                                 </a>
                             </h1>
                         </header>
 
                         <div id="t-L4t20" class="collapse">
-                            <p>  Suora $L_1$ kulkee pisteiden $A = (1,1,2)$ ja $B = (2,-1,1)$ kautta. Tehtävänä on laskea suoran $L_1$ ja $xz$-tason välinen kulma.
-                            <ol class="a">
-                                <li> Määritä suoran $L_1$ suuntavektori. 
-                                
+                            <p>  Tarkastellaan edelleen suoraa $L$, jonka vektorimuotoinen parametriesitys on 
+                            $$\vp{OP} = 2\vi + \vj + t(2\vi - \vj)$$
+                            ja jonka yksi normaalivektori on $\vn = \vi + 2\vj$.
+                            <br> 
+                            Edellä pääteltiin, että piste $P = (x,y)$ on tällä suoralla, jos ja vain jos se toteuttaa yhtälön 
+                            $$x+2y-4 = 0.$$
+                            Missä tässä yhtälössä näkyvät normaalivektorissa $\vn = \vi + 2\vj$ esiintyvät kertoimet $1$ ja $2$?
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="definition">
+                    <h3>MÄÄRITELMÄ: SUORAN NORMAALIMUOTOINEN YHTÄLÖ</h3>
+                    <p>
+                        Oletetaan, että $L$ on $xy$-tason suora ja $\vn = a\vi + b\vj$ on sen normaalivektori. 
+                        Yhtälö
+                        $$ax + by + c = 0$$
+                        on suoran $L$ <em>normaalimuotoinen yhtälö</em>.
+                    </p>
+                </div>
+
+                    <div class="tehtavat">
+                    <div class="tehtava" id="t-L4t21-ex">
+                        <header>
+                            <h1>
+                                <a data-toggle="collapse" class="collapsed" href="#t-L4t21">
+                                    Suoran normaalimuotoinen yhtälö
+                                </a>
+                            </h1>
+                        </header>
+
+                        <div id="t-L4t21" class="collapse">
+                            <p>  Tehtävänä on määrittää normaalimuotoinen yhtälö suoralle $L$, jonka vektorimuotoinen parametriesitys on $\pv{OP} = -\vi + 4\vj + t(\vi + 3\vj)$.
+                                <ol class="a">
+                                <li> Mikä tässä parametriesityksessä on suoran $L$ paikkavektori $\pv{OA}$? Entä suuntavektori $\vv$?
+                                <li> Piirrä suora $L$ koordinaatistoon.
+                                <li> Etsi suoralle $L$ jokin normaalivektori $\vn$. Voit päätellä sen piirroksesta, mutta varmista pistetulon avulla, että se todella on kohtisuorassa suoran $L$ suuntavektoria vastaan.
+                                <li> Valitse piirroksestasi jokin suoran $L$ piste ja anna sille nimi $P$. Merkitse sen koordinaatteja $(x,y)$.
+                                <li> Merkitse piirrokseesi vektori $\pv{OP} - \pv{OA}$. 
+                                <li> Muodosta suoran $L$ normaalimuotoinen yhtälö muokkaamalla yhtälöä 
+                                    $$(\pv{OP} - \pv{OA}) \cdot \vn = 0$$
+                                    kunnes se on samassa muodossa kuin määritelmässä.
                             </ol>
                             </p>
                         </div>
