@@ -325,7 +325,7 @@ article ul {
         .tehtava .collapse,
 	.panel .collapse {
 		display: block;
-		line-height: 9pt;
+		line-height: 10pt;
 	}
 	
 	article .tehtava,
@@ -342,6 +342,7 @@ article ul {
 	section .tehtava>header {
 		background: transparent;
 		background-color: transparent;
+		padding: 0;
 	}
 	
 	article section .tehtava {
