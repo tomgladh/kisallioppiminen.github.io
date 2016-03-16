@@ -686,18 +686,56 @@ topnav: maa4
                     </p>
 
                     <p>
-                        Tutkimalla yllä olevaa kuvaa voidaan havaita, että piste $P = (x,y)$ on suoralla $L$, jos ja vain jos vektori $\pv{OP}-\pv{OA}$ on kohtisuorassa suoran normaalivektoria $\vn$ vastaan. Pistetulon avulla sama asia voidaan ilmaista sanomalla, että piste $P = (x,y)$ on suoralla $L$, jos ja vain jos
-                        $$(\pv{OP}-\pv{OA}) \cdot \vn = 0,$$
-                        missä $\pv{OA}$ on suoran $L$ paikkavektori ja $\vn$ on suoran $L$ normaalivektori.
+                    <div class="tehtavat">
+                    <div class="tehtava" id="t-L4t20a-ex">
+                        <header>
+                            <h1>
+                                <a data-toggle="collapse" class="collapsed" href="#t-L4t20a">
+                                    Suoran normaalivektori
+                                </a>
+                            </h1>
+                        </header>
+
+                        <div id="t-L4t20a" class="collapse">
+                            <p> Keksi kaksi eri normaalivektoria alla olevan kuvan suoralle $L$. Tarkista pistetulon avulla, että löytämäsi vektorit ovat todella kohtisuorassa suoran $L$ suuntavektoria vastaan.
+                            </p>
+                        </div>
+                    </div>
                     </p>
 
                     <p>
-                        Pistetulon laskusääntöjen nojalla edellä mainittu yhtälö voidaan kirjoittaa myös muodossa
-                        $$\pv{OP} \cdot \vn-\pv{OA}\cdot \vn = 0.$$
-                        Kun tähän sijoitetaan pisteen $P = (x,y)$ paikkavektori $\pv{OP} = x\vi + y\vj$, suoran $L$ paikkavektori $\pv{OA} = 2\vi + \vj$ ja suoran $L$ normaalivektori $\vn = \vi + 2\vj$, saadaan se muotoon
-                        $$(x\vi + y\vj)\cdot (\vi + 2\vj) - (2\vi + \vj) \cdot (\vi + 2\vj) = 0.$$
+                    <div class="tehtavat">
+                    <div class="tehtava" id="t-L4t20b-ex">
+                        <header>
+                            <h1>
+                                <a data-toggle="collapse" class="collapsed" href="#t-L4t20b">
+                                    Suoran normaalivektori
+                                </a>
+                            </h1>
+                        </header>
+
+                        <div id="t-L4t20b" class="collapse">
+                            <p> Suoran $L$ vektorimuotoinen parametriesitys on $\pv{OP} = \vi - 2\vj + t(\vi + 4\vj)$. <ol class="a">
+                                <li> Mikä on tämän suoran paikkavektori? Entä suuntavektori?
+                                <li> Piirrä suora $L$ koordinaatistoon.
+                                <li> Etsi suoralle $L$ jokin normaalivektori $\vn$. Voit päätellä sen piirroksesta, mutta varmista pistetulon avulla, että se todella on kohtisuorassa suoran $L$ suuntavektoria vastaan.
+                            </ol>
+                            </p>
+                        </div>
+                    </div>
+                    </p>
+
+                    <p>
+                        Tutkimalla yllä olevaa kuvaa voidaan havaita, että piste $P = (x,y)$ on suoralla $L$, jos ja vain jos vektori $\pv{AP}$ on kohtisuorassa suoran normaalivektoria $\vn$ vastaan. Pistetulon avulla sama asia voidaan ilmaista sanomalla, että piste $P = (x,y)$ on suoralla $L$, jos ja vain jos
+                        $$\pv{AP} \cdot \vn = 0,$$
+                        missä $\vn$ on suoran $L$ normaalivektori.
+                    </p>
+
+                    <p>
+                        Kun tähän yhtälöön sijoitetaan vektori $\pv{AP} = (x-2)\vi + (y-1)\vj$ ja suoran $L$ normaalivektori $\vn = \vi + 2\vj$, saadaan se muotoon
+                        $$((x-2)\vi + (y-1)\vj)\cdot (\vi + 2\vj)= 0.$$
                         Vasenta puolta voidaan sieventää laskemalla pistetulot:
-                        $$(x\cdot 1 + y\cdot 2) - (2\cdot 1 + 1\cdot 2) = 0.$$
+                        $$(x-2)\cdot 1 + (y-1)\cdot 2 = 0.$$
                         Sievennyksen jälkeen yhtälö saadaan muotoon
                         $$x + 2y -4 = 0.$$
                     </p>
@@ -733,6 +771,7 @@ topnav: maa4
                     </p>
                 </div>
 
+                <p>
                     <div class="tehtavat">
                     <div class="tehtava" id="t-L4t21-ex">
                         <header>
@@ -749,15 +788,195 @@ topnav: maa4
                                 <li> Piirrä suora $L$ koordinaatistoon.
                                 <li> Etsi suoralle $L$ jokin normaalivektori $\vn$. Voit päätellä sen piirroksesta, mutta varmista pistetulon avulla, että se todella on kohtisuorassa suoran $L$ suuntavektoria vastaan.
                                 <li> Valitse piirroksestasi jokin suoran $L$ piste ja anna sille nimi $P$. Merkitse sen koordinaatteja $(x,y)$.
-                                <li> Merkitse piirrokseesi vektori $\pv{OP} - \pv{OA}$. Tässä vektori $\pv{OA}$ on suoran $L$ paikkavektori.
+                                <li> Merkitse piirrokseesi vektori $\pv{AP}$. Tässä $A$ on suoran $L$ jokin piste, jonka koordinaatit tunnetaan.
+                                <li> Ilmaise vektori $\pv{AP}$ vektoreiden $\vi$ ja $\vj$ avulla.
                                 <li> Muodosta suoran $L$ normaalimuotoinen yhtälö muokkaamalla yhtälöä 
-                                    $$(\pv{OP} - \pv{OA}) \cdot \vn = 0$$
+                                    $$\pv{AP} \cdot \vn = 0$$
                                     kunnes se on samassa muodossa kuin määritelmässä.
                             </ol>
                             </p>
                         </div>
                     </div>
+                </p>
 
+                <p>
+                    <div class="tehtavat">
+                    <div class="tehtava" id="t-L4t22-ex">
+                        <header>
+                            <h1>
+                                <a data-toggle="collapse" class="collapsed" href="#t-L4t22">
+                                    Suoran normaalimuotoinen yhtälö
+                                </a>
+                            </h1>
+                        </header>
+
+                        <div id="t-L4t22" class="collapse">
+                            <p>  Suoran $L$ normaalimuotoinen yhtälö on $2x + 3y - 2 = 0$. 
+                                <ol class="a">
+                                <li> Piste $A$ on suoralla $L$ ja tiedetään, että sen $x$-koordinaatti on $4$. Selvitä suoran yhtälön avulla, mikä on pisteen $A$ $y$-koordinaatti.
+                                <li> Etsi jokin toinen suoran $L$ piste antamalla sen $x$-koordinaatille jokin arvo ja laskemalla $y$-koordinaatin arvo suoran yhtälön avulla. Anna tälle pisteelle nimeksi $B$.
+                                <li> Päättele suoran normaalimuotoisesta yhtälöstä suoran $L$ normaalivektori.
+                                <li> Piirrä suora $L$ koordinaatistoon. Edellisten kohtien tiedoista on apua. 
+                                <li> Tarkista pistetulon avulla, että c-kohdassa päättelemäsi normaalivektori todella on kohtisuorassa suoran suuntavektoria $\pv{AB}$ vastaan.
+                                <li> Määritä suora $L$ vektorimuotoinen parametriesitys.
+                            </ol>
+                            </p>
+                        </div>
+                    </div>
+                </p>
+
+                <p>
+                        Tarkastellaan alla olevan kuvan tasoa $T$, jonka vektorimuotoinen parametriesitys on 
+                        $$\pv{OP} = -3\vi + 2\vk + s(3\vi + \vk) + t(4\vi - \vj).$$
+                        Kuvassa on näkyvissä vektori $\vn = \vi + 4\vj-3\vk$, joka on kohtisuorassa tason $%$ suuntavektoreita $\vw = 3\vi + \vk$ ja $\vv = 4\vi - \vj$ vastaan. Tämä voidaan varmistaa laskemalla näiden vektoreiden pistetulo:
+                        $$\begin{align*}
+                        \vn \cdot \vw &= (\vi + 4\vj-3\vk)\cdot (3\vi + \vk) \\
+                        &= 1\cdot 3 + 4\cdot 0 + (-3)\cdot 1\\
+                        &= 3-3 = 0.
+                        \end{align*}
+                        $$
+                        ja
+                        $$\begin{align*}
+                        \vn \cdot \vv &= (\vi + 4\vj-3\vk)\cdot (4\vi - \vj) \\
+                        &= 1\cdot 4 + 4\cdot (-1) + (-3)\cdot 0\\
+                        &= 4-4 = 0.
+                        \end{align*}
+                        $$
+                        Koska vektori $\vn$ on kohtisuorassa tason $T$ kumpaakin suuntavektoria vastaan ja siten myös koko tasoa $T$ vastaan, sanotaan sitä tason $T$ <em>normaalivektoriksi</em>. 
+                    </p>
+
+                    <p>
+                    <div class="tehtavat">
+                    <div class="tehtava" id="t-L4t23-ex">
+                        <header>
+                            <h1>
+                                <a data-toggle="collapse" class="collapsed" href="#t-L4t23">
+                                    Tason normaalivektori
+                                </a>
+                            </h1>
+                        </header>
+
+                        <div id="t-L4t23" class="collapse">
+                            <p> Tason $T$ vektorimuotoinen parametriesitys on $\pv{OP} = 2\vi - 5\vj -2\vk + s(7\vi + 5\vk)$ + t(7\vj + 2\vk)$. 
+                            <ol class="a">
+                                <li> Onko vektori $\vb = 3\vi-2\vj -2\vk$ tason $T$ normaalivektori?
+                                <li> Onko vektori $\vc = 5\vi+2\vj -7\vk$ tason $T$ normaalivektori?
+                                <li> Keksi tasolle $T$ vielä yksi normaalivektori. Mistä tiedät, että se todella on tason $T$ normaalivektori? Selitä omin sanoin.
+                            </ol>
+                            </p>
+                        </div>
+                    </div>
+                    </p>
+
+                    <p>
+                    <div class="tehtavat">
+                    <div class="tehtava" id="t-L4t23b-ex">
+                        <header>
+                            <h1>
+                                <a data-toggle="collapse" class="collapsed" href="#t-L4t23b">
+                                    Tason normaalivektori
+                                </a>
+                            </h1>
+                        </header>
+
+                        <div id="t-L4t23b" class="collapse">
+                            <p> Tason $T$ vektorimuotoinen parametriesitys on $\pv{OP} = -\vi + 2\vk + s(\vi + 3\vj-2\vk) + t(2\vi + 2\vj-2\vk)$. Tehtävänä on etsiä tälle tasolle normaalivektori.
+                            <ol class="a">
+                                <li> Päättele parametriesityksestä, mitkä ovat tason $T$ suuntavektorit $\vw$ ja $\vv$.
+                                <li> Merkitse etsittyä normaalivektoria $\vn = x\vi + y\vj + z\vk$. Sen täytyy olla kohtisuorassa tason $T$ kumpaakin suuntavektoria vastaan. Millaiset yhtälöt saat tästä pistetulon avulla?
+                                <li> Edellisen kohdan yhtälöt johtavat yhtälöpariin
+                                    $$\begin{align*}
+                                    \left\{
+                                    x+3y-2z &= 0\\
+                                    2x+2y-2z &= 0.
+                                    \right.
+                                    \end{align*}$$
+                                    Anna tuntemattomalle $z$ jokin arvo ja ratkaise sen jälkeen yhtälöparista $x$ ja $y$.
+                                <li> Kirjoita vektori $\vn$ näkyviin vektoreiden $\vi$, $\vj$ ja $\vk$ avulla. Tarkista vielä pistetulon avulla, että se todella on kohtisuorassa vektoreita $\vw$ ja $\vv$ vastaan.
+                            </ol>
+                            </p>
+                        </div>
+                    </div>
+                    </p>
+
+                    <p>
+                        Tutkimalla yllä olevaa kuvaa voidaan havaita, että piste $P = (x,y,z)$ on tasossa $T$, jos ja vain jos vektori $\pv{AP}$ on kohtisuorassa tason normaalivektoria $\vn$ vastaan. Pistetulon avulla sama asia voidaan ilmaista sanomalla, että piste $P = (x,y,z)$ on tasossa $T$, jos ja vain jos
+                        $$\pv{AP} \cdot \vn = 0,$$
+                        missä $\vn$ on tason $T$ normaalivektori.
+                    </p>
+
+                    <p>
+                        Kun tähän yhtälöön sijoitetaan vektori $\pv{AP} = (x+3)\vi + (y-0\vj + (z-2)\vk$ ja tason $T$ normaalivektori $\vn = \vi + 4\vj-3\vk$, saadaan se muotoon
+                        $$((x+3)\vi + y\vj + (z-2)\vk)\cdot (\vi + 4\vj-3\vk)= 0.$$
+                        Vasenta puolta voidaan sieventää laskemalla pistetulot:
+                        $$(x+3)\cdot 1 + 4y + (z-2)\cdot (-3) = 0.$$
+                        Sievennyksen jälkeen yhtälö saadaan muotoon
+                        $$x + 4y -3z +9 = 0.$$
+                    </p>
+
+                    <div class="definition">
+                    <h3>MÄÄRITELMÄ: TASON NORMAALIMUOTOINEN YHTÄLÖ</h3>
+                    <p>
+                        Oletetaan, että $\vn = a\vi + b\vj + c\vk$ on tason $T$ normaalivektori. 
+                        Yhtälö
+                        $$ax + by + cz + d = 0$$
+                        on tason $T$ <em>normaalimuotoinen yhtälö</em>.
+                    </p>
+                </div>
+
+                <p>
+                    <div class="tehtavat">
+                    <div class="tehtava" id="t-L4t24-ex">
+                        <header>
+                            <h1>
+                                <a data-toggle="collapse" class="collapsed" href="#t-L4t24">
+                                    Tason normaalimuotoinen yhtälö
+                                </a>
+                            </h1>
+                        </header>
+
+                        <div id="t-L4t24" class="collapse">
+                            <p>  Tehtävänä on määrittää normaalimuotoinen yhtälö tasolle $T$, jonka vektorimuotoinen parametriesitys on $\pv{OP} = -\vi + 2\vk + s(\vi + 3\vj-2\vk) + t(2\vi + 2\vj-2\vk)$.
+                                <ol class="a">
+                                <li> Piirrä tilanteesta mallikuva.
+                                <li> Päättele tason $T$ parametriesityksestä tason jonkin pisteen koordinaatit. Anna tälle pisteelle nimi $A$.
+                                <li> Valitse piirroksestasi jokin tason $T$ piste ja anna sille nimi $P$. Merkitse sen koordinaatteja $(x,y,z)$.
+                                <li> Merkitse piirrokseesi vektori $\pv{AP}$. 
+                                <li> Ilmaise vektori $\pv{AP}$ vektoreiden $\vi$, $\vj$ ja $\vk$ avulla.
+                                <li> Edellisessä tehtävässä etsittiin suoralle $T$ normaalivektori $\vn$. Muodosta tason $T$ normaalimuotoinen yhtälö muokkaamalla yhtälöä 
+                                    $$\pv{AP} \cdot \vn = 0$$
+                                    kunnes se on samassa muodossa kuin määritelmässä.
+                            </ol>
+                            </p>
+                        </div>
+                    </div>
+                </p>
+
+                <p>
+                    <div class="tehtavat">
+                    <div class="tehtava" id="t-L4t25-ex">
+                        <header>
+                            <h1>
+                                <a data-toggle="collapse" class="collapsed" href="#t-L4t25">
+                                    Tason normaalimuotoinen yhtälö
+                                </a>
+                            </h1>
+                        </header>
+
+                        <div id="t-L4t25" class="collapse">
+                            <p>  Tason $T$ normaalimuotoinen yhtälö on $-x + 3y + 2z - 5= 0$. 
+                                <ol class="a">
+                                <li> Piste $A$ on tasossa $T$ ja tiedetään, että $A = (4,5,z)$. Selvitä tason yhtälön avulla, mikä on pisteen $A$ $z$-koordinaatti.
+                                <li> Etsi jokin toinen tason $T$ piste antamalla sen $x$- ja $y$-koordinaateille jotkin arvot ja laskemalla $z$-koordinaatin arvo tason yhtälön avulla. Anna tälle pisteelle nimeksi $B$.
+                                <li> Muodosta tasolle $T$ yksi suuntavektori pisteiden $A$ ja $B$ avulla. Piirrä tilanteesta mallikuva. 
+                                <li> Päättele suoran normaalimuotoisesta yhtälöstä suoran $L$ normaalivektori. Anna sille nimeksi $\vn$.
+                                <li> Keksi jokin vektori $\vv \nparallel \pv{AB}$, joka on kohtisuorassa vektoria $\vn$ vastaan. Tarkista kohtisuoruus pistetulon avulla. 
+                                <li> Määritä tason $T$ vektorimuotoinen parametriesitys a-, c- ja e-kohtien avulla.
+                            </ol>
+                            </p>
+                        </div>
+                    </div>
+                </p>
                 </div>
         </section>
 
