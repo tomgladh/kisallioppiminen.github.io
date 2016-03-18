@@ -361,6 +361,16 @@ topnav: maa4
                         </div>
                     </div>
                     </p>
+                    
+                    <div class="definition">
+                    <h3>MÄÄRITELMÄ: SUORIEN VÄLINEN KULMA</h3>
+                    <p>
+                        <em>Suorien välinen kulma</em> tarkoittaa toisensa leikkaavien suorien muodostamista kulmista sitä, joka on terävää tai suora kulma. 
+                    <br> 
+                        Jos suorat eivät leikkaa toisiaan, tarkoittaa suorien välinen kulma näiden suorien kanssa yhdensuuntaisten toisensa leikkaavien suorien välistä kulmaa.
+                    </p>
+                    </div>
+
                     <p> 
                     Kahden suoran välistä kulmaa voidaan tutkia pistetulon avulla. Esimerkiksi alla olevassa kuvassa suoran $L_1$ suuntavektoriksi voidaan valita vektori $\vv = -3\vi + 2\vj$ ja suoran $L_2$ suuntavektoriksi voidaan valita $\vw = 4\vi + 3\vj$. 
                     </p>
@@ -373,10 +383,11 @@ topnav: maa4
                     \begin{align*}
                     \cos(\vv, \vw) &= \frac{\vv \cdot \vw}{|\vv||\vw|} \\
                     &= \frac{-3\cdot 4 + 2\cdot 3}{\sqrt{(-3)^2 + 2^2}\sqrt{4^2 + 3^2}} \\
+                    &= \frac{-6}{\sqrt{13}\cdot 5}
                     &\approx -0{,}332820.
                     \end{align*}
                     $$
-                    Tästä saadaan laskimella $\sphericalangle(\vv, \vw) \approx 109{,}4^\circ$. Koska tulos on yli $90^\circ$, voidaan päätellä, että suorien $L_1$ ja $L_2$ välinen kulma on $\alpha = 180^\circ - \sphericalangle(\vv, \vw) \approx 180^\circ - 109{,}4^\circ = 70{,}6^\circ$. 
+                    Tästä saadaan laskimella $\sphericalangle(\vv, \vw) = 109{,}44003\ldots \approx 109{,}4^\circ$. Koska tulos on yli $90^\circ$ eli kulma on tylppä, voidaan päätellä, että suorien $L_1$ ja $L_2$ välinen kulma on $\alpha = 180^\circ - \sphericalangle(\vv, \vw) \approx 180^\circ - 109{,}4^\circ = 70{,}6^\circ$.
                     </p>
 
                     <div class="tehtavat">
@@ -392,7 +403,7 @@ topnav: maa4
                         <div id="t-L4t10" class="collapse">
                             <p>  
                             <ol class="a">
-                                <li> Laske edellisen tehtävän suorien $L_1$ ja $L_2$ välinen kulma. 
+                                <li> Laske edellisen tehtävän suorien $L_1$ ja $L_2$ välinen kulma asteen kymmenesosan tarkkuudella. 
                                 <li> Miten on mahdollista, että suorat $L_1$ ja $L_2$ eivät leikkaa toisiaan, vaikka ne eivät ole yhdensuuntaisia? Selitä omin sanoin.
                             </ol>
                             </p>
@@ -1124,7 +1135,7 @@ topnav: maa4
                     &= \frac{(-1)\cdot(-1) + 3\cdot 1 + 2\cdot 2}{\sqrt{(-1)^2 + 3^2 + 2^2}\sqrt{(-1)^2 + 1^2 + 2^2}} \\
                     &= \frac{8}{\sqrt{14}\sqrt{6}} \ (\approx 0{,}87287156).
                     \end{align*}$$
-                    Laskimella saadaan tästä $\sphericalangle(\vn,\vv) \approx 29{,}2^\circ$. Tämä on siis suoran $L$ ja tason normaalin välinen kulma. Koska tason normaalin ja tason välinen kulma on $90^\circ$, saadaan suoran ja tason välinen kulma vähennyslaskulla:
+                    Laskimella saadaan tästä $\sphericalangle(\vn,\vv) = 29{,}205932\ldots \approx 29{,}2^\circ$. Tämä on siis suoran $L$ ja tason normaalin välinen kulma. Koska tason normaalin ja tason välinen kulma on $90^\circ$, saadaan suoran ja tason välinen kulma vähennyslaskulla:
                     $$90^\circ - 29{,}2^\circ = 60{,}8^\circ.$$
                     Suoran $L$ ja tason $T$ välinen kulma on siis noin $60{,}8^\circ$.
                 </p>
@@ -1155,7 +1166,7 @@ topnav: maa4
                                     $B = (3,4,0)$, $C = (0,3,4)$, $D = (3,0,0)$, $E = (0,4,0)$, $F = (0,0,3)$.
                                 <li> Keksi $xy$-tasolle jokin normaalivektori $\vn$. Mistä tiedät, että se on $xy$-tason normaalivektori? Selitä omin sanoin.   
                                 <li> Päättele suoran $L$ parametriesityksestä suoran $L$ suuntavektori $\vv$.
-                                <li> Laske vektorien $\vn$ ja $\vv$ välinen kulma. Mikä on suoran $L$ ja $xy$-tason välinen kulma?
+                                <li> Laske vektorien $\vn$ ja $\vv$ välinen kulma. Mikä on suoran $L$ ja $xy$-tason välinen kulma? Anna vastaus asteen kymmenesosan tarkkuudella.
                             </ol>
                             </p>
                         </div>
