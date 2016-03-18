@@ -233,7 +233,10 @@ topnav: maa4
                         </div>
                     </div>
 
-                    <p> Tutkitaan seuraavaksi suorien leikkauspisteitä. Kaksi suoraa leikkaa toisensa, jos ja vain jos niillä on yhteinen piste. Toisin sanottuna kaksi suoraa leikkaa toisensa, jos ja vain jos on olemassa sellainen piste $P$, jonka paikkavektori $\pv{OP}$ toteuttaa kummankin suoran parametriesityksen. KUVA
+                    <p> Tutkitaan seuraavaksi suorien leikkauspisteitä. Kaksi suoraa leikkaa toisensa, jos ja vain jos niillä on yhteinen piste. Toisin sanottuna kaksi suoraa leikkaa toisensa, jos ja vain jos on olemassa sellainen piste $P$, jonka paikkavektori $\pv{OP}$ toteuttaa kummankin suoran parametriesityksen. Tätä on havainnollistettu alla olevassa kuvassa.
+                    </p>
+                    <p>
+                    <img src="img/L4k9.png" max-width: 100%; width: auto; height: auto;/> 
                     </p>
 
                     <div class="tehtavat">
@@ -259,7 +262,7 @@ topnav: maa4
                     </div>
 
                     <p> 
-                        Tarkastellaan suoria, joiden vektorimuotoinset parametriesitykset ovat $\pv{OP} = \pv{OA} + t\vv$ ja $\pv{OP} = \pv{OC} + s\vw$. Jos näillä suorilla on leikkauspiste, sen paikkavektori toteuttaa kummankin yhtälön. Leikkauspiste löydetään siis tutkimalla yhtälöä 
+                        Tarkastellaan suoria, joiden vektorimuotoiset parametriesitykset ovat $\pv{OP} = \pv{OA} + t\vv$ ja $\pv{OP} = \pv{OC} + s\vw$. Jos näillä suorilla on leikkauspiste, sen paikkavektori toteuttaa kummankin yhtälön. Leikkauspiste löydetään siis tutkimalla yhtälöä 
                         $$\pv{OA} + t\vv = \pv{OC} + s\vw.$$
                         Jos tällä yhtälöllä ei ole ratkaisua, tarkoittaa se, ettei suorilla ole yhtään leikkauspistettä. 
                     </p>
@@ -359,7 +362,13 @@ topnav: maa4
                     </div>
                     </p>
                     <p> 
-                    Kahden suoran välistä kulmaa voidaan tutkia pistetulon avulla. Esimerkiksi alla olevassa kuvassa suoran $L_1$ suuntavektoriksi voidaan valita vektori $\vv = -3\vi + 2\vj$ ja suoran $L_2$ suuntavektoriksi voidaan valita $\vw = 4\vi + 3\vj$. KUVA Niiden välisen kulman kosini saadaan yhtälöstä
+                    Kahden suoran välistä kulmaa voidaan tutkia pistetulon avulla. Esimerkiksi alla olevassa kuvassa suoran $L_1$ suuntavektoriksi voidaan valita vektori $\vv = -3\vi + 2\vj$ ja suoran $L_2$ suuntavektoriksi voidaan valita $\vw = 4\vi + 3\vj$. 
+                    </p>
+                    <p>
+                    <img src="img/L4k10.png" max-width: 100%; width: auto; height: auto;/> 
+                    </p>
+                    <p>
+                    Suuntavektoreiden $\vv$ ja $\vw$ välisen kulman kosini saadaan yhtälöstä
                     $$
                     \begin{align*}
                     \cos(\vv, \vw) &= \frac{\vv \cdot \vw}{|\vv||\vw|} \\
@@ -367,7 +376,7 @@ topnav: maa4
                     &\approx -0{,}332820.
                     \end{align*}
                     $$
-                    Tästä saadaan laskimella $\sphericalangle(\vv, \vw) \approx 109{,}4^\circ$. Koska tulos on yli $90^\circ$, voidaan päätellä, että suorien $L_1$ ja $L_2$ välinen kulma on $180^\circ - 109{,}4^\circ = 70{,}6^\circ.$ 
+                    Tästä saadaan laskimella $\sphericalangle(\vv, \vw) \approx 109{,}4^\circ$. Koska tulos on yli $90^\circ$, voidaan päätellä, että suorien $L_1$ ja $L_2$ välinen kulma on $\alpha = 180^\circ - \sphericalangle(\vv, \vw) \approx 180^\circ - 109{,}4^\circ = 70{,}6^\circ$. 
                     </p>
 
                     <div class="tehtavat">
@@ -391,7 +400,10 @@ topnav: maa4
                     </div>
 
                     <p>
-                        Kaksi koordinaattiakselia määrää aina tason. Esimerkiksi $xy$-taso tarkoittaa $x$- ja $y$-akseleiden kautta kulkevaa tasoa, jossa kaikkien pisteiden $z$-koordinaatti on $0$. Suoran koordinaattimuotoisen parametriesityksen avulla voidaan löytää suoran ja tällaisen tason leikkauspiste. Tilannetta on havainnollistettu alla olevassa kuvassa. KUVA
+                        Kaksi koordinaattiakselia määrää aina tason. Esimerkiksi $xy$-taso tarkoittaa $x$- ja $y$-akseleiden kautta kulkevaa tasoa, jossa kaikkien pisteiden $z$-koordinaatti on $0$. Suoran koordinaattimuotoisen parametriesityksen avulla voidaan löytää suoran ja tällaisen tason leikkauspiste. Tilannetta on havainnollistettu alla olevassa kuvassa. 
+                    </p>
+                    <p>
+                    <img src="img/L4k11.png" max-width: 100%; width: auto; height: auto;/> 
                     </p>
 
                     <p>
@@ -758,7 +770,7 @@ topnav: maa4
                             <ol class="a">
                                 <li> Päättele tason parametriesityksestä, mitkä ovat tason suuntavektorit $\vw$ ja $\vv$. Päättele lisäksi tason pisteen $A$ koordinaatit.</li>
                                 <li> Piirrä omaan vihkoosi mallikuva tilanteesta. Merkitse kuvaan vektorit $\pv{QA}$ ja $\pv{AP}$. </li>
-                                <li> Ilmaise vektori $\pv{QA}$ vektoreiden $\vi$ ja $\vj$ avulla. Ilmaise vektori $\pv{AP}$ tason $T$ suuntavektoreiden $\vw$ ja $\vv$ avulla.
+                                <li> Ilmaise vektori $\pv{QA}$ vektoreiden $\vi$, $\vj$ ja $\vk$ avulla. Ilmaise vektori $\pv{AP}$ tason $T$ suuntavektoreiden $\vw$ ja $\vv$ avulla.
                                 <li> Ilmaise vektori $\pv{QP}$ vektoreiden $\pv{QA}$ ja $\pv{AP}$ avulla.</li>
                                 <li> Vektorin $\pv{QP}$ pitää olla kohtisuorassa tason $T$ kumpaakin suuntavektoria vastaan. Mitä tämä tarkoittaa pistetulon kannalta? </li>
                                 <li> Muokkaa edellisessä kohdassa muodostamaasi kahta yhtälöä, kunnes pääset yhtälöpariin
@@ -769,7 +781,7 @@ topnav: maa4
                                     \end{aligned}
                                     \right.$$
                                     Ratkaise tämä yhtälöpari. 
-                                <li> Kirjoita vektori $\pv{QP}$ vektoreiden $\vi$ ja $\vj$ avulla edellisen kohdan tuloksia hyödyntäen.
+                                <li> Kirjoita vektori $\pv{QP}$ vektoreiden $\vi$, $\vj$ ja $\vk$ avulla edellisen kohdan tuloksia hyödyntäen.
                                 <li> Mikä on pisteen $Q$ etäisyys suorasta $L$?</li>
                                 <li> Mitkä ovat pisteen $P$ koordinaatit? </li>
                             </ol>
