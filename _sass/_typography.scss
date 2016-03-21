@@ -37,6 +37,12 @@ p {
 	line-height: 1.8em;
 }
 
+blockquote {
+        font-size: 1.3em;
+        font-style: italic;
+        color: grey;
+}
+
 a,
 input[type=submit] {
 	color: $link-color;
