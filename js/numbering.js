@@ -27,7 +27,7 @@ var SITE = {
             var thName = "TEOREEMA " + thCount;
 
             // relabel assignments
-            $(value).find("header h3").text(thName);
+            $(value).find("h3").text(thName);
 
             // tag subassignments
             $(value).find("div h3").each(function(subIndex, value) {
