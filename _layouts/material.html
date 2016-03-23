@@ -13,16 +13,6 @@ layout: default
         }
 </style>
 
-
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        $(".tehtava").hide();
-        $("div.toc_viikko").hide();
-        $(".heading").click(function() {
-            $(this).next(".tehtava").slideToggle(200);
-        });
-    });
-</script>
 {% if page.sidenav %}
 	{% include sidenav.html %}
 {% endif %}
