@@ -24,10 +24,10 @@ var SITE = {
         
         $(".theorem").each(function(index, value) {
             var thCount = (index + 1);
-            var thName = "TEOREEMA " + thCount + ": " + $(value).find("h1 a").text();
+            var thName = "TEOREEMA " + thCount;
 
             // relabel assignments
-            $(value).find("header h1 a").text(thName);
+            $(value).find("header h1").text(thName);
 
             // tag subassignments
             $(value).find("div h1").each(function(subIndex, value) {
