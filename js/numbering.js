@@ -21,6 +21,20 @@ var SITE = {
                 $(value).text(exCount + "." + (subIndex + 1) + ": " + $(value).text());
             });
         });
+        
+        var theorem = $("#incrementStart").value();
+        $(".theorem").each(function(theorem, value) {
+            var exCount = (theorem + 1);
+            var exName = "TEOREEMA " + exCount + ": " + $(value).find("h1 a").text();
+
+            // relabel assignments
+            $(value).find("header h1 a").text(exName);
+
+            // tag subassignments
+            $(value).find("div h1").each(function(subIndex, value) {
+                $(value).text(exCount + "." + (subIndex + 1) + ": " + $(value).text());
+            });
+        });
 
         // link toc to assignments
         $("#tehtavat-toc a").each(function(index, value) {
