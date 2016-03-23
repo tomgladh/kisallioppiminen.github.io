@@ -27,10 +27,10 @@ var SITE = {
             var thName = "TEOREEMA " + thCount;
 
             // relabel assignments
-            $(value).find("header h1").text(thName);
+            $(value).find("header h3").text(thName);
 
             // tag subassignments
-            $(value).find("div h1").each(function(subIndex, value) {
+            $(value).find("div h3").each(function(subIndex, value) {
                 $(value).text(thCount + "." + (subIndex + 1) + ": " + $(value).text());
             });
         });
