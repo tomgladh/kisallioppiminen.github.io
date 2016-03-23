@@ -23,15 +23,15 @@ var SITE = {
         });
         
         $(".theorem").each(function(index, value) {
-            var exCount = (index + 1);
-            var exName = "TEOREEMA " + exCount + ": " + $(value).find("h1 a").text();
+            var thCount = (index + 1);
+            var thName = "TEOREEMA " + thCount + ": " + $(value).find("h1 a").text();
 
             // relabel assignments
-            $(value).find("header h1 a").text(exName);
+            $(value).find("header h1 a").text(thName);
 
             // tag subassignments
             $(value).find("div h1").each(function(subIndex, value) {
-                $(value).text(exCount + "." + (subIndex + 1) + ": " + $(value).text());
+                $(value).text(thCount + "." + (subIndex + 1) + ": " + $(value).text());
             });
         });
 
