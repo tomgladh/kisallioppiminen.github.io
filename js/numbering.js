@@ -22,9 +22,8 @@ var SITE = {
             });
         });
         
-        var theorem = $("#incrementStart").value();
-        $(".theorem").each(function(theorem, value) {
-            var exCount = (theorem + 1);
+        $(".theorem").each(function(index, value) {
+            var exCount = (index + 1);
             var exName = "TEOREEMA " + exCount + ": " + $(value).find("h1 a").text();
 
             // relabel assignments
