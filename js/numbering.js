@@ -23,7 +23,11 @@ var SITE = {
         });
         
         $(".theorem").each(function(index, value) {
-            var thCount = (index + 1);
+            if ($("#incrementStart").value() === null) {
+                var thCount = (index + 1);
+            } else {
+                var thCount = ($("#incrementStart").value() + index);
+            }
             var thName = "TEOREEMA " + thCount;
 
             // relabel assignments
