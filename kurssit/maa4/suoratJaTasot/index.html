@@ -748,7 +748,7 @@ topnav: maa4
                         </div>
                     </div>
 
-                    <p> Tutkitaan seuraavaksi suorien ja tasojen leikkauspisteitä. Suora ja taso leikkaavat toisensa, jos ja vain jos niillä on yhteinen piste. Toisin sanottuna suora ja taso leikkaavat toisensa, jos ja vain jos on olemassa piste $P$, jonka paikkavektori $\pv{OP}$ toteuttaa sekä suoran että tason parametriesityksen. 
+                    <p> Tutkitaan seuraavaksi suorien ja tasojen leikkauspisteitä. Suora ja taso leikkaavat toisensa, jos ja vain jos niillä on yhteinen piste. Toisin sanottuna suora ja taso leikkaavat toisensa, jos ja vain jos on olemassa piste $P$, jonka paikkavektori $\pv{OP}$ toteuttaa sekä suoran että tason parametriesityksen. Tätä on havainnollistettu alla olevassa kuvassa.
                     </p>
                     <p>
                             <img src="img/L4k17.png" max-width: 100%; width: auto; height: auto;/> 
@@ -759,6 +759,18 @@ topnav: maa4
                         Jos tällä yhtälöllä ei ole ratkaisua, tarkoittaa se, ettei tarkastelluilla suoralla ja tasolla ole yhtään leikkauspistettä. 
                     </p>
 
+                    <p>
+                        Vektoriyhtälöstä $\pv{OA} + t\vv = \pv{OC} + r\vw + s\vu$ voidaan muodostaa yhtälöryhmä tarkastelemalla erikseen vektoreiden $\vi$, $\vj$ ja $\vk$ suuntaisia komponentteja. Esimerkiksi yhtälöä
+                        $$\vi-3\vj + t(\vi + \vj + \vk)  = \vi + 2\vj + 3\vk + r(4\vi + 5\vk) + s(6\vi - 7\vj + 8\vk)$$
+                        vastaa yhtälöryhmä
+                        $$
+                            \left\{\begin{aligned}
+                            1 + t &= 1+4r+6s \\
+                            -3 + t &= 2 + 5r-7s \\
+                            t &= 3 + 8s
+                            \end{aligned}\right.
+                        $$ 
+                    </p>
                     <p>
                     <div class="tehtavat">
                     <div class="tehtava" id="t-L4t18-ex">
@@ -779,9 +791,12 @@ topnav: maa4
                             z &= 28 - s + 2t.
                             \end{aligned}\right.
                             $$  
+                            Tehtävänä on tutkia, leikkavatko suora $L$ ja taso $T_1$ toisensa, ja määrittää mahdollisen leikkauspisteen koordinaatit.
                             <ol class="a">
                                 <li> Muodosta suoran $L$ vektorimuotoinen parametriesitys.
                                 <li> Muodosta tason $T_1$ vektorimuotoinen parametriesitys. Käytä parametreina jotain muita kirjaimia kuin a-kohdassa.
+                                <li> Jos suoralla $L$ ja tasolla $T_1$ on leikkauspiste, se toteuttaa sekä a- että b-kohdassa muodostamasi parametriesitykset joillakin parametrien arvoilla. Millaisen yhtälön saat tästä tiedosta?
+
                                 <li> Tutki, leikkavatko suora $L$ ja taso $T_1$ toisensa. Mitkä ovat mahdollisen leikkauspisteen koordinaatit?
                             </ol>
                             </p>
