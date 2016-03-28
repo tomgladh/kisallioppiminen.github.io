@@ -193,12 +193,63 @@ topnav: maa4
             </div>
 
             <p>
-                Edellistä teoreemaa voidaan hyödyntää tilanteissa, joissa on mahdollista ilmaista jokin vektori kahdella erilaisella tavalla annettujen vektoreiden avulla. 
+                Edellistä teoreemaa voidaan hyödyntää tilanteissa, joissa on mahdollista ilmaista jokin vektori kahdella erilaisella tavalla annettujen vektoreiden avulla. Esimerkiksi alla olevan kuvan tilanteessa piste $Q$ on sekä janalla $AP$ että lävistäjällä $BD$, joten se voidaan esittää kahdella tavalla vektoreiden $\va$ ja $\vb$ avulla.
                 KUVA
             </p>
             <p>
-                Tarkastellaan yllä olevaa kuvaa. Selvitetään, missä suhteessa piste $Q$ jakaa lävistäjän $BD$, kun tiedetään, että piste $P$ jakaa sivun $DC$ suhteessa $3:2$. 
+                Tarkastellaan edelleen yllä olevaa kuvaa. Selvitetään, missä suhteessa piste $Q$ jakaa lävistäjän $BD$, kun tiedetään, että piste $P$ jakaa sivun $DC$ suhteessa $3:2$. KUVA
             </p>
+            <p>
+                Koska piste $Q$ on janalla $AP$, vektorit $\pv{AQ}$ ja $\pv{AP}$ ovat yhdensuuntaiset. Siten on olemassa luku $s$, jolla $$\pv{AQ} = s\pv{AP}.$$ Vektori $\pv{AP}$ voidaan puolestaan kirjoittaa summana $$\pv{AP} = \pv{AD} + \pv{DP}.$$ Koska piste $P$ jakaa sivun $DC$ suhteessa $3:2$, on 
+                $$\begin{align*}
+                \pv{DP} &= \frac{3}{3+2} \pv{DC} \\
+                &= \frac{3}{5}\va.
+                \end{align*}$$
+                Yhdistämällä kaikki edelliset tiedot saadaan
+                $$\begin{align*}
+                \pv{AQ} &= s\pv{AP} \\
+                &= s(\pv{AD} + \pv{DP}) \\
+                &= s(\vb + \frac{3}{5}\va) \\
+                &= \frac{3}{5}s\va + s\vb.
+                \end{align*}$$ KUVA
+             </p>
+             <p>
+                Koska piste $Q$ on lävistäjällä $BD$, vektorit $\pv{BQ}$ ja $\pv{BD}$ ovat yhdensuuntaiset. Siten on olemassa luku $t$, jolla $$\pv{BQ} = t\pv{BD}.$$ 
+                Vektori $\pv{BD}$ voidaan puolestaan kirjoittaa summana 
+                $$\begin{align*}
+                \pv{BD} &= \pv{BA} + \pv{AD} \\
+                &= -\va + \vb \\
+                &= \vb - \va.
+                \end{align*}$$
+                Muodostetaan näiden tietojen avulla vektori pisteestä $A$ pisteeseen $Q$:
+                $$\begin{align*}
+                \pv{AQ} &= \pv{AB} + \pv{BQ} \\
+                &= \va + t\pv{BD} \\
+                &= \va + t(\vb - \va) \\
+                &= \va + t\vb - t\va \\
+                &= (1-t)\va + t\vb.
+                \end{align*}$$ 
+             </p>
+             <p>
+                Nyt tiedetään, että $\pv{AQ} = \frac{3}{5}s\va + s\vb$ ja $\pv{AQ} = (1-t)\va + t\vb$. Siis
+                $$\frac{3}{5}s\va + s\vb = (1-t)\va + t\vb.$$
+                Edellisen teoreeman mukaan tästä yhtälöstä seuraa, että 
+                $$
+                \left\{\begin{aligned}
+                \frac{3}{5}s &= 1-t \\
+                s &= t. 
+                \end{aligned}\right.
+                $$
+                Kun ylempään yhtälöön sijoitetaan $s = t$, se saa muodon
+                $$\frac{3}{5}t &= 1-t$$
+                lisäämällä molemmille puolille $t$ se saadaan muotoon
+                $$\frac{8}{5}t &= 1.$$
+                Siis 
+                $$t = \frac{5}{8}.$$
+                Koska 
+                $$\pv{BQ} = t\pv{BD} = \frac{5}{8}\pv{BD},$$
+                voidaan päätellä, että jana $BD$ voidaan jakaa kahdeksaan osaan, joista viisi muodostaa janan $BQ$ ja kolme muodostaa janan $QD$. Piste $Q$ jakaa siis janan $BD$ suhteessa $5:3$.
+             </p>   
     </div>
 </section>
 
