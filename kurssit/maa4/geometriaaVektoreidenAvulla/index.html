@@ -128,6 +128,73 @@ topnav: maa4
                         </div>
                     </div>
                 </div>
+
+            <div class="tehtavat">
+                    <div class="tehtava" id="t-L5t4-ex">
+                        <header>
+                            <h1>
+                                <a data-toggle="collapse" class="collapsed" href="#t-L5t4">
+                                    Vektorin kertominen reaaliluvulla
+                                </a>
+                            </h1>
+                        </header>
+
+                        <div id="t-L5t4" class="collapse">
+                            <p> Kolmion $ABC$ sivuvektorit ovat $\va = \pv{AB}$ ja $\vb = \pv{AC}$. Piste $D$ on sivun $BC$ keskipiste. Ilmaise vektoreiden $\va$ ja $\vb$ avulla
+                                <ol class="a">
+                                <li> sivuvektori $\pv{BC}$
+                                <li> vektori $\pv{BE}$ 
+                                <li> keskijanavektori $\pv{AE}$.
+                            </ol>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <p>
+                Oletetaan, että $\vv \neq \nv$, $\vw \neq \nv$ ja $\vv \nparallel \vw$. Palautetaan mieleen, että jos vektori $\va$ voidaan kirjoittaa muodossa 
+                    $$\va = s\vv + t\vw$$
+                missä $s$ ja $t$ ovat reaalilukuja, niin sanotaan, että $s\vv$ ja $t\vw$ ovat vektorin $\va$ vektoreiden $\vv$ ja $\vw$ suuntaiset komponentit. Tätä on havainnollistettu alla olevassa kuvassa. KUVA
+            </p>
+                Seuraavan teoreeman mukaan mikä tahansa vektori voidaan jakaa vektoreiden $\vv$ ja $\vw$ suuntaisiin komponentteihin enintään yhdellä tavalla. 
+            <p>
+
+            </p>
+
+            <div class="theorem">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Oletetaan, että $\vv \neq \nv$, $\vw \neq \nv$ ja $\vv \nparallel \vw$. Tällöin $s\vw + t\vv = p\vw + q\vv$, jos ja vain jos $s = p$ ja $t = q$.
+                </p>
+                <div class="proof">
+                    <p>
+                        Perustelu: 
+                    <ul>
+                        <li>  Oletetaan, että $$s\vw + t\vv = p\vw + q\vv.$$ Lisäämällä yhtälön molemmille puolille $-p\vw - t\vv$ yhtälö saadaan muotoon
+                            $$s\vw - p\vw = q\vv - t\vv.$$
+                            Kun yhtälön kummallakin puolella otetaan yhteinen tekijä, saadaan yhtälö muotoon
+                            $$(s-p)\vw = (q-t)\vv.$$
+                            Jos kerroin $s-p \neq 0$, saadaan ratkaistua
+                            $$\vw = \frac{q-t}{s-p}\vv.$$
+                            Tämä tarkoittaa, että $\vw \parallel \vv$ (tapauksessa, jossa $q-t \neq 0$) tai $\vw = 0$ (tapauksessa, jossa $q-t = 0$). Tämä on mahdotonta, koska oletuksen mukaan $\vw \neq \nv$ ja $\vv \nparallel \vw$. Siis $s-p = 0$.
+                            <br>
+                            Jos kerroin $q-t \neq 0$, saadaan ratkaistua
+                            $$\vv = \frac{s-p}{q-t}\vw.$$
+                            Tämä tarkoittaa, että $\vv \parallel \vw$ (tapauksessa, jossa $s-p \neq 0$) tai $\vv = 0$ (tapauksessa, jossa $s-p = 0$). Tämä on mahdotonta, koska oletuksen mukaan $\vv \neq \nv$ ja $\vv \nparallel \vw$. Siis $q-t = 0$.
+                            <br>
+                            Koska $s-p = 0$ ja $q-t = 0$, niin $s = p$ ja $q = t$.
+                        <li> Oletetaan, että $s = p$ ja $t = q$. Tällöin summa $s\vw = p\vw$ ja $t\vv = q\vv, joten $s\vw + t\vv = p\vw + q\vv$. 
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+            <p>
+                Edellistä teoreemaa voidaan hyödyntää tilanteissa, joissa on mahdollista ilmaista jokin vektori kahdella erilaisella tavalla annettujen vektoreiden avulla. 
+                KUVA
+            </p>
+            <p>
+                Tarkastellaan yllä olevaa kuvaa. Selvitetään, missä suhteessa piste $Q$ jakaa lävistäjän $BD$, kun tiedetään, että piste $P$ jakaa sivun $DC$ suhteessa $3:2$. 
+            </p>
     </div>
 </section>
 
