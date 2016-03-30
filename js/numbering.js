@@ -35,9 +35,9 @@ var SITE = {
             $(value).find("h3").text(thName);
 
             // tag subassignments
-            $(value).find("div h3").each(function(subIndex, value) {
-                $(value).text(thCount + "." + (subIndex + 1) + ": " + $(value).text());
-            });
+//            $(value).find("div h3").each(function(subIndex, value) {
+//                $(value).text(thCount + "." + (subIndex + 1) + ": " + $(value).text());
+//            });
         });
 
         // link toc to assignments
