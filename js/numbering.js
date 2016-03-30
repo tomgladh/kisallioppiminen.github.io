@@ -23,10 +23,11 @@ var SITE = {
         });
         
         $(".theorem").each(function(index, value) {
-//            if ($("#incrementStart").value() === null) {
-                var thCount = (index + 1);
+//            if ($("#incrementStart").value() === null) 
+//                var thCount = (index + 1);
 //            } else {
-//                var thCount = ($("#incrementStart").value() + index);
+    
+                var thCount = (parseInt(document.getElementById('incrementStart').value) + index);
 //            }
             var thName = "TEOREEMA " + thCount;
 
