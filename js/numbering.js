@@ -27,11 +27,11 @@ var SITE = {
 //                var thCount = (index + 1);
 //            } else {
     
-                var thCount = (parseInt(document.getElementById('incrementStart').value) + index);
+                var thCount = ($('#incrementStart').val() + index);
 //            }
             var thName = "TEOREEMA " + thCount;
 
-            // relabel assignments
+            // relabel theorem
             $(value).find("h3").text(thName);
 
             // tag subassignments
