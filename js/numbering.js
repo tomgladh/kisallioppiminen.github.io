@@ -28,9 +28,9 @@ var SITE = {
                 var thStart = $('#theoremStart').val();
             }
         
-        $(".theorem").each(function(index, value) {
+        $(".theorem").each(function(thIndex, value) {
 
-            var thCount = (thStart + index);
+            var thCount = (thStart + thIndex);
             var thName = "TEOREEMA " + thCount;
 
             // relabel theorem
