@@ -22,13 +22,14 @@ var SITE = {
             });
         });
         
+        if ($('#theoremStart').val() === null) 
+               var thStart = 0;
+            } else {
+                var thStart = $('#theoremStart').val();
+            }
+        
         $(".theorem").each(function(index, value) {
-//            if ($("#incrementStart").value() === null) 
-//                var thCount = (index + 1);
-//            } else {
-    
-                var thCount = ($('#incrementStart').val() + index);
-//            }
+            var thCount = (thStart + index);
             var thName = "TEOREEMA " + thCount;
 
             // relabel theorem
