@@ -22,11 +22,11 @@ var SITE = {
             });
         });
         
-        if ($('#theoremStart').val() === null) 
-               var thStart = 0;
-            } else {
+//        if ($('#theoremStart').val() === null) 
+//               var thStart = 0;
+//            } else {
                 var thStart = $('#theoremStart').val();
-            }
+//            }
         
         $(".theorem").each(function(index, value) {
             var thCount = (thStart + index);
