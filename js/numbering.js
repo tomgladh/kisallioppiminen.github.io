@@ -25,7 +25,7 @@ var SITE = {
         if ($('#theoremStart').val() == null) {
                 var thStart = 1;
             } else {
-                var thStart = $('#theoremStart').val();
+                var thStart = parseInt($('#theoremStart').val());
             }
         
         $(".theorem").each(function(thIndex, value) {
