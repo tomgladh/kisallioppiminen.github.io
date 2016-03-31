@@ -22,7 +22,7 @@ var SITE = {
             });
         });
         
-        if ($('#theoremStart').val() === null) {
+        if ($('#theoremStart').val() == null) {
                 var thStart = 1;
             } else {
                 var thStart = $('#theoremStart').val();
