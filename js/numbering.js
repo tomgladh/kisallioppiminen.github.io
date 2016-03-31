@@ -23,7 +23,7 @@ var SITE = {
         });
         
         if ($('#theoremStart').val() == null) 
-                var thStart = 0;
+                var thStart = 1;
             } else {
                 var thStart = $('#theoremStart').val();
             }
