@@ -21,7 +21,7 @@ var SITE = {
                 $(value).text(exCount + "." + (subIndex + 1) + ": " + $(value).text());
             });
         });
-        
+/*        
         if ($('#theoremStart').val() == null) 
                 var thStart = 1;
             } else {
@@ -41,7 +41,7 @@ var SITE = {
 //                $(value).text(thCount + "." + (subIndex + 1) + ": " + $(value).text());
 //            });
         });
-        
+ */       
 /*
         // link toc to assignments
         $("#tehtavat-toc a").each(function(index, value) {
