@@ -7,11 +7,11 @@ var SITE = {
             var exCount = (index + 1);
             var exName = "Tehtävä " + exCount + ": " + $(value).find("h1 a").text();
 
-            // add assignments to toc 
-            $("#tehtavat-toc").append("<li><a data-toggle='collapse' href='" + $(value).find("h1 a").attr("href") + "'>" + exName + "</a></li>");
+             // add assignments to toc 
+//            $("#tehtavat-toc").append("<li><a data-toggle='collapse' href='" + $(value).find("h1 a").attr("href") + "'>" + exName + "</a></li>");
 
             // add links to assignment names
-            $(value).attr("id", $(value).find("h1 a").attr("href").substring(1) + "-ex");
+//            $(value).attr("id", $(value).find("h1 a").attr("href").substring(1) + "-ex");
 
             // relabel assignments
             $(value).find("header h1 a").text(exName);
@@ -22,7 +22,7 @@ var SITE = {
             });
         });
         
-        if ($('#theoremStart').val() === null) 
+        if ($('#theoremStart').val() == null) 
                 var thStart = 0;
             } else {
                 var thStart = $('#theoremStart').val();
