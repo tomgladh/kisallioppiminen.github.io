@@ -35,11 +35,6 @@ var SITE = {
 
             // relabel theorem
             $(value).find("h3").text(thName);
-
-            // tag subassignments
-//            $(value).find("div h3").each(function(subIndex, value) {
-//                $(value).text(thCount + "." + (subIndex + 1) + ": " + $(value).text());
-//            });
         });
      
 /*
