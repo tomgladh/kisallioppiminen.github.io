@@ -41,7 +41,7 @@ var SITE = {
 //                $(value).text(thCount + "." + (subIndex + 1) + ": " + $(value).text());
 //            });
         });
-
+/*
         // link toc to assignments
         $("#tehtavat-toc a").each(function(index, value) {
             $(value).click(function() {
@@ -52,7 +52,7 @@ var SITE = {
                 $($.attr(this, 'href')).click();
             });
         });
-/*
+
         var idx = 1;
         $("section h1").each(function(index, value) {
             if ($(value).parents('.tehtava').length) {
