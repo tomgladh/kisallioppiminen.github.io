@@ -22,15 +22,15 @@ var SITE = {
             });
         });
         
-//        if ($('#theoremStart').val() === null) 
-//               var thStart = 0;
-//            } else {
-                
-//            }
+        if ($('#theoremStart').val() === null) 
+                var thStart = 0;
+            } else {
+                var thStart = $('#theoremStart').val();
+            }
         
         $(".theorem").each(function(index, value) {
-//            var thStart = $('#theoremStart').val();
-            var thCount = ($('#theoremStart').val() + index);
+
+            var thCount = (thStart + index);
             var thName = "TEOREEMA " + thCount;
 
             // relabel theorem
@@ -52,7 +52,7 @@ var SITE = {
                 $($.attr(this, 'href')).click();
             });
         });
-
+/*
         var idx = 1;
         $("section h1").each(function(index, value) {
             if ($(value).parents('.tehtava').length) {
@@ -109,8 +109,9 @@ var SITE = {
             }
 
         });
+  */
+    }  
 
-    }
 };
 
 
