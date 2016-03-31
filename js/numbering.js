@@ -25,10 +25,11 @@ var SITE = {
 //        if ($('#theoremStart').val() === null) 
 //               var thStart = 0;
 //            } else {
-                var thStart = $('#theoremStart').val();
+                
 //            }
         
         $(".theorem").each(function(index, value) {
+            var thStart = $('#theoremStart').val();
             var thCount = (thStart + index);
             var thName = "TEOREEMA " + thCount;
 
