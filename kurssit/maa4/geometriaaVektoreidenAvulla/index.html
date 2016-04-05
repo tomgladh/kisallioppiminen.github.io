@@ -64,9 +64,9 @@ topnav: maa4
                         <div id="t-L5t1" class="collapse">
                             <p> Alla on kuvattu suunnikas $ABCD$. Ilmaise sen sivuvektoreiden $\va$ ja $\vb$ avulla
                             <ol class="a">
-                                <li> lävistäjä $\pv{AC}$
-                                <li> lävistäjä $\pv{DB}$ 
-                                <li> lävistäjä $\pv{BD}$.
+                                <li> lävistäjävektori $\pv{AC}$
+                                <li> lävistäjävektori $\pv{DB}$ 
+                                <li> lävistäjävektori $\pv{BD}$.
                             </ol>
                             </p>
                             <p>
@@ -127,15 +127,14 @@ topnav: maa4
                     </div>
                 </div>
             <p>
-                Joissakin tilanteissa vektorin pituus täytyy muuttaa sopivaksi luvulla kertomalla. Esimerkiksi alla olevassa kuvassa piste $C$ jakaa janan $AB$ suhteessa $3:5$. 
+                Joissakin tilanteissa vektorin pituus täytyy muuttaa sopivaksi kertomalla vektoria reaaliluvulla. Esimerkiksi alla olevassa kuvassa piste $C$ jakaa janan $AB$ suhteessa $3:5$. Tällöin
+                $$\pv{AC} = \frac{3}{8}\pv{AB}.$$
             </p>
             <p>
                 <img src="img/L4k33.png" max-width: 100%; width: auto; height: auto;/> 
             </p>
             <p>
-                Tällöin
-                $$\pv{AC} = \frac{3}{8}\pv{AB}$$
-                ja vektori $\pv{OC}$ saadaan lausuttua vektorien $\va = \pv{OA}$ ja $\vb = \pv{OB}$ avulla esimerkiksi seuraavasti:
+                Vektori $\pv{OC}$ saadaan lausuttua vektorien $\va = \pv{OA}$ ja $\vb = \pv{OB}$ avulla esimerkiksi seuraavasti:
                 $$\begin{align*}
                 \pv{OC} &= \pv{OA} + \pv{AC} \\
                 &= \pv{OA} + \frac{3}{8}\pv{AB} \\
@@ -156,9 +155,11 @@ topnav: maa4
                         </header>
 
                         <div id="t-L5t3" class="collapse">
-                            <p> Tarkastellaan edelleen alla olevaa kuvaa. Edellä lausuttiin vektori $\pv{OC}$ vektorien $\va$ ja $\vb$ avulla etsimällä reitti pisteestä $O$ pisteen $A$ kautta pisteeseen $C$. KUVA
+                            <p> Tarkastellaan edelleen alla olevaa kuvaa. Edellä lausuttiin vektori $\pv{OC}$ vektorien $\va$ ja $\vb$ avulla etsimällä reitti pisteestä $O$ pisteen $A$ kautta pisteeseen $C$. 
                             </p>
-
+                            <p>
+                            <img src="img/L4k33.png" max-width: 100%; width: auto; height: auto;/> 
+                            </p>
                             <p>
                                 Lausu vektori $\pv{OC}$ vektorien $\va$ ja $\vb$ avulla etsimällä reitti pisteestä $O$ pisteen $B$ kautta pisteeseen $C$. Saatko saman tuloksen kuin edellä?
                             </p>
@@ -223,13 +224,11 @@ topnav: maa4
             <div class="theorem">
                 <h3>TEOREEMA</h3>
                 <p>
-                    Oletetaan, että $\vv \neq \bar{0}$, $\vw \neq \bar{0}$ ja $\vv \nparallel \vw$. Tällöin $s\vw + t\vv = p\vw + q\vv$, jos ja vain jos $s = p$ ja $t = q$.
+                    Oletetaan, että $\vv \neq \bar{0}$, $\vw \neq \bar{0}$ ja $\vv \nparallel \vw$. Jos $s\vw + t\vv = p\vw + q\vv$, niin $s = p$ ja $t = q$.
                 </p>
                 <div class="proof">
                     <p>
-                        Perustelu: 
-                    <ul>
-                        <li>  Oletetaan, että $$s\vw + t\vv = p\vw + q\vv.$$ Lisäämällä yhtälön molemmille puolille $-p\vw - t\vv$ yhtälö saadaan muotoon
+                        Perustelu: Oletetaan, että $$s\vw + t\vv = p\vw + q\vv.$$ Lisäämällä yhtälön molemmille puolille $-p\vw - t\vv$ yhtälö saadaan muotoon
                             $$s\vw - p\vw = q\vv - t\vv.$$
                             Kun yhtälön kummallakin puolella otetaan yhteinen tekijä, saadaan yhtälö muotoon
                             $$(s-p)\vw = (q-t)\vv.$$
@@ -247,8 +246,6 @@ topnav: maa4
                             Tämä on mahdotonta, koska oletuksen mukaan $\vv \neq \bar{0}$. Siis $q-t = 0$.
                             <br>
                             Koska $s-p = 0$ ja $q-t = 0$, niin $s = p$ ja $q = t$.
-                        <li> Oletetaan, että $s = p$ ja $t = q$. Tällöin $s\vw = p\vw$ ja $t\vv = q\vv$, joten $s\vw + t\vv = p\vw + q\vv$. 
-                    </ul>
                     </p>
                 </div>
             </div>
