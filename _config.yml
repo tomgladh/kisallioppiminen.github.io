@@ -1,7 +1,13 @@
 # Site settings
+<<<<<<< HEAD
 title: Kisallioppiminen.fi
 baseurl: ""
 url: "http://kisallioppiminen.github.io"
+=======
+title: Latex-test
+baseurl: ""
+url: "http://ruumis.github.io/latex-test/"
+>>>>>>> ruumis/master
 
 # Build settings
 markdown: kramdown
@@ -13,18 +19,29 @@ sass:
   style: :compressed
 
 navigation:
+<<<<<<< HEAD
   "Materiaalit": "/"
   "Blogi": "http://blogs.helsinki.fi/kisallioppiminenlukiossa"
   "Tietoa": "/tietoa.html"
+=======
+  "Etusivu": "/latex-test"
+  "Kurssit": "/latex-test/kurssit.html"
+  "Mikä MOOC?": "/latex-test/mooc.html"
+  "In English": "/latex-test/english.html"
+>>>>>>> ruumis/master
 
 resources:
   css:
     - "//fonts.googleapis.com/css?family=Alegreya+Sans:400|Noto+Sans:400,700|Open+Sans+Condensed:300,700"
-    - "/css/main.css"
+    - "/latex-test/css/main.css"
   js:
     - "//code.jquery.com/jquery-1.11.0.min.js"
     - "//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+<<<<<<< HEAD
     - "/js/mooc.js"
+=======
+    - "/latex-test/js/mooc.js"
+>>>>>>> ruumis/master
 
 exclude: [vendor]
 
