@@ -1,0 +1,16 @@
+{% assign url_parts = page.topnav | split: '/' %}
+{% assign topbar = site.data.topbar %}
+{% for part in url_parts %}
+	{% assign topbar = topbar[part] %}
+{% endfor %}
+
+<main{% if page.main-class %} class="{{page.main-class}}"{% endif %}>
+		
+{% for link in topbar.navigation %}
+	{% for page in site.pages %}
+		{% if page.url == link.path %}
+			{{page.content}}
+		{% endif %}
+	{% endfor %}
+{% endfor %}
+</main>
