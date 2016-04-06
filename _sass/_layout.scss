@@ -201,6 +201,18 @@ article ul {
 	margin: 10px 0;
 }
 
+.print-link {
+	float: right;
+	width: 300px;
+	display: block;
+	font-size: 0.8em;
+}
+
+.print-link img {
+	width: 30px;
+	padding-right: 8px;
+}
+
 @media screen and (max-width: 1160px) {
 
 	main {
