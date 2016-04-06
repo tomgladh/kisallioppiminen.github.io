@@ -312,6 +312,12 @@ article ul {
 		display: none;
 	}
 	
+	img,
+	.theorem,
+	.definition {
+		page-break-inside: avoid;
+	}
+	
 	main.has-atop article,
 	main.has-atop {
 		background-color: white;
@@ -352,7 +358,6 @@ article ul {
 	
 	img {
 		max-width: 60%;
-		page-break-inside: avoid;
 	}
 	
 	main.has-atop article {
