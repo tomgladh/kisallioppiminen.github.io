@@ -1,0 +1,32 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+
+	<body>
+		{% include nav.html %}
+		{% include header.html %}
+	        <div style="display: none;">
+	        ${% include mathematics.html %}$
+	        </div>
+		
+		{% if page.topnav %}
+			{% include topnav.html %}
+		{% endif %}
+		<main{% if page.main-class %} class="{{page.main-class}}"{% endif %}>
+			{{ content }}
+		</main>
+
+		{% if page.english %}
+			{% include footer-en.html %}
+		{% else %}
+			{% include footer.html %}
+		{% endif %}
+
+		{% include foot.html %}
+
+	</body>
+
+</html>
