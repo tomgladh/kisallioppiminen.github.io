@@ -14,11 +14,22 @@ layout: compress
 		
 		{% if page.topnav %}
 			{% include topnav.html %}
+			<main{% if page.main-class %} class="{{page.main-class}}"{% endif %}>
+				{% assign url_parts = page.topnav | split: '/' %}
+				{% assign topbar = site.data.topbar %}
+				{% for part in url_parts %}
+					{% assign topbar = topbar[part] %}
+				{% endfor %}
+	
+				{% for link in topbar.navigation %}
+					{% for page in site.pages %}
+					{% if page.url == link.path %}
+						{{page.content}}
+					{% endif %}
+				{% endfor %}
+				{% endfor %}
+			</main>
 		{% endif %}
-		<main{% if page.main-class %} class="{{page.main-class}}"{% endif %}>
-			{{ content }}
-		</main>
-
 		{% if page.english %}
 			{% include footer-en.html %}
 		{% else %}
