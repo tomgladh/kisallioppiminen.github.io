@@ -5,7 +5,7 @@ Täältä löydät sivuston http://kisallioppiminen.fi sivuston lähdekoodin. Si
 Git-versionhallintajärjestemää ja sen pohjalta tehtyä GitHub-pilvipalvelua voi käyttää monella tavalla. Tässä yksi tapa, jolla pääset nopeasti liikkeelle oman version luomisessa kisallioppiminen.fi-sivuston materiaaleista.
 
 1. Mene osoitteeseen http://github.com
-2. Luo GitHub-käyttäjätili ja tunnus täyttämällä sivun kentät ja paina nappia "SignUp for GitHub"
+2. Luo GitHub-käyttäjätili ja tunnus täyttämällä sivun kentät ja paina nappia "Sign up for GitHub"
 3. Mene sivulle [https://github.com/kisallioppiminen/kisallioppiminen.github.io] (jossa siis luet tätä teksitä)
 4. Paina oikeassa ylälaidassa olevaa Fork-nappia, luodaksesi oman kopion tästä lähdekoodista
 5. Nyt sinut olis pitänyt uudelleenohjata omaan työtilaasi osoitteeseen `https://github.com/oma-tunnus/kisallioppiminen.github.io`, missä *oma-tunnus* on kohdassa 2 luomasi GitHub-tunnus. Paina ratasikonia "Settings".
