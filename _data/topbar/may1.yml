@@ -5,6 +5,9 @@ navigation:
     name: Kurssin etusivu
     path: /kurssit/may1/index.html
   -
+    name: Luvut ja laskutoimitukset
+    path: /kurssit/may1/luvutLaskutoimitukset/index.html
+  -
     name: Lukujonot ja summat
     path: /kurssit/may1/lukujonotSummat/index.html
   -
