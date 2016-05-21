@@ -6,6 +6,17 @@ main-class: has-atop
 ---
 
 <style>
+
+  .tehtava .collapse,
+	.panel .collapse {
+		display: block;
+	}
+	
+  section .tehtava>header a[data-toggle="collapse"].collapsed:after, 
+	section.panel>header a[data-toggle="collapse"].collapsed:after {
+  content: none;
+  }
+  
   body div {
   display: none;
   }
