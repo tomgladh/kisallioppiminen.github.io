@@ -6,13 +6,36 @@ main-class: has-atop
 ---
 
 <style>
-
-  html body article * {
- visibility:hidden;
+  .tehtava .collapse,
+	.panel .collapse {
+		display: block;
+	}
+	
+  section .tehtava>header a[data-toggle="collapse"].collapsed:after, 
+	section.panel>header a[data-toggle="collapse"].collapsed:after {
+  content: none;
+  }
+  
+  body div > p,
+  .tehtavat,
+  .theorem,
+  article section.panel>header,
+  .tavoitteet {
+  display: none;
+  
+  main.has-atop article,
+  .panel {
+    margin-bottom: 0px;
+  }
+  
+  .tehtava, .panel {
+    border: 0px solid #139197;
+    border-bottom-width: 0px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
-
-.definition {
- display:block;
-}
-
+  
+  body div.definition {
+  display: block;
+  }
 </style>
