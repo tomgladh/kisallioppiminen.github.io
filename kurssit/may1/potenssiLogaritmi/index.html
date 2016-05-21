@@ -677,10 +677,10 @@ topnav: may1
         </div>
     </div>
 
-    <p>
+<!--     <p>
         Palautetaan mieleen, että kahden murtoluvun osamäärä saadaan laskettua, kun kerrotaan jakajan käänteisluvulla:
         $$\dfrac{\left(\dfrac{3}{35}\right)}{\left(\dfrac{9}{7}\right)} = \frac{3}{35} \cdot \frac{7}{9} = \frac{3 \cdot 7}{35 \cdot 9} = \frac{1 \cdot 1}{5 \cdot 3} = \frac{1}{15}.$$
-    </p>
+    </p> -->
 
     <div class="tehtavat">
         <div class="tehtava" id="potenssi19-ex">
@@ -688,7 +688,7 @@ topnav: may1
             <header>
                 <h1>
                     <a data-toggle="collapse" class="collapsed" href="#potenssi19">
-                        Samankantaisten potenssien osamäärä
+                        Negatiivinen eksponentti
                     </a>
                 </h1>
             </header>
@@ -696,19 +696,35 @@ topnav: may1
             <div id="potenssi19" class="collapse">
 
                 <p>
-                  Kirjoita osoittaja ja nimittäjä ensin tulomuodossa ja supista. Kirjoita lopputulos sen jälkeen potenssimerkintää käyttäen.
+                  Tehtävänä on tutkia, miten potenssit $2^{-4}$ ja $\left(\dfrac{1}{2}\right)^4$ liittyvät toisiinsa.
                 <ol class="a">
-                    <li> $\dfrac{2^7}{2^4}$</li>
-                    <li> $\dfrac{5^6}{5^2}$</li>
-                    <li> $\dfrac{(-2)^8}{(-2)^7}.$</li>
+                    <li> Kirjoita näkyviin, mitä $2^{-4}$ tarkoittaa määritelmän mukaan.</li>
+                    <li> Kirjoita $\left(\dfrac{1}{2}\right)^4$ tulomuodossa ja sievennä mahdollisimman pitkälle.</li>
+                    <li> Vertaa a- ja b-kohdan tuloksia. Miten ne liittyvät toisiinsa?</li>
                 </ol>
-                    
-                  Tutki tehtävän lähtötilannetta ja lopputulosta a-, b- ja c-kohdissa. Keksitkö säännön eksponentin muodostumiselle samankantaisten potenssien osamäärässä? 
                 </p>
 
             </div>
         </div>
     </div>
+
+    <div class="theorem">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Oletetaan, että $n$ on positiivinen kokonaisluku ja $a \neq 0$. Potenssi $a^{-n}$ on luvun $a$ käänteisluvun $n$. potenssi eli
+                    $$a^{-n} = \left(\frac{1}{a}\right)^n.$$
+                </p>
+                <div class="proof">
+                    <p>
+                        Perustelu: Potenssin määritelmän mukaan
+                        $$a^{-n} = \frac{1}{a^n}.$$
+                        Toisaalta potenssin määritelmän mukaan
+                        $$\left(\frac{1}{a}\right)^n = \underbrace{\left(\frac{1}{a}\right) \cdots \left(\frac{1}{a}\right)}_\text{$n$ kpl} = \frac{1}{a^n}.$$
+                        Siis 
+                        $$a^{-n} = \left(\frac{1}{a}\right)^n.$$
+                    </p>
+                </div>
+            </div>
 
     <div class="tehtavat">
         <div class="tehtava" id="potenssi4d-ex">
