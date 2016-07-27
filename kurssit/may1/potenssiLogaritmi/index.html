@@ -9,7 +9,7 @@ topnav: may1
   
    <section>
         <header>
-            <h1>Potenssi</h1>
+            <h1>Potenssi ja logaritmi</h1>
         </header>
     </section>
 <section class="panel">
@@ -412,7 +412,7 @@ topnav: may1
         </header>
     <div id="eksponenttiNolla" class="collapse">
 
-        <p>Edellisessä kappaleessa sovittiin, mitä tarkoitetaan potenssilla $a^n$, missä $n$ on positiivinen kokonaisluku, ja tutkittiin, millaisia laskulakeja potenssilausekkeilla on. Huomattiin esimerkiksi, että samankantaisten potenssien osamäärälle pätee sääntö
+        <p>Edellisessä kappaleessa sovittiin, mitä tarkoitetaan potenssilla $a^n$, missä $n$ on positiivinen kokonaisluku. Sen jälkeen tutkittiin, millaisia laskulakeja potenssilausekkeet noudattavat. Huomattiin esimerkiksi, että samankantaisten potenssien osamäärälle pätee sääntö
             $$\frac{a^m}{a^n} = a^{m-n}.$$
         Jos tässä luku $m$ sattuu olemaan pienempi kuin luku $n$, joudutaan kuitenkin ongelmalliseen tilanteeseen. Esimerkiksi 
         $$\frac{a^3}{a^9} = a^{3-9} = a^{-6}.$$
@@ -539,32 +539,7 @@ topnav: may1
     </div>
 
     <div class="tehtavat">
-        <div class="tehtava" id="potenssi16-ex">
-
-            <header>
-                <h1>
-                    <a data-toggle="collapse" class="collapsed" href="#potenssi16">
-                        Potenssin potenssi
-                    </a>
-                </h1>
-            </header>
-            <div id="potenssi16" class="collapse">
-                <p> 
-                  <ol class="a">
-                    <li> Kirjoita lauseke $(a^{-3})^4$ ensin tulomuodossa. Kirjoita lopputulos sen jälkeen potenssimerkintää käyttäen.</li>
-                    <li> Kirjoita lauseke $(a^3)^{-4}$ ensin tulomuodossa. Kirjoita lopputulos sen jälkeen potenssimerkintää käyttäen.</li>
-                    <li> Mitä eroa a- ja b-kohdilla on? Selitä omin sanoin.</li>
-                    <li> Mitä yhteistä a- ja b-kohdilla on? Selitä omin sanoin.</li>
-                  </ol>
-                </p>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="tehtavat">
         <div class="tehtava" id="potenssi17-ex">
-
             <header>
                 <h1>
                     <a data-toggle="collapse" class="collapsed" href="#potenssi17">
@@ -572,9 +547,7 @@ topnav: may1
                     </a>
                 </h1>
             </header>
-
             <div id="potenssi17" class="collapse">
-
                 <p>
                   Kirjoita lauseke ensin tulomuodossa. Kirjoita lopputulos sen jälkeen potenssimerkintää käyttäen.
                   <ol class="a">
@@ -586,32 +559,26 @@ topnav: may1
                   </ol>
                   Tutki tehtävän lähtötilannetta ja lopputulosta a-, b-, c- ja d-kohdissa. Vaikuttaako samankantaisten potenssien tulon laskusääntö pätevän myös negatiivisten eksponenttien tapauksessa?
                 </p>
-
             </div>
         </div>
     </div>
 
-    <div class="tehtavat">
-        <div class="tehtava" id="potenssi18-ex">
+    <p>
+        Kun potenssi määriteltiin myös negatiivisten eksponenttien ja eksponentin nolla tapauksessa, tehtiin määritelmästä tarkoituksella sellainen, että aikaisemmin havaitut potenssien laskusäännöt toimivat edelleen. Nämä laskusäännöt on koottu seuraavaan teoreemaan. Teoreemat (toiselta nimeltään lauseet) ovat matemaattisia tosiasioita, jotka voidaan perustella todeksi määritelmien pohjalta. Tällä kertaa perustelu kuitenkin sivuutetaan, koska se ei ole tämän kurssin kannalta keskeinen.
+    </p>
 
-            <header>
-                <h1>
-                    <a data-toggle="collapse" class="collapsed" href="#potenssi18">
-                        Samankantaisten potenssien tulo
-                    </a>
-                </h1>
-            </header>
-            <div id="potenssi18" class="collapse">
-                <p> 
-                  <ol class="a">
-                    <li> Kirjoita lauseke $a^{-7}\cdot a^2$ ensin tulomuodossa. Kirjoita lopputulos sen jälkeen potenssimerkintää käyttäen.</li>
-                    <li> Kirjoita lauseke $a^7\cdot a^{-2}$ ensin tulomuodossa. Kirjoita lopputulos sen jälkeen potenssimerkintää käyttäen.</li>
-                    <li> Miten tehtävän a- ja b-kohtien vastaukset liittyvät toisiinsa? Selitä omin sanoin.</li>
-                  </ol>
-                </p>
-
-            </div>
-        </div>
+    <div class="theorem">
+        <h3>TEOREEMA</h3>
+        <p>
+            Seuraavat potenssien laskusäännöt pätevät kaikilla kokonaisluvuilla $m$ ja $n$ sekä kaikilla reaaliluvuilla $a \neq 0$:
+            <ol>
+                <li>tulon potenssi on potenssien tulo: $(ab)^n = a^nb^n$</li>
+                <li>osamäärän potenssi on potenssien osamäärä: $\left(\dfrac{a}{b}\right)^n = \frac{a^n}{b^n}$</li>
+                <li>potenssin potenssissa eksponentit kerrotaan keskenään: $(a^m)^n = a^mn$</li>
+                <li>samankantaisten potenssien tulossa eksponentit lasketaan yhteen: $a^m\cdot a^n = a^{m+n}$</li>
+                <li>samankantaisten potenssien osamäärässä osoittajan eksponentista vähennetään nimittäjän eksponentti: $\dfrac{a^m}{a^n} = a^{m-n}$</li>
+            </ol>
+        </p>
     </div>
 
 <!--     <p>
@@ -996,6 +963,52 @@ topnav: may1
                 </p>
             </div>
         </div>
+
+ 
+        <div class="tehtava" id="potenssi16-ex">
+            <header>
+                <h1>
+                    <a data-toggle="collapse" class="collapsed" href="#potenssi16">
+                        Potenssin potenssi
+                    </a>
+                </h1>
+            </header>
+            <div id="potenssi16" class="collapse">
+                <p> 
+                  <ol class="a">
+                    <li> Kirjoita lauseke $(a^{-3})^4$ ensin tulomuodossa. Kirjoita lopputulos sen jälkeen potenssimerkintää käyttäen.</li>
+                    <li> Kirjoita lauseke $(a^3)^{-4}$ ensin tulomuodossa. Kirjoita lopputulos sen jälkeen potenssimerkintää käyttäen.</li>
+                    <li> Mitä eroa a- ja b-kohdilla on? Selitä omin sanoin.</li>
+                    <li> Mitä yhteistä a- ja b-kohdilla on? Selitä omin sanoin.</li>
+                  </ol>
+                </p>
+            </div>
+        </div>
+  
+
+    
+
+        <div class="tehtava" id="potenssi18-ex">
+
+            <header>
+                <h1>
+                    <a data-toggle="collapse" class="collapsed" href="#potenssi18">
+                        Samankantaisten potenssien tulo
+                    </a>
+                </h1>
+            </header>
+            <div id="potenssi18" class="collapse">
+                <p> 
+                  <ol class="a">
+                    <li> Kirjoita lauseke $a^{-7}\cdot a^2$ ensin tulomuodossa. Kirjoita lopputulos sen jälkeen potenssimerkintää käyttäen.</li>
+                    <li> Kirjoita lauseke $a^7\cdot a^{-2}$ ensin tulomuodossa. Kirjoita lopputulos sen jälkeen potenssimerkintää käyttäen.</li>
+                    <li> Miten tehtävän a- ja b-kohtien vastaukset liittyvät toisiinsa? Selitä omin sanoin.</li>
+                  </ol>
+                </p>
+
+            </div>
+        </div>
+ 
     
      <div class="tehtavat">
 
