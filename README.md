@@ -6,7 +6,7 @@ Git-versionhallintajärjestemää ja sen pohjalta tehtyä GitHub-pilvipalvelua v
 
 1. Mene osoitteeseen http://github.com
 2. Luo GitHub-käyttäjätili ja tunnus täyttämällä sivun kentät ja paina nappia "Sign up for GitHub"
-3. Mene sivulle https://github.com/kisallioppiminen/kisallioppiminen.github.io (jossa siis luet tätä teksitä)
+3. Mene sivulle https://github.com/kisallioppiminen/kisallioppiminen.github.io (jossa siis luet tätä tekstiä)
 4. Paina oikeassa ylälaidassa olevaa Fork-nappia, luodaksesi oman kopion tästä lähdekoodista
 5. Nyt sinut olis pitänyt uudelleenohjata omaan työtilaasi osoitteeseen `https://github.com/oma-tunnus/kisallioppiminen.github.io`, missä *oma-tunnus* on kohdassa 2 luomasi GitHub-tunnus. Paina ratasikonia "Settings".
 6. Vaihda "Repository name" -kohdassa `kisallioppiminen.github.io` muotoon `oma-tunnus.github.io` ja paina "Rename"
