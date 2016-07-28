@@ -8,14 +8,14 @@ navigation:
     name: Luvut ja laskutoimitukset
     path: /kurssit/may1/luvutLaskutoimitukset/index.html
   -
+    name: Potenssi ja logaritmi
+    path: /kurssit/may1/potenssiLogaritmi/index.html
+  -
     name: Lukujonot ja summat
     path: /kurssit/may1/lukujonotSummat/index.html
   -
     name: Funktio
     path: /kurssit/may1/funktio/index.html
-  -
-    name: Potenssi ja logaritmi
-    path: /kurssit/may1/potenssiLogaritmi/index.html
   -
     name: Prosenttilaskenta
     path: /kurssit/may1/prosenttilaskenta/index.html
