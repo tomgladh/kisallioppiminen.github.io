@@ -1,5 +1,5 @@
 # Kisallioppiminen.fi lähdekoodi
-Täältä löydät sivuston http://kisallioppiminen.fi sivuston lähdekoodin. Sivusto sisältää ilmaisia ja avoimia lukion pitkän matematiikan materiaaleja matematiikan oppimisen ja opettamisen tueksi. Materiaalit ovat erityisesti suunniteltu tukemaan tehostetun kisällioppimisen menetelmän käyttöä.
+Täältä löydät http://kisallioppiminen.fi -sivuston lähdekoodin. Sivusto sisältää ilmaisia ja avoimia lukion pitkän matematiikan materiaaleja matematiikan oppimisen ja opettamisen tueksi. Materiaalit ovat erityisesti suunniteltu tukemaan tehostetun kisällioppimisen menetelmän käyttöä.
 
 ## Pikaohje oman version tekemiseen 
 Git-versionhallintajärjestemää ja sen pohjalta tehtyä GitHub-pilvipalvelua voi käyttää monella tavalla. Tässä yksi tapa, jolla pääset nopeasti liikkeelle oman version luomisessa kisallioppiminen.fi-sivuston materiaaleista.
