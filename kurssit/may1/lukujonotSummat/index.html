@@ -901,13 +901,13 @@ $
                 </h1>
             </header>
             <div id="t-helloweb36" class="collapse">
-            <p> Tarkastele geometrista lukujonoa $\frac{3}{2}$,$3$,$6$,$\ldots$. 
+            <p> Tarkastele geometrista lukujonoa $\dfrac{3}{4}$,$\dfrac{3}{2}$,$3$,$\ldots$. 
             <ol class="a">
                 <li> Kopioi alla oleva taulukko vihkoosi.
                     $$
                         \begin{array}{c|c|c|c|c|c|c|c}
                         n \T & 1 & 2 & 3 & 4 & 5 & 6 & 7  \\\hline
-                        a_n \T & \dfrac{3}{2} & 3 & 6 & \quad& \quad & \quad & \quad\\
+                        a_n \T & \dfrac{3}{4} & \dfrac{3}{2} & 3 & \quad& \quad & \quad & \quad\\
                         \end{array}
                     $$</li>
                 <li> Mikä on tarkastellun geometrisen jonon suhdeluku $q$?
@@ -920,38 +920,41 @@ $
         </div>
     </div>
 
-            <div class="theorem">
-                <h3>TEOREEMA</h3>
+        <p>
+            Edellisessä tehtävässä havaittiin, että tarkastellun geometrisen jonon jäsenet pystyttiin laskemaan, kun tiedetiin jonon ensimmäinen jäsen ja suhdeluku. Tämä havainto koskee kaikkia geometrisia jonoja, kuten seuraava teoreema osoittaa. Lue teoreeman perustelu huolellisesti ja mieti jokaisen virkkeen jälkeen, mitä järkeä selityksessä on. Jos jokin kohta tuntuu hämärältä, keskustele siitä kaverin tai opettajan kanssa.
+        </p>
+
+        <div class="theorem">
+            <h3>TEOREEMA</h3>
+            <p>
+                Geometrisen jonon $(a_n)$ jäsenet saadaan laskettua, jos tiedetään jonon ensimmäinen jäsen $a_1$ ja jonon suhdeluku $q$, sillä kaikilla $n = 1$, $2$, $3$, $\ldots$ pätee
+                $$a_n = a_1q^{n-1}.$$
+            </p>
+            <div class="proof">
                 <p>
-                    Geometrisen jonon $(a_n)$ jäsenet saadaan laskettua, jos tiedetään jonon ensimmäinen jäsen $a_1$ ja jonon suhdeluku $q$, sillä kaikilla $n = 1$, $2$, $3$, $\ldots$ pätee
+                    Perustelu: Geometrisen jonon määritelmän mukaan 
+                    $$\frac{a_{n+1}}{a_n} = q$$
+                    eli $a_{n+1} = a_nq$ kaikilla $n = 1$, $2$, $3$, $\ldots$ Tästä saadaan seuraavat tiedot:
+                    $$
+                    \begin{align*}
+                    a_2 &= a_1q \\
+                    a_3 &= a_2q = (a_1q)q = a_1q^2 \\
+                    a_4 &= a_3q = (a_1q^2)q = a_1q^3 \\
+                    a_5 &= a_4q = (a_1q^3)q = a_1q^4 
+                    \end{align*}
+                    $$
+                    ja niin edelleen. Havaitaan säännönmukaisuus: jonon toisesta jäsenestä alkaen jäsen $a_n$ saadaan aina tulona $a_1q^{n-1}$. 
+                    Lisäksi 
+                    $$a_1 = a_1q^0,$$
+                    sillä $q^0 = 1$ kaikilla $q \neq 0$.
+                    Voidaan päätellä, että kaikilla $n = 1$, $2$, $3$, $\ldots$ pätee
                     $$a_n = a_1q^{n-1}.$$
                 </p>
-                <div class="proof">
-                    <p>
-                        Perustelu: Geometrisen jonon määritelmän mukaan 
-                        $$\frac{a_{n+1}}{a_n} = q$$
-                        eli $a_{n+1} = a_nq$ kaikilla $n = 1$, $2$, $3$, $\ldots$ Tästä saadaan seuraavat tiedot:
-                        $$
-                        \begin{align*}
-                        a_2 &= a_1q \\
-                        a_3 &= a_2q = (a_1q)q = a_1q^2 \\
-                        a_4 &= a_3q = (a_1q^2)q = a_1q^3 \\
-                        a_5 &= a_4q = (a_1q^3)q = a_1q^4 
-                        \end{align*}
-                        $$
-                        ja niin edelleen. Havaitaan säännönmukaisuus: jonon toisesta jäsenestä alkaen jäsen $a_n$ saadaan aina tulona $a_1q^{n-1}$. 
-                        Lisäksi 
-                        $$a_1 = a_1q^0,$$
-                        sillä $q^0 = 1$ kaikilla $q \neq 0$.
-                        Voidaan päätellä, että kaikilla $n = 1$, $2$, $3$, $\ldots$ pätee
-                        $$a_n = a_1q^{n-1}.$$
-                    </p>
-                </div>
             </div>
+        </div>
     
      <div class="tehtavat">
         <div class="tehtava" id="t-helloweb38-ex">
-
             <header>
                 <h1>
                     <a data-toggle="collapse" class="collapsed" href="#t-helloweb38">
@@ -974,7 +977,6 @@ $
     
      <div class="tehtavat">
         <div class="tehtava" id="t-helloweb38b-ex">
-
             <header>
                 <h1>
                     <a data-toggle="collapse" class="collapsed" href="#t-helloweb38b">
