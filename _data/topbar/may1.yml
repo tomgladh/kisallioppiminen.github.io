@@ -3,19 +3,19 @@ path:
 navigation:
   -
     name: Kurssin etusivu
-    path: /kurssit/may1/index.html
+    path: /kurssit/may1/
   -
     name: Luvut ja laskutoimitukset
-    path: /kurssit/may1/luvutLaskutoimitukset/index.html
+    path: /kurssit/may1/luvutLaskutoimitukset/
   -
     name: Potenssi ja logaritmi
-    path: /kurssit/may1/potenssiLogaritmi/index.html
+    path: /kurssit/may1/potenssiLogaritmi/
   -
     name: Lukujonot ja summat
-    path: /kurssit/may1/lukujonotSummat/index.html
+    path: /kurssit/may1/lukujonotSummat/
   -
     name: Funktio
-    path: /kurssit/may1/funktio/index.html
+    path: /kurssit/may1/funktio/
   -
     name: Prosenttilaskenta
-    path: /kurssit/may1/prosenttilaskenta/index.html
+    path: /kurssit/may1/prosenttilaskenta/
