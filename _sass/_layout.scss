@@ -3,8 +3,10 @@ body {
 	margin-right: auto;
 }
 
-header a {
+header a,
+.tehtava h2 a {
 	cursor: pointer;
+        padding: 2px;
 }
 
 /**
