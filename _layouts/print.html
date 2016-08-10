@@ -32,14 +32,14 @@ layout: compress
 
 		{% if page.topnav %}
 			{% include topnav.html %}
-			{{ content }}
+
 			<main{% if page.main-class %} class="{{page.main-class}}"{% endif %}>
 				{% assign url_parts = page.topnav | split: '/' %}
 				{% assign topbar = site.data.topbar %}
 				{% for part in url_parts %}
 					{% assign topbar = topbar[part] %}
 				{% endfor %}
-	
+				{{ content }}
 				{% for link in topbar.navigation %}
 					{% for page in site.pages %}
 					{% if page.url == link.path %}
