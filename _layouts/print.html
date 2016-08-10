@@ -22,15 +22,17 @@ layout: compress
 	{% include head.html %}
 
 	<body>
-		{{ content }}
+
 		{% include nav.html %}
 		{% include header.html %}
 	        <div style="display: none;">
 	        ${% include mathematics.html %}$
 	        </div>
 		
+
 		{% if page.topnav %}
 			{% include topnav.html %}
+			{{ content }}
 			<main{% if page.main-class %} class="{{page.main-class}}"{% endif %}>
 				{% assign url_parts = page.topnav | split: '/' %}
 				{% assign topbar = site.data.topbar %}
