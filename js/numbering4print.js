@@ -9,7 +9,7 @@ var SITE = {
    //         if (this.id == "exStart") {
      //           exCount = 1;
        //     }
-            var exName = "Tehtävä " + exCount + ": " + $(value).find("h1 a").text() + this.id;
+            var exName = "Tehtävä " + exCount + ": " + $(value).find("h1 a").text();
 
              // add assignments to toc 
 //            $("#tehtavat-toc").append("<li><a data-toggle='collapse' href='" + $(value).find("h1 a").attr("href") + "'>" + exName + "</a></li>");
