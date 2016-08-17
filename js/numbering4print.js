@@ -4,7 +4,7 @@ var SITE = {
     },
     initToc: function() {
         $(".tehtava").each(function(index, value) {
-            if ($('#exerciseStart').val() == 1) {
+            if ($('#exStart').val() == 0) {
                 exCount = 0;
             }
             var exCount = (index + 1);
