@@ -5,11 +5,11 @@ var SITE = {
     initToc: function() {
         $(".tehtava").each(function(index, value) {
 
-            var exCount = (index + 1
-            if (this.id == "exStart") {
-                exCount = 1;
-            }
-            var exName = "Tehtävä " + exCount + ": " + $(value).find("h1 a").text();
+ //           var exCount = (index + 1
+   //         if (this.id == "exStart") {
+     //           exCount = 1;
+       //     }
+            var exName = "Tehtävä " + exCount + ": " + $(value).find("h1 a").text() + this.id;
 
              // add assignments to toc 
 //            $("#tehtavat-toc").append("<li><a data-toggle='collapse' href='" + $(value).find("h1 a").attr("href") + "'>" + exName + "</a></li>");
