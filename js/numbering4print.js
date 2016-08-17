@@ -4,10 +4,11 @@ var SITE = {
     },
     initToc: function() {
         $(".tehtava").each(function(index, value) {
-            if (this.id == "#exStart") {
-                exCount = 0;
+
+            var exCount = (index + 1
+            if (this.id == "exStart") {
+                exCount = 1;
             }
-            var exCount = (index + 1);
             var exName = "Tehtävä " + exCount + ": " + $(value).find("h1 a").text();
 
              // add assignments to toc 
