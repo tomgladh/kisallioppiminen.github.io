@@ -4,6 +4,9 @@ var SITE = {
     },
     initToc: function() {
         $(".tehtava").each(function(index, value) {
+            if ($('#exerciseStart').val() == 1) {
+                exCount = 0;
+            }
             var exCount = (index + 1);
             var exName = "Tehtävä " + exCount + ": " + $(value).find("h1 a").text();
 
