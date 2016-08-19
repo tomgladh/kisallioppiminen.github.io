@@ -4,3 +4,15 @@ navigation:
   -
     name: Kurssin etusivu
     path: /kurssit/maa2/
+  -
+    name: Luku 1
+    path: /kurssit/luku1/
+  -
+    name: Luku 2 
+    path: /kurssit/luku2/
+  -
+    name: Luku 3
+    path: /kurssit/luku3/
+  -
+    name: Luku 4
+    path: /kurssit/luku4/
