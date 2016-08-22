@@ -5,14 +5,14 @@ navigation:
     name: Kurssin etusivu
     path: /kurssit/maa2/
   -
-    name: Luku 1
+    name: 1. asteen polynomifunktio
     path: /kurssit/maa2/luku1/
   -
-    name: Luku 2 
+    name: 2. asteen potenssifunktio ja neliöjuuri
     path: /kurssit/maa2/luku2/
   -
-    name: Luku 3
+    name: 2. asteen polynomifunktio
     path: /kurssit/maa2/luku3/
   -
-    name: Luku 4
+    name: Korkeamman asteen potenssi- ja polynomifunktiot
     path: /kurssit/maa2/luku4/
