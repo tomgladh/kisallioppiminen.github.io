@@ -7,8 +7,11 @@ var SITE = {
         var exReset = 0;
         $(".tehtava").each(function(index, value) {
             
+            // reset excercise counter
             if ($this.is('#firstEx')) {
-                exReset = index};
+                exReset = index;
+            };
+            
             var exCount = (index + 1 - exReset);
             var exName = "Tehtävä " + exCount + ": " + $(value).find("h1 a").text();
 
