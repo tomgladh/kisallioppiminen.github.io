@@ -3,12 +3,13 @@ var SITE = {
         SITE.initToc();
     },
     initToc: function() {
+        
+        var exReset = 0;
         $(".tehtava").each(function(index, value) {
-
- //           var exCount = (index + 1
-   //         if (this.id == "exStart") {
-     //           exCount = 1;
-       //     }
+            
+            if ($this.is('#firstEx')) {
+                exReset = index};
+            var exCount = (index + 1 - exReset);
             var exName = "Tehtävä " + exCount + ": " + $(value).find("h1 a").text();
 
              // add assignments to toc 
@@ -48,37 +49,27 @@ var SITE = {
                 $('html, body').animate({
                     scrollTop: $($.attr(this, 'href') + "-ex").offset().top
                 }, 400);
-
                 $($.attr(this, 'href')).click();
             });
         });
-
         var idx = 1;
         $("section h1").each(function(index, value) {
             if ($(value).parents('.tehtava').length) {
                 return; // ignore assignments
             }
-
             if ($(value).parents('.no-toc').length) {
                 return; //ignore sections with .no-toc
             }
-
             if ($(value).parent('section').length) {
-
-
                 var chapterCount = idx;
-
                 var chapterText = chapterCount + ". " + $(value).text();
                 
                 console.log(chapterText);
-
                 $(value).attr("id", "chapter" + chapterCount);
                 $(value).text(chapterText);
-
                 // add chapters to toc 
                 $("#material-toc").append("<li><a href='#chapter" + chapterCount + "'>" + chapterText + "</a></li>");
                 idx++;
-
                 // iterate through siblings
                 var sibling = $(value).next();
                 var count = 1;
@@ -87,7 +78,6 @@ var SITE = {
                     if (!$(sibling).prop("tagName") || $(sibling).prop("tagName").toLowerCase() === "h1") {
                         break;
                     }
-
                     if ($(sibling).prop("tagName").toLowerCase() === "h2") {
                         var subChapterText = (chapterCount + "." + count + ". " + $(sibling).text());
                         $(sibling).text(subChapterText);
@@ -98,8 +88,6 @@ var SITE = {
                         
                         count++;
                     }
-
-
                     sibling = $(sibling).next();
                     
                     if(sibling.length <= 0) {
@@ -107,7 +95,6 @@ var SITE = {
                     }
                 }
             }
-
         });
   */
     }  
