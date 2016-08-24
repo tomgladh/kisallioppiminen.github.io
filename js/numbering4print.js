@@ -15,7 +15,7 @@ var SITE = {
             };
             
             var exCount = (index + 1 - exReset);
-            var exName = "Tehtävä " + chapterNumber + "." exCount + ": " + $(value).find("h1 a").text();
+            var exName = "Tehtävä " + chapterNumber + "." + exCount + ": " + $(value).find("h1 a").text();
 
              // add assignments to toc 
 //            $("#tehtavat-toc").append("<li><a data-toggle='collapse' href='" + $(value).find("h1 a").attr("href") + "'>" + exName + "</a></li>");
