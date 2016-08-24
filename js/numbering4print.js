@@ -5,7 +5,7 @@ var SITE = {
     initToc: function() {
         
         var exReset = 0;
-        var chapterNumber = -1;
+        var chapterNumber = 0;
         $(".tehtava").each(function(index, value) {
             
             // reset excercise counter
