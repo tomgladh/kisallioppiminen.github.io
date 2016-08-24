@@ -5,15 +5,17 @@ var SITE = {
     initToc: function() {
         
         var exReset = 0;
+        var chapterNumber = -1;
         $(".tehtava").each(function(index, value) {
             
             // reset excercise counter
             if (this.id === 'firstEx') {
                exReset = index;
+               chapterNumber++;
             };
             
             var exCount = (index + 1 - exReset);
-            var exName = "Tehtävä " + exCount + ": " + $(value).find("h1 a").text();
+            var exName = "Tehtävä " + chapterNumber + "." exCount + ": " + $(value).find("h1 a").text();
 
              // add assignments to toc 
 //            $("#tehtavat-toc").append("<li><a data-toggle='collapse' href='" + $(value).find("h1 a").attr("href") + "'>" + exName + "</a></li>");
