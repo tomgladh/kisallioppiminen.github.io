@@ -4,8 +4,14 @@ var SITE = {
     },
     initToc: function() {
         $(".tehtava").each(function(index, value) {
+            if ($('#chapterNumber').val() == null) {
+                var chNumber = "";
+            } else {
+                var chNumber = parseInt($('#chapterNumber').val());
+            }
+            
             var exCount = (index + 1);
-            var exName = "Tehtävä " + exCount + ": " + $(value).find("h1 a").text();
+            var exName = "Tehtävä " + chNumber + "." + exCount + ": " + $(value).find("h1 a").text();
 
              // add assignments to toc 
 //            $("#tehtavat-toc").append("<li><a data-toggle='collapse' href='" + $(value).find("h1 a").attr("href") + "'>" + exName + "</a></li>");
