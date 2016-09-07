@@ -1241,6 +1241,34 @@ topnav: maa2
                 </div>
             </div>
 
+            <p>
+                Edellisten tehtävien havainnot voidaan koota seuraavaksi teoreemaksi:
+            </p>
+
+            <div class="theorem">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Toisen asteen yhtälön $ax^2 + bx + c = 0$ ratkaisujen lukumäärä voidaan päätellä diskriminantin $D = b^2-4ac$ avulla seuraavasti: jos 
+                    <ul>
+                        <li> $D > 0$, yhtälöllä on kaksi ratkaisua
+                        </li>
+                        <li> $D = 0$, yhtälöllä on yksi ratkaisu</li>
+                        <li> $D < 0$, yhtälöllä ei ole yhtään ratkaisua. </li>
+                    </ul>
+                </p>
+                <div class="proof">
+                    <p>
+                        Perustelu: Jos yhtälön $ax^2 + bx + c = 0$ diskriminantti on negatiivinen eli $D < 0$, niin teoreeman 5 mukaan yhtälöllä $ax^2 + bx + c = 0$ ei ole yhtään ratkaisua. Jos diskriminantti on epänegatiivinen, ratkaisut saadaan kaavalla
+                        $$x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
+                        eli
+                        $$x = \frac{-b \pm \sqrt{D}}{2a}.$$
+                        Jos $D > 0$, on myös $\sqrt{D} > 0$, ja ratkaisuja saadaan kaksi. 
+                        Jos $D = 0$, ratkaisuja on yksi:
+                        $$x = \frac{-b}{2a}.$$
+                    </p>
+                </div>
+            </div>
+
             <div class="tehtavat">
                 <div class="tehtava" id="2aste26-ex">
 
@@ -1381,7 +1409,7 @@ topnav: maa2
             </div>
 
             <p>
-                Teoreeman 7 avulla toisen asteen polynomi saadaan jaettua tekijöihin etsimällä ensin polynomin nollakohdat. Esimerkiksi jos polynomi $10x^2 + x - 3$ halutaan jakaa tekijöihin, ratkaistaan ensin yhtälö $10x^2 + x - 3 = 0$:
+                Teoreeman 8 avulla toisen asteen polynomi saadaan jaettua tekijöihin etsimällä ensin polynomin nollakohdat. Esimerkiksi jos polynomi $10x^2 + x - 3$ halutaan jakaa tekijöihin, ratkaistaan ensin yhtälö $10x^2 + x - 3 = 0$:
                 \begin{align*}
                 x &= \frac{-1\pm \sqrt{1^2-4\cdot 1 \cdot (-3)}}{2\cdot 10} \\[1mm]
                 &= \frac{-1\pm \sqrt{121}}{20} \\[1mm]
@@ -1410,7 +1438,7 @@ topnav: maa2
                         </h1>
                     </header>
                     <div id="2aste29" class="collapse">
-                        <p> Jaa seuraavat toisen asteen polynomit ensimmäisen asteen tekijöihin teoreeman 7 avulla. Aloita ratkaisemalla polynomin nollakohdat.
+                        <p> Jaa seuraavat toisen asteen polynomit ensimmäisen asteen tekijöihin teoreeman 8 avulla. Aloita ratkaisemalla polynomin nollakohdat.
                             <ol class="a">
                                 <li> $x^2+2x-8$ </li>
                                 <li> $9x^2-3x-2$ </li>
