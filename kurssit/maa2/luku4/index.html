@@ -673,7 +673,7 @@ topnav: maa2
                     <div id="korkeammat16" class="collapse">
                         <p> Yhtälö $3x^3+x^2-8x+4 = 0$ toteutuu, jos ja vain jos $x = -2$ tai $x = 1$ tai $x = \frac{2}{3}$.
                         <ol class="a">
-                            <li> Mitkä ensimmäisen asteen polynomit ovat polynomin $3x^3+x^2-8x+4$ tekijöitä? </li>
+                            <li> Mitkä ensimmäisen asteen polynomit ovat teoreeman 9 mukaan polynomin $3x^3+x^2-8x+4$ tekijöitä? </li>
                             <li> Laske a-kohdan ensimmäisen asteen polynomien tulo. Millä luvulla tämä tulo pitää kertoa, jolla se on sama kuin polynomi $3x^3+x^2-8x+4$?</li>
                             <li> Kirjoita polynomi $3x^3+x^2-8x+4$ ensimmäisen asteen kokonaislukukertoimisten polynomien tulona.</li>
                         </ol>
@@ -683,8 +683,24 @@ topnav: maa2
             </div>
 
             <p>
-
+                Teoreeman 9 avulla saadaan perusteltua myös polynomiyhtälöiden ratkaisujen määrää koskeva tulos:
             </p>
+
+            <div class="theorem">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Astetta $n$ olevalla polynomiyhtälöllä on enintään $n$ ratkaisua.
+                </p>
+                <div class="proof">
+                    <p>
+                        Perustelu: Oletetaan, $P(x)$ on $n$:nnen asteen polynomi. Oletetaan lisäksi, että $x_1$, $x_2$ $\ldots$, $x_k$ ovat polynomiyhtälön $P(x) = 0$ ratkaisut. Tällöin lausekkeet $(x-x_1)$, $(x-x_2)$ $\ldots$, $(x-x_k)$ ovat teoreeman 9 mukaan polynomin $P(x)$ tekijöitä. Siis polynomi $P(x)$ voidaan kirjoittaa tulomuodossa
+                        $$P(x) = (x-x_1)(x-x_2) \cdots (x-x_k)Q(x),$$
+                        missä $Q(x)$ on jokin polynomi (mahdollisesti pelkkä vakiopolynomi, esimerkiksi $1$). Laskemalla tulo 
+                        $$(x-x_1)(x-x_2) \cdots (x-x_k)$$
+                        huomataan, että sen aste on $k$. Koska polynomin $P(x)$ aste on $n$, voidaan päätellä, että $k \leq n$. Siis ratkaisujen lukumäärä $k$ on enintään $n$.
+                    </p>
+                </div>
+            </div>
 
         </div>
     </section>
