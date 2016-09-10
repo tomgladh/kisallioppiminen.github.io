@@ -558,7 +558,7 @@ topnav: maa2
                         </h1>
                     </header>
                     <div id="korkeammat13" class="collapse">
-                        <p> Tehtävänä on ratkaista yhtälö $x^3-2x^2-2x + 4 = 0$.
+                        <p> Tehtävänä on ratkaista yhtälö $x^3-2x^2-7x + 14 = 0$.
                         <ol class="a">
                             <li> Ryhmittele yhtälön vasemman puolen termit niin, että saat näkyviin yhteisen tekijän $x-2$.</li>
                             <li> Kirjoita yhtälön vasen puoli tulomuodossa ja ratkaise yhtälö tulon nollasäännön avulla.</li>
@@ -582,12 +582,32 @@ topnav: maa2
                         <ol class="a">
                             <li> $2x^3 - 8x^2-4x+16 = 0$ </li>
                             <li> $x^3+5x^2 = x+5$ </li>
-                            <li> $(x+2)^3-4x+8 = 0$ </li>
+                            <li> $(x+2)^3-4x-8 = 0$ </li>
                         </ol>
                         </p>
                     </div>
                 </div>
             </div>
+
+            <p>
+                Sellaiset neljännen asteen yhtälöt, joissa esiintyy neljännen asteen termin lisäksi vain toisen asteen termi ja vakiotermi, voidaan ratkaista soveltamalla toisen asteen yhtälön ratkaisukaavaa. Esimerkki tällaisesta niin sanotusta bikvadraattisesta yhtälöstä on 
+                $$4x^4 + 11x^2 - 3 = 0.$$
+                Kun merkitään $t = x^2$, voidaan yhtälö kirjoittaa muodossa
+                $$4t^2 + 11t - 3 = 0.$$
+                Tämä on tavallinen toisen asteen yhtälö, jonka ratkaisuiksi saadaan
+                \begin{align*}
+                t &= \frac{-11 \pm \sqrt{11^2-4\cdot 4\cdot (-3)}}{2\cdot 4} \\[1mm]
+                &= \frac{-11 \pm 13}{8}
+                \end{align*}
+                eli $t_1 = \frac{1}{4}$ ja $t_2 = -3$. Ensimmäisestä ratkaisusta saadaan alkuperäiselle yhtälölle kaksi ratkaisua:
+                \begin{align*}
+                x^2 &= \frac{1}{4} \\[1mm]
+                x &= \frac{1}{2} \quad \text{ tai } \quad x &= -\frac{1}{2}
+                \end{align*}
+                Ratkaisu $t_2 = -3$ ei tuota alkuperäiselle yhtälölle yhtään ratkaisua, sillä yhtälö
+                $$x^2 = -3$$
+                ei toteudu millään muuttujan $x$ arvolla.
+            </p>
 
         </div>
     </section>
