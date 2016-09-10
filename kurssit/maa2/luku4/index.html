@@ -628,6 +628,39 @@ topnav: maa2
                 </div>
             </div>
 
+            <p>
+                Aiemmin pääteltiin, että toisen asteen polynomiyhtälöllä on aina enintään kaksi ratkaisua. On mahdollista osoittaa, että vastaava tulos pätee myös korkeamman asteen polynomiyhtälöille: kolmannen asteen yhtälöllä on enintään kolme ratkaisua, neljännen asteen yhtälöllä enintään neljä ratkaisua ja niin edelleen. Esimerkiksi yhtälö
+                $$3x^3-12x^2-33x+90 = 0$$
+                voidaan kirjoittaa muodossa
+                $$3(x-5)(x-2)(x+3) = 0.$$
+                Tästä nähdään tulon nollasäännön avulla, että tällä kolmannen asteen yhtälöllä on tasan kolme ratkaisua: $x_1 = 5$, $x_2 = 2$ ja $x_3 = -3$. 
+            </p>
+
+            <div class="theorem">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Lauseke $x-a$ on polynomin $P(x)$ tekijä, jos ja vain jos polynomiyhtälöllä $P(x) = 0$ on ratkaisu $x = a$.
+                </p>
+                <div class="proof">
+                    <p>
+                        Perustelu: Koska teoreeman tulos on kaksisuuntainen (jos ja vain jos), on myös perustelussa kaksi osaa:
+                        <ul>
+                            <li> 
+                                Oletetaan aluksi, että $x-a$ on polynomin $P(x)$ tekijä. Tämä tarkoittaa, että polynomi $P(x)$ voidaan kirjoittaa tulomuodossa
+                                $$P(x) = (x-a)Q(x),$$
+                                missä $Q(x)$ on jokin polynomi. Silloin myös yhtälö 
+                                $$P(x) = 0$$
+                                voidaan kirjoittaa muodossa 
+                                $$(x-a)Q(x) = 0.$$
+                                Tulon nollasäännön nojalla tämän yhtälön yksi ratkaisu on $x = a$.
+                            <li> 
+                                Oletetaan, että polynomiyhtälöllä $P(x) = 0$ on ratkaisu $x = a$. Nyt pitäisi jollakin tavalla perustella, että tällöin lauseke $x-a$ on polynomin $P(x)$ tekijä. Toisen asteen polynomien tapauksessa tämä on tehty aiemmin teoreemassa 8. Korkeamman asteen polynomien tapauksessa perustelu on liian hankala tässä esitettäväksi.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
         </div>
     </section>
 
