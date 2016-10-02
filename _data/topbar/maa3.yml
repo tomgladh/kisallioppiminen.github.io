@@ -1,0 +1,18 @@
+header: 
+path: 
+navigation:
+  -
+    name: Kurssin etusivu
+    path: /kurssit/maa3/
+  -
+    name: Luku 1
+    path: /kurssit/maa3/luku1/
+  -
+    name: Luku 2
+    path: /kurssit/maa3/luku2/
+  -
+    name: Luku 3
+    path: /kurssit/maa3/luku3/
+  -
+    name: Luku 4
+    path: /kurssit/maa3/luku4/
