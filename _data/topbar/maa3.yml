@@ -8,7 +8,7 @@ navigation:
     name: Suorakulmainen kolmio
     path: /kurssit/maa3/luku1/
   -
-    name: Vinokulmainen kolmio
+    name: Kolmio
     path: /kurssit/maa3/luku2/
   -
     name: Tasogeometriaa
