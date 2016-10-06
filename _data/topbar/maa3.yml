@@ -5,14 +5,11 @@ navigation:
     name: Kurssin etusivu
     path: /kurssit/maa3/
   -
-    name: Suorakulmainen kolmio
+    name: Kolmio
     path: /kurssit/maa3/luku1/
   -
-    name: Kolmio
+    name: Tasogeometriaa
     path: /kurssit/maa3/luku2/
   -
-    name: Tasogeometriaa
-    path: /kurssit/maa3/luku3/
-  -
     name: Avaruusgeometriaa
-    path: /kurssit/maa3/luku4/
+    path: /kurssit/maa3/luku3/
