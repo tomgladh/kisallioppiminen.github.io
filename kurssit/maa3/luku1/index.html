@@ -43,7 +43,7 @@ topnav: maa3
         <header>
             <h1>
                 <a data-toggle="collapse" class="collapsed" data-target="#ala">
-                    Kolmion pinta-ala, kulmat ja yhdenmuotoisuus
+                    Kolmion pinta-ala ja kulmat
                 </a>
             </h1>
         </header>
@@ -109,16 +109,33 @@ topnav: maa3
             </div>
 
             <div class="definition">
-                <h3>MÄÄRITELMÄ: YHDENMUOTOISUUS</h3>
+                <h3>MÄÄRITELMÄ: KOLMIOIDEN YHDENMUOTOISUUS</h3>
                 <p>
-                    Kuviot ovat <em>yhdenmuotoiset</em>, jos ne toteuttavat seuraavat ehdot:
+                    Kolmiot ovat <em>yhdenmuotoiset</em>, jos ne toteuttavat seuraavat ehdot:
                     <ul>
                         <li> kulma ja sen vastinkulma ovat aina yhtä suuret </li>
                         <li> suhde 
-                            $$\frac{\text{ janan pituus }}{\text{ vastinjanan pituus }}$$ 
-                            on sama riippumatta siitä, mitä kuvion janaa tarkastellaan.</li>
+                            $$\frac{\text{ sivun pituus }}{\text{ vastinsivun pituus }}$$ 
+                            on sama riippumatta siitä, mitä kolmion sivua tarkastellaan.</li>
                     </ul>
                 </p>
+            </div>
+
+            <div class="theorem">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Jos kolmiossa on kaksi kulmaa, jotka ovat yhtä suuria kuin niitä vastaavat kulmat toisessa kolmiossa, niin kolmiot ovat yhdenmuotoiset.
+                </p>
+                <div class="proof">
+                    <p>
+                        Perustelu: Merkitään niitä kulmia, jotka ovat molemmissa kolmioissa yhtä suuria, kirjaimilla $\alpha$ ja $\beta$ kuten alla olevassa kuvassa. Koska kolmion kulmien summa on $180^\circ$, saadaan kummankin kolmion kolmannen kulman suuruus laskettua vähennyslaskun avulla: $$180^\circ - \alpha - \beta.$$
+                        Havaitaan, että myös kolmas kulma on molemmissa kolmioissa yhtä suuri. 
+                        <br>
+                        Lisäksi pitäisi perustella, että sivun pituuden suhden vastinsivun pituuteen on aina sama eli alla olevan kuvan mukaan 
+                        $$\frac{a}{a'} = \frac{b}{b'} = \frac{c}{c'}.$$
+                        Tämä perustelu on sen verran hankala, että se sivuutetaan. (Perustelu löytyy esimerkiksi <a href="http://matematiikkalehtisolmu.fi/2011/geometria2011.pdf">täältä</a>, lause 2.2.1.)
+                    </p>
+                </div>
             </div>
 
         </div>
