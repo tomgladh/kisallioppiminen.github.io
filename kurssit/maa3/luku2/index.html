@@ -115,6 +115,57 @@ topnav: maa3
     <section class="panel">
         <header>
             <h1>
+                <a data-toggle="collapse" class="collapsed" data-target="#suorakulmainen">
+                    Suorakulmainen kolmio
+                </a>
+            </h1>
+        </header>
+        <div id="suorakulmainen" class="collapse">
+
+            <div class="theorem">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Suorakulmaisen kolmion kateettien neliöiden summa on yhtä suuri kuin hypotenuusan neliö, eli alla olevan kuvan merkinnöillä
+                    $$a^2 + b^2 = c^2$$
+                </p>
+                <p>
+                    <img src="/kurssit/maa3/kuvat/suoraK02.png" max-width: 100%; width: auto; height: auto;/> 
+                </p>
+                <div class="proof">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+
+            <div class="definition">
+                <h3>MÄÄRITELMÄ: SINI, KOSINI JA TANGENTTI</h3>
+                <p>
+                    Suorakulmaisessa kolmiossa terävän kulman $\alpha$ sini, kosini ja tangetti tarkoittavat kolmion sivujen pituuksien suhteita:
+                    \begin{align*}
+                    \sin \alpha &= \dfrac{\text{ kulman vastainen kateetti }}{\text{ hypotenuusa }} \\[1mm]
+                    \cos \alpha &= \dfrac{\text{ kulman viereinen kateetti }}{\text{ hypotenuusa }} \\[1mm]
+                    \tan \alpha &= \dfrac{\text{ kulman vastainen kateetti }}{\text{ kulman viereinen kateetti }}
+                    \end{align*}
+                <br>
+                    <img src="/kurssit/maa3/kuvat/suoraK03.png" max-width: 100%; width: auto; height: auto;/> 
+                <br>
+                    Yllä olevan kuvion merkinnöillä
+                    \begin{align*}
+                    \sin \alpha &= \dfrac{a}{c} \\[1mm]
+                    \cos \alpha &= \dfrac{b}{c} \\[1mm]
+                    \tan \alpha &= \dfrac{a}{b}
+                    \end{align*}
+                </p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="panel">
+        <header>
+            <h1>
                 <a data-toggle="collapse" class="collapsed" data-target="#tylppa">
                     Tylpän kulman kosini ja sini
                 </a>
@@ -257,6 +308,141 @@ topnav: maa3
 
         <div id="tehtavasarja3" class="collapse">
             <!-- Tästä alkaa piilotus -->
+
+            <div class="tehtava" id="skkS301-ex">
+                <header>
+                    <h1>
+                        <a data-target="#skkS301">
+
+                        </a>
+                    </h1>
+                </header>
+                <div id="skkS301">
+                    <p>
+                        <ol class="a">
+                            <li> Suorakulmaisen kolmion hypotenuusan pituus on 5 ja toisen kateetin pituus 2. Laske toisen kateetin pituus. </li>
+                            <li> Laske neliön piiri, kun sen lävistäjän pituus on 6.</li>
+                        </ol>
+                        [Pitkä S2011/1b &amp; S2015/1b]
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#skkS301_v">
+                            Vastaus
+                        </a>
+                    </h2>
+                    <div id="skkS301_v" class="collapse">
+                        <p>
+                            <ol class="a">
+                                <li> $\sqrt{21}$ </li>
+                                <li> $12\sqrt{2}$ </li>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtava" id="skkS302-ex">
+                <header>
+                    <h1>
+                        <a data-target="#skkS302">
+
+                        </a>
+                    </h1>
+                </header>
+                <div id="skkS302">
+                    <p>
+                        <ol class="a">
+                            <li> Suorakulmaisen kolmion kateettien ja hypotenuusan pituudet $a < b < c$ muodostavat geometrisen jonon. Määritä jonon suhdeluku $q$. </li>
+                            <li> Suorakulmaisen kolmion kateettien ja hypotenuusan pituudet $a < b < c$ muodostavat aritmeettisen jonon. Määritä suhde $a : b : c$.</li>
+                        </ol>
+                        [Pitkä S2015/10]
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#skkS302_v">
+                            Vastaus
+                        </a>
+                    </h2>
+                    <div id="skkS302_v" class="collapse">
+                        <p>
+                            <ol class="a">
+                                <li> $q = \sqrt{\dfrac{1 + \sqrt{5}}{2}}$ </li>
+                                <li> $a:b:c = 3:4:5$ </li>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtava" id="skkS303-ex">
+                <header>
+                    <h1>
+                        <a data-target="#skkS303">
+
+                        </a>
+                    </h1>
+                </header>
+                <div id="skkS303">
+                    <p> Suorakulmaisessa kolmiossa $ABC$ kateetin $AB$ pituus on 4,4 cm ja hypotenuusan $AC$ pituus 8,1 cm. 
+                        <ol class="a">
+                            <li> Laske kateetin $BC$ pituus. </li>
+                            <li> Laske kolmion terävien kulmien suuruudet 0,1 asteen tarkkuudella.</li>
+                            <li> Laske kolmion pinta-ala 0,1 neliösenttimetrin tarkkuudella.</li>
+                        </ol>
+                    </p>
+                    <p>
+                    <img src="/kurssit/maa3/kuvat/suoraK01.png" max-width: 100%; width: auto; height: auto;/> 
+                    </p>
+                    <p>
+                        [Lyhyt K2015/4]
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#skkS303_v">
+                            Vastaus
+                        </a>
+                    </h2>
+                    <div id="skkS303_v" class="collapse">
+                        <p>
+                            <ol class="a">
+                                <li> 6,8 cm </li>
+                                <li> $57{,}1^\circ$ </li>
+                                <li> $15{,}0 \text{ cm}^2$</li>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtava" id="skkS304-ex">
+                <header>
+                    <h1>
+                        <a data-target="#skkS304">
+
+                        </a>
+                    </h1>
+                </header>
+                <div id="skkS304">
+                    <p> Liito-oravan vaakasuora siirtymä suoraviivaisessa liidossa on parhaimmillaan 3,3-kertainen korkeuden vähenemiseen verrattuna.  
+                        <ol class="a">
+                            <li>  Huippukuntoinen liito-orava aikoo liitää 60 metriä leveän aukion yli. Kuinka korkealta puusta sen täytyy ponnistaa, jotta se laskeutuisi aukion toisella puolella olevaan puuhun yhden metrin korkeudelle? Anna vastaus metrin tarkkuudella. </li>
+                            <li> Kuinka suuressa kulmassa vaakatasoon nähden a-kohdan liito-orava liitää? Anna vastaus asteen tarkkuudella. </li>
+                        </ol>
+                        [Lyhyt S2014/6]
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#skkS304_v">
+                            Vastaus
+                        </a>
+                    </h2>
+                    <div id="skkS304_v" class="collapse">
+                        <p>
+                            <ol class="a">
+                                <li> 19 m </li>
+                                <li> $17^\circ$ alaviistoon</li>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
             <div class="tehtava" id="vkkS301-ex">
                 <header>
