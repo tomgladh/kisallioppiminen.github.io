@@ -49,6 +49,14 @@ topnav: maa3
         </header>
         <div id="ala" class="collapse">
 
+            <p>
+                Kolmioita voidaan käyttää apuna monien geometristen ongelmien ratkaisemisessa. Aloitammekin tämän kurssin palauttamalla mieleen kolmioiden geometrisia ominaisuuksia. 
+            </p>
+
+            <p>
+                Sovitaan ensin, mitä suorakulmion pinta-alalla tarkoitetaan, eli asetetaan seuraava määritelmä:
+            </p>
+
             <div class="definition">
                 <h3>MÄÄRITELMÄ: SUORAKULMION PINTA-ALA</h3>
                 <p>
@@ -58,19 +66,52 @@ topnav: maa3
                 </p>
             </div>
 
+            <div class="tehtavat">
+                <div class="tehtava" id="kolmio01-ex">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#kolmio01">
+                                Suorakulmion pinta-ala
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="kolmio01" class="collapse">
+                        <p>
+                            Kansainvälisissä aikuisten jalkapallo-otteluissa kentän leveyden on oltava vähintään 64 m ja enintään 75 m. Kentän pituuden on oltava vähintään 100 m ja enintään 110 m. Laske suurimman ja pienimmän mahdollisen jalkapallokentän pinta-alojen erotus.  
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                Suorakulmion pinta-alan avulla saadaan johdettua lauseke kolmion pinta-alalle:
+            </p>
+
             <div class="theorem">
                 <h3>TEOREEMA</h3>
                 <p>
-                    Kolmion pinta-ala on puolet sen kannan ja korkeuden tulosta eli alla olevan kuvion merkinnöillä
+                    Kolmion pinta-ala on puolet sen kannan ja korkeuden tulosta eli alla olevan kuvioiden merkinnöillä
                     $$\dfrac{ah}{2}$$
                 <br>
                     <img src="/kurssit/maa3/kuvat/suoraK05.png" max-width: 100%; width: auto; height: auto;/> 
                 </p>
                 <div class="proof">
                     <p>
-                        Perustelu: Kolmio voidaan täydentää suorakulmioksi, jonka pinta-ala on $ah$. Lisäksi havaitaan, että alkuperäisen kolmion pinta-ala on puolet tämän suorakulmion pinta-alasta.
-                    <br>
-                        <img src="/kurssit/maa3/kuvat/suoraK06.png" max-width: 100%; width: auto; height: auto;/> 
+                        Perustelu: Kolmion korkeusjanan toinen päätepiste voi sijaita kolmion sivulla, sivun päätepisteessä tai sivun jatkeella. Tarkastellaan jokainen näistä tapauksista erikseen.
+                        <ol>
+                            <li> Jos kolmion korkeusjanan toinen päätepiste sijaitsee kolmion sivulla, voidaan kolmio täydentää suorakulmioksi, jonka pinta-ala on $ah$. Lisäksi havaitaan, että alkuperäisen kolmion pinta-ala on puolet tämän suorakulmion pinta-alasta.
+                            <br>
+                            <img src="/kurssit/maa3/kuvat/suoraK06.png" max-width: 100%; width: auto; height: auto;/>  </li>
+                            <li> Jos kolmion korkeusjanan toinen päätepiste sijaitsee kolmion sivun päätepisteessä, voidaan kolmio täydentää suorakulmioksi, jonka pinta-ala on $ah$. Tässäkin tapauksessa alkuperäisen kolmion pinta-ala on puolet tämän suorakulmion pinta-alasta. <br>
+                            <img src="/kurssit/maa3/kuvat/suoraK07.png" max-width: 100%; width: auto; height: auto;/> </li>
+                            <li> Jos kolmion korkeusjanan toinen päätepiste sijaitsee kolmion sivun jatkeella, voidaan kolmio täydentää suorakulmaiseksi kolmioksi, jonka pinta-ala on edellisen kohdan nojalla 
+                            $$\frac{(a+x)h}{2}.$$
+                            Alkuperäisen kolmion pinta-ala saadaan tästä vähentämällä pienemmän suorakulmaisen kolmion pinta-ala:
+                            $$\frac{(a+x)h}{2} - \frac{xh}{2} = \frac{ah + xh - xh}{2} = \frac{ah}{2}$$
+                            </li>
+                        </ol>
+
+                        Kolmio voidaan 
                     </p>
                 </div>
             </div>
