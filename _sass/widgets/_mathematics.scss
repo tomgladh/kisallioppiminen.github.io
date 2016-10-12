@@ -96,6 +96,13 @@ margin-top: 0;
   background-color: #E6E6E6;
 }
 
+.theorem p > ul,
+.theorem p > ol,
+.definition p > ul,
+.definition p > ol {
+        margin-top: -20px;
+}
+
 ol.a {
     list-style-type: none;
     counter-reset:list; /* Initiate a counter */
