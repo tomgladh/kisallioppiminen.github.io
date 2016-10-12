@@ -20,11 +20,10 @@ section img {
 .objective,
 .tool {
 display: block; 
-max-width: 94%; 
 width: auto; 
 height: auto;
-padding: 20px;
-margin: auto;
+padding: 35px;
+margin: -15px;
 }
 
 .objective {
@@ -41,7 +40,7 @@ display: block;
 max-width: 94%; 
 width: auto; 
 height: auto; 
-margin: auto;
+margin: 10px auto;
 }
 
 .definition h3 {
@@ -67,7 +66,7 @@ margin-top: 0;
   max-width: 94%; 
   width: auto; 
   height: auto; 
-  margin: auto; 
+  margin: 10px auto; 
   background-color: #CCCCCC;
 }
 
