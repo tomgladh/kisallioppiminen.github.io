@@ -1155,8 +1155,6 @@ topnav: maa3
                         </h1>
                     </header>
                     <div id="kolmio21" class="collapse">
-                        <p>
-                        </p>
                         <ol class="a">
                             <li> 
                                 Tiedetään, että 
@@ -1183,8 +1181,6 @@ topnav: maa3
                         </h1>
                     </header>
                     <div id="kolmio22" class="collapse">
-                        <p>
-                        </p>
                         <ol class="a">
                             <li> 
                                 Piirrä koordinaatistoon samanlainen origokeskinen puoliympyrä kuin tehtävässä 1.24 ja merkitse siihen kaikki ne puoliympyrän kehän pisteet, joiden $y$-koordinaatti on 0,75.</li>
@@ -1209,8 +1205,6 @@ topnav: maa3
                         </h1>
                     </header>
                     <div id="kolmio23" class="collapse">
-                        <p>
-                        </p>
                         <ol class="a">
                             <li> 
                                 Piirrä koordinaatistoon samanlainen origokeskinen puoliympyrä kuin edellisessä tehtävässä ja merkitse siihen kaikki ne puoliympyrän kehän pisteet, joiden $x$-koordinaatti on $-0{,}25$.</li>
@@ -1243,22 +1237,104 @@ topnav: maa3
             </p>
 
             <p>
-                Tutkitaan aluksi, miten kolmion pinta-ala riippuu kolmion sivuista ja niiden välisestä kulmasta. Tiedetään, että kolmion pinta-ala on puolet kannan ja korkeuden tulosta eli alla olevan kuvan merkinnöillä
-                $$\frac{1}{2}ah.$$
+                Seuraavissa tehtävissä tutkitaan, miten kolmion pinta-ala riippuu kolmion sivuista ja niiden välisestä kulmasta. 
             </p>
-            <p>
-                <img src="/kurssit/maa3/kuvat/vinoK18.png" max-width: 100%; width: auto; height: auto;/>
-            </p>
-            <p>
-                Kolmion korkeus voidaan ratkaista kuvaan piirretystä suorakulmaisesta kolmiosta:
-                $$\frac{h}{b} = \sin(\textcolor{blue}{180^\circ - \gamma}),$$
-                joten
-                $$h = b\sin(\textcolor{blue}{180^\circ - \gamma}).$$
-                Edellisessä kappaleessa havaittiin, että kulman ja sen suplementtikulman sini ovat yhtä suuret (teoreema 5), joten $\sin \gamma = \sin(\textcolor{blue}{180^\circ - \gamma})$. Edellinen yhtälö voidaan siten kirjoittaa muodossa
-                $$h = b\sin \gamma.$$
-                Sijoittamalla tämä kolmion pinta-alan lausekkeeseen saadaan kolmion pinta-alaksi
-                $$\frac{1}{2}ab \sin \gamma.$$
-            </p>
+
+
+            <div class="tehtavat">
+                <div class="tehtava" id="kolmio24-ex">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#kolmio24">
+                                KOLMION PINTA-ALA
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="kolmio24" class="collapse">
+                        <p>
+                            <img src="/kurssit/maa3/kuvat/vinoK20.png" max-width: 100%; width: auto; height: auto;/>
+                        </p>
+                        <p> 
+                            Tehtävänä on näyttää, että yllä olevan kolmion pinta-ala on 
+                            $$\frac{1}{2}ab\sin \gamma.$$
+                        </p>
+                        <ol class="a">
+                            <li> 
+                                Ilmaise $\sin \gamma$ kolmion sivujen suhteena. Ratkaise muodostamastasi yhtälöstä kolmion korkeus $h$. </li>
+                            <li> 
+                                Tiedetään, että kolmion pinta-ala on puolet kannan ja korkeuden tulosta eli
+                                $$\frac{1}{2}ah.$$
+                                Sijoita tähän a-kohdassa ratkaisemasi korkeuden $h$ lauseke.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="kolmio25-ex">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#kolmio25">
+                                KOLMION PINTA-ALA
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="kolmio25" class="collapse">
+                        <p>
+                            <img src="/kurssit/maa3/kuvat/vinoK19.png" max-width: 100%; width: auto; height: auto;/>
+                        </p>
+                        <p> 
+                            Tehtävänä on näyttää, että yllä olevan kolmion pinta-ala on 
+                            $$\frac{1}{2}ab\sin \gamma.$$
+                        </p>
+                        <ol class="a">
+                            <li> 
+                                Ratkaise kolmion korkeus $h$ kuvassa näkyvästä suorakulmaisesta kolmiosta. 
+                            </li>
+                            <li> 
+                                
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="theorem">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Kolmion pinta-ala on puolet kolmion kahden sivun pituuden ja niiden välisen kulman sinin tulosta:
+                    $$\frac{1}{2}ab\sin \gamma$$
+                    <img src="/kurssit/maa3/kuvat/vinoK19.png" max-width: 100%; width: auto; height: auto;/> 
+                </p>
+                <div class="proof">
+                    <p>
+                        Perustelu: Kolmion korkeusjanan toinen päätepiste voi sijaita kolmion sivun päätepisteessä, kolmion sivulla tai sivun jatkeella. Tarkastellaan jokainen näistä tapauksista erikseen.
+                        <ol>
+                            <li> 
+                                Tapaus, jossa kolmion korkeusjanan toinen päätepiste sijaitsee kolmion sivun päätepisteessä, on käsitelty tehtävässä X.
+                            </li>
+                            <li> 
+                                Tapaus, jossa kolmion korkeusjanan toinen päätepiste sijaitsee kolmion sivulla, on käsitelty tehtävässä XX.
+                            </li>
+                            <li> 
+                                Tarkastellaan vielä tapaus, jossa kolmion korkeusjanan toinen päätepiste sijaitsee kolmion sivun jatkeella:
+                                <br>
+                                    <img src="/kurssit/maa3/kuvat/vinoK18.png" max-width: 100%; width: auto; height: auto;/>
+                                <br>
+                                Kolmion korkeus voidaan ratkaista kuvaan piirretystä suorakulmaisesta kolmiosta:
+                                $$\frac{h}{b} = \sin(\textcolor{blue}{180^\circ - \gamma}),$$
+                                joten
+                                $$h = b\sin(\textcolor{blue}{180^\circ - \gamma}).$$
+                                Edellisessä kappaleessa havaittiin, että kulman ja sen suplementtikulman sini ovat yhtä suuret (teoreema 5), joten $\sin \gamma = \sin(\textcolor{blue}{180^\circ - \gamma})$. Edellinen yhtälö voidaan siten kirjoittaa muodossa
+                                $$h = b\sin \gamma.$$
+                                Sijoittamalla tämä kolmion pinta-alan lausekkeeseen saadaan kolmion pinta-alaksi
+                                $$\frac{1}{2}ab \sin \gamma.$$
+                            </li>
+                        </ol>
+                    </p>
+                </div>
+            </div>
 
             <div class="theorem">
                 <h3>TEOREEMA</h3>
