@@ -34,13 +34,17 @@ var SITE = {
                 var thStart = parseInt($('#theoremStart').val());
             }
         
-        $(".theorem").each(function(thIndex, value) {
+         $(".theorem").each(function(thIndex, value) {
 
             var thCount = (thStart + thIndex);
             var thName = "TEOREEMA " + thCount;
 
             // relabel theorem
-            $(value).find("h3").text(thName);
+            if (this.id === '') {
+                $(value).find("h3").text(thName);
+            } else {
+                $(value).find("h3").text(thName +" (" + this.id + ")");
+            }
         });
      
 /*
