@@ -44,7 +44,11 @@ var SITE = {
             var thName = "TEOREEMA " + thCount;
 
             // relabel theorem
-            $(value).find("h3").text(thName);
+            if (this.id === '') {
+                $(value).find("h3").text(thName);
+            } else {
+                $(value).find("h3").text(thName +" (" + this.id + ")");
+            }
         });
      
 /*
