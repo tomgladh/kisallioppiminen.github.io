@@ -43,7 +43,7 @@ var SITE = {
             if (this.id === '') {
                 $(value).find("h3").text(thName);
             } else {
-                $(value).find("h3").text(thName +" (" + this.id + ")");
+                $(value).find("h3").text(this.id + " (" + thName +")");
             }
         });
      
