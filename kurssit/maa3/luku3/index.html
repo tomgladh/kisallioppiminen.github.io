@@ -43,12 +43,12 @@ topnav: maa3
     <section class="panel">
         <header>
             <h1>
-                <a data-toggle="collapse" class="collapsed" data-target="#sarmio">
-                    Suorakulmainen särmiö
+                <a data-toggle="collapse" class="collapsed" data-target="#monitahokkaat">
+                    MONITAHOKKAITA
                 </a>
             </h1>
         </header>
-        <div id="sarmio" class="collapse">
+        <div id="monitahokkaat" class="collapse">
 
 
             <div class="theorem" id="PYTHAGORAAN LAUSE AVARUUDESSA">
@@ -64,6 +64,19 @@ topnav: maa3
                 </div>
             </div>
 
+
+        </div>
+    </section>
+
+    <section class="panel">
+        <header>
+            <h1>
+                <a data-toggle="collapse" class="collapsed" data-target="#yhdenmuotoisuusAvaruudessa">
+                    Yhdenmuotoisuus
+                </a>
+            </h1>
+        </header>
+        <div id="yhdenmuotoisuusAvaruudessa" class="collapse">
 
             <p>
                 Tasogeometriaa käsittelevässä luvussa määriteltiin, mitä tarkoitetaan yhdenmuotoisuudella tasokuvioiden tapauksessa. Yhdenmuotoisuuden käsite voidaan laajentaa myös kolmiulotteisiin kappaleisiin. Kappaleet, jotka saadaan toisistaan siirtämällä, kiertämällä, peilaamalla, suurentamalla tai pienentämällä, ovat yhdenmuotoiset.
@@ -91,7 +104,7 @@ topnav: maa3
             </p>
 
             <p>
-                Tutkitaan seuraavaksi, miten yhdenmuotoisten kuvioiden pinta-alat liittyvät toisiinsa.
+                Tutkitaan seuraavaksi, miten yhdenmuotoisten kappaleiden tilavuude liittyvät toisiinsa.
             </p>
 
             <div class="tehtavat">
@@ -165,6 +178,86 @@ topnav: maa3
                 </p>
             </div>
 
+
+        </div>
+    </section>
+
+    <section class="panel">
+        <header>
+            <h1>
+                <a data-toggle="collapse" class="collapsed" data-target="#pallo">
+                    Pallo
+                </a>
+            </h1>
+        </header>
+        <div id="pallo" class="collapse">
+
+            <p>
+                Tässä kappaleessa tutkitaan pallon geometrisia ominaisuuksia. Aloitetaan määrittelemällä, mitä tarkoitetaan pallolla ja joillakin siihen liittyvillä käsitteillä.
+            </p>
+
+            <div class="definition">
+                <h3>MÄÄRITELMÄ: PALLO</h3>
+                <p>
+                    Avaruuden pisteet, jotka ovat vakioetäisyydellä kiinteästä pisteestä, muodostavat <em>pallon</em> eli <em>pallopinnan</em>. Kiinteä piste on pallon <em>keskipiste</em> ja vakioetäisyys sen <em>säde</em>.
+                    <br>
+                    <img src="/kurssit/maa3/kuvat/avaruusK12.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+            </div>
+
+            <p>
+                Nimitystä pallo käytetään toisinaan myös pallopinnan rajoittamasta avaruuden osasta.
+            </p>
+
+            <div class="theorem" id="PALLON TILAVUUS JA PINTA-ALA">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Pallon tilavuus $V$ ja pinta-ala $A$ riippuvat pallon säteestä $r$ seuraavasti:
+                    \begin{align*}
+                    V &= \frac{4\pi r^3}{3} \\
+                    A &= 4\pi r^2 
+                    \end{align*}
+                </p>
+                <div class="proof">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+
+            <div class="definition">
+                <h3>MÄÄRITELMÄ: ISOYMPYRÄ JA PIKKUYMPYRÄ</h3>
+                <p>
+                    <em>Isoympyrä</em> syntyy, jos pallo leikataan sen keskipisteen kautta kulkevalla tasolla.
+                    <br>
+                    <img src="/kurssit/maa3/kuvat/avaruusK13.png" max-width: 100%; width: auto; height: auto;/>
+                    <br>
+                    <em>Pikkuympyä</em> syntyy, jos pallo leikataan tasolla, joka ei kulje pallon keskipisteen kautta.
+                    <br>
+                    <img src="/kurssit/maa3/kuvat/avaruusK14.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+            </div>
+
+            <div class="definition">
+                <h3>MÄÄRITELMÄ: PALLOSEGMENTTI JA KALOTTI</h3>
+                <p>
+                    Taso leikkaa pallosta kappaleen, jota kutsutaan <em>pallosegmentiksi</em>, ja erottaa pallon pinnasta <em>kalotin</em>.
+                    <br>
+                    <img src="/kurssit/maa3/kuvat/avaruusK15.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+            </div>
+
+            <div class="theorem" id="PALLOSEGMENTIN TILAVUUS JA KALOTIN PINTA-ALA">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Pallosegmentin tilavuus $V_S$ ja kalotin pinta-ala $A_K$ riippuvat pallosegmentin korkeudesta $h$ ja pallon säteestä $r$ seuraavasti:
+                    \begin{align*}
+                    V_S &= \pi h^2 \left(r-\dfrac{h}{3}\right) \\[1mm]
+                    A_K &= 2\pi rh
+                    \end{align*}
+                    <img src="/kurssit/maa3/kuvat/avaruusK16.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+            </div>
 
         </div>
     </section>
@@ -301,86 +394,6 @@ topnav: maa3
                         
                     </p>
                 </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="panel">
-        <header>
-            <h1>
-                <a data-toggle="collapse" class="collapsed" data-target="#pallo">
-                    Pallo
-                </a>
-            </h1>
-        </header>
-        <div id="pallo" class="collapse">
-
-            <p>
-                Tässä kappaleessa tutkitaan pallon geometrisia ominaisuuksia. Aloitetaan määrittelemällä, mitä tarkoitetaan pallolla ja joillakin siihen liittyvillä käsitteillä.
-            </p>
-
-            <div class="definition">
-                <h3>MÄÄRITELMÄ: PALLO</h3>
-                <p>
-                    Avaruuden pisteet, jotka ovat vakioetäisyydellä kiinteästä pisteestä, muodostavat <em>pallon</em> eli <em>pallopinnan</em>. Kiinteä piste on pallon <em>keskipiste</em> ja vakioetäisyys sen <em>säde</em>.
-                    <br>
-                    <img src="/kurssit/maa3/kuvat/avaruusK12.png" max-width: 100%; width: auto; height: auto;/>
-                </p>
-            </div>
-
-            <p>
-                Nimitystä pallo käytetään toisinaan myös pallopinnan rajoittamasta avaruuden osasta.
-            </p>
-
-            <div class="theorem" id="PALLON TILAVUUS JA PINTA-ALA">
-                <h3>TEOREEMA</h3>
-                <p>
-                    Pallon tilavuus $V$ ja pinta-ala $A$ riippuvat pallon säteestä $r$ seuraavasti:
-                    \begin{align*}
-                    V &= \frac{4\pi r^3}{3} \\
-                    A &= 4\pi r^2 
-                    \end{align*}
-                </p>
-                <div class="proof">
-                    <p>
-                        
-                    </p>
-                </div>
-            </div>
-
-            <div class="definition">
-                <h3>MÄÄRITELMÄ: ISOYMPYRÄ JA PIKKUYMPYRÄ</h3>
-                <p>
-                    <em>Isoympyrä</em> syntyy, jos pallo leikataan sen keskipisteen kautta kulkevalla tasolla.
-                    <br>
-                    <img src="/kurssit/maa3/kuvat/avaruusK13.png" max-width: 100%; width: auto; height: auto;/>
-                    <br>
-                    <em>Pikkuympyä</em> syntyy, jos pallo leikataan tasolla, joka ei kulje pallon keskipisteen kautta.
-                    <br>
-                    <img src="/kurssit/maa3/kuvat/avaruusK14.png" max-width: 100%; width: auto; height: auto;/>
-                </p>
-            </div>
-
-            <div class="definition">
-                <h3>MÄÄRITELMÄ: PALLOSEGMENTTI JA KALOTTI</h3>
-                <p>
-                    Taso leikkaa pallosta kappaleen, jota kutsutaan <em>pallosegmentiksi</em>, ja erottaa pallon pinnasta <em>kalotin</em>.
-                    <br>
-                    <img src="/kurssit/maa3/kuvat/avaruusK15.png" max-width: 100%; width: auto; height: auto;/>
-                </p>
-            </div>
-
-            <div class="theorem" id="PALLOSEGMENTIN TILAVUUS JA KALOTIN PINTA-ALA">
-                <h3>TEOREEMA</h3>
-                <p>
-                    Pallosegmentin tilavuus $V_S$ ja kalotin pinta-ala $A_K$ riippuvat pallosegmentin korkeudesta $h$ ja pallon säteestä $r$ seuraavasti:
-                    \begin{align*}
-                    V_S &= \pi h^2 \left(r-\dfrac{h}{3}\right) \\[1mm]
-                    A_K &= 2\pi rh
-                    \end{align*}
-                    <img src="/kurssit/maa3/kuvat/avaruusK16.png" max-width: 100%; width: auto; height: auto;/>
-                </p>
             </div>
 
         </div>
