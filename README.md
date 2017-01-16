@@ -12,5 +12,5 @@ Git-versionhallintajärjestemää ja sen pohjalta tehtyä GitHub-pilvipalvelua v
 6. Vaihda "Repository name" -kohdassa `kisallioppiminen.github.io` muotoon `oma-tunnus.github.io` ja paina "Rename"
 7. Klikkaa tiedoston nimeä `_congig.yml`
 8. Vaihda teksti: `url: "http://kisallioppiminen.github.io"` muotoon `url: "http://oma-tunnus.github.io"`
-9. Poista tiedosto CNAME painamalla tiedoston nimeä ja painamalla roskis-ikonia
+9. Poista tiedosto CNAME painamalla tiedoston nimeä ja painamalla roskis-ikonia 'Delete this file'
 10. Nyt oma versio sivustostasi aukeaa osoitteessa `http://oma-tunnus.github.io`. Nyt sinun kannattaa muokata sivustoa sen verran ettei sitä sekoita alkuperäiseen kisallioppiminen.fi-sivustoon. Materiaalien lähdekoodi löytyy kansiosta `/kurssit`. 
