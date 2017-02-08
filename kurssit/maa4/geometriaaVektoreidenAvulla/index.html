@@ -202,7 +202,6 @@ topnav: maa4
                             </a>
                         </h1>
                     </header>
-
                     <div id="t-L5t3" class="collapse">
                         <p> Tarkastellaan alla olevaa kuvaa. Edellä lausuttiin vektori $\pv{OC}$ vektorien $\va$ ja $\vb$ avulla etsimällä reitti pisteestä $O$ pisteen $A$ kautta pisteeseen $C$. 
                         </p>
@@ -225,7 +224,6 @@ topnav: maa4
                             </a>
                         </h1>
                     </header>
-
                     <div id="t-L5t4" class="collapse">
                         <p> Kolmion $ABC$ sivuvektorit ovat $\va = \pv{AB}$ ja $\vb = \pv{AC}$. Piste $D$ on sivun $BC$ keskipiste. Piirrä tilanteesta mallikuva ja ilmaise vektoreiden $\va$ ja $\vb$ avulla
                         <ol class="a">
@@ -234,6 +232,18 @@ topnav: maa4
                             <li> keskijanavektori $\pv{AD}$.
                         </ol>
                         </p>
+                        <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-L5t4_v">
+                            VASTAUS
+                        </a>
+                        </h2>
+                        <div id="t-L5t4_v" class="collapse">
+                            <ol class="a">
+                                <li> $\pv{BC} = \vb - \va$ </li>
+                                <li> $\pv{BD} = \frac{1}{2}(\vb - \va)$ </li>
+                                <li> $\pv{AD} = \frac{1}{2}\va + \frac{1}{2}\vb$. </li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -247,7 +257,6 @@ topnav: maa4
                             </a>
                         </h1>
                     </header>
-
                     <div id="t-L5t4b" class="collapse">
                         <p> Tiedetään, että vektorit $\vv$ ja $\vw$ ovat yksikkövektoreita eli niiden pituus on yksi. Määritä vektorin $4\vv+6\vw$ pituus, jos vektorit $\vv$ ja $\vw$ ovat
                         <ol class="a">
@@ -257,6 +266,18 @@ topnav: maa4
                         </ol>
                         Havainnollista ratkaisuasi piirroksilla.
                         </p>
+                        <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-L5t4b_v">
+                            VASTAUS
+                        </a>
+                        </h2>
+                        <div id="t-L5t4b_v" class="collapse">
+                            <ol class="a">
+                                <li> $|4\vv+6\vw| = 10$ </li>
+                                <li> $|4\vv+6\vw| = 2$ </li>
+                                <li> $|4\vv+6\vw| = \sqrt{52} = 2\sqrt{13}$. </li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -274,18 +295,41 @@ topnav: maa4
                             </a>
                         </h1>
                     </header>
-
                     <div id="t-L5t4c" class="collapse">
-                        <p> Tiedetään, että $|\va| = 3$, $|\vb| = 5$ ja $\sphericalangle(\va,\vb) = 120^\circ$. Tehtävänä on selvittää vektorin $2\va + \vb$ pituus $|2\va + \vb|$.
+                        <p> 
+                            Tiedetään, että $|\va| = 3$, $|\vb| = 5$ ja $\sphericalangle(\va,\vb) = 120^\circ$. Tehtävänä on selvittää vektorin $2\va + \vb$ pituus $|2\va + \vb|$.
                         <ol class="a">
                             <li> Piirrä tilanteesta mallikuva.</li>
                             <li> Havainnollista piirroksella vektoria $2\va + \vb$.</li>
-                            <li> Sievennä pistetulo $(2\va + \vb) \cdot (2\va + \vb)$. Muista, että pistetulossa sulut voidaan kertoa auki tavalliseen tapaan. (Pistetulon laskusääntöjä löydät $xy$-koordinaatistoa käsittelevän luvun teoreemasta 3.)</li>
-                            <li> Teoreeman 4 mukaan $\vv \cdot \vv = |\vv|^2$ ja teoreeman 5 mukaan $\vv \cdot \vw = |\vv||\vw|\cos(\vv, \vw)$. Käytä näitä tietoja ja ilmaise c-kohdan tulos vektoreiden $\va$ ja $\vb$ itseisarvojen avulla. </li>
-                            <li> Käytä tehtävänannon tietoja ja laske edellisen kohdan avulla lukuarvo pistetulolle $(2\va + \vb) \cdot (2\va + \vb)$.</li>
-                            <li> Sovella tietoa $\vv \cdot \vv = |\vv|^2$ uudelleen ja päättele edellisen kohdan avulla, mikä on vektorin $2\va + \vb$ pituus $|2\va + \vb|$.</li>
+                            <li> 
+                                Sievennä pistetulo $(2\va + \vb) \cdot (2\va + \vb)$. Muista, että pistetulossa sulut voidaan kertoa auki tavalliseen tapaan. (Pistetulon laskusääntöjä löydät $xy$-koordinaatistoa käsittelevän luvun teoreemasta 3.)
+                            </li>
+                            <li> 
+                                Teoreeman 4 mukaan $\vv \cdot \vv = |\vv|^2$ ja teoreeman 5 mukaan $\vv \cdot \vw = |\vv||\vw|\cos(\vv, \vw)$. Käytä näitä tietoja ja ilmaise c-kohdan tulos vektoreiden $\va$ ja $\vb$ itseisarvojen avulla. 
+                            </li>
+                            <li> 
+                                Käytä tehtävänannon tietoja ja laske edellisen kohdan avulla lukuarvo pistetulolle $(2\va + \vb) \cdot (2\va + \vb)$.
+                            </li>
+                            <li> 
+                                Sovella tietoa $\vv \cdot \vv = |\vv|^2$ uudelleen ja päättele edellisen kohdan avulla, mikä on vektorin $2\va + \vb$ pituus $|2\va + \vb|$.
+                            </li>
                         </ol>
                         </p>
+                        <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-L5t4c_v">
+                            VASTAUS
+                        </a>
+                        </h2>
+                        <div id="t-L5t4c_v" class="collapse">
+                            <ol class="a">
+                                <li>  </li>
+                                <li>  </li>
+                                <li> $4 \va \cdot \va + 4\va \cdot \vb + \vb\cdot \vb$ </li>
+                                <li> $4 |\va|^2 + 4|\va||\vb|\cos(\va, \vb) + |\vb|^2$ </li>
+                                <li> $31$ </li>
+                                <li> $\sqrt{31}$. </li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
