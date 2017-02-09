@@ -1,0 +1,18 @@
+header: 
+path: 
+navigation:
+  -
+    name: Kurssin etusivu
+    path: /kurssit/maa5/
+  -
+    name: Suora
+    path: /kurssit/maa5/luku1/
+  -
+    name: Paraabeli
+    path: /kurssit/maa5/luku2/
+  -
+    name: Ympyrä
+    path: /kurssit/maa5/luku3/
+  -
+    name: Itseisarvo
+    path: /kurssit/maa5/luku4/
