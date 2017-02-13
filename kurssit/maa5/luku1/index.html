@@ -207,9 +207,19 @@ topnav: maa5
             <p>
                 Tutkitaan seuraavaksi suoraa $L$, jonka yhtälön ratkaistu muoto on $y = -x + 3$. Tämä yhtälö kertoo, miten suoran pisteiden $y$-koordinaatit riippuvat $x$-koordinaateista, ja sen avulla voidaan selvittää suoran pisteitä. Esimerkiksi jos suoran $L$ pisteen $x$-koordinaatti on $x = 1$, niin sen $y$-koordinaatti on $y = -x+3 = -1 + 3 = 2$. Näin saadaan tieto, että suora $L$ kulkee pisteen $(1,2)$ kautta. Toinen piste löydetään, kun $x$-koordinaatiksi valitaan jokin muu luku: esimerkiksi jos $x = 4$, niin $y = -x+3 = -4 + 3 = -1$. Suora $L$ kulkee siis myös pisteen $(4,-1)$ kautta. Nyt suorasta $L$ voidaan piirtää kuva:
                 <br>
-                <img src="/kurssit/maa5/kuvat/k005.png" max-width: 100%; width: auto; height: auto;/>
+                <img src="/kurssit/maa5/kuvat/k006.png" max-width: 100%; width: auto; height: auto;/>
                 <br>
-                Yleisesti 
+                Suoran $L$ yhtälöstä voidaan päätellä yleisemmin, että jos suoran pisteen $x$-koordinaatti on $x = t$, niin $y$-koordinaatti on $y = -t+3$. Tämä on MAA4-kurssista tuttu suoran $L$ koordinaattimuotoinen parametriesitys
+                $$
+                \left\{\begin{aligned}
+                x &= t \\
+                y &= -t+3 
+                \end{aligned}\right.
+                $$ 
+                Suoran $L$ pisteet ovat siis muotoa $(t, -t+3)$.
+                <br>
+                <img src="/kurssit/maa5/kuvat/k007.png" max-width: 100%; width: auto; height: auto;/>
+                <br>
             </p>
 
             <div class="tehtavat">
@@ -223,16 +233,14 @@ topnav: maa5
                     </header>
                     <div id="maa5t103" class="collapse">
                         <p>
-                            Suoran yhtälö on 
+                            Suoran $L$ yhtälön ratkaistu muoto on $y = 2x - 1$. 
                         </p>
                         <ol class="a">
-                            <li> Valitse suoralle $L$ jokin suuntavektori. </li>
-                            <li> Valitse suoralle $L$ jokin normaalivektori. Tarkista pistetulon avulla, että se on todella kohtisuorassa suoraa $L$ vastaan. </li>
-                            <li> Valitse jokin piste, jonka kautta suora $L$ kulkee. Muodosta sen ja b-kohdan avulla suoralle $L$ normaalimuotoinen yhtälö. </li>
-                            <li> Muokkaa suoran $L$ normaalimuotoinen yhtälö ratkaistuun muotoon. Mikä on suoran $L$ kulmakerroin? </li>
-                            <li> Miten kulmakerroin näkyy alla olevassa kuvassa?</li>
+                            <li> Selvitä suoran $L$ yhtälön avulla kaksi suoran pistettä ja piirrä suora $L$ koordinaatistoon. </li>
+                            <li> Muodosta suoran $L$ koordinaattimuotoinen parametriesitys. </li>
+                            <li> Muodosta suoran $L$ vektorimuotoinen parametriesitys. Voit käyttää apuna a- ja b-kohtia. </li>
+                            <li> Muokkaa suoran $L$ yhtälö ratkaistusta muodosta normaalimuotoon. Keksi sen avulla suoralle $L$ jokin normaalivektori. </li>
                         </ol>
-                        <img src="/kurssit/maa5/kuvat/k004.png" max-width: 100%; width: auto; height: auto;/>
                         <h2>
                         <a data-toggle="collapse" class="collapsed" data-target="#maa5t103_v">
                             VASTAUS
@@ -240,10 +248,16 @@ topnav: maa5
                         </h2>
                         <div id="maa5t103_v" class="collapse">
                             <ol class="a">
-                                <li> Esimerkiksi $\vi$. </li>
-                                <li> Esimerkiksi $\vj$. </li>
-                                <li> Esimerkiksi $(1,3)$. Yhtälö on $y-3 = 0$. </li>
-                                <li> Ratkaistu muoto on $y = 3$ ja suoran $L$ kulmakerroin $0$.</li>
+                                <li> Esimerkiksi $(0,-1)$ ja $(2,3)$. </li>
+                                <li> Koordinaattimuotoinen parametriesitys on
+                                        $$
+                                        \left\{\begin{aligned}
+                                        x &= t \\
+                                        y &= 2t-1 
+                                        \end{aligned}\right.
+                                        $$  </li>
+                                <li> Esimerkiksi $\pv{OP} = -\vj + t(\vi + 2\vj)$. </li>
+                                <li> Normaalimuoto on $-2x + y + 1 = 0$ ja yksi normaalivektori $\vn = -2\vi + \vj$.</li>
                             </ol>
                         </div>
                     </div>
