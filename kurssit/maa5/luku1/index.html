@@ -542,15 +542,14 @@ topnav: maa5
                     <p>
                        Perustelu: Oletetaan, että suora kulkee pisteen $(x_0, y_0)$ kautta ja suoran kulmakerroin on $k$. Tällöin suoran yhtälö on muotoa $y = kx + h$. Lisäksi piste $(x_0, y_0)$ toteuttaa suoran yhtälön:
                        $$y_0 = kx_0 + h.$$
-                       Tutkitaan erotusta $y-y_0$:
-                       \begin{align*}
-                       y - y_0 &= (kx+ h) - (kx_0 + h) \\
-                       &= kx + h - kx_0 - h \\
-                       &= kx-kx_0 \\
-                       &= k(x-x_0).
-                       \end{align*}
-                       Siis 
-                       $$y - y_0 = k(x-x_0).$$
+                       Tästä saadaan ratkaistua vakio $h$:
+                       $$h = y_0 - kx_0.$$
+                       Sijoittamalla tämä suoran yhtälöön saadaan se muotoon
+                       $$y = kx + (y_0 - kx_0)$$
+                       eli
+                       $$y - y_0 = kx-kx_0$$
+                       eli 
+                       $$y - y_0 = k(x - x_0).$$
                     </p>
                 </div>
             </div>
