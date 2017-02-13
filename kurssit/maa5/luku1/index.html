@@ -395,7 +395,7 @@ topnav: maa5
             </div>
 
             <p>
-                Havaitaan, että suoran kulmakerroin kuvaa sen jyrkkyyttä. Tarkemmin sanottuna kulmakerroin ilmaisee suoran pisteiden $y$-koordinaattien erotuksen suhteen $x$-koordinaattien erotukseen:
+                Havaitaan, että suoran kulmakerroin kuvaa sen jyrkkyyttä. Tarkemmin sanottuna suoran kulmakerroin on suoran pisteiden $y$-koordinaattien erotuksen suhde $x$-koordinaattien erotukseen:
             </p>
 
             <div class="theorem" id="KULMAKERROIN">
@@ -403,10 +403,20 @@ topnav: maa5
                 <p>
                     Oletetaan, että $\textcolor{blue}{x_1} \neq \textcolor{red}{x_2}$. Pisteiden $\textcolor{blue}{(x_1,y_1)}$ ja $\textcolor{red}{(x_2,y_2)}$ kautta kulkevan suoran kulmakerroin on 
                     $$k = \frac{\textcolor{red}{y_2}-\textcolor{blue}{y_1}}{\textcolor{red}{x_2}-\textcolor{blue}{x_1}}$$
+                    <img src="/kurssit/maa5/kuvat/k008.png" max-width: 100%; width: auto; height: auto;/>
                 </p>
                 <div class="proof">
                     <p>
-                        Perustelu: tehtävissä 2.19 ja 2.20.
+                       Oletetaan, että suora kulkee pisteiden $\textcolor{blue}{(x_1,y_1)}$ ja $\textcolor{red}{(x_2,y_2)}$ kautta. Tällöin nämä pisteet toteuttavat suoran yhtälön:
+                       \begin{aligned*}
+                       \textcolor{blue}{y_1} &= k\textcolor{blue}{x_1} + h \\
+                       \textcolor{red}{y_2} &= k\textcolor{red}{x_2} + h \\
+                       \end{aligned*}
+                       Sievennetään
+                       \begin{aligned*}
+                       \frac{\textcolor{red}{y_2}-\textcolor{blue}{y_1}}{\textcolor{red}{x_2}-\textcolor{blue}{x_1}} &= \frac{(k\textcolor{red}{x_2} + h) - (k\textcolor{red}{x_2} + h)}{\textcolor{red}{x_2}-\textcolor{blue}{x_1}} \\
+                       &= \frac{k(\textcolor{red}{x_2} - \textcolor{red}{x_2})}{\textcolor{red}{x_2}-\textcolor{blue}{x_1}} = k \\
+                       \end{aligned*}
                     </p>
                 </div>
             </div>
