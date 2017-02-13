@@ -109,7 +109,7 @@ topnav: maa5
             <div class="definition">
                 <h3>MÄÄRITELMÄ: SUORAN YHTÄLÖN RATKAISU MUOTO JA KULMAKERROIN</h3>
                 <p>
-                    Yhtälö $y = kx + b$ on suoran yhtälön <em>ratkaistu muoto</em>. Tässä esiintyvä kerroin $k$ on suoran <em>kulmakerroin</em>.
+                    Yhtälö $y = kx + h$ on suoran yhtälön <em>ratkaistu muoto</em>. Tässä esiintyvä kerroin $k$ on suoran <em>kulmakerroin</em>.
                 </p>
             </div>
 
@@ -178,6 +178,67 @@ topnav: maa5
                         </a>
                         </h2>
                         <div id="maa5t102_v" class="collapse">
+                            <ol class="a">
+                                <li> Esimerkiksi $\vi$. </li>
+                                <li> Esimerkiksi $\vj$. </li>
+                                <li> Esimerkiksi $(1,3)$. Yhtälö on $y-3 = 0$. </li>
+                                <li> Ratkaistu muoto on $y = 3$ ja suoran $L$ kulmakerroin $0$.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                Edellisissä tehtävissä muodostettiin vektoreiden avulla suoralle normaalimuotoinen yhtälö ja muokattiin se ratkaistuun muotoon. Tämä voidaan tehdä kaikille muille $xy$-tason suorille paitsi $y$-akselin suuntaisille suorille. Esimerkiksi alla näkyvän suoran yksi suuntavektori on $\vj$ ja yksi normaalivektori on $\vi$. 
+                <br>
+                <img src="/kurssit/maa5/kuvat/k005.png" max-width: 100%; width: auto; height: auto;/>
+                <br>
+                Suoran normaalimuotoinen yhtälö on siten muotoa $1\cdot x + 0\cdot y + c = 0$. Vakion $c$ arvo määräytyy tiedosta, että suora kulkee pisteen $(4,1)$ kautta. Siten
+                $$4 + c = 0$$
+                eli $c = -4$. Normaalimuotoinen yhtälö on siis 
+                $$x - 4 = 0.$$
+                Havaitaan, että tätä yhtälöä ei voi muuttaa määritelmän mukaiseen ratkaistuun muotoon, sillä muuttuja $y$ ei esiinny yhtälössä lainkaan. Tämä voidaan ilmaista myös sanomalla, että muuttujan $y$ kerroin on nolla.
+            </p>
+            <p>
+                Koska suoran $x - 4 = 0$ yhtälöä ei voida muuttaa ratkaistuun muotoon, ei sillä ole kulmakerrointakaan.  
+            </p>
+
+            <p>
+                Tutkitaan seuraavaksi suoraa $L$, jonka yhtälön ratkaistu muoto on $y = -x + 3$. Tämä yhtälö kertoo, miten suoran pisteiden $y$-koordinaatit riippuvat $x$-koordinaateista, ja sen avulla voidaan selvittää suoran pisteitä. Esimerkiksi jos suoran $L$ pisteen $x$-koordinaatti on $x = 1$, niin sen $y$-koordinaatti on $y = -x+3 = -1 + 3 = 2$. Näin saadaan tieto, että suora $L$ kulkee pisteen $(1,2)$ kautta. Toinen piste löydetään, kun $x$-koordinaatiksi valitaan jokin muu luku: esimerkiksi jos $x = 4$, niin $y = -x+3 = -4 + 3 = -1$. Suora $L$ kulkee siis myös pisteen $(4,-1)$ kautta. Nyt suorasta $L$ voidaan piirtää kuva:
+                <br>
+                <img src="/kurssit/maa5/kuvat/k005.png" max-width: 100%; width: auto; height: auto;/>
+                <br>
+                Yleisesti 
+            </p>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="maa5t103-ex">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#maa5t103">
+                                Suora
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="maa5t103" class="collapse">
+                        <p>
+                            Suoran yhtälö on 
+                        </p>
+                        <ol class="a">
+                            <li> Valitse suoralle $L$ jokin suuntavektori. </li>
+                            <li> Valitse suoralle $L$ jokin normaalivektori. Tarkista pistetulon avulla, että se on todella kohtisuorassa suoraa $L$ vastaan. </li>
+                            <li> Valitse jokin piste, jonka kautta suora $L$ kulkee. Muodosta sen ja b-kohdan avulla suoralle $L$ normaalimuotoinen yhtälö. </li>
+                            <li> Muokkaa suoran $L$ normaalimuotoinen yhtälö ratkaistuun muotoon. Mikä on suoran $L$ kulmakerroin? </li>
+                            <li> Miten kulmakerroin näkyy alla olevassa kuvassa?</li>
+                        </ol>
+                        <img src="/kurssit/maa5/kuvat/k004.png" max-width: 100%; width: auto; height: auto;/>
+                        <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#maa5t103_v">
+                            VASTAUS
+                        </a>
+                        </h2>
+                        <div id="maa5t103_v" class="collapse">
                             <ol class="a">
                                 <li> Esimerkiksi $\vi$. </li>
                                 <li> Esimerkiksi $\vj$. </li>
