@@ -519,16 +519,41 @@ topnav: maa5
                 <img src="/kurssit/maa5/kuvat/k010.png" max-width: 100%; width: auto; height: auto;/>
                 <br>
                 Yritetään kuitenkin muodostaa suoran $L$ yhtälön ratkaistu muoto $y = kx + h$ toisella tavalla. Lasketaan ensin suoran kulmakerroin:
-                $$k = \frac{\textcolor{red}{y_2}-\textcolor{blue}{y_1}}{\textcolor{red}{x_2}-\textcolor{blue}{x_1}} = \frac{\textcolor{red}{4}-(\textcolor{blue}{-1})}{\textcolor{red}{5}-\textcolor{blue}{1}} = \frac{5}{4}.$$
+                $$k = \frac{\textcolor{red}{y_2}-\textcolor{blue}{y_1}}{\textcolor{red}{x_2}-\textcolor{blue}{x_1}} = \frac{\textcolor{red}{4}-(\textcolor{blue}{-1})}{\textcolor{red}{5}-\textcolor{blue}{1}} = \frac{5}{4} = 1{,}25.$$
                 Suoran $L$ yhtälö on siis muotoa
                 $$y = \frac{5}{4}x + h.$$
                 Vakion $h$ arvo saadaan selville esimerkiksi tiedosta, että suora $L$ kulkee pisteen $(1,-1)$ kautta. Siis
                 $$-1 = \frac{5}{4}\cdot 1 + h,$$
                 joten 
                 $$h = -\frac{9}{4} = -2{,}25.$$
-                Samaan tulokseen päästää myös muodostamalla yhtälö
-                $$y-(-1) = \frac{5}{4}(x-1)$$
+                Etsitty suoran $L$ yhtälö on siis 
+                $$y = \frac{5}{4}x - \frac{9}{4}.$$
+                Seuraava teoreema osoittaa, että samaan tulokseen päästään myös kulmakertoimen $k = \frac{5}{4}$ ja suoran pisteen $(x_0,y_0) = (1,-1)$ avulla, kun muodostetaan yhtälö
+                $$y-(-1) = \frac{5}{4}(x-1).$$
             </p>    
+
+            <div class="theorem" id="SUORAN YHTÄLÖ">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Jos suora kulkee pisteen $(x_0, y_0)$ kautta ja suoran kulmakerroin on $k$, niin suoran yhtälö on
+                    $$y - y_0 = k(x-x_0).$$ 
+                </p>
+                <div class="proof">
+                    <p>
+                       Perustelu: Oletetaan, että suora kulkee pisteen $(x_0, y_0)$ kautta ja suoran kulmakerroin on $k$. Tällöin suoran yhtälö on muotoa $y = kx + h$. Lisäksi piste $(x_0, y_0)$ toteuttaa suoran yhtälön:
+                       $$y_0 = kx_0 + h.$$
+                       Tutkitaan erotusta $y-y_0$:
+                       \begin{align*}
+                       y - y_0 &= (kx+ h) - (kx_0 + h) \\
+                       &= kx + h - kx_0 - h \\
+                       &= kx-kx_0 \\
+                       &= k(x-x_0).
+                       \end{align*}
+                       Siis 
+                       $$y - y_0 = k(x-x_0).$$
+                    </p>
+                </div>
+            </div>
 
         </div>
     </section>
