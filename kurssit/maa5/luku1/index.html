@@ -820,7 +820,47 @@ topnav: maa5
                 $$0{,}75x + 0{,}60y = 3.$$
                 Vastaavalla tavalla sinkin määräksi seoksessa saadaan $0{,}25x + 0{,}40y$. Koska sinkkiä pitää seoksessa 1,5 kg, saadaan yhtälö
                 $$0{,}25x + 0{,}40y = 1,5.$$
-                Havaitaan, että kumpikin yhtälö esittää suoraa.  
+                Havaitaan, että kumpikin yhtälö esittää suoraa. Tämä näkyy siitä, että ne ovat lähes normaalimuodossa $ax + by + c = 0$, vain vakiotermi $c$ on yhtäsuuruusmerkin toisella puolella. 
+            </p>
+            <p>
+                Eri messinkilaatujen määrät $x$ ja $y$ toteuttavat kummankin yhtälön, joten piste $(x,y)$ on näiden suorien leikkauspiste. Se löydetään ratkaisemalla yhtälöpari
+                \begin{align*}
+                    0{,}75x + 0{,}60y &= 3 \\
+                    0{,}25x + 0{,}40y &= 1{,}5
+                \end{align*}
+                esimerkiksi kuten <a href="http://kisallioppiminen.fi/kurssit/maa4/xyz-koordinaatisto/">MAA4-kurssissa</a> tehtiin. Yhtälöparin ratkaisemiseen voidaan käyttää myös niin sanottua yhteenlaskumenetelmää: 
+                <ol>
+                    <li> 
+                        Valitaan jompi kumpi tuntemattomista. Kerrotaan yhtälöt sellaisilla luvuilla, että valitun tuntemattoman kertoimiksi tulevat vastaluvut. Esimerkiksi tässä tapauksessa voidaan valita tuntematon $x$, jolloin alempi yhtälö kannattaa kertoa luvulla $-3$:
+                        \begin{align*}
+                            \textcolor{red}{0{,}75x} + 0{,}60y &= 3 \mid \textcolor{red}{\cdot 1} \\
+                            \textcolor{red}{0{,}25x} + 0{,}40y &= 1{,}5 \mid \textcolor{red}{\cdot (-3)}
+                        \end{align*}
+                        Yhtälöpari saa näin muodon
+                        \begin{align*}
+                            \textcolor{red}{0{,}75x} + 0{,}60y &= 3 \\
+                            \textcolor{red}{-0{,}75x} - 1{,}20y &= -4{,}5.
+                        \end{align*}
+                    </li>
+                    <li> 
+                        Lasketaan yhtälöt yhteen, jolloin saadaan yksi yhtälö, jossa on yksi tuntematon. Nyt tuloksena on yhtälö
+                        $$-0{,}6y = -1{,}5.$$
+                    </li>
+                    <li>
+                        Ratkaistaan saatu yhtälö.
+                        $$y = \frac{-1{,}5}{-0{,}6} = 2{,}5.$$
+                    </li>
+                    <li>
+                        Valitaan jompi kumpi alkuperäisistä yhtälöistä ja sijoitetaan edellisen kohdan tulos siihen. Esimerkiksi jos nyt valitaan ensimmäinen yhtälö, saadaan
+                        $$0{,}75x + 0{,}60 \cdot 2{,}5 = 3.$$
+                        Tästä voidaan ratkaista jäljellä oleva tuntematon:
+                        \begin{align*}
+                            0{,}75x + 1{,}5 &= 3 \\
+                            0{,}75x &= 1{,}5 \\
+                            x &= \frac{1{,}5}{0{,}75} = 2
+                        \end{align*}
+                    </li>
+                </ol> 
             </p>
             
         </div>
