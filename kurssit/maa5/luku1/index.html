@@ -831,32 +831,8 @@ topnav: maa5
             </div>
 
             <p>
-                Kurssissa MAA4 suorien leikkauspisteitä tutkittiin, kun ratkaistiin <a href="http://kisallioppiminen.fi/kurssit/maa4/xyz-koordinaatisto/">ensimmäisen asteen yhtälöpareja</a> sekä selvitettiin <a href="http://kisallioppiminen.fi/kurssit/maa4/suoratJaTasot/">suorien leikkauspisteitä</a> vektorilaskennan keinoin.
+                Kurssissa MAA4 suorien leikkauspisteitä tutkittiin, kun selvitettiin <a href="http://kisallioppiminen.fi/kurssit/maa4/suoratJaTasot/">suorien leikkauspisteitä</a> vektorilaskennan keinoin ja kun ratkaistiin <a href="http://kisallioppiminen.fi/kurssit/maa4/xyz-koordinaatisto/">ensimmäisen asteen yhtälöpareja</a>.
             </p>
-
-            <div class="tehtavat">
-                <div class="tehtava" id="maa5t113-ex">
-                    <header>
-                        <h1>
-                            <a data-toggle="collapse" class="collapsed" data-target="#maa5t113">
-                                Suorien leikkauspiste (MAA4)
-                            </a>
-                        </h1>
-                    </header>
-                    <div id="maa5t113" class="collapse">
-                        <p> 
-                            Ratkaise yhtälöpari 
-                            $$
-                            \left\{\begin{aligned}
-                                x + 2y &= -1 \\
-                                y &= 0{,}5 - 0{,}5x.
-                            \end{aligned}\right.
-                            $$ 
-                            Havainnollista ratkaisua piirtämällä yhtälöitä vastaavat suorat koordinaatistoon. Pystytkö päättelemään pelkän piirroksen avulla, mitkä luvut toteuttavat tämän yhtälöparin?
-                        </p>
-                    </div>
-                </div>
-            </div>
 
             <div class="tehtavat">
                 <div class="tehtava" id="maa5t113b-ex">
@@ -894,8 +870,43 @@ topnav: maa5
                 </div>
             </div>
 
+            <div class="tehtavat">
+                <div class="tehtava" id="maa5t113-ex">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#maa5t113">
+                                Suorien leikkauspiste (MAA4)
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="maa5t113" class="collapse">
+                        <p> 
+                            Ratkaise yhtälöpari 
+                            $$
+                            \left\{\begin{aligned}
+                                x + 2y &= -1 \\
+                                y &= 0{,}5 - 0{,}5x.
+                            \end{aligned}\right.
+                            $$ 
+                            Havainnollista ratkaisua piirtämällä yhtälöitä vastaavat suorat koordinaatistoon. Pystytkö päättelemään pelkän piirroksen avulla, mitkä luvut toteuttavat tämän yhtälöparin?
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <p> 
+                MAA4-kurssissa tarkasteltiin pääasiassa niin sanottuja ensimmäisen asteen yhtälöpareja, jotka voidaan kirjoittaa muodossa
+                $$
+                \left\{\begin{aligned}
+                ax+by &= c \\
+                mx+ny &= k,
+                \end{aligned}\right.
+                $$
+                missä $a$, $b$, $c$, $m$, $n$ ja $k$ ovat reaalilukuja. Havaittiin, että tällaisella yhtälöparilla voi olla tasan yksi ratkaisu tai ei yhtään ratkaisua riippuen siitä, onko yhtälöparia vastaavilla suorilla leikkauspiste vai ei. Näiden vaihtoehtojen lisäksi on vielä kolmaskin mahdollisuus: yhtälöparin kumpikin yhtälö voi vastata samaa suoraa. Tällöin yhtälöparilla on äärettömän paljon ratkaisuja, koska kyseisen suoran jokainen piste on yksi ratkaisu. 
+            </p>
+
             <p>
-                Kahden suoran leikkauspisteeseen voidaan päätyä monista muistakin tilanteista. Yhtenä esimerkkinä tarkastellaan seuraavaa kysymystä: 
+                Kurssissa MAA4 yhtälöpareja ratkaistiin niin sanotulla sijoitusmenetelmällä. Tällä kurssilla tutustutaan toiseen ratkaisumenetelmään, jota kutsutaan yhteenlaskumenetelmäksi. Sitä havainnollistetaan alla olevalla esimerkillä. 
             </p>
             <p>
                 Messinki on metalliseos, jossa on kuparia ja sinkkiä sekä joskus myös pieniä määriä tinaa tai lyijyä. Eräässä messinkilaadussa on 75 % kuparia ja 25 % sinkkiä. Niin sanotusta Muntz-messingistä 60 % on kuparia ja loput sinkkiä. Näistä kahdesta messinkilaadusta halutaan valmistaa seos, jossa on 3 kg kuparia ja 1,5 kg sinkkiä (tällä sekoitussuhteella valmistettua messinkiä sanotaan keltaiseksi messingiksi). Kuinka paljon kumpaakin seosta tarvitaan?
@@ -915,7 +926,7 @@ topnav: maa5
                     0{,}25x + 0{,}40y &= 1{,}5.
                 \end{aligned}\right.
                 $$
-                <a href="http://kisallioppiminen.fi/kurssit/maa4/xyz-koordinaatisto/">MAA4-kurssissa</a> opeteltiin ratkaisemaan yhtälöpari sijoitusmenetelmällä. Yhtälöparin ratkaisemiseen voidaan käyttää myös niin sanottua yhteenlaskumenetelmää: 
+                Ratkaistaan tämä yhtälöpari yhteenlaskumenetelmällä: 
                 <ol>
                     <li> 
                         Valitaan jompi kumpi tuntemattomista. Kerrotaan yhtälöt sellaisilla luvuilla, että valitun tuntemattoman kertoimiksi tulevat vastaluvut. Esimerkiksi tässä tapauksessa voidaan valita tuntematon $x$, jolloin alempi yhtälö kannattaa kertoa luvulla $-3$:
