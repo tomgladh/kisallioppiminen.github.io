@@ -1122,6 +1122,41 @@ topnav: maa5
                 <br>
             </p>
 
+            <div class="theorem" id="SUORIEN YHDENSUUNTAISUUS">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Kaksi suoraa, jotka eivät ole $y$-akselin suuntaisia, ovat yhdensuuntaisia, jos ja vain jos niiden kulmakertoimet ovat yhtä suuret.
+                </p>
+                <div class="proof">
+                    <p>
+                       Perustelu: 
+                       <ol>
+                            <li>
+                                Oletetaan, että kahdella suoralla on sama kulmakerroin. Merkitään tätä kulmakerrointa kirjaimella $k$. Kulmakerroin ilmaisee, kuinka paljon suora nousee tai laskee, jos siirrytään yhden yksikön verran oikealle. Tästä voidaan päätellä, että kummallakin suoralla on suuntavektori $\vi + k\vj$. Siis suorat ovat yhdensuuntaiset.
+                                <br>
+                                <img src="/kurssit/maa5/kuvat/k020.png" max-width: 100%; width: auto; height: auto;/> 
+                            </li>
+                            <li>
+                                Oletetaan, että kaksi suoraa, jotka eivät ole $y$-akselin suuntaisia, ovat yhdensuuntaisia. Olkoon ensimmäisen suoran suuntavektori $\vv_1 = a_1\vi + b_1\vj$ ja toisen suoran suuntavektori $\vv_2 = a_2\vi + b_2\vj$. Koska suorat ovat yhdensuuntaisia, niiden suuntavektorit ovat yhdensuuntaisia. Siis on olemassa sellainen luku $t \neq 0$, että $\vv_2 = t\vv_1$. Tästä seuraa, että 
+                                $$
+                                \left\{\begin{aligned}
+                                    a_2 &= ta_1 \\
+                                    b_2 &= tb_1.
+                                \end{aligned}\right.
+                                $$
+                                Suoran kulmakerroin saadaan, kun lasketaan $y$-koordinaatin muutoksen suhde $x$-koordinaatin muutokseen. Ensimmäisen suoran kulmakerroin on siten
+                                $$k_1 = \frac{b_1}{a_1}.$$
+                                Toisen suoran kulmakertoimeksi saadaan 
+                                $$k_2 = \frac{b_2}{a_2} = \frac{tb_1}{ta_1} = \frac{b_1}{a_1}.$$
+                                Siis $k_2 = k_1$ eli suorilla on sama kulmakerroin.
+                                <br>
+                                <img src="/kurssit/maa5/kuvat/k021.png" max-width: 100%; width: auto; height: auto;/> 
+                            </li>
+                       </ol>    
+                    </p>
+                </div>
+            </div>
+
             <p>
                 ******
             </p>
