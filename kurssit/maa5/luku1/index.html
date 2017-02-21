@@ -1569,7 +1569,54 @@ topnav: maa5
                     </div>
                 </div>
             </div>
+
+            <p>
+                Edellisen tehtävän menetelmällä on mahdollista johtaa yleinen yhtälö pisteen $(x_0,y_0)$ etäisyydelle suorasta $ax + by + c = 0$. Perustelu on sen verran työläs, ettei sen kaikkia yksityiskohtia ole kirjoitettu näkyviin.
+            </p>
             
+            <div class="theorem" id="PISTEEN ETÄISYYS SUORASTA">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Pisteen $(x_0,y_0)$ etäisyys suorasta $ax + by + c = 0$ on
+                    $$d = \frac{\left| ax_0 + by_0 + c \right|}{\sqrt{a^2 + b^2}}.$$
+                </p>
+                <div class="proof">
+                    <p>
+                       Perustelu: Suoran $ax+by+c = 0$ se normaali, joka kulkee pisteen $(x_0,y_0)$ kautta, on 
+                       $$bx-ay + ay_0 - bx_0 = 0.$$
+                       Yhtälöparin
+                       $$
+                        \left\{\begin{aligned}
+                            ax + by + c &= 0 \\
+                            bx-ay + ay_0 - bx_0 &= 0
+                        \end{aligned}\right.
+                        $$
+                        ratkaisuksi saadaan
+                        $$
+                        x = \frac{b^2x_0 - aby_0 - ac}{a^2 + b^2}
+                        $$
+                        ja
+                        $$
+                        y = \frac{a^2y_0 - abx_0 - bc}{a^2 + b^2}.
+                        $$
+                        Nämä ovat siis pistettä $Q = (x_0,y_0)$ lähinnä olevan suoran $ax + by + c = 0$ pisteen $P$ koordinaatit. Pisteiden $Q$ ja $P$ $x$-koordinaattien erotukseksi saadaan
+                        $$
+                        x_0-x = \frac{a(ax_0+by_0+c)}{a^2 + b^2}
+                        $$
+                        ja $y$-koordinaattien erotukseksi
+                        $$
+                        y_0-y = \frac{b(ax_0+by_0+c)}{a^2 + b^2}.
+                        $$
+                        Pythagoraan lauseella pisteiden $Q$ ja $P$ väliseksi etäisyydeksi saadaan sievennysten jälkeen
+                        \begin{align*}
+                        d &= \sqrt{(x-x_0)^2 + (y-y_0)^2} \\
+                         &= \ldots \\
+                         &= \frac{\sqrt{(ax_0+by_0+c)^2}}{\sqrt{a^2+b^2}} \\
+                         &= \frac{\left| ax_0 + by_0 + c \right|}{\sqrt{a^2 + b^2}}.
+                        \end{align*}
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
