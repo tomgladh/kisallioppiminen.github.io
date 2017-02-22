@@ -5,6 +5,9 @@ navigation:
     name: Kurssin etusivu
     path: /kurssit/maa5/
   -
+    name: Etäisyys
+    path: /kurssit/maa5/luku0/
+  -
     name: Suora
     path: /kurssit/maa5/luku1/
   -
