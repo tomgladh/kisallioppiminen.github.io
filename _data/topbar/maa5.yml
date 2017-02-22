@@ -8,10 +8,10 @@ navigation:
     name: Suora
     path: /kurssit/maa5/luku1/
   -
-    name: Paraabeli
+    name: Ympyrä
     path: /kurssit/maa5/luku2/
   -
-    name: Ympyrä
+    name: Paraabeli
     path: /kurssit/maa5/luku3/
   -
     name: Itseisarvo
