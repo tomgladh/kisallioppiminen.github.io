@@ -104,7 +104,7 @@ topnav: maa5
             </div>
 
         <p>
-            Ympyrän määritelmässä esiintyy etäisyyden käsite, joten 
+            Seuraavassa teoreemassa johdetaan ympyrän yhtälö samaan tapaan kuin äskeisessä tehtävässä. Lue teoreema ja sen perustelu huolellisesti ja mieti jokaisen virkkeen jälkeen, mitä järkeä selityksessä on. Jos jokin kohta tuntuu hämärältä, keskustele siitä kaverin tai opettajan kanssa.
         </p>
 
         <div class="theorem" id="YMPYRÄN YHTÄLÖ">
@@ -116,6 +116,37 @@ topnav: maa5
             <div class="proof">
                 <p>
                     Perustelu: 
+                    <ol>
+                        <li> 
+                            Oletetaan aluksi, että $(x,y)$ on ympyrän piste. Tällöin sen etäisyys ympyrän keskipisteestä $(a,b)$ on $r$. Tämä voidaan ilmaista yhtälönä
+                            $$
+                            \sqrt{(x-a)^2 + (y-b)^2} = r.
+                            $$
+                            Tästä seuraa, että 
+                            $$
+                            (x-a)^2 + (y-b)^2 = r^2.
+                            $$
+                        </li>
+                        <li>
+                            Oletetaan, että piste $(x,y)$ toteuttaa yhtälön 
+                            $$
+                            (x-a)^2 + (y-b)^2 = r^2.
+                            $$
+                            Yhtälön kumpikin puoli on epänegatiivinen, joten voidaan ottaa neliöjuuri:
+                            $$
+                            \sqrt{(x-a)^2 + (y-b)^2} = \sqrt{r^2}.
+                            $$
+                            Koska luku $r$ on ympyrän säde, sekin on epänegatiivinen: $r \geq 0$. Tästä seuraa, että $\sqrt{r^2} = r$. Yhtälö voidaan siis kirjoittaa muodossa
+                            $$
+                            \sqrt{(x-a)^2 + (y-b)^2} = r.
+                            $$
+                            Tästä nähdään, että pisteen $(x,y)$ etäisyys ympyrän keskipisteestä $(a,b)$ on $r$. Siis piste $(x,y)$ on ympyrällä.
+                        </li>
+                    </ol>
+                    Näin on näytetty, että piste $(x,y)$ on ympyrällä, jos ja vain jos se toteuttaa yhtälön 
+                    $$
+                    \sqrt{(x-a)^2 + (y-b)^2} = r.
+                    $$
                </p>                
             </div>
         </div>
