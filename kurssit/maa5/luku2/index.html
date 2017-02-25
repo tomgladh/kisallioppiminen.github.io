@@ -347,7 +347,7 @@ topnav: maa5
         <div id="ympyra2" class="collapse">
 
             <p>
-                Tässä kappaleessa tutkitaan kahden ympyrän sekä suoran ja ympyrän leikkauspisteitä ja opitaan määrittämään ympyrälle tangentteja. Aloitetaan tarkastelemalla suoran ja ympyrän leikkauspisteitä.
+                Tässä kappaleessa tutkitaan kahden ympyrän sekä suoran ja ympyrän leikkauspisteitä. Lisäksi opitaan määrittämään ympyrälle tangentteja. Aloitetaan tarkastelemalla suoran ja ympyrän leikkauspisteitä.
             </p>
           
             <div class="tehtavat">
@@ -386,6 +386,49 @@ topnav: maa5
                     </div>
                 </div>
             </div>
+
+            <p>
+                Kun tutkitaan, missä pisteissä suora ja ympyrä leikkaavat, joudutaan usein ratkaisemaan yhtälöpari. Tällainen suoran ja ympyrän yhtälöistä muodostuva yhtälöpari on kätevintä ratkaista sijoitusmenetelmällä, jota käytettiin jo kurssissa <a href="http://kisallioppiminen.fi/kurssit/maa4/xyz-koordinaatisto/">MAA4</a>. Havainnollistetaan menetelmää seuraavan esimerkin avulla.
+            </p>
+
+            <p>
+                Etsitään suoran $x + 2y - 11 = 0$ ja ympyrän $x^2+y^2 + 4x - 8y + 10 = 0$ leikkauspisteet ratkaisemalla yhtälöpari 
+                $$
+                \left\{\begin{aligned}
+                    x + 2y - 11 &= 0 \\
+                    x^2+y^2 + 4x - 8y + 10 &= 0.
+                \end{aligned}\right.
+                $$
+                <ol>
+                    <li> 
+                        Ratkaistaan suoran yhtälöstä jompi kumpi tuntemattomista. Esimerkiksi
+                        $$x = 11-2y.$$
+                    </li>
+                    <li>
+                        Sijoitetaan saatu lauseke ympyrän yhtälöön ja sievennetään:
+                        \begin{align*}
+                        (11-2y)^2+y^2 + 4(11-2y) - 8y + 10 = 0 \\
+                        121 - 44y + 4y^2 + y^2 + 44 - 8y - 8y + 10 &= 0 \\
+                        5y^2 - 60y + 175 &= 0 \quad \mid \, : 5\\
+                        y^2 - 12y + 35 &= 0
+                        \end{align*}
+                        Saatu toisen asteen yhtälö voidaan ratkaista toisen asteen yhtälön ratkaisukaavan avulla (<a href="http://kisallioppiminen.fi/kurssit/maa2/luku3/">MAA2</a>, teoreema 5). 
+                        $$
+                            y = \frac{12\pm \sqrt{12^2 - 4\cdot 35}}{2\cdot 1} = 6 \pm 1.
+                        $$
+                        Siis $y = 7$ tai $y = 5$.
+                    </li>
+                    <li>
+                        Toinen tuntematon saadaan nyt selville sijoittamalla äsken saatu ratkaisu suoran yhtälöön:
+                        $$x = 11 - 2\cdot 7 = -3$$
+                        tai
+                        $$x = 11 - 2\cdot 5 = 1.$$
+                    </li>
+                    <li>
+                        Etsityt leikkauspisteet ovat siis $(-3,7)$ ja $(1,5)$.
+                    </li>
+                </ol>
+            </p>
 
         </div>
     </section>
