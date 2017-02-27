@@ -347,7 +347,110 @@ topnav: maa5
         <div id="ympyra2" class="collapse">
 
             <p>
-                Tässä kappaleessa tutkitaan kahden ympyrän sekä suoran ja ympyrän leikkauspisteitä. Aloitetaan tarkastelemalla suoran ja ympyrän leikkauspisteitä.
+                Tässä kappaleessa tutkitaan kahden ympyrän sekä suoran ja ympyrän leikkauspisteitä. Aloitetaan tarkastelemalla kahden ympyrän leikkauspisteitä.
+            </p>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="t209-ex">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t209">
+                                Ympyrän leikkauspisteitä
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t209" class="collapse">
+                        <ol class="a">
+                            <li> 
+                                Piirrä koordinaatistoon ympyrä $(x+3)^2 + (y-1)^2 = 20$.
+                            </li>
+                            <li> 
+                                Piirrä samaan koordinaatistoon ympyrä $(x-2)^2 + (y-6)^2 = 10$.
+                            </li>
+                            <li> 
+                                Päättele piirtämäsi kuvan avulla, mitkä ovat yhtälöparin
+                                $$
+                                \left\{\begin{aligned}
+                                    (x+3)^2 + (y-1)^2 &= 20 \\
+                                    (x-2)^2 + (y-6)^2 &= 10
+                                \end{aligned}\right.
+                                $$
+                                ratkaisut.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                Tarkan ratkaisun löytäminen piirtämällä ei aina ole mahdollista. Seuraava esimerkki havainnollistaa, miten kahden ympyrän leikkauspisteet voidaan löytää ratkaisemalla yhtälöpari.
+            </p>
+
+            <p>
+                Tarkastellaan edellisen tehtävän yhtälöparia
+                $$
+                \left\{\begin{aligned}
+                    (x+3)^2 + (y-1)^2 &= 20 \\
+                    (x-2)^2 + (y-6)^2 &= 10
+                \end{aligned}\right.
+                $$
+                Tehdään yhtälöiden vasemmalla puolella toiseen potenssiin korotukset, jolloin yhtälöpari saadaan välivaiheiden jälkeen muotoon
+                $$
+                \left\{\begin{aligned}
+                    x^2 + y^2 + 6x - 2y - 10 &= 0 \\
+                    x^2 + y^2 - 4x - 12y + 30 &= 0.
+                \end{aligned}\right.
+                $$
+                Tähän yhtälöpariin kannattaa soveltaa luvussa <a href="http://kisallioppiminen.fi/kurssit/maa5/luku1/">Suora</a> opiskeltua yhteenlaskumenetelmää:
+                <ol>
+                    <li> 
+                        Kerrotaan toinen yhtälö luvulla $-1$:
+                        $$
+                        \left\{\begin{aligned}
+                            \textcolor{red}{x^2 + y^2} + 6x - 2y - 10 &= 0 \\
+                            \textcolor{red}{x^2 + y^2} - 4x - 12y + 30 &= 0 \mid \, \textcolor{red}{\cdot (-1)}
+                        \end{aligned}\right.
+                        $$
+                        Yhtälöpari saa näin muodon
+                        $$
+                        \left\{\begin{aligned}
+                            \textcolor{red}{x^2 + y^2} + 6x - 2y - 10 &= 0 \\
+                            \textcolor{red}{-x^2 - y^2} - 4x - 12y + 30 &= 0.
+                        \end{aligned}\right.
+                        $$
+                    </li>
+                    <li> 
+                        Lasketaan yhtälöt yhteen, jolloin saadaan yksi yhtälö. Nyt tuloksena on yhtälö
+                        $$2x - 14y + 20 = 0.$$
+                        Ratkaistaan tästä toinen tuntematon, esimerkiksi
+                        $$x = 7y-10.$$ 
+                    </li>
+                    <li>
+                        Sijoitetaan saatu lauseke jompaan kumpaan alkuperäisistä yhtälöistä, esimerkiksi ensimmäiseen:
+                        \begin{align*}
+                        ({\scriptsize 7y-10})^2 + y^2 + 6({\scriptsize 7y-10}) - 2y - 10 &= 0 \\
+                        &\vdots \\
+                        50y^2 - 100y + 30 &= 0\\
+                        5y^2 - 10y + 3 &= 0
+                        \end{align*}
+                        Ratkaistaan toisen asteen yhtälö esimerkiksi ratkaisukaavan avulla (<a href="http://kisallioppiminen.fi/kurssit/maa2/luku3/">MAA2</a>, teoreema 5). 
+                        $$
+                            y = \frac{10\pm \sqrt{10^2 - 4\cdot 15}}{2\cdot 5} = 6 \pm 1.
+                        $$
+                        Siis $y = 7$ tai $y = 5$.
+                    </li>
+                    <li>
+                        Valitaan jompi kumpi alkuperäisistä yhtälöistä ja sijoitetaan edellisen kohdan tulos siihen. Esimerkiksi jos nyt valitaan ensimmäinen yhtälö, saadaan
+                        $$0{,}75x + 0{,}60 \cdot 2{,}5 = 3.$$
+                        Tästä voidaan ratkaista jäljellä oleva tuntematon:
+                        \begin{align*}
+                            0{,}75x + 1{,}5 &= 3 \\
+                            0{,}75x &= 1{,}5 \\
+                            x &= \frac{1{,}5}{0{,}75} = 2
+                        \end{align*}
+                        Ratkaisu on siis $x = 2$ ja $y = 2{,}5$. Tämä näkyy myös alla olevasta kuvasta. Vastauksena kysymykseen voidaan siis sanoa, että Muntz-messinkiä tarvitaan 2,5 kg ja toista messinkilaatua 2 kg.
+                    </li>
+                </ol>  
             </p>
           
             <div class="tehtavat">
