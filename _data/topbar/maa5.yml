@@ -14,8 +14,8 @@ navigation:
     name: Ympyrä
     path: /kurssit/maa5/luku2/
   -
-    name: Itseisarvoyhtälöt ja -epäyhtälöt
+    name: Paraabeli
     path: /kurssit/maa5/luku3/
   -
-    name: Paraabeli
+    name: Itseisarvoyhtälöt ja -epäyhtälöt
     path: /kurssit/maa5/luku4/
