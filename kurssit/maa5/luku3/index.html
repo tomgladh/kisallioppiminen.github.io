@@ -58,13 +58,9 @@ topnav: maa5
 
             <p>
                 Kurssissa <a href="http://kisallioppiminen.fi/kurssit/maa2/luku3/">MAA2</a> tutustuttiin toisen asteen polynomifunktioihin. Näiden kuvaajat ovat aina ylöspäin tai alaspäin aukeavia paraabeleja. 
-            </p>
-            <p>
-                Esimerkiksi alla ovat näkyvissä funktioiden $\,f(x) = x^2 - 2x - 3 \,$ ja $\,g(x) = -0{,}25x^2 + 2\,$ kuvaajat.
+                Alla on esimerkiksi näkyvissä funktion $\,f(x) = x^2 - 2x - 3 \,$ kuvaaja.
                 <br>
                 <img src="/kurssit/maa5/kuvat/k038.png" max-width: 100%; width: auto; height: auto;/>
-                <br>
-                <img src="/kurssit/maa5/kuvat/k039.png" max-width: 100%; width: auto; height: auto;/>
                 <br>
                 Ylöspäin ja alaspäin aukeavien paraabelien lisäksi on olemassa esimerkiksi oikealle ja vasemmalle aukeavia paraabeleja. Yleisesti paraabeli määritellään etäisyyden avulla seuraavasti: 
             </p>
@@ -79,7 +75,7 @@ topnav: maa5
             </div>
 
             <p>
-            Esimerkiksi funktion $g(x) = -0{,}25x^2 + 2$ kuvaajan johtosuora on $y = 3$ ja polttopiste $(0,1)$. Siniset janat havainnollistavat etäisyyksiä paraabelin pisteistä polttopisteeseen ja johtosuoraan:
+                Alla on näkyvissä funktion $g(x) = -0{,}25x^2 + 2$ kuvaaja. Se on paraabeli, jonka johtosuora on $y = 3$ ja polttopiste $(0,1)$. Siniset janat havainnollistavat etäisyyksiä paraabelin pisteistä polttopisteeseen ja johtosuoraan:
             <br>
             <img src="/kurssit/maa5/kuvat/k040.png" max-width: 100%; width: auto; height: auto;/>
             </p>
@@ -90,31 +86,28 @@ topnav: maa5
                 ja etäisyys johtosuorasta on 
                 $$\left| x-(-2)\right|.$$
                 <img src="/kurssit/maa5/kuvat/k042.png" max-width: 100%; width: auto; height: auto;/>
-                Piste $(x,y)$ on paraabelin piste, jos ja vain jos nämä etäisyydet ovat yhtä suuret eli yhtälö
+                Piste $(x,y)$ on paraabelin piste, jos ja vain jos etäisyydet polttopisteeseen ja johtosuoraan ovat yhtä suuret eli yhtälö
                 $$
                 \sqrt{(x-4)^2 + y^2} = \left| x-(-2)\right|
                 $$
                 toteutuu.
             </p>
             <p>
-                Jos yhtälön vasen ja oikea puoli ovat yhtä suuret, ovat myös niiden toiset potenssit yhtä suuret. Kun yhtälön kumpikin puoli korotetaan toiseen potenssiin, saadaan yhtälö
+                Jos yhtälön vasen ja oikea puoli ovat yhtä suuret, yhtäsuuruus säilyy toiseen potenssiin korotuksessa. Näin saadaan yhtälö
                 $$
                 (x-4)^2 + y^2 = (x + 2)^2.
                 $$
-                Siitä voidaan ratkaista $x$: 
+                Siitä voidaan ratkaista $y^2$: 
                 \begin{align*}
                 x^2 - 8x + 16 + y^2 &= x^2 + 4x + 4 \\
-                -12x &= -12 - y^2 \\
-                x &= 1 + \frac{1}{12}y^2
+                y^2 &= 12x - 12
                 \end{align*}
-                Tämä päättely osoittaa, että jos $(x,y)$ on paraabelin piste, sen koordinaatit toteuttavat yhtälön 
-                $x = 1 + \frac{1}{12}y^2$. 
+                Tämä päättely osoittaa, että jos $(x,y)$ on paraabelin piste, niin sen koordinaatit toteuttavat yhtälön 
+                $y^2 &= 12x - 12$. 
             </p>
             <p>
-                Toisaalta, jos pisteen $(x,y)$ koordinaatit toteuttavat yhtälön 
-                $$x = 1 + \frac{1}{12}y^2,$$
-                niin 
-                $$y^2 = 12x - 12.$$
+                Tutkitaan sitten tilannetta, jossa pisteen $(x,y)$ koordinaatit toteuttavat yhtälön 
+                $y^2 = 12x - 12$.
                 Kun tämä sijoitetaan etäisyyttä kuvaavaan lausekkeeseen, havaitaan, että pisteen $(x,y)$ etäisyys polttopisteestä on yhtä suuri kuin sen etäisyys johtosuorasta:
                 \begin{align*}
                 \sqrt{(x-4)^2 + y^2} &= \sqrt{(x-4)^2 + 12x - 12} \\
