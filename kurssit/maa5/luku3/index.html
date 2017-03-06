@@ -84,20 +84,62 @@ topnav: maa5
             <img src="/kurssit/maa5/kuvat/k040.png" max-width: 100%; width: auto; height: auto;/>
             </p>
 
+            <p>
+                Paraabelille voidaan johtaa yhtälö, jos polttopiste ja johtosuora tunnetaan. Tarkastellaan esimerkiksi paraabelia, jonka polttopiste on $(4,0)$ johtosuora on $x = -2$. Oletetaan, että piste $(x,y)$ on tämän paraabelin piste. Tällöin sen etäisyys polttopisteestä on 
+                $$\sqrt{(x-4)^2 + y^2}$$
+                ja etäisyys johtosuorasta on 
+                $$\left| x-(-2)\right|$$
+                <img src="/kurssit/maa5/kuvat/k042.png" max-width: 100%; width: auto; height: auto;/>
+                Nämä etäisyydet ovat yhtä suuret, joten saadaan yhtälö
+                $$
+                \sqrt{(x-4)^2 + y^2} = \left| x-(-2)\right|
+                $$
+                Jos yhtälön vasen ja oikea puoli ovat yhtä suuret, ovat myös niiden toiset potenssit yhtä suuret. Kun yhtälön kumpikin puoli korotetaan toiseen potenssiin, saadaan yhtälö
+                $$
+                (x-4)^2 + y^2 = (x + 2)^2.
+                $$
+                Siitä voidaan ratkaista $x$: 
+                \begin{align*}
+                x^2 - 8x + 16 + y^2 &= x^2 + 4x + 4 \\
+                -12x &= -12 - y^2 \\
+                x &= 1 + \frac{1}{12}y^2
+                \end{align*}
+                Paraabelin yhtälöksi saadaan näin 
+                $$x = \frac{1}{12}y^2 + 1.$$
+            </p>
+
             <div class="tehtavat">
                 <div class="tehtava" id="firstEx">
                     <header>
                         <h1>
                             <a data-toggle="collapse" class="collapsed" data-target="#t201">
-                                Jotain
+                                Paraabelin yhtälö
                             </a>
                         </h1>
                     </header>
                     <div id="t201" class="collapse">
                         <p>
-                            Bla bla
+                            Tehtävänä on muodostaa yhtälö paraabelille, jonka polttopiste on $(0,3)$ ja johtosuora on $y = -1$. 
                         <ol class="a">
-                            <li>  </li>
+                            <li> 
+                                Piirrä paraabelin polttopiste ja johtosuora koordinaatistoon. Merkitse kuvaan pisteitä, jotka ovat yhtä kaukana polttopisteestä ja johtosuorasta. Onko paraabeli ylöspäin vai alaspäin aukeava? 
+                            </li>
+                            <li> 
+                                Muodosta lauseke, joka ilmaisee pisteen $(x,y)$ etäisyyden pisteestä $(0,3)$. 
+                                <br>
+                                Vinkki: kertaa tarvittaessa teoreema 3 luvusta <a href="http://kisallioppiminen.fi/kurssit/maa5/luku0/">Etäisyys</a>. 
+                            </li>
+                            <li>
+                                Muodosta lauseke, joka ilmaisee pisteen $(x,y)$ etäisyyden suorasta $y = -1$. 
+                                <br>
+                                Vinkki: Yksi mahdollisuus on käyttää luvun <a href="http://kisallioppiminen.fi/kurssit/maa5/luku1/">Suora</a> teoreemaa 10. Keksitkö muita tapoja?
+                            </li>
+                            <li>
+                                Muodosta edellisten kohtien lausekkeista yhtälö, jonka mukaan pisteen $(x,y)$ etäisyys polttopisteestä $(0,3)$ on yhtä suuri kuin pisteen $(x,y)$ etäisyys johtosuorasta $y = -1$.
+                            </li>
+                            <li>
+                                Ratkaise muodostamasi yhtälöstä $y$. Aloita korottamalla yhtälön kumpikin puoli toiseen potenssiin.
+                            </li>
                         </ol>
                         </p>
                         <h2>
