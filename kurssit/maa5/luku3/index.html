@@ -85,15 +85,18 @@ topnav: maa5
             </p>
 
             <p>
-                Paraabelille voidaan johtaa yhtälö, jos polttopiste ja johtosuora tunnetaan. Tarkastellaan esimerkiksi paraabelia, jonka polttopiste on $(4,0)$ johtosuora on $x = -2$. Oletetaan, että piste $(x,y)$ on tämän paraabelin piste. Tällöin sen etäisyys polttopisteestä on 
+                Paraabelille voidaan johtaa yhtälö, jos polttopiste ja johtosuora tunnetaan. Tarkastellaan esimerkiksi paraabelia, jonka polttopiste on $(4,0)$ johtosuora on $x = -2$. Pisteen $(x,y)$ etäisyys polttopisteestä on 
                 $$\sqrt{(x-4)^2 + y^2}$$
                 ja etäisyys johtosuorasta on 
-                $$\left| x-(-2)\right|$$
+                $$\left| x-(-2)\right|.$$
                 <img src="/kurssit/maa5/kuvat/k042.png" max-width: 100%; width: auto; height: auto;/>
-                Nämä etäisyydet ovat yhtä suuret, joten saadaan yhtälö
+                Piste $(x,y)$ on paraabelin piste, jos ja vain jos nämä etäisyydet ovat yhtä suuret eli yhtälö
                 $$
                 \sqrt{(x-4)^2 + y^2} = \left| x-(-2)\right|
                 $$
+                toteutuu.
+            </p>
+            <p>
                 Jos yhtälön vasen ja oikea puoli ovat yhtä suuret, ovat myös niiden toiset potenssit yhtä suuret. Kun yhtälön kumpikin puoli korotetaan toiseen potenssiin, saadaan yhtälö
                 $$
                 (x-4)^2 + y^2 = (x + 2)^2.
@@ -104,8 +107,23 @@ topnav: maa5
                 -12x &= -12 - y^2 \\
                 x &= 1 + \frac{1}{12}y^2
                 \end{align*}
-                Paraabelin yhtälöksi saadaan näin 
-                $$x = \frac{1}{12}y^2 + 1.$$
+                Tämä päättely osoittaa, että jos $(x,y)$ on paraabelin piste, sen koordinaatit toteuttavat yhtälön 
+                $x = 1 + \frac{1}{12}y^2$. 
+            </p>
+            <p>
+                Toisaalta, jos pisteen $(x,y)$ koordinaatit toteuttavat yhtälön 
+                $$x = 1 + \frac{1}{12}y^2,$$
+                niin 
+                $$y^2 = 12x - 12.$$
+                Kun tämä sijoitetaan etäisyyttä kuvaavaan lausekkeeseen, havaitaan, että pisteen $(x,y)$ etäisyys polttopisteestä on yhtä suuri kuin sen etäisyys johtosuorasta:
+                \begin{align*}
+                \sqrt{(x-4)^2 + y^2} &= \sqrt{(x-4)^2 + 12x - 12} \\
+                &= \sqrt{x^2 - 8x + 16 + 12x - 12} \\
+                &= \sqrt{x^2 + 4x + 4} \\
+                &= \sqrt{(x+2)^2} \\
+                &= \left|x+2\right|
+                \end{align*}
+                Siis piste $(x,y)$ on paraabelin piste.
             </p>
 
             <div class="tehtavat">
