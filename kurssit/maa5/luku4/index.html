@@ -59,7 +59,7 @@ topnav: maa5
         <div id="itseisarvo1" class="collapse">
 
             <p>
-                Kurssin ensimmäisessä luvussa <a href="http://kisallioppiminen.fi/kurssit/maa5/luku0/">Etäisyys</a> opittiin, miten itseisarvon avulla voidaan ilmaista etäisyyksiä lukusuoralla. Itseisarvoa tarvittiin myös, kun määritettiin tason pisteen etäisyys suorasta (<a href="http://kisallioppiminen.fi/kurssit/maa5/luku1/">teoreema 10</a>). Ympyrän tangetin yhteydessä ratkaistiin yhtälöitä, joissa esiintyi itseisarvo. Tässä kappaleessa syvennytään tarkemmin itseisarvoyhtälöiden ratkaisemiseen. 
+                Kurssin ensimmäisessä luvussa <a href="http://kisallioppiminen.fi/kurssit/maa5/luku0/">Etäisyys</a> opittiin, miten itseisarvon avulla voidaan ilmaista etäisyyksiä lukusuoralla. Itseisarvoa tarvittiin myös, kun määritettiin tason pisteen etäisyys suorasta (<a href="http://kisallioppiminen.fi/kurssit/maa5/luku1/">teoreema 10</a>). Kun määritettiin yhtälö ympyrän tangetille tai paraabelille, ratkaistiin yhtälö, jossa esiintyi itseisarvo. Tässä kappaleessa syvennytään tarkemmin itseisarvoyhtälöiden ratkaisemiseen. 
             </p>
             <p>
                 Aloitetaan palauttamalla mieleen itseisarvon määritelmä:
@@ -460,6 +460,378 @@ topnav: maa5
             </h1>
         </header>
         <div id="itseisarvo2" class="collapse">
+
+            <p>
+                Tässä kappaleessa harjoitellaan itseisarvoepäyhtälöiden ratkaisemista. Osa tällaisista yhtälöistä voidaan ratkaista päättelemällä, kun muistetaan, että erotuksen itseisarvo ilmaisee etäisyyden lukusuoralla:
+            </p>
+
+            <input type="hidden" id="theoremStart" value="2"/>
+            <div class="theorem" id="ETÄISYYS LUKUSUORALLA">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Lukujen $a$ ja $b$ välinen etäisyys lukusuoralla on $\left|a-b\right|$.
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="t411">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t411">
+                                Itseisarvoyhtälö
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t401" class="collapse">
+                        <p>
+                            Tehtävänä on ratkaista epäyhtälö $\left|x - 5\right| < 2$.
+                        <ol class="a">
+                            <li> 
+                                Piirrä lukusuora ja merkitse siihen luku $5$. Merkitse näkyviin myös ne luvut, joiden etäisyys luvusta $5$ on pienempi kuin kaksi. 
+                            </li>
+                            <li> 
+                                Mitkä luvut toteuttavat epäyhtälön $\left|x - 5\right| < 2$?
+                            </li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="t412-ex">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t412">
+                                Itseisarvoyhtälö
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t412" class="collapse">
+                        <p>
+                            Tehtävänä on ratkaista epäyhtälö $\left|x + 1 \right| > 3$.
+                        <ol class="a">
+                            <li>
+                                Kirjoita summa $x + 1$ erotuksena.
+                            </li>
+                            <li> 
+                                Piirrä lukusuora ja merkitse siihen luku $-1$. Merkitse näkyviin myös ne luvut, joiden etäisyys luvusta $-1$ on suurempi kuin kolme. 
+                            </li>
+                            <li> 
+                                Mitkä luvut toteuttavat yhtälön $\left|x + 1 \right| > 3$?
+                            </li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                Joillakin itseisarvoyhtälöillä ei ole lainkaan ratkaisua. Esimerkiksi yhtälö 
+                $$\left|x - 10 \right| = -3$$
+                on aina epätosi, sillä sen oikea puoli on negatiivinen mutta vasen puoli on itseisarvon määritelmän perusteella aina suurempi tai yhtä suuri kuin nolla. Ennen itseisarvoyhtälön ratkaisemista kannattaakin ensin miettiä, voiko yhtälöllä ylipäätään olla ratkaisuja. 
+            </p>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="t403-ex">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t403">
+                                Itseisarvoyhtälö
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t403" class="collapse">
+                        <p>
+                            Ratkaise seuraavat yhtälöt päättelemällä. Voit käyttää piirrosta apuna, jos haluat.
+                        <ol class="a">
+                            <li>
+                                $\left|x\right| = 7$
+                            </li>
+                            <li> 
+                                $\left|x - 5 \right| = 9$ 
+                            </li>
+                            <li> 
+                                $\left|1 + x \right| = 8$
+                            </li>
+                            <li> 
+                                $\left|4 - x \right| = -6$
+                            </li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                Monimutkaisemmat itseisarvoyhtälöt on mahdollista ratkaista muodostamalla kaksi tavallista yhtälöä. Tarkastellaan esimerkiksi yhtälöä 
+                $$\left|2x - 3 \right| = 4.$$ 
+                Se toteutuu, jos ja vain jos lausekkeen $2x + 3$ arvo on $4$ tai $-4$. Tutkitaan kumpikin vaihtoehto:
+            </p>
+                <ol>
+                    <li> 
+                        vaihtoehto (lausekkeen arvo on $4$):
+                        \begin{align*}
+                            2x-3 &= 4 \\
+                            2x &= 7 \\
+                            x &= \frac{7}{2}
+                        \end{align*}
+                        Ratkaisun voi tarkistaa sijoittamalla alkuperäiseen yhtälöön:
+                        $$\left|2\cdot \frac{7}{2} - 3 \right| = \left|4 \right| =4.$$
+                    </li>
+                    <li> vaihtoehto (lausekkeen arvo on $-4$):
+                        \begin{align*}
+                            2x-3 &= -4 \\
+                            2x &= -1 \\
+                            x &= -\frac{1}{2}
+                        \end{align*}
+                        Ratkaisun voi tarkistaa sijoittamalla alkuperäiseen yhtälöön:
+                        $$\left|2\cdot \left(-\frac{1}{2}\right) - 3 \right| = \left|-4 \right| = 4.$$
+                    </li>
+                </ol>
+            <p>
+                Yhtälöllä $\left|2x - 3 \right| = 4$ on siis kaksi ratkaisua:
+                $$x_1 = \frac{7}{2} \ \text{ ja } \ x_2 = -\frac{1}{2}.$$
+                
+            </p>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="t404-ex">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t404">
+                                Itseisarvoyhtälö
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t404" class="collapse">
+                        <p>
+                            Tehtävänä on ratkaista yhtälö $\left|3x + 1 \right| = 5$.
+                        <ol class="a">
+                            <li>
+                                Luettele luvut, joiden itseisarvo on $5$.
+                            </li>
+                            <li> 
+                                Muodosta a-kohdan avulla alkuperäisestä yhtälöstä kaksi tavallista yhtälöä.
+                            </li>
+                            <li> 
+                                Ratkaise muodostamasi yhtälöt. Tarkista, että saamasi ratkaisut todella toteuttavat alkuperäisen yhtälön.
+                            </li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="t405-ex">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t405">
+                                Itseisarvoyhtälö
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t405" class="collapse">
+                        <p>
+                            Ratkaise seuraavat itseisarvoyhtälöt:
+                        <ol class="a">
+                            <li>
+                                $\left|8x - 11 \right| = 3$
+                            </li>
+                            <li> 
+                                $\left|5x - 30\right| = -10$
+                            </li>
+                            <li> 
+                                $\left|7 - 6x \right| = 9$
+                            </li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                Tarkastellaan seuraavaksi yhtälöitä, joissa esiintyy kaksi itseisarvoa. Niiden ratkaisemiseen voidaan käyttää samoja menetelmiä kuin edellä. Yksinkertaisimmat yhtälöt voidaan ratkaista päättelemällä, kun muistetaan, että erotuksen itseisarvo ilmaisee lukujen etäisyyden lukusuoralla. 
+            </p>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="t406-ex">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t406">
+                                Itseisarvoyhtälö
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t406" class="collapse">
+                        <p>
+                            Tehtävänä on ratkaista yhtälö $\left|x - 3 \right| = \left|x + 5 \right|$.
+                        <ol class="a">
+                            <li>
+                                Kirjoita summa $x + 5$ erotuksena.
+                            </li>
+                            <li> 
+                                Piirrä lukusuora ja merkitse siihen luvut $3$ ja $-5$. Mitkä luvut ovat yhtä kaukana luvuista $3$ ja $-5$?
+                            </li>
+                            <li> 
+                                Mitkä luvut toteuttavat yhtälön $\left|x - 3 \right| = \left|x + 5 \right|\,$?
+                            </li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="t407-ex">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t407">
+                                Itseisarvoyhtälö
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t407" class="collapse">
+                        <p>
+                            Ratkaise seuraavat yhtälöt päättelemällä. Voit käyttää piirrosta apuna, jos haluat.
+                        <ol class="a">
+                            <li>
+                                $\left|x - 1 \right| = \left|x - 9 \right|$
+                            </li>
+                            <li> 
+                                $\left|x + 2 \right| = \left|7 - x \right|$ 
+                            </li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                Monimutkaisemmat tapaukset on mahdollista ratkaista muodostamalla kaksi tavallista yhtälöä. Tarkastellaan esimerkiksi yhtälöä 
+                $$\left|2x - 3 \right| = \left|5x + 4 \right|.$$ 
+                Se toteutuu, jos ja vain jos itseisarvojen sisällä olevat lausekkeet ovat samat tai toistensa vastalausekkeet. Tutkitaan kumpikin vaihtoehto:
+            </p>
+                <ol>
+                    <li> 
+                        vaihtoehto (lausekkeet ovat samat):
+                        \begin{align*}
+                            2x-3 &= 5x + 4 \\
+                            -3x &= 7 \\
+                            x &= -\frac{7}{3}
+                        \end{align*}
+                        Ratkaisun voi tarkistaa sijoittamalla alkuperäiseen yhtälöön. Vasemmaksi puoleksi saadaan
+                        $$\left|2\cdot \left(-\frac{7}{3}\right) - 3 \right| = \left|-\frac{23}{3} \right| = \frac{23}{3}.$$
+                        Oikeaksi puoleksi saadaan
+                        $$\left|5\cdot \left(-\frac{7}{3}\right) + 4 \right| = \left|-\frac{23}{3} \right| = \frac{23}{3}.$$
+                        Yhtälön vasen ja oikea puoli ovat yhtä suuret, joten yhtälö toteutuu.
+                    </li>
+                    <li> vaihtoehto (lausekkeet ovat toistensa vastalausekkeet):
+                        \begin{align*}
+                            2x - 3 &= -(5x + 4) \\
+                            2x - 3 &= -5x - 4 \\
+                            7x  &= -1 \\
+                            x &= -\frac{1}{7}
+                        \end{align*}
+                        Ratkaisun voi tarkistaa sijoittamalla alkuperäiseen yhtälöön. Vasemmaksi puoleksi saadaan
+                        $$\left|2\cdot \left(-\frac{1}{7}\right) - 3 \right| = \left|-\frac{23}{7} \right| = \frac{23}{7}.$$
+                        Oikeaksi puoleksi saadaan
+                        $$\left|5\cdot \left(-\frac{1}{7}\right) + 4 \right| = \left|\frac{23}{7} \right| = \frac{23}{7}.$$
+                        Yhtälön vasen ja oikea puoli ovat yhtä suuret, joten yhtälö toteutuu.
+                    </li>
+                </ol>
+            <p>
+                Yhtälöllä $\left|2x - 3 \right| = \left|5x + 4 \right|$ on siis kaksi ratkaisua:
+                $$x_1 = -\frac{7}{3} \ \text{ ja } \ x_2 = -\frac{1}{7}.$$
+            </p>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="t408-ex">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t408">
+                                Itseisarvoyhtälö
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t408" class="collapse">
+                        <p>
+                            Tehtävänä on ratkaista yhtälö $\left|2 - 7x \right| = \left|3x + 6 \right|$.
+                        <ol class="a">
+                            <li>
+                                Oletetaan, että itseisarvojen sisällä olevat lausekkeet ovat samat. Muodosta tästä yhtälö ja ratkaise se.
+                            </li>
+                            <li> 
+                                Oletetaan, että itseisarvojen sisällä olevat lausekkeet ovat toistensa vastalausekkeet. Muodosta tästä yhtälö ja ratkaise se.
+                            </li>
+                            <li> 
+                                Onko mahdollista, että yhtälö toteutuu, jos itseisarvojen sisällä olevat lausekkeet eivät ole samoja eivätkä toistensa vastalausekkeita? Selitä omin sanoin.  
+                            </li>
+                            <li>
+                                Mitkä luvut toteuttavat yhtälön $\left|2 - 7x \right| = \left|3x + 6 \right|\,$? 
+                            </li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="t409-ex">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t409">
+                                Itseisarvoyhtälö
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t409" class="collapse">
+                        <p>
+                            Ratkaise seuraavat itseisarvoyhtälöt:
+                        <ol class="a">
+                            <li> 
+                                $\left|x - 2 \right| = \left|3x + 1 \right|$ 
+                            </li>
+                            <li>
+                                $\left|2x - 3 \right| = \left|4x - 2 \right|$
+                            </li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="t410-ex">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t410">
+                                Itseisarvoyhtälö
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t410" class="collapse">
+                        <p>
+                            Selitä omin sanoin, miten ratkaiset seuraavan tyyppiset itseisarvoyhtälöt. Voit myös havainnollistaa ratkaisuja lukusuoralla piirroksen avulla.
+                        <ol class="a">
+                            <li> 
+                                $\left|x - a \right| = t$ 
+                            </li>
+                            <li>
+                                $\left|x - a \right| = \left|x - b \right|$
+                            </li>
+                            <li> 
+                                $\left|kx + h \right| = t$ 
+                            </li>
+                            <li>
+                                $\left|kx + h \right| = \left|cx + d \right|$
+                            </li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
 
         </div>
