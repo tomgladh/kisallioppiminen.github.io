@@ -78,8 +78,19 @@ topnav: maa5
                 Alla on näkyvissä funktion $g(x) = -0{,}25x^2 + 2$ kuvaaja. Se on paraabeli, jonka johtosuora on $y = 3$ ja polttopiste $(0,1)$. Siniset janat havainnollistavat etäisyyksiä paraabelin pisteistä polttopisteeseen ja johtosuoraan:
             <br>
             <img src="/kurssit/maa5/kuvat/k040.png" max-width: 100%; width: auto; height: auto;/>
+            <br>
+                Piste $(0,2)$ on tämän paraabelin huippu ja $y$-akseli on tässä tapauksessa paraabelin akseli. Nämä <a href="http://kisallioppiminen.fi/kurssit/maa2/luku3/">MAA2-kurssista</a> tutut käsitteet voidaan määritellä paraabelin polttopisteen ja johtosuoran avulla seuraavasti:
             </p>
 
+            <div class="definition">
+                <h3>MÄÄRITELMÄ: PARAABELIN AKSELI JA HUIPPU</h3>
+                <p>
+                    Paraabelin johtosuoran se normaali, joka kulkee paraabelin polttopisteen kautta, on paraabelin <em>akseli</em>. Akselin ja paraabelin leikkauspiste on paraabelin <em>huippu</em>.
+                    <br>
+                    <img src="/kurssit/maa5/kuvat/k043.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+            </div>
+            
             <p>
                 Paraabelille voidaan johtaa yhtälö, jos polttopiste ja johtosuora tunnetaan. Tarkastellaan esimerkiksi paraabelia, jonka polttopiste on $(4,0)$ johtosuora on $x = -2$. Pisteen $(x,y)$ etäisyys polttopisteestä on 
                 $$\sqrt{(x-4)^2 + y^2}$$
@@ -100,7 +111,7 @@ topnav: maa5
                 Siitä voidaan ratkaista $y^2$: 
                 \begin{align*}
                 x^2 - 8x + 16 + y^2 &= x^2 + 4x + 4 \\
-                y^2 &= 12x - 12
+                y^2 &= 12x - 12.
                 \end{align*}
                 Tämä päättely osoittaa, että jos $(x,y)$ on paraabelin piste, niin sen koordinaatit toteuttavat yhtälön 
                 $y^2 = 12x - 12$. 
@@ -113,14 +124,15 @@ topnav: maa5
                 &= \sqrt{x^2 - 8x + 16 + 12x - 12} \\
                 &= \sqrt{x^2 + 4x + 4} \\
                 &= \sqrt{(x+2)^2} \\
-                &= \left|x+2\right|
+                &= \left|x+2\right| \\
+                &= \left|x- (-2)\right|
                 \end{align*}
                 Havaitaan, että pisteen $(x,y)$ etäisyys polttopisteestä on yhtä suuri kuin sen etäisyys johtosuorasta.
                 Siis piste $(x,y)$ on paraabelin piste.
             </p>
 
             <p>
-                Yhtälöstä $y^2 = 12x - 12$ voidaan vielä ratkaista $x$. Aloitetaan vaihtamalla yhtälön vasen ja oikea puoli keskenään:
+                Etsitty paraabelin yhtälö on siis $y^2 = 12x - 12$. Tästä yhtälöstä voidaan vielä ratkaista $x$. Aloitetaan vaihtamalla yhtälön vasen ja oikea puoli keskenään:
                 \begin{align*}
                 12x - 12 &= y^2 \\
                 12x &= y^2 + 12 \\
@@ -152,13 +164,15 @@ topnav: maa5
                             <li>
                                 Muodosta lauseke, joka ilmaisee pisteen $(x,y)$ etäisyyden suorasta $y = -1$. 
                                 <br>
-                                Vinkki: Yksi mahdollisuus on käyttää luvun <a href="http://kisallioppiminen.fi/kurssit/maa5/luku1/">Suora</a> teoreemaa 10. Keksitkö muita tapoja?
+                                Vinkki: Voit päätellä samaan tapaan kuin edellisessä esimerkissä tehtiin tai käyttää luvun <a href="http://kisallioppiminen.fi/kurssit/maa5/luku1/">Suora</a> teoreemaa 10.
                             </li>
                             <li>
                                 Muodosta edellisten kohtien lausekkeista yhtälö, jonka mukaan pisteen $(x,y)$ etäisyys polttopisteestä $(0,3)$ on yhtä suuri kuin pisteen $(x,y)$ etäisyys johtosuorasta $y = -1$.
                             </li>
                             <li>
-                                Ratkaise muodostamasi yhtälöstä $y$. Aloita korottamalla yhtälön kumpikin puoli toiseen potenssiin.
+                                Ratkaise muodostamasi yhtälöstä $y$. 
+                                <br>
+                                Vinkki: aloita korottamalla yhtälön kumpikin puoli toiseen potenssiin.
                             </li>
                         </ol>
                         </p>
@@ -176,14 +190,7 @@ topnav: maa5
                 </div>
             </div>
 
-            <div class="definition">
-                <h3>MÄÄRITELMÄ: PARAABELIN AKSELI JA HUIPPU</h3>
-                <p>
-                    Paraabelin johtosuoran se normaali, joka kulkee paraabelin polttopisteen kautta, on paraabelin <em>akseli</em>. Akselin ja paraabelin leikkauspiste on paraabelin <em>huippu</em>.
-                    <br>
-                    <img src="/kurssit/maa5/kuvat/k043.png" max-width: 100%; width: auto; height: auto;/>
-                </p>
-            </div>
+            
 
         </div>
     </section>
