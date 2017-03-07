@@ -478,7 +478,7 @@ topnav: maa5
                     <header>
                         <h1>
                             <a data-toggle="collapse" class="collapsed" data-target="#t411">
-                                Itseisarvoyhtälö
+                                Itseisarvoepäyhtälö
                             </a>
                         </h1>
                     </header>
@@ -503,7 +503,7 @@ topnav: maa5
                     <header>
                         <h1>
                             <a data-toggle="collapse" class="collapsed" data-target="#t412">
-                                Itseisarvoyhtälö
+                                Itseisarvoepäyhtälö
                             </a>
                         </h1>
                     </header>
@@ -527,35 +527,49 @@ topnav: maa5
             </div>
 
             <p>
-                Joillakin itseisarvoyhtälöillä ei ole lainkaan ratkaisua. Esimerkiksi yhtälö 
-                $$\left|x - 10 \right| = -3$$
-                on aina epätosi, sillä sen oikea puoli on negatiivinen mutta vasen puoli on itseisarvon määritelmän perusteella aina suurempi tai yhtä suuri kuin nolla. Ennen itseisarvoyhtälön ratkaisemista kannattaakin ensin miettiä, voiko yhtälöllä ylipäätään olla ratkaisuja. 
+                Edellisistä tehtävistä voi havaita, että itseisarvoepäyhtälön vastaus riippuu huomattavasti siitä, esiintyykö epäyhtälössä pienempi kuin -merkki vai suurempi kuin -merkki. Esimerkiksi epäyhtälön 
+                $$\left| x - 2 \right| < 6$$
+                ratkaisuja ovat kaikki luvut, joiden etäisyys luvusta $2$ on pienempi kuin $6$:
+                <img src="/kurssit/maa5/kuvat/k047.png" max-width: 100%; width: auto; height: auto;/>
+                Yhtälö siis toteutuu, jos ja vain jos
+                $$-4 < x \quad \textbf{ ja } \quad x < 8.$$
+                Tämä voidaan ilmaista myös kaksoisepäyhtälönä
+                $$-4 < x < 8.$$
+            </p>
+
+            <p>
+                Epäyhtälön 
+                $$\left| x - 2 \right| > 4$$
+                ratkaisuja ovat puolestaan kaikki luvut, joiden etäisyys luvusta $2$ on suurempi kuin $4$:
+                <img src="/kurssit/maa5/kuvat/k048.png" max-width: 100%; width: auto; height: auto;/>
+                Yhtälö siis toteutuu, jos ja vain jos
+                $$x < -2 \quad \textbf{ tai } \quad x > 6.$$
             </p>
 
             <div class="tehtavat">
-                <div class="tehtava" id="t403-ex">
+                <div class="tehtava" id="t413-ex">
                     <header>
                         <h1>
-                            <a data-toggle="collapse" class="collapsed" data-target="#t403">
-                                Itseisarvoyhtälö
+                            <a data-toggle="collapse" class="collapsed" data-target="#t413">
+                                Itseisarvoepäyhtälö
                             </a>
                         </h1>
                     </header>
-                    <div id="t403" class="collapse">
+                    <div id="t413" class="collapse">
                         <p>
-                            Ratkaise seuraavat yhtälöt päättelemällä. Voit käyttää piirrosta apuna, jos haluat.
+                            Ratkaise seuraavat yhtälöt päättelemällä. Voit käyttää piirrosta apuna, jos haluat. Kirjoita vastaus huolellisesti ja kiinnitä erityistä huomioita siihen, esiintyykö vastauksessa sana "ja" vai sana "tai".
                         <ol class="a">
                             <li>
-                                $\left|x\right| = 7$
+                                $\left|x\right| < 7$
                             </li>
                             <li> 
-                                $\left|x - 5 \right| = 9$ 
+                                $\left|x - 5 \right| \geq 9$ 
                             </li>
                             <li> 
-                                $\left|1 + x \right| = 8$
+                                $\left|x + 1 \right| > 8$
                             </li>
                             <li> 
-                                $\left|4 - x \right| = -6$
+                                $\left|4 - x \right| \leq -6$
                             </li>
                         </ol>
                         </p>
@@ -564,34 +578,32 @@ topnav: maa5
             </div>
 
             <p>
-                Monimutkaisemmat itseisarvoyhtälöt on mahdollista ratkaista muodostamalla kaksi tavallista yhtälöä. Tarkastellaan esimerkiksi yhtälöä 
-                $$\left|2x - 3 \right| = 4.$$ 
-                Se toteutuu, jos ja vain jos lausekkeen $2x + 3$ arvo on $4$ tai $-4$. Tutkitaan kumpikin vaihtoehto:
+                Monimutkaisemmat itseisarvoepäyhtälöt on mahdollista ratkaista muodostamalla kaksi tavallista epäyhtälöä samalla periaatteella kuin edellä. Tarkastellaan esimerkiksi epäyhtälöä 
+                $$\left|2x - 3 \right| < 4.$$ 
+                Se toteutuu, jos ja vain jos lausekkeen $2x + 3$ arvo on lukujen $-4$ ja $4$ välissä eli 
+                $$-4 < 2x - 3 < 4.$$ 
+                Ratkaistaan kumpikin epäyhtälö:
             </p>
                 <ol>
                     <li> 
-                        vaihtoehto (lausekkeen arvo on $4$):
+                        epäyhtälö:
                         \begin{align*}
-                            2x-3 &= 4 \\
-                            2x &= 7 \\
-                            x &= \frac{7}{2}
+                            2x-3 &> -4 \\
+                            2x &> -1 \\
+                            x &> -\frac{1}{2}
                         \end{align*}
-                        Ratkaisun voi tarkistaa sijoittamalla alkuperäiseen yhtälöön:
-                        $$\left|2\cdot \frac{7}{2} - 3 \right| = \left|4 \right| =4.$$
                     </li>
-                    <li> vaihtoehto (lausekkeen arvo on $-4$):
+                    <li> epäyhtälö:
                         \begin{align*}
-                            2x-3 &= -4 \\
-                            2x &= -1 \\
-                            x &= -\frac{1}{2}
+                            2x-3 &< 4 \\
+                            2x &< 7 \\
+                            x &< \frac{7}{2}
                         \end{align*}
-                        Ratkaisun voi tarkistaa sijoittamalla alkuperäiseen yhtälöön:
-                        $$\left|2\cdot \left(-\frac{1}{2}\right) - 3 \right| = \left|-4 \right| = 4.$$
                     </li>
                 </ol>
             <p>
-                Yhtälöllä $\left|2x - 3 \right| = 4$ on siis kaksi ratkaisua:
-                $$x_1 = \frac{7}{2} \ \text{ ja } \ x_2 = -\frac{1}{2}.$$
+                Epäyhtälö $\left|2x - 3 \right| < 4$ toteutuu, jos ja vain jos kumpikin näistä epäyhtälöistä toteutuu eli
+                $$-\frac{1}{2} < x \quad \textbf{ ja } \quad x < \frac{7}{2}.$$
                 
             </p>
 
