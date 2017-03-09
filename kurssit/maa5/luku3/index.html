@@ -96,11 +96,11 @@ topnav: maa5
                 Paraabelille voidaan johtaa yhtälö, jos polttopiste ja johtosuora tunnetaan. Tarkastellaan esimerkiksi paraabelia, jonka polttopiste on $(4,0)$ johtosuora on $x = -2$. Pisteen $(x,y)$ etäisyys polttopisteestä on 
                 $$\sqrt{(x-4)^2 + y^2}$$
                 ja etäisyys johtosuorasta on 
-                $$\left| x-(-2)\right|.$$
+                $$\left| x-(-2)\right| = \left| x+2\right|.$$
                 <img src="/kurssit/maa5/kuvat/k042.png" max-width: 100%; width: auto; height: auto;/>
                 Piste $(x,y)$ on paraabelin piste, jos ja vain jos sen etäisyydet polttopisteeseen ja johtosuoraan ovat yhtä suuret eli yhtälö
                 $$
-                \sqrt{(x-4)^2 + y^2} = \left| x-(-2)\right|
+                \sqrt{(x-4)^2 + y^2} = \left| x+2\right|
                 $$
                 toteutuu.
             </p>
@@ -109,7 +109,19 @@ topnav: maa5
                 $$
                 (x-4)^2 + y^2 = (x + 2)^2.
                 $$
-                Siitä voidaan ratkaista $y^2$: 
+                Tästä yhtälöstä päästään takaisin alkuperäiseen yhtälöön, kun yhtälön molemmilta puolilta otetaan neliöjuuri. Se on sallittua, koska yhtälön kumpikin puoli on epänegatiivinen. Huomaa myös, että $\sqrt{(x+2)^2} = \left| x+2\right|$.
+            </p>
+            <p>
+                Yhtälöstä $(x-4)^2 + y^2 = (x + 2)^2$ voidaan ratkaista $x$:
+                \begin{align*}
+                x^2 - 8x + 16 + y^2 &= x^2 + 4x + 4 \\
+                y^2 &= 12x - 12 \\
+                12x - 12 &= y^2 \\
+                12x &= y^2 + 12 \\
+                x &= \frac{1}{12}y^2 + 1.
+                \end{align*}
+            </p>
+                <!-- voidaan ratkaista $y^2$: 
                 \begin{align*}
                 x^2 - 8x + 16 + y^2 &= x^2 + 4x + 4 \\
                 y^2 &= 12x - 12.
@@ -139,7 +151,7 @@ topnav: maa5
                 12x &= y^2 + 12 \\
                 x &= \frac{1}{12}y^2 + 1.
                 \end{align*}
-            </p>
+            </p> -->
 
             <p>
                 Mille tahansa paraabelille, jonka johtosuora on $x$- tai $y$-akselin suuntainen, voidaan johtaa yhtälö samaan tapaan kuin edellä tehtiin. Tällä tavalla voitaisiin todistaa oikeaksi myös seuraava teoreema:
