@@ -349,6 +349,44 @@ topnav: maa5
                     </div>
                 </div>
             </div>
+
+            <p>
+                Tämän kappaleen lopuksi tarkastellaan vielä hiukan itseisarvojen ominaisuuksia. Joissakin tilanteissa joudutaan tarkastelemaan tulojen tai osamäärien itseisarvoja. Esimerkiksi lukujen $5k-m$ ja $8k-4m$ väliseksi etäisyydeksi saadaan
+                \begin{align*}
+                \left|(5k-m) - (8k-4m)\right| &= \left|5k-8k - m + 4m\right| \\
+                &= \left|-3k + 3m\right| \\
+                &= \left|-3(k-m)\right|
+                \end{align*}
+                Miten suuri tämä etäisyys on verrattuna lukujen $k$ ja $m$ väliseen etäisyyteen $\left|k-m\right|$? Tähän kysymykseen vastaamisessa auttaa seuraava teoreema:
+            </p>
+
+            <div class="theorem" id="TULON JA OSAMÄÄRÄN ITSEISARVO">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Tulon itseisarvo on yhtä suuri kuin itseisarvojen tulo:
+                    $$\left|ab\right| = \left|a\right|\left|b\right|$$
+                    Osamäärän itseisarvo on yhtä suuri kuin itseisarvojen osamäärä:
+                    $$\left|\frac{a}{b}\right| = \frac{\left|a\right|}{\left|b\right|}$$
+                </p>
+                <div class="proof">
+                    <p>
+                       Perustelu: Molemmat yhtälöt voidaan perustella teoreeman 1 avulla tutkimalla neljä mahdollista tapausta: 1. $a \geq 0$ ja $b \geq 0$, 2. $a \geq 0$ ja $b < 0$, 3. $a < 0$ ja $b \geq 0$ ja 4. $a < 0$ ja $b < 0$. Huomaa lisäksi, että osamäärää koskevassa yhtälössä $b \neq 0$, sillä muuten osamäärä ei ole määritelty.
+                   </p>
+                    <p>
+                        Tarkastellaan malliksi tulon itseisarvon tapaus 2: $a \geq 0$ ja $b < 0$. Tällöin teoreeman 1 mukaan
+                        \begin{align*}
+                        \left|a\right| &= a \\
+                        \left|b\right| &= -b,
+                        \end{align*}
+                        joten 
+                        $$\left|a\right|\left|b\right| = a \cdot (-b) = -ab.$$
+                        Toisaalta koska $a \geq 0$ ja $b < 0$, niin $ab \leq 0$ ja teoreeman 1 mukaan
+                        $$\left|ab\right| = -ab.$$
+                        Siis tässä tapauksessa
+                        $$\left|ab\right| = \left|a\right|\left|b\right|.$$
+                    </p>
+                </div>
+            </div>
             
         </div>
     </section>
