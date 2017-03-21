@@ -407,6 +407,37 @@ topnav: maa5
                 </div>
             </div>
 
+            <p>
+                Vektoreiden avulla voidaan perustella muitakin  <a href="http://kisallioppiminen.fi/kurssit/maa4/xy-taso/">MAA4-kurssista</a> tutun vektorin pituuden avulla. 
+            </p>
+
+            <div class="theorem" id="JANAN KESKIPISTE">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Pisteitä $P = (x_1,y_1)$ ja $Q = (x_2,y_2)$ yhdistävän janan keskipisteen $C$ koordinaatit ovat päätepisteiden koordinaattien keskiarvot:
+                    $$
+                    C = \left(\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2}\right).
+                    $$
+                </p>
+                <div class="proof">
+                    <p>
+                        Perustelu: Muodostetaan pisteen $C$ paikkavektori:
+                        <br>
+                        <img src="/kurssit/maa5/kuvat/k033.png" max-width: 100%; width: auto; height: auto;/>
+                        \begin{align*}
+                        \pv{OC} &= \pv{OP} + \frac{1}{2}\pv{PQ}\\
+                         &= x_1\vi + y_1\vj + \frac{1}{2}((x_2-x_1)\vi + (y_2-y_1)\vj) \\
+                         &= x_1\vi + y_1\vj + \frac{1}{2}x_2\vi- \frac{1}{2}x_1\vi + \frac{1}{2}y_2\vj-\frac{1}{2}y_1\vj \\
+                         &= \frac{1}{2}(x_1+x_2)\vi + \frac{1}{2}(y_1 + y_2)\vj
+                        \end{align*}
+                        Paikkavektorista voidaan lukea pisteen $C$ koordinaatit. Siis 
+                        $$
+                        C = \left(\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2}\right).
+                        $$
+                   </p>
+                </div>
+            </div>
+
         </div>
     </section>
 
