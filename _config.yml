@@ -13,7 +13,7 @@ sass:
   style: :compressed
 
 navigation:
-  "Materiaalit": "/"
+  "MAA4": "/kurssit/maa4/index.html"
   "Kisallioppiminen.fi": "http://kisallioppiminen.fi"
   "Tietoa": "/tietoa.html"
 
