@@ -35,6 +35,8 @@
  
 		});
 	</script>
-	<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+	
+	{% for src in site.resources.js %}
+	<script src="{% if src contains '//' %}{{ src }}{% else %}{{ src | prepend: site.baseurl }}{% endif %}"></script>{% endfor %}
 
 </head>
