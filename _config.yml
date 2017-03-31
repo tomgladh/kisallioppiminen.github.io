@@ -14,7 +14,7 @@ sass:
 
 navigation:
   "Materiaalit": "/"
-  "Blogi": "http://blogs.helsinki.fi/kisallioppiminenlukiossa"
+  "Kisallioppiminen.fi": "http://kisallioppiminen.fi"
   "Tietoa": "/tietoa.html"
 
 resources:
