@@ -8,11 +8,14 @@ navigation:
     name: Käytännön asiat
     path: /kurssit/eo01/kaytannot/
   -
-    name: Päätelaitteet
-    path: /kurssit/eo01/paatelaitteet/
+    name: Työvälineohjelmat
+    path: /kurssit/eo01/ohjelmat/
   -
     name: Pilvipalvelut
     path: /kurssit/eo01/pilvipalvelut/
   -
     name: Abitti
     path: /kurssit/eo01/abitti/
+  -
+    name: Digikansalaisuus
+    path: /kurssit/eo01/digikansalaisuus/
