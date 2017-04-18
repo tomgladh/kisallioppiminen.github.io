@@ -19,3 +19,6 @@ navigation:
   -
     name: Digikansalaisuus
     path: /kurssit/eo01/digikansalaisuus/
+  -
+    name: Keskustelu
+    path: /kurssit/eo01/keskustelu/
