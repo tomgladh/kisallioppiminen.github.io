@@ -1,0 +1,34 @@
+---
+layout: material
+title: EO01 - DigiEspoo
+main-class: has-atop
+topnav: eo01
+---
+
+<input type="hidden" id="theoremStart" value="1"/>
+<input type="hidden" id="chapterNumber" value="1"/>
+
+<article>
+    <section>
+        <header>
+            <h1>Keskustelu</h1>
+        </header>
+    </section>
+    <section>
+ 
+ <iframe id="forum_embed"
+  src="javascript:void(0)"
+  scrolling="no"
+  frameborder="0"
+  width="900"
+  height="700">
+</iframe>
+<script type="text/javascript">
+  document.getElementById('forum_embed').src =
+     'https://groups.google.com/a/eduespoo.fi/forum/embed/?place=forum/eo01-ryhma'
+     + '&showsearch=true&showpopout=true&showtabs=false'
+     + '&parenturl=' + encodeURIComponent(window.location.href);
+</script>
+    </section>
+
+</article>
